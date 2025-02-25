@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <title>HYGGE_View</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>테마 기획<span class="snb_txt">Theme Planning</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="next_page">
+                                이벤트
+                            </div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                                테마 기획
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="view_cnt">
+                <div class="view_cnt">
+                    <h2 class="view_tit">[휘게문고 특별기획] 2017 소설가 50명이 뽑은 올해의 소설</h2>
+                    <div class="view_explain">
+                        <p class="view_commenter">휘게문고</p>
+                        <p class="view_date">2017.12.23 18:43</p>
+                        <div class="view_lookup">조회&nbsp;<span>168</span></div>
+                    </div>
+                    <div class="view_contain">
+                        <img src="images/view_ex.png" alt="예시" />
+                    </div>
+                    <div class="view_btn">
+                        <div class="prev_list">이전</div>
+                        <div class="view_list" onclick="location.href='theme_planning.html'">목록</div>
+                    </div>
+                    <div class="catalog">
+                        <div>
+                            <p class="next_txt"><span>다음글</span></p>
+                            <div class="non_next">다음글이 없습니다.</div>   
+                            <div class="list_subject displaynone">[2018 출판 트랜드 키워드 5] 나에게 길을 묻다.</div> 
+                        </div>
+                        <span class="line"></span>
+                        <div>
+                            <p class="prev_txt"><span>이전글</span></p>
+                            <div class="list_subject">[2018 출판 트랜드 키워드 5] 나에게 길을 묻다.</div>
+                            <div class="non_prev displaynone">이전글이 없습니다.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.view_cnt --> 
+            </div>
+            
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

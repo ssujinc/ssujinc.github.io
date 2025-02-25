@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css"/>
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css"/>
+
+<link rel="stylesheet" type="text/css" href="../../resources/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../../resources/css/bootstrap-datetimepicker.css" />
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/>
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Loaders</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Components</span></li>
+							<li><span>Tables</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Table (List)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <table class="tbl_line_lst" summary="번호/제목/내용/URL/작성일/비고로 구성됨">
+                                    <caption class="hide">테이블 제목</caption>
+                                    <colgroup>
+                                        <col width="80"><col><col><col><col width="120">
+                                        <col width="120">
+                                        <!-- cell 개수 만큼 <col> 개수를 넣어야 함 -->
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">내용</th>
+                                            <th scope="col">URL</th>
+                                            <th scope="col">작성일</th>
+                                            <th scope="col">비고</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">5</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">6</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">7</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">8</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">9</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">10</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" colspan="6">등록된 데이터가 없습니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tbl_btm_info">
+                                    <div class="tbl_path">전체 <strong>4</strong> / 10</div>
+                                    <div class="paging">
+                                        <div class="selectbox">
+                                            <label for="select_page">페이지보기</label> 
+                                            <select id="select_page"> 
+                                                <option selected>페이지보기</option> 
+                                                <option>10</option> 
+                                                <option>20</option> 
+                                                <option>30</option> 
+                                            </select> 
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+                                        <a class="btn_paging_first" href="#none" >처음 페이지로 이동</a>
+                                        <a class="btn_paging_prev" href="#none" >이전 페이지로 이동</a>
+                                        <span class="list">
+                                            <strong>1</strong>
+                                            <a href="#none">2</a>
+                                            <a href="#none">3</a>
+                                            <a href="#none">4</a>
+                                            <a href="#none">5</a>
+                                        </span>
+                                        <a class="btn_paging_next" href="#none">다음 페이지로 이동</a>
+                                        <a class="btn_paging_last" href="#none">마지막 페이지로 이동</a>
+                                    </div>
+                                    <div class="btnBox sz_regular">
+                                        <button type="button" class="btnS_basic">버튼1</button>
+                                        <button type="button" class="btnS_line">버튼2</button>
+                                    </div>
+                                </div>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;table class="tbl_line_lst" summary="번호/제목/내용/URL/작성일/비고로 구성됨"&gt;
+    &lt;caption class="hide"&gt;테이블 제목&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col width="80"&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col width="120"&gt;
+        &lt;col width="120"&gt;
+        &lt;!-- cell 개수 만큼 &lt;col&gt; 개수를 넣어야 함 --&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;번호&lt;/th&gt;
+            &lt;th scope="col"&gt;제목&lt;/th&gt;
+            &lt;th scope="col"&gt;내용&lt;/th&gt;
+            &lt;th scope="col"&gt;URL&lt;/th&gt;
+            &lt;th scope="col"&gt;작성일&lt;/th&gt;
+            &lt;th scope="col"&gt;비고&lt;/th&gt;
+        &lt;/tr&gt;	
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;1&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;2&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;3&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;4&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;5&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;6&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;7&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;8&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;9&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;10&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row" colspan="6"&gt;등록된 데이터가 없습니다.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="tbl_btm_info"&gt;
+    &lt;div class="tbl_path"&gt;전체 &lt;strong&gt;4&lt;/strong&gt; / 10&lt;/div&gt;
+    &lt;div class="paging"&gt;
+        &lt;div class="selectbox"&gt;
+            &lt;label for="select_page"&gt;페이지보기&lt;/label&gt; 
+            &lt;select id="select_page"&gt; 
+                &lt;option selected&gt;페이지보기&lt;/option&gt; 
+                &lt;option&gt;10&lt;/option&gt; 
+                &lt;option&gt;20&lt;/option&gt; 
+                &lt;option&gt;30&lt;/option&gt; 
+            &lt;/select&gt; 
+            &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+        &lt;/div&gt;
+        &lt;a class="btn_paging_first" href="#none" &gt;처음 페이지로 이동&lt;/a&gt;
+        &lt;a class="btn_paging_prev" href="#none" &gt;이전 페이지로 이동&lt;/a&gt;
+        &lt;span class="list"&gt;
+            &lt;strong&gt;1&lt;/strong&gt;
+            &lt;a href="#none"&gt;2&lt;/a&gt;
+            &lt;a href="#none"&gt;3&lt;/a&gt;
+            &lt;a href="#none"&gt;4&lt;/a&gt;
+            &lt;a href="#none"&gt;5&lt;/a&gt;
+        &lt;/span&gt;
+        &lt;a class="btn_paging_next" href="#none"&gt;다음 페이지로 이동&lt;/a&gt;
+        &lt;a class="btn_paging_last" href="#none"&gt;마지막 페이지로 이동&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="btnBox sz_regular"&gt;
+        &lt;button type="button" class="btnS_basic"&gt;버튼1&lt;/button&gt;
+        &lt;button type="button" class="btnS_line"&gt;버튼2&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Table (Scroll)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <table class="tbl_line_lst scroll" summary="번호/제목/내용/URL/작성일/비고로 구성됨">
+                                    <caption class="hide">테이블 제목</caption>
+                                    <colgroup>
+                                        <col><col><col><col><col>
+                                        <col>
+                                        <!-- cell 개수 만큼 <col> 개수를 넣어야 함(scroll은 width 사이즈 css로 조절 불가) -->
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">내용</th>
+                                            <th scope="col">URL</th>
+                                            <th scope="col">작성일</th>
+                                            <th scope="col">비고</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">5</td>
+                                            <td>제목 제목 제목 제목</td>
+                                            <td>내용 내용 내용 내용 내용 내용 내용 내용 내용</td>
+                                            <td class="al_l"><a class="link">링크</a></td>
+                                            <td>2019.09.11</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row" colspan="6">등록된 데이터가 없습니다.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;table class="tbl_line_lst scroll" summary="번호/제목/내용/URL/작성일/비고로 구성됨"&gt;
+    &lt;caption class="hide"&gt;테이블 제목&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;
+        &lt;col&gt;
+        &lt;!-- cell 개수 만큼 &lt;col&gt; 개수를 넣어야 함(scroll은 width 사이즈 css로 조절 불가) --&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th scope="col"&gt;번호&lt;/th&gt;
+            &lt;th scope="col"&gt;제목&lt;/th&gt;
+            &lt;th scope="col"&gt;내용&lt;/th&gt;
+            &lt;th scope="col"&gt;URL&lt;/th&gt;
+            &lt;th scope="col"&gt;작성일&lt;/th&gt;
+            &lt;th scope="col"&gt;비고&lt;/th&gt;
+        &lt;/tr&gt;	
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;1&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;2&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;3&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;4&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row"&gt;5&lt;/td&gt;
+            &lt;td&gt;제목 제목 제목 제목&lt;/td&gt;
+            &lt;td&gt;내용 내용 내용 내용 내용 내용 내용 내용 내용&lt;/td&gt;
+            &lt;td class="al_l"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+            &lt;td&gt;2019.09.11&lt;/td&gt;
+            &lt;td&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td scope="row" colspan="6"&gt;등록된 데이터가 없습니다.&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Table (Edit)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <table class="tbl_line_view" summary="고객명/실행일자/상품명/고객관리번호/주민번호/모니터링종류/과일/사용여부/URL로 구성됨">
+                                    <caption class="hide">테이블 제목</caption>
+                                    <colgroup>
+                                        <col width="120"><col><col width="120"><col>
+                                        <!-- cell 개수 만큼 <col> 개수를 넣어야 함 -->
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">고객명</th>
+                                            <td>
+                                                <div class="iptBox">
+                                                    <input type="text" class="ipt_txt">
+                                                </div>
+                                            </td>
+                                            <th>실행일자</th>
+                                            <td>
+                                                <div class="iptBox">
+                                                    <input type="text" class="ipt_date fromDate">
+                                                    <span>-</span>
+                                                    <input type="text" class="ipt_date toDate">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">상품명</th>
+                                            <td>
+                                                <div class="iptBox">
+                                                    <input type="text" class="ipt_txt">
+                                                </div>
+                                            </td>
+                                            <th>고객 관리 번호</th>
+                                            <td>
+                                                <div class="iptBox">
+                                                    <input type="text" class="ipt_txt">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주민번호</th>
+                                            <td>
+                                                <div class="iptBox inline">
+                                                    <input type="text" class="ipt_txt">
+                                                    <span>-</span>
+                                                    <input type="text" class="ipt_txt">
+                                                </div>
+                                            </td>
+                                            <th>모니터링 종류</th>
+                                            <td>
+                                                <div class="selectbox">
+                                                    <label for="select_label1">화재보험</label> 
+                                                    <select id="select_label1"> 
+                                                        <option selected>화재보험</option> 
+                                                        <option>생명보험</option> 
+                                                        <option>산재보험</option> 
+                                                        <option>자동차보험</option> 
+                                                    </select> 
+                                                    <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">과일</th>
+                                            <td>
+                                                <div class="checkBox">                                            
+                                                    <input type="checkbox" name="ipt_check_1" id="ipt_check_1" class="ipt_check">
+                                                    <label for="ipt_check_1">사과</label>
+                                                    <input type="checkbox" name="ipt_check_2" id="ipt_check_2" class="ipt_check">
+                                                    <label for="ipt_check_2">수박</label>
+                                                    <input type="checkbox" name="ipt_check_3" id="ipt_check_3" class="ipt_check">
+                                                    <label for="ipt_check_3">참외</label>
+                                                    <input type="checkbox" name="ipt_check_4" id="ipt_check_4" class="ipt_check">
+                                                    <label for="ipt_check_4">딸기</label>
+                                                    <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                                </div>
+                                            </td>
+                                            <th>사용여부</th>
+                                            <td>
+                                                <div class="radioBox">                                            
+                                                    <input type="radio" name="ipt_radio_1" id="ipt_radio_1" class="ipt_radio">
+                                                    <label for="ipt_radio_1">Y</label>
+                                                    <input type="radio" name="ipt_radio_2" id="ipt_radio_2" class="ipt_radio">
+                                                    <label for="ipt_radio_2">N</label>
+                                                    <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">내용</th>
+                                            <td colspan="3">
+                                                <div class="textareaBox">
+                                                    <textarea placeholder="내용을 입력해 주세요."></textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- 추가CSS -------------------- --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/bootstrap.css" /&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/bootstrap-datetimepicker.css" /&gt;
+
+&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;table class="tbl_line_view" summary="고객명/실행일자/상품명/고객관리번호/주민번호/모니터링종류/과일/사용여부/URL로 구성됨"&gt;
+    &lt;caption class="hide"&gt;테이블 제목&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col width="120"&gt;&lt;col&gt;&lt;col width="120"&gt;&lt;col&gt;
+        &lt;!-- cell 개수 만큼 &lt;col&gt; 개수를 넣어야 함 --&gt;
+    &lt;/colgroup&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;고객명&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="iptBox"&gt;
+                    &lt;input type="text" class="ipt_txt"&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;th&gt;실행일자&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="iptBox"&gt;
+                    &lt;input type="text" class="ipt_date fromDate"&gt;
+                    &lt;span&gt;-&lt;/span&gt;
+                    &lt;input type="text" class="ipt_date toDate"&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;상품명&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="iptBox"&gt;
+                    &lt;input type="text" class="ipt_txt"&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;th&gt;고객 관리 번호&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="iptBox"&gt;
+                    &lt;input type="text" class="ipt_txt"&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;주민번호&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="iptBox inline"&gt;
+                    &lt;input type="text" class="ipt_txt"&gt;
+                    &lt;span&gt;-&lt;/span&gt;
+                    &lt;input type="text" class="ipt_txt"&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;th&gt;모니터링 종류&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="selectbox"&gt;
+                    &lt;label for="select_label"&gt;화재보험&lt;/label&gt; 
+                    &lt;select id="select_label"&gt; 
+                        &lt;option selected&gt;화재보험&lt;/option&gt; 
+                        &lt;option&gt;생명보험&lt;/option&gt; 
+                        &lt;option&gt;산재보험&lt;/option&gt; 
+                        &lt;option&gt;자동차보험&lt;/option&gt; 
+                    &lt;/select&gt; 
+                    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;과일&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="checkBox"&gt;                                            
+                    &lt;input type="checkbox" name="ipt_check1" id="ipt_check1" class="ipt_check"&gt;
+                    &lt;label for="ipt_check1"&gt;사과&lt;/label&gt;
+                    &lt;input type="checkbox" name="ipt_check2" id="ipt_check2" class="ipt_check"&gt;
+                    &lt;label for="ipt_check2"&gt;수박&lt;/label&gt;
+                    &lt;input type="checkbox" name="ipt_check3" id="ipt_check3" class="ipt_check"&gt;
+                    &lt;label for="ipt_check3"&gt;참외&lt;/label&gt;
+                    &lt;input type="checkbox" name="ipt_check4" id="ipt_check4" class="ipt_check"&gt;
+                    &lt;label for="ipt_check4"&gt;딸기&lt;/label&gt;
+                    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;th&gt;사용여부&lt;/th&gt;
+            &lt;td&gt;
+                &lt;div class="radioBox"&gt;                                            
+                    &lt;input type="radio" name="ipt_radio3" id="ipt_radio3" class="ipt_radio"&gt;
+                    &lt;label for="ipt_radio3"&gt;Y&lt;/label&gt;
+                    &lt;input type="radio" name="ipt_radio4" id="ipt_radio4" class="ipt_radio"&gt;
+                    &lt;label for="ipt_radio4"&gt;N&lt;/label&gt;
+                    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;내용&lt;/th&gt;
+            &lt;td colspan="3"&gt;
+                &lt;div class="textareaBox"&gt;
+                    &lt;textarea placeholder="내용을 입력해 주세요."&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;!-- -------------------- 추가JS -------------------- --&gt;
+&lt;script type="text/javascript" src="../../resources/js/bootstrap.min.js"&gt;&lt;/script&gt;		
+&lt;script type="text/javascript" src="../../resources/js/moment.min.js"&gt;&lt;/script&gt;	
+&lt;script type="text/javascript" src="../../resources/js/bootstrap-datetimepicker.js"&gt;&lt;/script&gt;		
+&lt;script type="text/javascript" src="../../resources/js/ko.js"&gt;&lt;/script&gt;</code>
+&lt;script type="text/javascript"&gt;
+$(document).ready(function (){
+    $('.fromDate').datetimepicker({
+        language : 'ko', // 화면에 출력될 언어를 한국어로 설정합니다.
+        pickTime : false, // 사용자로부터 시간 선택을 허용하려면 true를 설정하거나 pickTime 옵션을 생략합니다.
+        defalutDate : new Date(), // 기본값으로 오늘 날짜를 입력합니다. 기본값을 해제하려면 defaultDate 옵션을 생략합니다.
+        autoclose: 1,
+    });
+
+    $('.toDate').datetimepicker({
+        language : 'ko',
+        pickTime : false,
+        defalutDate : new Date(),
+        autoclose: 1,
+    });
+});
+&lt;/script&gt;
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Table (View)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <table class="tbl_line_view" summary="고객명/실행일자/상품명/고객관리번호/주민번호/모니터링종류/URL로 구성됨">
+                                    <caption class="hide">테이블 제목</caption>
+                                    <colgroup>
+                                        <col width="120"><col><col width="120"><col>
+                                        <!-- cell 개수 만큼 <col> 개수를 넣어야 함 -->
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">고객명</th>
+                                            <td>홍길동</td>
+                                            <th>실행일자</th>
+                                            <td>2019-02-28 00:15:33</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">상품명</th>
+                                            <td>ARS 3468</td>
+                                            <th>고객 관리 번호</th>
+                                            <td>0506-A2345</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주민번호</th>
+                                            <td>009090-2******</td>
+                                            <th>모니터링 종류</th>
+                                            <td>화재보험</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">URL</th>
+                                            <td colspan="3"><a class="link">링크</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;table class="tbl_line_view" summary="고객명/실행일자/상품명/고객관리번호/주민번호/모니터링종류/URL로 구성됨"&gt;
+    &lt;caption class="hide"&gt;테이블 제목&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col width="120"&gt;&lt;col&gt;&lt;col width="120"&gt;&lt;col&gt;
+        &lt;!-- cell 개수 만큼 &lt;col&gt; 개수를 넣어야 함 --&gt;
+    &lt;/colgroup&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;고객명&lt;/th&gt;
+            &lt;td&gt;홍길동&lt;/td&gt;
+            &lt;th&gt;실행일자&lt;/th&gt;
+            &lt;td&gt;2019-02-28 00:15:33&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;상품명&lt;/th&gt;
+            &lt;td&gt;ARS 3468&lt;/td&gt;
+            &lt;th&gt;고객 관리 번호&lt;/th&gt;
+            &lt;td&gt;0506-A2345&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;주민번호&lt;/th&gt;
+            &lt;td&gt;009090-2******&lt;/td&gt;
+            &lt;th&gt;모니터링 종류&lt;/th&gt;
+            &lt;td&gt;화재보험&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th scope="row"&gt;URL&lt;/th&gt;
+            &lt;td colspan="3"&gt;&lt;a class="link"&gt;링크&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+                
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- datetimepicker -->
+<script type="text/javascript" src="../../resources/js/bootstrap-datetimepicker.js"></script>	
+<script type="text/javascript" src="../../resources/js/moment.min.js"></script>		
+<script type="text/javascript" src="../../resources/js/ko.js"></script>	    
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("tables")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('tables > HTML GUIDE');
+            });            
+		}); 
+        
+        $('.fromDate').datetimepicker({
+            language : 'ko', // 화면에 출력될 언어를 한국어로 설정합니다.
+            pickTime : false, // 사용자로부터 시간 선택을 허용하려면 true를 설정하거나 pickTime 옵션을 생략합니다.
+            defalutDate : new Date(), // 기본값으로 오늘 날짜를 입력합니다. 기본값을 해제하려면 defaultDate 옵션을 생략합니다.
+            autoclose: 1,
+        });
+
+        $('.toDate').datetimepicker({
+            language : 'ko',
+            pickTime : false,
+            defalutDate : new Date(),
+            autoclose: 1,
+        });
+        
+	});
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/terms_privacy.css">
+	<script type="text/javascript" src="asset/js/terms_privacy.js"></script>
+	<title>privacy</title>    
+</head>
+<body id="privacy" data-role="page" class="terms_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<div class="privacy_tab">
+				<h2>개인정보 취급 방침</h2>
+			</div>
+
+			<div class="privacy_inner_content">
+				<section class="privacy_section01">
+					<table>
+						<colgroup>
+							<col style="width:18%;">
+							<col style="width:12%;">
+							<col style="width:48%;">
+							<col style="width:22%;">
+						</colgroup>
+						<tr>
+							<th>구분</th>
+							<th colspan="2">수집항목</th>
+							<th>보유 및<br>이용기간</th>
+						</tr>
+						<tr>
+							<td rowspan="2" class="borL0">
+								<b>홈페이지<br>회원가입<br>및 관리</b>
+							</td>
+							<td>필수<br>항목</td>
+							<td class="textalignL">이름, 휴대폰번호, 이메일, 아이디, 비밀번호, 휴대폰인증정보, 이메일 인증정보</td>
+							<td rowspan="2" class="borR0">
+								<b>휘게북스<br>회원 탈퇴 시<br>까지</b>
+							</td>
+						</tr>
+						<tr>
+							<td>선택<br>항목</td>
+							<td class="textalignL">생년월일, 성별, 전화번호, 주소, 직업, 가입경로, 닉네임</td>
+						</tr>
+						<tr>
+							<td rowspan="2" class="borL0">
+								<b>유료결제<br>이용시<br>수집하는<br>항목</b>
+							</td>
+							<td>필수<br>항목</td>
+							<td class="textalignL">이름, 주소, 연락처, 이메일, 결제수단, 신용카드 번호, 은행명, 계좌번호</td>
+							<td rowspan="2" class="borR0">
+								<b>관련법령에<br>따른<br>보존기간</b>
+							</td>
+						</tr>
+						<tr>
+							<td>선택<br>항목</td>
+							<td class="textalignL">포인트, 캐시</td>
+						</tr>
+						<tr>
+							<td rowspan="2" class="borL0">
+								<b>부정이용<br>방지,<br>비인가<br>사용 방지</b>
+							</td>
+							<td>필수<br>항목</td>
+							<td class="textalignL">서비스 이용기록, 접속로그, 쿠키, 접속 IP 정보, 컴퓨터 기기정보, 결제기록, 불량이용 기록</td>
+							<td rowspan="3" class="borR0">
+								<b>휘게북스<br>회원자격이<br>유지되는<br>기간</b>
+							</td>
+						</tr>
+						<tr>
+							<td>선택<br>항목</td>
+							<td class="textalignL">없음</td>
+						</tr>
+						<tr>
+							<td class="borL0">
+								<b>서비스 별<br>혜택받기</b>
+							</td>
+							<td>필수<br>항목</td>
+							<td class="textalignL">직업, 가입경로, 예상학습기간, 학습 목적, 받고싶은혜택, 목표점수, 현점수, 관심과목,가입경로, 대학교, 거주지역, 별명, 현재수준, 학습기간, 학습목표, 전공여부,JLPT 목표,HSK목표,준비자 격증,출신 학교,전공,목표,응시전공과목,준비기간,관심학과</td>
+						</tr>
+					</table>
+				</section>
+
+				<a class="back_btn" href="javascript:history.back()">이전 페이지</a>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+  <title>Memeber Info</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <p class="no_path_box"><a href="">마이페이지</a></p>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">내 정보 조회·수정</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box">
+                <ul>
+                    <li><a href="">국내도서</a></li>
+                    <li><a href="">해외도서</a></li>
+                    <li><a href="">웹소설</a></li>
+                    <li><a href="">펜시몰</a></li>
+                </ul>
+            </div>
+	    </div>
+	</section>
+	<section class="memberInfo_section01">
+        <div class="memberInfo_inner_section01">
+            <h2>내 정보 조회·수정</h2>
+        </div>
+	</section>
+
+    <section class="memberInfo_section02">
+        <h3 class="memberInfo_h3">필수 입력 정보</h3>
+        <div class="memberInfo_inner_section">
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">아이디</p>
+                <div class="memeberbox_right_box">
+                    <p class="memberbox_txt">hygge</p>
+                </div>
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">비밀번호</p>
+                <div class="memeberbox_right_box">
+                    <input type="text" class="password_input"/>
+                    <button type="button" class="password_change_btn">비밀번호 변경</button>
+                </div>
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">이름</p>
+                <div class="memeberbox_right_box">
+                    <p class="memberbox_txt">김휘게</p>
+                    <div class="gender_btn_box">
+                        <button class="gender_btn gender_man gender_on">남</button>
+                        <button class="gender_btn gender_woman">여</button>
+                    </div>
+                </div>
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">전화번호</p>
+                <div class="memeberbox_right_box">
+                    <input type="text" class="phone_number_input" value="01012345678"/>
+                </div>
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">이메일</p>
+                <div class="memeberbox_right_box">
+                    <input type="text" class="email_input" value="hygge@hygge.com"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="memberInfo_section03">
+        <h3 class="memberInfo_h3">선택입력 정보</h3>
+        <div class="memberInfo_inner_section">
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">생년월일</p>
+                <div class="memeberbox_right_box birthday_box">
+                    <select name="" id="" class="birth_year_select">
+                        <option value="">년</option>
+                    </select>
+                    <select name="" id="" class="birth_month_select">
+                        <option value="">월</option>
+                    </select>
+                    <select name="" id="" class="birth_day_select">
+                        <option value="">일</option>
+                    </select>
+                    <!--<select id="yeardropdown">
+                    </select> 
+                    <select id="monthdropdown">
+                    </select> 
+                    <select id="daydropdown">
+                    </select> 
+                    <select name="selectBox" id="selectBox">
+                        <option value=""></option>
+                        <option value="fist">first</option>
+                        <option value="second">second</option>
+                        <option value="third">third</option>
+                    </select>               
+                                    <select name="" id="">
+                        <option value="">월</option>
+                        <option value="">1월</option>
+                        <option value="">2월</option>
+                        <option value="">3월</option>
+                        <option value="">4월</option>
+                        <option value="">5월</option>
+                        <option value="">6월</option>
+                        <option value="">7월</option>
+                        <option value="">8월</option>
+                        <option value="">9월</option>
+                        <option value="">10월</option>
+                        <option value="">11월</option>
+                        <option value="">12월</option>
+                    </select>  -->
+                </div>
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">우편번호</p>
+                <div class="memeberbox_right_box">
+                    <input type="text" class="postcode_input" />
+                    <button type="button" class="postcode_btn">우편번호</button>
+                </div> 
+            </div>
+            <div class="memeberInfo_inbox">
+                <p class="memberbox_left">주소</p>
+                <div class="memeberbox_right_box address_box">
+                    <input type="text" class="first_address_input" />
+                    <input type="text" class="second_address_input" />
+                </div>
+            </div>
+            <div class="memeberInfo_inbox interest_field_inbox">
+                <p class="memberbox_left">관심분야</p>
+                <div class="memeberbox_right_box">
+                    <div class="interest_field_box">
+                        <label class="interest_field marginl0">소설
+                            <input type="checkbox" checked>
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">장르소설
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">시/에세이/기행
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">인문/교양/철학
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">역사/신화/문화
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">종교
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">사회/정치/법률
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">경제/경영
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">자기계발
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="interest_field_box">
+                        <label class="interest_field marginl0">외국어/사전
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">가정/생활/요리
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">건강/의학/미용
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">청소년교양
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">예술/대중문화
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">여행/취미/레저
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">잡지
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">만화
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">컴퓨터/IT
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="interest_field_box">
+                        <label class="interest_field marginl0">자연과학/공학
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">대학교재
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">서양서
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">일본서
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>
+                        <label class="interest_field">중/고등참고서
+                            <input type="checkbox">
+                            <span class="interest_field_checkmark"></span>
+                        </label>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="memberInfo_section04">
+        <h3 class="memberInfo_h3">본인인증</h3>
+        <div class="memberInfo_inner_section">
+            <p class="identity_txt">정보 수정시 본인 인증이 반드시 필요합니다.</p>
+            <div class="get_confirm_number_box">
+                <input type="text" placeholder="휴대폰 번호 또는 이메일" />
+                <button type="button" class="get_confirm_btn">인증번호 받기</button>
+            </div>
+            <div class="confirm_number_box">
+                <input type="text" />
+                <button type="button" class="certify_confirm_btn">인증하기</button>
+                <p class="check_certify_confirm">인증되었습니다.</p>
+            </div>
+        
+        </div>
+    </section>
+	
+	<section class="memberInfo_section05">
+	    <button type="button" class="save_info">저장하기</button>
+	    <div class="leave_hygge_box">
+            <p>휘게북스의 회원탈퇴를 원하시면</p>
+            <button type="button" class="leave_hygge_btn">회원탈퇴 신청</button>
+	    </div>
+    </section>
+	
+	<div class="memberInfo_layer">
+        <div class="mask"></div>
+        <div class="memberInfo_password_change_layer">
+            <div class="mi_layer_inner">
+                <div class="mi_header">
+                    <h3>비밀번호 변경</h3>
+                    <p>8자~20자 이내로 영문자, 숫자, 특수문자 중 2가지 이상 조합해주세요.</p>
+                </div>
+                <div class="mi_section">
+                    <table>
+                        <colgroup>
+                            <col style="width:124px;">
+                            <col style="width:212px;">
+                        </colgroup>
+                        <tr>
+                            <td>기존 비밀번호</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr height="12"></tr>
+                        <tr>
+                            <td>변경할 비밀번호</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr height="12"></tr>
+                        <tr>
+                            <td>비밀번호 확인</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mi_btn_box">
+                    <div class="mi_btn_box_inner">
+                        <button type="button" class="password_change_cancel_btn">취소</button>
+                        <button type="button" class="password_change_layer_close layer_close_btn">완료</button>  
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="memberInfo_leave_hygge_layer">
+            <div class="mi_layer_inner">
+                <div class="mi_header">
+                    <h3>회원탈퇴</h3>
+                    <p>이용해주셔서 감사합니다. 더욱 발전하는 휘게북스가 되겠습니다.</p>
+                </div>
+                <div class="mi_section">
+                    <div class="mi_section_in own_cash_box">
+                        <p>회원탈퇴시 보유하신 포인트 및 캐시가 소멸되며,<br>재가입시 복구가 불가합니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width:124px;">
+                                <col style="width:212px;">
+                            </colgroup>
+                            <tr>
+                                <td>보유 포인트</td>
+                                <td><span>5,000</span> P</td>
+                            </tr>
+                            <tr height="12"></tr>
+                            <tr>
+                                <td>보유 캐시</td>
+                                <td><span>20,000</span> 캐시</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="mi_section_in">
+                        <p>회원님의 정보 보호를 위하여 비밀번호를 재확인 합니다.</p>
+                        <table>
+                            <colgroup>
+                                <col style="width:124px;">
+                                <col style="width:212px;">
+                            </colgroup>
+                            <tr>
+                                <td>아이디</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr height="12"></tr>
+                            <tr>
+                                <td>비밀번호</td>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="mi_btn_box">
+                    <div class="mi_btn_box_inner">
+                        <button type="button" class="leave_hygge_cancel_btn">취소</button>
+                        <button type="button" class="leave_hygge_layer_close layer_close_btn">확인</button>  
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>	
+			
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

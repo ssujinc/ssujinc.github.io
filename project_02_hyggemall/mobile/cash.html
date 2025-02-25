@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/cash.css">
+	<script type="text/javascript" src="asset/js/cash.js"></script>
+	<script>
+		$(document).bind("mobileinit", function(){
+			$.mobile.ajaxLinksEnabled = false;
+			$.mobile.ajaxFormsEnabled = false;
+			$.mobile.ajaxEnabled = false;
+		});
+	</script>
+	<title>cash</title>    
+ </head>
+ <body id="cash" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content">
+			<ul class="tab tab_cash">
+				<li class="tab_btn" onclick="tabover('cash', 0)"><a href="javascript:void()">휘게북스 캐시충전</a></li>
+				<li class="tab_btn" onclick="tabover('cash', 1)"><a href="javascript:void()">충전/사용내역</a></li>
+	        </ul>	
+
+			<div class="inner_content">
+				<div id="charging" class="cash_tabcontent tabcnt_cash0">
+					<section class="charging_section01">
+						<p>충전금액을 선택해주세요.</p>
+
+						<div class="cash_table_box">
+							<div class="table_th">
+								<ul>
+									<li>충전금액</li>
+									<li>보너스 충전금액</li>
+									<li>총 충전캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr_on cash_table">
+								<ul>									
+									<li>5,000 원</li>
+									<li>10% (+ 500캐시)</li>
+									<li>+ 5,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>10,000 원</li>
+									<li>10% (+ 1,000캐시)</li>
+									<li>+ 11,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>30,000 원</li>
+									<li>15% (+ 4,500캐시)</li>
+									<li>+ 34,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>50,000 원</li>
+									<li>15% (+ 7,500캐시)</li>
+									<li>+ 57,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>70,000 원</li>
+									<li>15% (+ 10,500캐시)</li>
+									<li>+ 80,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>100,000 원</li>
+									<li>20% (+ 20,500캐시)</li>
+									<li>+ 120,500 캐시</li>
+								</ul>
+							</div>
+							<div class="table_tr cash_table">
+								<ul>
+									<li>
+										<div class="direct_write_input_box">
+											<input type="text" placeholder="직접입력" class="direct_write_input">
+										</div>
+										<span class="direct_write_input_box_span">&nbsp;원</span>
+									</li>
+									<li>0%</li>
+									<li>+ 0 캐시</li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="cash_bottom_box">
+							<div class="cash_bottom_first">
+								<div class="displaytable">
+									<div class="displaytablecell">
+										<h4>나의 현재 보유<br>휘게북스 캐시</h4>	
+										<h2><span>25,000</span> 캐시</h2>
+									</div>
+								</div>	
+							</div>
+							<div class="cash_bottom_second">
+								<div>
+									<p class="cbs_left_txt">충전결제금액</p>
+									<p class="cbs_right_txt"><span>50,000</span> 원</p>
+								</div>
+								<div>
+									<p class="cbs_left_txt">보너스 충전금액</p>
+									<p class="cbs_right_txt">(+) <span>7,500</span> 캐시</p>
+								</div>
+								<div>
+									<p class="cbs_left_txt">최종 보유 캐시</p>
+									<p class="cbs_right_txt"><span>57,500</span> 캐시</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="charging_section02">
+						<h3>결제정보</h3>
+						<div class="charging_inner_section02">
+
+							<div class="charging_section02_box order_pay_method">
+								<p class="charing_left_txt">결제수단</p>
+								<div class="charing_right_box_cnt">
+									<button type="button" class="credit_card pay_method_on pay_method_btn" value="credit_card">신용카드</button>
+									<button type="button" class="cell_phone pay_method_btn" value="cell_phone">휴대폰</button>
+								</div>
+							</div>
+							
+							<div class="charging_section02_box pay_creditcard">
+								<p class="charing_left_txt">카드선택</p>
+								<div class="charing_right_box_cnt">
+									<select class="bank_kind_select">
+										<option value="">결제하실 카드를 선택해주세요</option>
+										<option value="">국민은행</option>
+										<option value="">농협은행</option>
+										<option value="">신한은행</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="charging_section02_box pay_creditcard">
+								<p class="charing_left_txt">카드구분</p>
+								<div class="charing_right_box_cnt">
+									<label class="card_divide_radio">
+										<input type="radio" checked="checked" name="card_divide_radio" class="personal_card" >
+										<span class="card_checkmark"></span>
+										개인카드
+									</label>
+									<label class="card_divide_radio">
+										<input type="radio" name="card_divide_radio" class="corporate_card" >
+										<span class="card_checkmark"></span>
+										법인카드
+									</label>
+								</div>
+							</div>
+
+							<div class="charging_section02_box pay_cellphone">
+								<p class="charing_left_txt">휴대폰번호</p>
+								<div class="charing_right_box_cnt">
+									<select class="number_kind_select">
+										<option value="">010</option>
+										<option value="">011</option>
+										<option value="">017</option>
+										<option value="">016</option>
+									</select>
+									<span>-</span>
+									<input type="text" maxlength="4" />
+									<span>-</span>
+									<input type="text" maxlength="4" />
+								</div>
+							</div>
+
+						</div>
+						
+						<div class="agree_payment_box">
+							<label for="agree_payment">위의내용을 확인하였으며 결제에 동의합니다.
+								<input type="checkbox" id="agree_payment"> 
+							</label>
+						</div>
+					</section>
+					
+					<div class="cash_pay_btn_box">
+						<input type="button" value="휘게북스 캐시 충전" class="cash_pay_btn">
+					</div> 
+				</div>
+
+				<div id="cashHistory" class="cash_tabcontent tabcnt_cash1">
+					<section class="cashH_section01">
+						<p class="available_cash"><b>사용가능 휘게북스 캐시</b><span>20,000</span> 캐시</p>	
+					</section>
+
+					<section class="cashH_section02">
+						<div class="check_period_box">
+							<p class="cashH_check_txt">조회기간</p>
+							<div class="check_period_input_box">
+								<div class="first_select_year_box">
+									<select class="first_select_year">
+										<option value="">2017년</option>
+										<option value="">2016년</option>
+										<option value="">2015년</option>
+									</select>
+								</div>
+								<div class="first_select_month_box">
+									<select class="first_select_month">
+										<option value="">12월</option>
+										<option value="">1월</option>
+										<option value="">2월</option>
+										<option value="">3월</option>
+										<option value="">3월</option>
+									</select>
+								</div>
+								<span class="bar">&#9472;</span>
+								<div class="second_select_year_box">
+									<select class="second_select_year">
+										<option value="">2017년</option>
+										<option value="">2016년</option>
+										<option value="">2015년</option>
+									</select>
+								</div>
+								<div class="second_select_month_box">
+									<select class="second_select_month">
+										<option value="">12월</option>
+										<option value="">1월</option>
+										<option value="">2월</option>
+										<option value="">3월</option>
+										<option value="">3월</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="check_period_box">
+							<p class="cashH_check_txt">충전/사용 구분</p>
+							<div class="check_period_radio_box">
+								<label class="charge_usage_radio">
+									<input type="radio" checked="checked" name="charge_usage_radio" class="charge_reserve" value="chargeReserve">
+									<span class="cash_charge_usage_checkmark"></span>
+									충전/적립
+								</label>
+								<label class="charge_usage_radio">
+									<input type="radio" name="charge_usage_radio" class="usage_extinction" value="usageExtinction" >
+									<span class="cash_charge_usage_checkmark"></span>
+									사용/소멸
+								</label>
+							</div>
+						</div>
+
+					</section>
+
+					
+					<button type="button" class="cash_state_check_btn">조회하기</button>
+
+					<table class="cash_charging_table cash_check_table">
+						<colgroup>
+							<col style="width:29%;">
+							<col style="width:40%;">
+							<col style="width:31%;">
+						</colgroup>
+						<tr>
+							<th>충전 날짜</th>
+							<th>충전 금액 및 결제수단</th>
+							<th>취소</th>
+						</tr>
+					   <tr>
+							<td>2018.05.05</td>
+							<td>+ 5,500 캐시 (휴대폰)</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>2017.12.15</td>
+							<td>+ 100,000 캐시 (신용카드)</td>
+							<td>취소 완료</td>
+						</tr>
+						<tr class="no_data">
+							<td colspan="3">조회된 데이터가 없습니다.</td>
+						</tr>
+					</table>
+
+					<table class="cash_using_table cash_check_table">
+						<colgroup>
+							<col style="width:29%;">
+							<col style="width:40%;">
+							<col style="width:31%;">
+						</colgroup>
+						<tr>
+							<th>사용 날짜</th>
+							<th>사용 내용</th>
+							<th>사용 캐시</th>
+						</tr>
+					   <tr>
+							<td>2018.04.01</td>
+							<td>도서 구매</td>
+							<td>- 11,000 캐시</td>
+						</tr>
+						<tr>
+							<td>2017.12.15</td>
+							<td>웹소설 구매</td>
+							<td>- 1,500 캐시</td>
+						</tr>
+						<!-- <tr class="no_data">
+							<td colspan="3">조회된 데이터가 없습니다.</td>
+						</tr> -->
+					</table>
+					<p class="cash_using_table_txt cash_using_table">영수증 보기는 PC웹을 이용해주시기 바랍니다.</p>
+				</div>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

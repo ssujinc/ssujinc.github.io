@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+
+input[type="text"]::placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]:-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]::-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+
+
+#wrap { width:100%; position:relative; overflow:hidden; background:#fff; }
+#wrap .content { background:#fff; width:100%; height:auto; border-width:0; overflow:visible; padding:0; } 
+#wrap .inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:48px 24px 17px 24px; } 
+
+
+.mbI_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.mbI_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+ 
+
+/* mbI_section01 */
+.mbI_section01 { width:100%; height:auto; display:block; } 
+.mbI_section01 p { font-size:14px; font-family:'NBGothicL'; color:#636c77; font-weight:normal; line-height:inherit; }
+
+
+
+/* mbI_section02 */
+.mbI_section02 { width:100%; height:auto; } 
+.mbI_section02 .mbI_inner_section02 { margin-top:32px; }
+.mbI_section02 .mbI_inner_section02 h3 { width:100%; height:40px; line-height:40px; font-weight:normal; font-size:14px; font-family:'GodoM'; color:#424852; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box { width:100%; height:auto; padding:0 6.25%; border-top:2px solid #424852; border-bottom:1px solid #424852; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box { width:100%; height:36px; margin-top:11px; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box:last-child { margin-bottom:11px; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box:after { clear:both; content:''; clear:both; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_left_txt { width:27%; float:left; font-size:14px; color:#424852; font-family:'NBGothicB'; font-weight:normal; line-height:36px; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt { width:73%; height:100%; float:right; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt.mb_right_txt { padding-left:12px; box-sizing:border-box; font-size:14px; font-family:'NBGothicR'; color:#424852; line-height:36px; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .mbI_pw_box { width:100%; height:100%; border:1px solid #a9b0bb; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .mbI_pw_box>div { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .mbI_pw_box>div .mbI_pw_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt.mb_right_txt .mb_right_txt_p { width:auto; float:left; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt.mb_right_txt .gender_btn_box { float:right; width:72px; height:36px; position:relative; }
+/* gender_box */
+.gender_btn_box .gender_btn { position:absolute; padding:0; margin:0; width:36px; height:36px; text-align:center; color:#a9b0bb; font-size:14px; font-family:'NBGothicL'; border:1px solid #a9b0bb; box-sizing:border-box; background:#fff; float:left; text-shadow:none; box-shadow:none; border-radius:0; font-weight:normal; line-height:36px; }
+.gender_btn_box .gender_btn:hover { background-color:transparent; border:1px solid #a9b0bb; color:#a9b0bb; text-shadow:none; }
+.gender_btn_box .gender_man { right:35px; z-index:0; }
+.gender_btn_box .gender_woman { right:0; z-index:0; }
+.gender_btn_box .gender_on { font-family:'NBGothicR'; color:#424852; border:1px solid #4a88da; z-index:1; font-weight:normal; }
+.gender_btn_box .gender_on:hover { font-family:'NBGothicR'; color:#424852; border:1px solid #4a88da ; z-index:1; font-weight:normal; }
+
+
+/* birthday_box */
+.birthday_box>div { float:left; height:36px; box-sizing:border-box; }
+.birthday_box>div .ui-select { border:0; margin:0; padding:0; border-radius:0; width:100%; height:100%; box-sizing:border-box; }
+.birthday_box>div .ui-select .ui-btn { border:1px solid #a9b0bb; margin:0; padding:0; border-radius:0; width:100%; height:100%; box-sizing:border-box; background:#fff; box-shadow:none; text-shadow:none; vertical-align:middle; }
+.birthday_box>div .ui-select .ui-btn.ui-icon-carat-d:after { background-image: url(../img/m_select_down.png) !important; width:8px; height:4px; right:16%; top:15px; }
+.birthday_box>div .ui-select .ui-btn>span:not(.ui-li-count) { width:100%; height:100% !important; line-height:36px !important; padding-left:12px; box-sizing:border-box; color:#424852; font-size:14px; font-family:'NBGothicL'; }
+.birthday_box>div select { width:100%: }
+.birthday_box .birth_year_select_box { width:32%; margin-right:12px; }
+.birthday_box .birth_month_select_box { width:26%; margin-right:12px; }
+.birthday_box .birth_day_select_box { width:26%; }
+
+/* postcode_input_box */
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .postcode_input_box { float:left; margin-right:12px; width:49%; height:100%; border:1px solid #a9b0bb; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .postcode_input_box>div { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .postcode_input_box>div .postcode_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .postcode_btn { float:left; width:32%; height:100%; border:1px solid #a9b0bb; box-sizing:border-box; border-radius:4px; color:#636c77; font-size:14px; font-family:'NBGothicR'; box-shadow:none; text-shadow:none; padding:0; margin:0; text-align:center; line-height:36px; box-sizing:border-box; background:#fff; font-weight:normal; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .first_address_input_box { width:100%; height:36px; border:1px solid #a9b0bb; box-sizing:border-box; margin-bottom:12px; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .first_address_input_box>div { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .first_address_input_box>div .first_address_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .second_address_input_box { width:100%; height:36px; border:1px solid #a9b0bb; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .second_address_input_box>div { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .second_address_input_box>div .second_address_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box.address_box { height:auto; }
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box.address_box:after { clear:both; content:''; display:block; }
+
+/* mbI_interest_btn */
+.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box .mbI_interest_btn { display:block; width:75%; margin:0; padding:0; color:#636c77; font-size:14px; font-family:'NBGothicR'; font-weight:normal; text-shadow:none; box-shadow:none; border-radius:4px; background:#fff; border:1px solid #a9b0bb; height:100%; vertical-align:middle; line-height:36px; text-align:center; }
+
+/* identity_box */
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box { width:100%; text-align:center; padding:24px; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .identity_txt { color:#d94452; font-family:'NBGothicB'; font-size:14px; margin-bottom:23px; line-height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box { width:100%; height:36px; margin-bottom:12px; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box:after { clear:both; content:''; display:block; }
+/* get_confirm_number_input_box */
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box { width:68%; height:100%; float:left; border:1px solid #a9b0bb; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box .ui-input-text { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box .get_confirm_number_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_btn { width:29%; height:100%; float:right; margin:0; padding:0; background:#fff; border:1px solid #a9b0bb; border-radius:4px; font-family:'NBGothicR'; color:#636c77; font-size:14px; font-weight:normal; box-shadow:none; text-shadow:none; }
+/* confirm_number_box */
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box { width:100%; height:auto; box-sizing:border-box; padding:0 10%; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box:after { clear:both; content:''; display:block; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box .confirm_number_input_box { width:57%; height:36px; box-sizing:border-box; padding:0; margin:0; float:left; border:1px solid #a9b0bb; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box .confirm_number_input_box .ui-input-text { width:100%; height:100%; text-shadow:none; box-shadow:none; border-radius:0; border:0; padding:0; margin:0; padding-left:12px; box-sizing:border-box; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box .confirm_number_input_box .confirm_number_input { padding:0; font-size:14px; color:#424852; font-family:'NBGothicR'; vertical-align:middle; margin:0; width:100%; height:100%; }
+.mbI_section02 .mbI_inner_section02 .mbI_identity_box .confirm_number_box .certify_confirm_btn { width:38%; height:36px; box-sizing:border-box; padding:0; margin:0; float:right; background:#fff; border:1px solid #a9b0bb; border-radius:4px; font-family:'NBGothicR'; color:#636c77; font-size:14px; font-weight:normal; box-shadow:none; text-shadow:none; }
+.check_certify_confirm { display:none;  clear:both; text-align:left; padding:12px 0 0; color:#4a88da; font-size:14px; font-family:'NBGothicL'; }
+
+
+/* orderC_btn_box */
+.mbI_btn_box { width:100%; height:48px; margin:48px 0; }
+.mbI_btn_box .save_info { display:block; width:100%; height:100%; border-radius:24px; padding:0; margin:0; border:0; outline:0; background:#d94452; color:#fff; font-family:'GodoM'; font-weight:normal; font-size:20px; text-align:center; vertical-align:middle; text-shadow:none; box-shadow:none; }
+.mbI_btn_box .save_info:hover { display:block; width:100%; height:100%; border-radius:24px; padding:0; margin:0; border:0; outline:0; background:#d94452; color:#fff; font-family:'GodoM'; font-weight:normal; font-size:20px; text-align:center; vertical-align:middle; text-shadow:none; box-shadow:none; }
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 376px) and (max-width: 459px) { 
+
+} */
+
+
+
+
+
+@media screen and (max-width:375px) {
+	.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box .mbI_interest_btn { width:80%; }	
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {	
+	.birthday_box>div .ui-select .ui-btn>span:not(.ui-li-count) { padding-left:8px }
+	.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_right_box_cnt .postcode_btn { font-size:12px; }
+	.mbI_section02 .mbI_inner_section02 .mbI_inner_section02_box .mbI_section02_box .mbI_interest_btn { font-size:12px; width:88%; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box .identity_txt { font-size:14px; line-height:inherit; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box .get_confirm_number_input { font-size:12px; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box input { font-size:12px; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box { width:62%; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_number_input_box .ui-input-text { padding-left:8px; }
+	.mbI_section02 .mbI_inner_section02 .mbI_identity_box .get_confirm_number_box .get_confirm_btn { width:36%; font-size:12px; }
+	input[type="text"]::placeholder { font-size:12px; }
+	input[type="text"]:-ms-input-placeholder { font-size:12px; }
+	input[type="text"]::-ms-input-placeholder { font-size:12px; }
+
+} 
+
+
+
+

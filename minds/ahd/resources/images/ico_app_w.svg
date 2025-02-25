@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+    <defs>
+        <filter id="grn34pvpia">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="5fx3fazi9b">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="1a08x2qt8c">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="i2rr6qovsd">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 0 0.117647 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#grn34pvpia)" transform="translate(-1846 -89) translate(50 82)">
+                <g>
+                    <g filter="url(#5fx3fazi9b)" transform="translate(1796 7)">
+                        <path fill="#FFF" stroke="#FFF" stroke-width="1.2" d="M.6.6H5.3999999999999995V5.3999999999999995H.6zM9 .6H13.8V5.3999999999999995H9zM17.4.6H22.2V5.3999999999999995H17.4z"/>
+                    </g>
+                    <g filter="url(#1a08x2qt8c)" transform="translate(1796 7)">
+                        <g>
+                            <path fill="#FFF" stroke="#FFF" stroke-width="1.2" d="M.6.6H5.3999999999999995V5.3999999999999995H.6zM9 .6H13.8V5.3999999999999995H9zM17.4.6H22.2V5.3999999999999995H17.4z" transform="translate(0 8.4)"/>
+                        </g>
+                    </g>
+                    <g filter="url(#i2rr6qovsd)" transform="translate(1796 7)">
+                        <g>
+                            <path fill="#FFF" stroke="#FFF" stroke-width="1.2" d="M.6.6H5.3999999999999995V5.3999999999999995H.6zM9 .6H13.8V5.3999999999999995H9zM17.4.6H22.2V5.3999999999999995H17.4z" transform="translate(0 16.8)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

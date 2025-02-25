@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>통계</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="#"></a></h1>
+    <ul class="gnb">
+      <li><a href="./member.html">회원관리</a></li>
+      <li class="active"><a href="./statistics.html">통계</a>
+        <ul class="lnb">
+          <li><a href="./user_statistics.html">유저 통계</a></li>
+          <li><a href="./voice_font_statistics.html">Voice Font 통계</a></li>
+        </ul>
+      </li>
+      <li><a href="./question.html">문의</a></li>
+      <li><a href="#">공지사항</a></li>
+    </ul>
+  </header>
+  <div id="wrap" class="statistics">
+    <div class="today_statistics information">
+      <ul>
+        <li class="total_user up"><span class="information_label">총 유저 수</span><span
+            class="information_figure">21,325</span><em>(+15)</em></li>
+        <li class="pay_user down"><span class="information_label">유료 유저 수</span><span
+            class="information_figure">265,265</span><em>(-7)</em></li>
+        <li class="active_user down"><span class="information_label">활성화 유저 수</span><span
+            class="information_figure">10,332</span><em>(-5)</em></li>
+        <li class="total_login up"><span class="information_label">총 로그인 수</span><span
+            class="information_figure">65,448,444,158</span><em>(+1,234)</em></li>
+      </ul>
+      <ul>
+        <li class="total_voice_font same"><span class="information_label">총 Voice Font 수</span><span
+            class="information_figure">30</span><em>(-)</em></li>
+        <li class="total_download up"><span class="information_label">총 다운로드 글자 수</span><span
+            class="information_figure">2,544,877</span><em>(+4,002)</em></li>
+        <li class="total_convert up"><span class="information_label">총 변환 글자 수</span><span
+            class="information_figure">55,597,771</span><em>(+10,028)</em></li>
+      </ul>
+    </div>
+    <div class="shortcuts">
+      <a href="./user_statistics.html" class="user_statistics">
+        <em>유저 통계</em><br>
+        바로가기
+      </a>
+      <a href="#" class="voice_font_statistics">
+        <em>Voice Font 통계</em><br>
+        바로가기
+      </a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Minds Lab.</p>
+  </footer>
+</body>
+<script src="../js/admin.js"></script>
+
+</html>

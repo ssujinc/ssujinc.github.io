@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; }
+#wrap .ui-content { border-width:0; overflow:visible; padding:0; }
+#wrap .content { background:#fff; width:100%; height:auto; } 
+#wrap .inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:32px 24px 0; } 
+
+
+input[type="text"]::placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]:-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]::-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+
+.warning_red { display:block; font-size:14px; color:#d94452; font-family:'NBGothicR'; margin-top:12px; line-height:inherit; }
+
+.order_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.order_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+
+
+/* order_section01 */
+.order_section01 { width:100%; height:auto; } 
+.order_section01 table { width:100%; height:auto; border-top:2px solid #424852; } 
+.order_section01 table tr { border-bottom:1px solid #cad0d7; }
+.order_section01 table tr:last-child { border-bottom:1px solid #424852; }
+.order_section01 table tr td { padding:24px; vertical-align:middle; text-align:left; }
+.order_section01 table tr td .book_name { font-size:14px; color:#424852; font-family:'GodoM'; font-weight:normal; margin-bottom:12px; }
+.order_section01 table tr td .book_img { width:89px; height:132px; border:1px solid #e4e8eb; box-sizing:border-box; float:left; }
+.order_section01 table tr td .book_img img { width:100%; height:100%; }
+.order_section01 table tr td .book_right_box  { float:right; width:180px; max-width:207px; margin-left:24px; height:auto; box-sizing:border-box; }
+.order_section01 table tr td .book_right_box>div { width:auto; height:auto; height:32px; line-height:32px; }
+.order_section01 table tr td .book_right_box .cart_selling_price { color:#424852; font-weight:normal; font-size:14px; font-family:'GodoM'; float:left; } 
+.order_section01 table tr td .book_right_box .benefit_price { margin-top:11px; margin-left:12px; display:block; float:left; width:auto; font-size:12px; color:#d94452; font-family:'NBGothicB'; padding-right:16px; background:url('../img/m_discount.png') no-repeat right center; background-size:12px; line-height:12px; }
+.order_section01 table tr td .book_right_box .cart_point { float:left; font-size:14px; color:#424852; font-family:'GodoM'; }
+.order_section01 table tr td .book_right_box .benefit_point { margin-top:10px; margin-left:12px; display:block; float:left; width:auto; font-size:12px; height:13px; line-height:14px; color:#4a88da; font-family:'NBGothicB'; padding-right:16px; background:url('../img/m_point.png') no-repeat right 0px; background-size:12px; }
+/* cart_order_count_box */
+.order_section01 table tr td .book_right_box .cart_order_count_box{ margin-bottom:18px; }
+.order_section01 table tr td .book_right_box .cart_order_count_box p { font-size:14px; font-family:'GodoM'; color:#636c77; }
+.order_section01 table tr td .book_right_box .cart_order_count_box p span { color:#424852; }
+
+.order_section01 table tr td .book_right_box div:last-child { clear:both; line-height:18px; height:18px; }
+.order_section01 table tr td .book_right_box div:last-child .cart_txt { float:left; font-size:14px; font-family:'GodoM'; color:#636c77; font-weight:normal; }
+.order_section01 table tr td .book_right_box div:last-child .cart_total_price { float:right; font-size:18px; color:#424852; font-family:'GodoM'; }
+
+/* cart_total_box */
+.order_section01 .cart_total_box { width:100%; height:auto; border-bottom:1px solid #424852; }
+.order_section01 .cart_total_box div { padding:0 26px 0 10%; }
+.order_section01 .cart_total_box div:after { clear:both; display:block; content:''; }
+.order_section01 .cart_total_box div.cart_select_pick_box { height:40px; background:#fff; box-sizing:border-box; line-height:40px; }
+.order_section01 .cart_total_box .only_txt { float:left; width:auto; display:inline-block; color:#636c77; font-size:14px; font-family:'NBGothicR'; text-shadow:none; font-weight:normal; }
+.order_section01 .cart_total_box .cart_select_pick { float:right; width:auto; display:inline-block; color:#424852; font-size:14px; font-family:'NBGothicB'; text-shadow:none; font-weight:normal; }
+.order_section01 .cart_total_box div.cart_total_price_box { border-top:1px solid #cad0d7; box-sizing:border-box; clear:both; height:51px; background:#fff; line-height:50px; }
+.order_section01 .cart_total_box div.cart_total_price_box .cart_total_payment { float:right; color:#d94452; font-size:14px; font-family:'GodoM'; font-weight:normal; }
+.order_section01 .cart_total_box div.cart_total_price_box .cart_total_payment span {font-size:18px; }
+
+
+
+
+
+
+/* order_section02 */
+.order_section02 { width:100%; height:auto; margin-top:48px; }
+.order_section02 h3 { height:40px; line-height:40px; font-size:16px; font-weight:normal; font-family:'GodoM'; color:#424852; }
+.order_section02 .order_inner_section02 { border-top:2px solid #424852; border-bottom:2px solid #424852; width:100%; padding:0 24px 12px; box-sizing:border-box; height:auto; }
+.order_section02 .order_inner_section02 .order_section02_box { width:100%; height:32px; margin-top:12px; }
+.order_section02 .order_inner_section02 .order_left_txt { width:34%; float:left; font-family:'NBGothicB'; color:#424852; font-size:14px; line-height:32px; }
+.order_section02 .order_inner_section02 .order_right_box_cnt { width:66%; height:100%; float:right; font-family:'NBGothicL'; color:#424852; font-size:14px; }
+.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box { float:left; width:104px; height:32px; border-bottom:1px solid #cad0d7; box-sizing:border-box;  }
+.order_section02 .order_inner_section02 .order_use_cash_box .ui-input-text { margin:0; width:66px; float:left; text-align:right; border:0; padding:0; box-shadow:none; text-shadow:none; border-radius:0; height:31px; }
+.order_section02 .order_inner_section02 .order_use_cash_box .ui-input-text input { color:#424852; text-align:right; font-size:14px; font-family:'NBGothicR'; padding:0; vertical-align:middle; height:100%; }
+.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box span { float:right; line-height:32px; }
+.order_section02 .order_inner_section02 .order_use_cash_box .order_right_box_cnt p { margin-left:10px; float:left; line-height:32px; font-size:14px; font-family:'NBGothicL'; color:#d94452;  }
+
+
+
+.order_section02 .order_inner_section02 .order_pay_method .order_right_box_cnt button { width:48%; height:26px; padding:0; margin:0; background:#fff; border:1px solid #e4e8eb; color:#a9b0bb; font-family:'NBGothicR'; font-size:14px; vertical-align:middle; text-align:center; line-height:26px; margin-top:2px; box-shadow:none; text-shadow:none; float:left; border-radius:0; font-weight:normal; }
+.order_section02 .order_inner_section02 .order_pay_method .order_right_box_cnt .cell_phone { float:right; }
+.order_section02 .order_inner_section02 .order_pay_method .order_right_box_cnt .pay_method_on { border:1px solid #636c77; color:#424852; }
+
+
+
+/* pay_creditcard .ui-select  */
+.order_section02 .order_inner_section02 .pay_creditcard { display:block; }
+.pay_creditcard .ui-select { padding:0; margin:3px 0 0 0; } 
+.pay_creditcard .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 12px !important; } 
+.pay_creditcard .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:12px !important; box-sizing:border-box; }
+.ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.pay_creditcard .ui-btn-icon-right:after { right:9px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:11px; }
+.ui-select .ui-btn>span:not(.ui-li-count) { text-align:left !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; line-height:100% !important; height:26px !important; line-height:26px !important; }
+
+
+/* pay_creditcard .ui-radio */
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio { margin:0; width:48%; float:left; margin-top:7px; height:18px; position:relative; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio:last-child { float:right; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn { border:0; margin:0; padding:0; background:transparent; border-radius:0; padding-left:30px; box-sizing:border-box; font-size:14px; color:#424852; font-family:'NBGothicL'; font-weight:normal; text-shadow:none; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio input { display:none; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio-off .card_checkmark { position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#fff; border-radius:50%; top:4px; left:4px; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio-on .card_checkmark {  position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#424852; border-radius:50%; top:4px; left:4px; z-index:1;  }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn-icon-left:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn.ui-radio-on.ui-btn-a:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+
+
+/* pay_cellphone */
+.order_section02 .order_inner_section02 .pay_cellphone { display:none; } 
+.pay_cellphone .ui-select { width:25%; padding:0; margin:3px 0 0 0; max-width:70px; float:left; } 
+.pay_cellphone .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 0 !important; } 
+.pay_cellphone .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:8px !important; box-sizing:border-box; }
+.pay_cellphone .ui-btn-icon-right:after { right:9px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:11px; }
+.ui-select .ui-btn>span:not(.ui-li-count) { text-align:left !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; width:100%; height:26px !important; line-height:26px !important; padding-left:8px; box-sizing:border-box;  }
+.order_section02 .order_inner_section02 .pay_cellphone .order_right_box_cnt>span { float:left; display:block; height:32px; line-height:32px; font-size:14px; color:#636c77; font-family:'NBGothicR'; margin:0 6px; }
+.order_section02 .order_inner_section02 .pay_cellphone .order_right_box_cnt .ui-input-text { float:left; width:25%; height:26px; padding:0; margin:3px 0 0 0; border-radius:0; box-shadow:none; text-shadow:none; box-sizing:border-box; }
+.order_section02 .order_inner_section02 .pay_cellphone .order_right_box_cnt .ui-input-text  input { width:100%; height:100%; text-align:center; color:#424852; font-size:12px; font-family:'NBGothicR'; vertical-align:middle; font-weight:normal; padding:0; margin:0; line-height:inherit; }
+
+
+
+
+/* cart_btn_box */
+.cart_btn_box { width:100%; height:48px; margin:48px 0; }
+.cart_btn_box .ui-btn { margin:0; padding:0; width:100%; height:100%; border-radius:24px; background:#d94452; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; line-height:48px; }
+.cart_btn_box .ui-btn:hover { margin:0; padding:0; width:100%; height:100%; border-radius:24px; background:#d94452; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; line-height:48px; }
+.cart_btn_box .ui-btn .order_pay_btn { width:100%; height:100%; }
+
+
+
+
+
+
+
+@media screen and (min-width: 376px) and (max-width: 459px) { 
+	.order_section02 .order_inner_section02 { padding:0 12px 12px; }
+	
+	.order_section01 table tr td .book_right_box  { float:left; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_right_box_cnt p { margin-left:4px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box { width:80px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_right_box_cnt p { margin-left:4px; font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box span { font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .ui-input-text { width:56px; }
+}
+
+
+
+
+
+@media screen and (max-width:375px) {
+	.order_section01 table tr td .book_right_box  { float:left; width:140px; max-width:207px; margin-left:24px; height:auto; box-sizing:border-box; }
+
+	.order_section02 .order_inner_section02 { padding:0 12px 12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box { width:72px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_right_box_cnt p { margin-left:4px; font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box span { font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .ui-input-text { width:44px; }
+	.order_section02 .order_inner_section02 .order_pay_method .order_right_box_cnt button { width:48%; }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {	
+	.order_section01 table tr td .book_right_box  { width:106px; margin-left:12px; }
+	.order_section01 table tr td .book_right_box .cart_selling_price { font-size:12px; } 
+	.order_section01 table tr td .book_right_box .cart_point { font-size:12px; } 
+	.order_section01 table tr td .book_right_box div:last-child .cart_txt { font-size:12px; } 
+	.order_section01 table tr td .book_right_box div:last-child .cart_total_price { font-size:16px; } 
+	.order_section01 table tr td .book_right_box .benefit_price { margin-top:10px; }
+	.order_section01 table tr td .book_right_box .benefit_point { margin-top:8px; }
+	.order_section01 table tr td .book_right_box .cart_order_count_box p { font-size:12px; }
+
+
+	.order_section02 .order_inner_section02 .order_left_txt { font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_txt_box { width:66px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .ui-input-text input { font-size:12px; }
+	.order_section02 .order_inner_section02 .order_use_cash_box .order_right_box_cnt p { margin-left:4px; font-size:10px; }
+
+	.order_section02 .order_inner_section02 .order_pay_method .order_right_box_cnt button { font-size:12px; }
+
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio { height:16px; line-height:16px; margin-top:9px; }
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn { font-size:12px; padding-left:20px; height:16px; line-height:16px; }
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio-off .card_checkmark { width:8px; height:8px; top:4px; left:4px; }
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio-on .card_checkmark { width:8px; height:8px; top:4px; left:4px; }
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn-icon-left:after { width:16px; height:16px; }
+	.order_section02 .order_inner_section02 .pay_creditcard .ui-radio .ui-btn.ui-radio-on.ui-btn-a:after { width:16px; height:16px; }
+
+	.ui-select .ui-btn>span:not(.ui-li-count) { font-size:12px !important; }
+	.pay_cellphone .ui-btn-icon-right:after { right:4px; }
+	.ui-select .ui-btn>span:not(.ui-li-count) { padding-left:4px; }
+	.order_section02 .order_inner_section02 .pay_cellphone .order_right_box_cnt>span { float:left; display:block; height:32px; line-height:32px; font-size:14px; color:#636c77; font-family:'NBGothicR'; margin:0 3px; }
+
+}
+
+
+
+

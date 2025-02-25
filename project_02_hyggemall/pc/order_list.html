@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+    <title>Order List</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <p class="no_path_box"><a href="">마이페이지</a></p>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">주문/취소 내역 조회</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box">
+                <ul>
+                    <li><a href="">주문/취소 내역 조회</a></li>
+                    <li><a href="">자주묻는 질문</a></li>
+                </ul>
+            </div>
+	    </div>
+	</section>
+	<section class="orderL_section01">
+        <div class="orderL_inner_section01">
+            <h2>주문/취소 내역 조회</h2>
+        </div>
+	</section>
+
+    <section class="orderL_section02">
+        <div class="orderL_inner_section02">
+            <div class="orderL_s02_top">
+                <div class="orderL_section02_left">
+                    <div class="orderL_section02_left_in">
+                        <p class="orderL_left">기간조회</p>
+                        <div class="orderL_right">
+                            <button type="button" class="period_btn week1">1주일</button>
+                            <button type="button" class="period_btn month1 period_btn_on">1개월</button>
+                            <button type="button" class="period_btn month3">3개월</button>
+                            <button type="button" class="period_btn month6">6개월</button>
+                            
+                            <select name="" id="" class="first_select_year">
+                                <option value="">2018년</option>
+                            </select>
+                            <select name="" id="" class="first_select_month">
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4">4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                            </select>
+                            <span class="bar">-</span>
+                            <select name="" id="" class="second_select_year">
+                                <option value="">2018년</option>
+                            </select>
+                            <select name="" id="" class="second_select_month">
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4" selected>4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="orderL_section02_left_in">
+                        <p class="orderL_left">상품명 조회</p>
+                        <div class="orderL_right">
+                            <input type="text" placehoder="상품명을 입력하세요." />
+                        </div>
+                    </div>
+                </div>
+                <div class="orderL_section02_right">
+                    <button type="button" class="check_orderL_btn">조회하기</button>
+                </div>
+            </div>
+            
+            <div class="orderL_s02_bottom">
+                <p class="orderL_left">구분</p>
+                <div class="orderL_right">
+                    <label class="order_list_radio">전체
+                        <input type="radio" checked="checked" name="order_list_radio" class="orderL_all" value="orderAll">
+                        <span class="order_list_checkmark"></span>
+                    </label>
+                    <label class="order_list_radio">수령완료
+                        <input type="radio" name="order_list_radio" class="usage_extinction" value="receiveComplete" >
+                        <span class="order_list_checkmark"></span>
+                    </label>
+                    <label class="order_list_radio">주문취소
+                        <input type="radio" checked="checked" name="order_list_radio" class="orderL_cancel" value="orderCancel">
+                        <span class="order_list_checkmark"></span>
+                    </label>
+                    <label class="order_list_radio">교환
+                        <input type="radio" name="order_list_radio" class="orderL_exchange" value="orderExchange" >
+                        <span class="order_list_checkmark"></span>
+                    </label>
+                    <label class="order_list_radio">반품
+                        <input type="radio" name="order_list_radio" class="orderL_return" value="orderReturn" >
+                        <span class="order_list_checkmark"></span>
+                    </label>
+                </div>                
+            </div>
+        </div>
+    </section>
+    
+    <section class="orderL_section03">
+        <table class="orderL_table">
+            <colgroup>
+                <col style="width:148px;">
+                <col style="width:484px;">
+                <col style="width:80px;">
+                <col style="width:124px;">
+                <col style="width:124px;">
+            </colgroup>
+            <tr class="orderL_table_thead">
+                <th>주문번호</th>
+                <th>상품정보</th>
+                <th>수량</th>
+                <th>주문금액</th>
+                <th>주문상태</th>
+            </tr>
+            <tr>
+                <td class="orderL_number">
+                    <p><b>1234567890</b></p>
+                    <p>(2018.05.03)</p>
+                    <button type="button" class="payment_info_btn">결제정보 보기</button>
+                </td>
+                <td colspan="2" class="orderL_product_info">
+                    <table class="orderL_sub_table">
+                        <colgroup>
+                            <col style="width:484px;">
+                            <col style="width:80px;">
+                        </colgroup>
+                        <tr>
+                            <td>
+                                <img src="asset/img/cart_01.jpg" class="cart_img" alt="" />
+                                <p>
+                                    <span class="book_name">파피용</span>
+                                    <span class="book_explain">베르나르 베르베르 지음 · 열린책들 · 2013년 5월 30일 출간</span>
+                                </p>
+                            </td>
+                            <td class="orderL_quantity">2</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="asset/img/cart_02.jpg" class="cart_img" alt="" />
+                                <p>
+                                    <span class="book_name">워너원 포토에세이 : 우리 기억 잃어버리지 않게</span>
+                                    <span class="book_explain">CJ E&M 지음 · 아르테팝(artePOP) · 2018년 04월 22일 출간</span>
+                                </p>
+                            </td>
+                            <td class="orderL_quantity">1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="orderL_pay">
+                    <p><span>53,640</span>원</p>
+                </td>
+                <td class="orderL_status">
+                    <p>주문취소</p>
+                    <!-- 취소완료 / 상품준비중 / 반품신청 / 반품완료 / 수령완료 -->
+                </td>
+            </tr>
+            <tr>
+                <td class="orderL_number">
+                    <p><b>1234567890</b></p>
+                    <p>(2018.05.03)</p>
+                    <button type="button" class="payment_info_btn">결제정보 보기</button>
+                </td>
+                <td colspan="2" class="orderL_product_info">
+                    <table class="orderL_sub_table">
+                        <colgroup>
+                            <col style="width:484px;">
+                            <col style="width:80px;">
+                        </colgroup>
+                        <tr>
+                            <td>
+                                <img src="asset/img/cart_01.jpg" class="cart_img" alt="" />
+                                <p>
+                                    <span class="book_name">나는 왜 저인간에게 휘둘릴까?</span>
+                                    <span class="book_explain">베르나르 베르베르 지음 · 열린책들 · 2013년 5월 30일 출간</span>
+                                </p>
+                            </td>
+                            <td class="orderL_quantity">1</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="orderL_pay">
+                    <p><span>11,700</span>원</p>
+                </td>
+                <td class="orderL_status">
+                    <p>수령완료</p>
+                    <!-- 취소완료 / 상품준비중 / 반품신청 / 반품완료 / 수령완료 -->
+                </td>
+            </tr>
+        </table>   
+    </section>
+    
+    <div class="pagination-list">
+        <div class="pagination-div">
+            <ul>
+                <li><a href="" class="paging_first"></a></li>
+                <li><a href="" class="paging_prev"></a></li>
+                <li><a href="" class="paging_num">1</a></li>
+                <li><a href="" class="paging_num">2</a></li>
+                <li><a href="" class="paging_num">3</a></li>
+                <!--<li><a href="" class="paging_num">4</a></li>
+                <li><a href="" class="paging_num">5</a></li>
+                <li><a href="" class="paging_num">6</a></li>
+                <li><a href="" class="paging_num">7</a></li>
+                <li><a href="" class="paging_num">8</a></li>
+                <li><a href="" class="paging_num">9</a></li>
+                <li><a href="" class="paging_num">10</a></li>-->
+                <li><a href="" class="paging_next"></a></li>
+                <li><a href="" class="paging_last"></a></li>
+            </ul>
+        </div>    
+    </div>
+    
+    <div class="orderL_layer">
+        <div class="mask"></div>
+        <div class="odl_payment_info_layer">
+            <div class="odl_layer_inner">
+                <div class="odl_sub_header">
+                    <p>주문번호 <span class="red-color">1234567890</span></p>
+                </div>
+                <div class="odl_header">
+                    <h3>결제정보</h3>
+                </div>
+                <div class="odl_section">
+                    <table>
+                        <colgroup>
+                            <col style="width:138px;">
+                            <col style="width:198px;">
+                        </colgroup>
+                        <tr>
+                            <td>주문일시</td>
+                            <td>
+                                2018.05.03 10:36:25
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>주문금액</td>
+                            <td>
+                                53,640 원
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>휘게북스 캐시</td>
+                            <td>
+                                2,000 캐시
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>휘게북스 포인트</td>
+                            <td>
+                                0 P 사용
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>최종 결제금액</td>
+                            <td>
+                                51,640 원
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>결제 수단</td>
+                            <td>
+                                신용카드 (법인)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="odl_btn_box">
+                    <button type="button" class="odl_payment_info_close layer_close_btn">닫기</button>  
+                </div>
+            </div>
+        </div>  
+    </div>
+	
+    <?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

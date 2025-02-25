@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>파일 및 폴더 네이밍 규칙</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>네이밍 규칙</span></li>
+							<li><span>파일 및 폴더 네이밍 규칙</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>파일 및 폴더 네이밍 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. 이미지 네이밍</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>산출되는 모든 HTML 파일과 폴더를 분류해야 할 경우, 페이지 마스터 파일에서 정의된 페이지 코드와 폴더 코드를 그대로 사용합니다. 단,  '코드_이름' 규칙 중 마크업 산출물의 경우만 코드만으로 파일 명을 정의할 수 있으며 뒤의 '이름(영문만 허용) '은 선택에 따라 정의할수 있습니다.</li>
+                                    <li>정의된 코드가 없는 프로젝트의 경우, 표 2-8 파일 및 폴더 네이밍 규칙을 따른다.</li>
+                                    <li>모바일의 경우 서비스 및 디바이스 환경에 따라 변경될 수 있으므로 표 2-9 를 참조합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="분류/예제/설명으로 구성됨">
+                                    <caption>표 2-8 파일 및 폴더 네이밍 규칙 예</caption>
+                                    <colgroup>
+                                        <col><col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">분류</th>
+                                            <th class="al_l" scope="col">예제</th>
+                                            <th class="al_l" scope="col">설명</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">HTML</td>
+                                            <td class="al_l">1.1.1_home.html</td>
+                                            <td class="al_l">'페이지코드.html'로 사용하거나, 선택에 따라 '페이지 코드_이름(영문만 허용).html'로 사용합니다.</td>
+                                        </tr>     
+                                        <tr>
+                                            <td class="al_l" scope="row" rowspan="3">HTML (페이지코드 정의서가  없는 경우)</td>
+                                            <td class="al_l">news.html</td>
+                                            <td class="al_l">'서비스영문이름.html'로 사용</td>
+                                        </tr>     
+                                        <tr>
+                                            <td class="al_l" scope="row">pop_.html</td>
+                                            <td class="al_l">팝업 파일을 사용</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="al_l" scope="row">ifr_.html</td>
+                                            <td class="al_l">iframe 파일을 사용</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="al_l" scope="row">CSS</td>
+                                            <td class="al_l">news_.css</td>
+                                            <td class="al_l">'서비스영문이름.css'로 사용합니다.</td>
+                                        </tr>     
+                                        <tr>
+                                            <td class="al_l" scope="row" rowspan="4">folder</td>
+                                            <td class="al_l">p_yymmdd_프로젝트이름</td>
+                                            <td class="al_l">신규 프로젝트 작업 시 사용</td>
+                                        </tr>   
+                                        <tr>
+                                            <td class="al_l" scope="row">yymmdd_서스테이닝이름</td>
+                                            <td class="al_l">서스테이닝 작업 시 사용</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="al_l" scope="row">img, css, javascript</td>
+                                            <td class="al_l">images, css, js 폴더 사용</td>
+                                        </tr> 
+                                        <tr>
+                                            <td class="al_l" scope="row">p_yymmdd_프로젝트명\00_메뉴명</td>
+                                            <td class="al_l">HTML 파일의 폴더 분류가 필요한 경우 사용</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. 파일 및 폴더 네이밍 조합</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>HTML 파일은 페이지 마스터 파일에서 정의한 페이지 코드를 그대로 사용하거나, '코드_이름(영문만 허용)'으로 조합합니다.</li>
+                                    <li>페이지 마스터 파일이 없는 경우 '메뉴이름_의미_상태' 순서로 조합합니다.</li>
+                                    <li>CSS 파일은 '서비스이름'을 맨 앞으로 하여 조합합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="분류/조합 예/설명으로 구성됨">
+                                    <caption>표 2-10 HTML/CSS 조합 예</caption>
+                                    <colgroup>
+                                        <col><col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">분류</th>
+                                            <th class="al_l" scope="col">조합 예</th>
+                                            <th class="al_l" scope="col">설명</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row" rowspan="2">HTML</td>
+                                            <td class="al_l">cafe.html<br>cafe_menu_detail.html</td>
+                                            <td class="al_l">'페이지 마스터 파일에서 정의할 페이지 코드를 그대로 사용하거나, '코드_네임(영문만허용)'으로 조합합니다.</td>
+                                        </tr>     
+                                        <tr>
+                                            <td class="al_l" scope="row">news_nboard_view.html</td>
+                                            <td class="al_l">정의된 코드가 없는 경우 '메뉴이름_의미_상태' 순서로 조합합니다.</td>
+                                        </tr>    
+                                        <tr>
+                                            <td class="al_l" scope="row">CSS</td>
+                                            <td class="al_l">news_home.css<br>news_admin.css<br>news_pop.css, news_nanum.css</td>
+                                            <td class="al_l">'서비스이름'을 맨 앞으로 하여 조합합니다.</td>
+                                        </tr>  
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(3) span:contains("파일 및 폴더 네이밍 규칙")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('파일 및 폴더 네이밍 규칙 > HTML GUIDE');
+            });            
+		});
+        
+	});
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>기타 엘리먼트</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>HTML 엘리먼트 작성 규칙</span></li>
+							<li><span>기타 엘리먼트</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. &lt;a&gt;</dt>
+                            <dd>
+                                <p class="txt">href, target, title 순서로 애트리뷰트를 선언합니다.</p>
+                                <ul class="lst">
+                                    <li>새 창으로 페이지를 표시해야 할 때 target 애트리뷰트를 선택적으로 사용합니다.</li>
+                                    <li>title 애트리뷰트는 예고 없이 새 창을 표시해야 하거나 이동 경로를 정확히 알 수 없을 때, 또는 브라우저에 독립적으로 툴팁을 표현합니다.</li>
+                                </ul>
+                                <div class="txt_bg">
+&lt;a <em class="ft_clr_red">href</em>="print.html" <em class="ft_clr_red">target</em>="_blank" <em class="ft_clr_red">title</em>="새창"&gt;인쇄하기&lt;/a&gt;
+                                </div>
+                            </dd>
+                            <dd>
+                                <dl class="helpBox ico_refer">
+                                    <dt>참고</dt>
+                                    <dd>
+                                        <p class="txt">HTML5 에서의 &lt;a&gt;</p>
+                                        <ul class="lst">
+                                            <li>HTML5에서의 &lt;a&gt; 엘리먼트 안에 블록 속성의 엘리먼트를 포함할 수 있습니다.</li>
+                                            <li>href 애트리뷰트 없이 단독으로 &lt;a&gt;OOO&lt;/a&gt; 사용이 가능합니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd>   
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. &lt;iframe&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;iframe&gt;은 페이지 성능에 영향을 주기 때문에 가급적 사용하지 않습는다.</p>
+                                <ul class="lst">
+                                    <li>부득이하게 사용해야 할 경우 src, width, height, title, frameborder, marginwidth, marginheight, scrolling 순서로 애트리뷰트를 선언합니다.</li>
+                                    <li>스크린 리더 사용자를 위해 title 애트리뷰트에 제목을 표기합니다. 상단에 iframe의 heading 엘리먼트가 있는 경우더라도 반드시 title을 선언합니다.</li>
+                                    <li>Iframe의 내용이 빈 경우더라도 빈 아이프레임라는 것을 사용자에게 알려주도록 합니다.</li>
+                                </ul>
+                                <div class="txt_bg">
+&lt;iframe <em class="ft_clr_red">src</em>="nbox.html" <em class="ft_clr_red">width</em>="410" <em class="ft_clr_red">height</em>="800" <em class="ft_clr_red">title</em>="공지사항 게시판" <em class="ft_clr_red">frameborder</em>="0" <em class="ft_clr_red">marginwidth</em>="0" <em class="ft_clr_red">marginheight</em>="0" <em class="ft_clr_red">scrolling</em>="no"&gt;&lt;/iframe&gt;
+                                </div>
+                                <p class="txt">HTML5 DTD 선언 시 frameborder, marginwidth, marginheight, scrolling 애트리뷰트는 사용할 수 없다. 단, 다른 방법으로 구현이 불가한 frameborder 애트리뷰트는 허용합니다.</p>
+                                <div class="txt_bg">
+&lt;iframe <em class="ft_clr_red">src</em>="nbox.html" <em class="ft_clr_red">width</em>="410" <em class="ft_clr_red">height</em>="800" <em class="ft_clr_red">title</em>="공지사항 게시판" <em class="ft_clr_red">frameborder</em>="0"&gt;&lt;/iframe&gt;
+                                </div>
+                            </dd>
+                            <dd>
+                                <dl class="helpBox ico_refer">
+                                    <dt>참고</dt>
+                                    <dd>
+                                        <p class="txt">iframe 사용 시 다음과 같은 문제점이 있습니다.</p>
+                                        <ul class="lst">
+                                            <li>iframe을 포함하는 페이지의 도메인과 iframe에서 불러오는 페이지의 도메인이 다르면, 크로스 도메인 설정을 위해 별도의 소스 코드가 추가되어 성능에 영향을 줄 수 있습니다.</li>
+                                            <li>iframe의 높이값이 콘텐츠에 따라 유동적이어야 한다면 별도의 자바스크립트 코드가 추가되어 성능에 영향을 줄 수 있습니다.</li>
+                                            <li>검색 엔진에서 iframe의 내용만 추출하여 표시하면 전체 페이지의 레이아웃이 비정상적으로 보일 수 있으며, 주변 맥락(머리글, 바닥  글, 메뉴)이 노출되지 않아 검색 엔진 최적화(SEO) 관점에서 적합하지 않다.</li>
+                                            <li>iframe은 가장 마지막으로 로딩되기 때문에 페이지 로딩 초기에는 화면이 비어 보일 수 있습니다.</li>
+                                            <li>모바일에서는 iframe 스크롤에 대한 렌더링이 브라우저별로 다르며, CSS 말 줄임이 동작하지 않는 브라우저가 있습니다.</li>
+                                            <li>접근성 보장을 위해 유관부서와 협의 가능 여부를 판단하여 아래 안 중 하나를 선택할 수 있습니다.</li>
+                                            <li>&lt;iframe&gt;iframe 미지원 장치에서는 내용을 확인할 수 없습니다.&lt;/iframe&gt;</li>
+                                            <li>&lt;iframe&gt;&lt;a href="아이프레임 링크"&gt;&lt;/a&gt;&lt;/iframe&gt;</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd> 
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. &lt;img&gt;</dt>
+                            <dd>
+                                <p class="txt">src, width, height, title, alt, usemap 순서로 애트리뷰트를 선언합니다.</p>
+                                <ul class="lst">
+                                    <li>이미지 내용과 동일한 값을 alt 애트리뷰트에 표기하여, 이미지를 볼 수 없는 환경(스크린 리더, 이미지 서버 장애, 이미지 표시 하지 않음 설정)에서도 내용을 확일할 수 있게 합니다.</li>
+                                    <li>title 애트리뷰트를 선언할 경우에도 alt 애트리뷰트를 함께 선언합니다.</li>
+                                    <li>title 애트리뷰트는 alt 애트리뷰트값을 축약하거나 브라우저에 독립적으로 툴팁을 표현하기 위해 사용합니다.</li>
+                                </ul>
+                                <div class="txt_bg">
+&lt;img <em class="ft_clr_red">src</em>="logo.gif" <em class="ft_clr_red">width</em>="30" <em class="ft_clr_red">height</em>="10" <em class="ft_clr_red">title</em>="고객센터" <em class="ft_clr_red">alt</em>="고객센터, 모듞 궁금증이 해결되는 곳" <em class="ft_clr_red">usemap</em>="#help"&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. &lt;map&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;map&gt; 엘리먼트의 name 애트리뷰트를 선언하여 &lt;img&gt; 엘리먼트의 usemap 애트리뷰트와 같은 이름으로 커플링합니다.</p>
+                                <div class="txt_bg">
+&lt;img src="img_main.gif" width="696" height="196" title=“오픈이벤트" alt=“오픈이벤트, 쿠폰을나눕니다" <em class="ft_clr_red">usemap="#help"</em>&gt;<br>
+&lt;map <em class="ft_clr_red">name="help"</em>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;area shape="rect" coords="506,48,608,139" href="#" target="_blank" title="고객센터" alt="고객센터, 모든 궁금증이 해결되는 곳"&gt;<br>
+&lt;/map&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. &lt;area&gt;</dt>
+                            <dd>
+                                <p class="txt">shape, coords, href, target, title, alt 순서로 애트리뷰트를 선언합니다.</p>
+                                <ul class="lst">
+                                    <li>title 애트리뷰트를 선언한 경우에도 alt 애트리뷰트를 함께 선언합니다.</li>
+                                    <li>target 애트리뷰트는 새 창으로 페이지를 표시해야 할 때 사용합니다.</li>
+                                    <li>title 애트리뷰트는 예고 없이 새 창을 표시해야 하거나 이동 경로를 정확히 알 수 없을 때, alt 애트리뷰트값을 축약하거나, 브라우저에 독립적으로 툴팁을 표현하기 위해 사용합니다.</li>
+                                </ul>
+                                <div class="txt_bg">
+&lt;area <em class="ft_clr_red">shape</em>="rect" <em class="ft_clr_red">coords</em>="506,48,608,139" <em class="ft_clr_red">href</em>="#" <em class="ft_clr_red">target</em>="_blank" <em class="ft_clr_red">title</em>="새창" <em class="ft_clr_red">alt</em>="고객센터, 모든 궁금증이 해결되는 곳"&gt;
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(5) span:contains("기타 엘리먼트")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('기타 엘리먼트 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

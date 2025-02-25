@@ -1,0 +1,1435 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  <title>newbook</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">국내도서</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box">
+                <ul>
+                    <li><a href="">국내도서</a></li>
+                    <li><a href="">해외도서</a></li>
+                    <li><a href="">웹소설</a></li>
+                    <li><a href="">펜시몰</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">여행</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box" style="width:338px;">
+                <ul>
+                    <li><a href="">소설</a></li>
+                    <li><a href="">시/에세이</a></li>
+                    <li><a href="">인문</a></li>
+                    <li><a href="">가정/육아</a></li>
+                    <li><a href="">요리</a></li>
+                    <li><a href="">건강</a></li>
+                    <li><a href="">취미/실용/스포츠</a></li>
+                    <li><a href="">경제/경영</a></li>
+                    <li><a href="">자기계발</a></li>
+                    <li><a href="">정치/사회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">역사/문화</a></li>
+                    <li><a href="">종교</a></li>
+                    <li><a href="">예술/대중문화</a></li>
+                    <li><a href="">중/고등참고서</a></li>
+                    <li><a href="">기술/공학</a></li>
+                    <li><a href="">외국어</a></li>
+                    <li><a href="">과학</a></li>
+                    <li><a href="">취업/수험서</a></li>
+                    <li><a href="">여행</a></li>
+                    <li><a href="">컴퓨터/IT</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">잡지</a></li>
+                    <li><a href="">청소년</a></li>
+                    <li><a href="">초등참고서</a></li>
+                    <li><a href="">유아(0~7세)</a></li>
+                    <li><a href="">어린이(초등)</a></li>
+                    <li><a href="">어린이영어</a></li>
+                    <li><a href="">만화</a></li>
+                    <li><a href="">대학교재</a></li>
+                    <li><a href="">어린이전집</a></li>
+                    <li><a href="">한국소개도서</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">해외여행</a>
+                <span class="select_arrow"></span>
+            </p>
+	    </div>
+	</section>
+	<section class="newbook_section01">
+        <div class="newbook_inner_section01">
+            <h2>새로 나온 책</h2>
+            <div class="list_grid_btn_box">
+                <button class="list_btn list_grid_btn">list</button>
+                <button class="grid_btn list_grid_btn list_grid_active">grid</button>
+            </div>
+        </div>
+	</section>
+	<section class="newbook_section02">
+	    <div class="newbook_inner_section02">
+            <ul class="tab tab_newbook">
+	            <li class="tab_btn newbook_tab_btn" onclick="tabover('newbook', 0)"><a>주간</a></li>
+	            <li class="tab_btn newbook_tab_btn"  onclick="tabover('newbook', 1)"><a>월간</a></li>
+	        </ul>
+	        <div class="range_box">
+                <div class="sort_box">
+                    <button class="sort_btn">판매량</button>
+                    <span>·</span>
+                    <button class="sort_btn sort_btn_on">등록일</button>
+                    <span>·</span>
+                    <button class="sort_btn">최고가</button>
+                    <span>·</span>
+                    <button class="sort_btn">최저가</button>
+                </div>
+                <div class="cart_box">
+                    <span>선택한 상품을</span>
+                    <input type="button" class="cart_s_btn" value="장바구니 담기" />
+                </div>
+	        </div>
+	        
+	        <div id="weekly" class="newbook_tabcontent tabcnt_newbook0">
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>  
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>     
+            <div id="monthly" class="newbook_tabcontent tabcnt_newbook1">
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">죄의 목소리</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="newbook_title">죄의 목소리</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                            <p class="newbook_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="newbook_price">13,320원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">당신의 손길이 닿기 전에</p>
+                                    <p class="newbook_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="newbook_author">배지윤 저 · 우리교과서</p>
+                            <p class="newbook_price">19,800원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="newbook_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="newbook_txt_grid">
+                            <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="newbook_author">이상헌 저 · 메이트북스</p>
+                            <p class="newbook_price">14,400원</p>
+                        </div>
+                        <div class="newbook_txt_list">
+                            <div class="newbook_txt_list_left">
+                                <div class="newbook_list_cover">
+                                    <p class="newbook_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="newbook_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="newbook_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="newbook_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="newbook_list_price">
+                                <p class="newbook_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="pagination-list">
+                <div class="pagination-div">
+                    <ul>
+                        <li><a href="" class="paging_first"></a></li>
+                        <li><a href="" class="paging_prev"></a></li>
+                        <li><a href="" class="paging_num">1</a></li>
+                        <li><a href="" class="paging_num">2</a></li>
+                        <li><a href="" class="paging_num">3</a></li>
+                        <!--<li><a href="" class="paging_num">4</a></li>
+                        <li><a href="" class="paging_num">5</a></li>
+                        <li><a href="" class="paging_num">6</a></li>
+                        <li><a href="" class="paging_num">7</a></li>
+                        <li><a href="" class="paging_num">8</a></li>
+                        <li><a href="" class="paging_num">9</a></li>
+                        <li><a href="" class="paging_num">10</a></li>-->
+                        <li><a href="" class="paging_next"></a></li>
+                        <li><a href="" class="paging_last"></a></li>
+                    </ul>
+                </div>    
+            </div>
+            
+	    </div>
+	</section>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

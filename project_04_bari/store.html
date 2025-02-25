@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>     
+	<link rel="stylesheet" href="resources/css/store.css" />
+	<script type="text/javascript" src="resources/js/store.js"></script>
+	<script type="text/javascript" src="resources/js/header_change.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#fadding-controls").on('click', 'div', function() {
+				$("#fading-wrapper img").removeClass("opaque");
+
+				var newImage = $(this).index();
+
+				$("#fading-wrapper img").eq(newImage).addClass("opaque");
+
+				$("#fadding-controls div").removeClass("fade_selected");
+				$(this).addClass("fade_selected");
+			});
+		});
+	</script>
+  <title>BARI STORE</title>
+ </head>
+ <body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header_main.html' ) ;
+    ?>
+	
+	<div class="fading" id="store-fade">
+		<div id="fading-wrapper">
+			<div class="fading-wrapper_img">
+				<img class='opaque' src="resources/img/acaibowl.jpg" alt="" />
+			</div>
+			<div class="fading-wrapper_img">
+				<img src="resources/img/bari_1920_test1.jpg" alt="" />
+			</div>
+			<div class="fading-wrapper_img no_img2">
+				<img src="resources/img/store_empty.png" alt="" />
+			</div>
+		</div>
+		<div id="fadding-controls">
+			<div class="fade_selected">
+				<img src="resources/img/main_visual_thumb_01.jpg" alt="" />
+			</div>
+			<div>	
+				<img src="resources/img/main_visual_thumb_02.jpg" alt="" />
+			</div>
+			<div>
+				<img src="resources/img/main_visual_thumb_03.jpg" alt="" />
+			</div>
+			<div>
+				<img src="resources/img/main_visual_thumb_04.jpg" alt="" />
+			</div>
+			<div>
+				<img src="resources/img/main_visual_thumb_05.jpg" alt="" />
+			</div>
+			<div>
+				<img src="resources/img/main_visual_thumb_06.jpg" alt="" />
+			</div>	
+			<div class="no_img"></div>
+		</div>		
+	</div>	
+	
+	<div id="container_store">
+		<ul>
+			<li>
+				<a href="store_detail.html">
+					<div class="store_img">
+						<img src="resources/img/store_kyungridan.jpg" alt="경리단길" />
+					</div>
+					<p>
+						<span class="store_location"># 경리단길</span>
+						<span class="store_location_address">서울, 이태원</span>
+					</p>
+					<div class="dimmed">
+						<p>VIEW</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="store_detail.html">
+					<div class="store_img">
+						<img src="resources/img/hd.jpg" alt="현대백화점 판교점" />
+					</div>
+					<p>
+						<span class="store_location"># 현대백화점 판교점</span>
+						<span class="store_location_address">경기, 분당 판교</span>
+					</p>
+					<div class="dimmed">
+						<p>VIEW</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="store_detail.html">
+					<div class="store_img">
+						<img src="resources/img/store_snue.jpg" alt="교대" />
+					</div>
+					<p>
+						<span class="store_location"># 교대</span>
+						<span class="store_location_address">서울, 서초</span>
+					</p>
+					<div class="dimmed">
+						<p>VIEW</p>
+					</div>
+				</a>
+			</li>
+			<li class="no_store">
+				<a href="javscript:void()">
+					<div class="store_img coming_soon">					
+						<p>Coming Soon</p>
+					</div>
+					<p>
+						<span class="store_location"># 오픈예정</span>
+					</p>
+				</a>
+			</li>
+			<li class="no_store">
+				<a href="javscript:void()">
+					<div class="store_img coming_soon">					
+						<p>Coming Soon</p>
+					</div>
+					<p>
+						<span class="store_location"># 오픈예정</span>
+					</p>
+				</a>
+			</li>
+		</ul>
+	</div> <!-- /#container_store -->
+
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+ </body>
+</html>

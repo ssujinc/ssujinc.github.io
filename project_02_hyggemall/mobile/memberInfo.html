@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/memberInfo.css">
+  <title>memberInfo</title>    
+</head>
+<body id="memberInfo" data-role="page" class="mbI_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<div class="mbI_tab">
+				<h2>내 정보 조회·수정</h2>
+			</div>
+
+			<div class="inner_content">
+				
+				<section class="mbI_section01">
+					<p>비밀번호 변경 및 회원탈퇴는 PC웹을 이용해주시기 바랍니다.</p>
+				</section>
+
+				<section class="mbI_section02">
+					<div class="mbI_inner_section02">
+						<h3>필수 입력 정보</h3>	
+						<div class="mbI_inner_section02_box">
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">아이디</p>
+								<div class="mbI_right_box_cnt mb_right_txt">hygge</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">비밀번호</p>
+								<div class="mbI_right_box_cnt">
+									<div class="mbI_pw_box">
+										<input type="text" class="mbI_pw_input">
+									</div>
+								</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">이름</p>
+								<div class="mbI_right_box_cnt mb_right_txt">
+									<p class="mb_right_txt_p">김휘게</p>
+									<div class="gender_btn_box">
+										<button class="gender_btn gender_man">남</button>
+										<button class="gender_btn gender_woman gender_on">여</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">전화번호</p>
+								<div class="mbI_right_box_cnt mb_right_txt">0102345678</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">이메일</p>
+								<div class="mbI_right_box_cnt mb_right_txt">hygge@hygge.com</div>
+							</div>
+
+						</div>	
+					</div>
+
+					<div class="mbI_inner_section02">
+						<h3>선택 입력 정보</h3>	
+						<div class="mbI_inner_section02_box">
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">생년월일</p>
+								<div class="mbI_right_box_cnt birthday_box">
+									<div class="birth_year_select_box">
+										<select name="" id="">
+											<option value="">년</option>
+										</select>
+									</div>		
+									<div class="birth_month_select_box">
+										<select name="" id="" class="birth_month_select">
+											<option value="">월</option>
+										</select>
+									</div>
+									<div class="birth_day_select_box">
+										<select name="" id="" class="birth_day_select">
+											<option value="">일</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">우편번호</p>
+								<div class="mbI_right_box_cnt">
+									<div class="postcode_input_box">
+										<input type="text" class="postcode_input">
+									</div>
+									<button type="button" class="postcode_btn">우편번호</button>
+								</div>
+							</div>
+
+							<div class="mbI_section02_box address_box">
+								<p class="mbI_left_txt">주소</p>
+								<div class="mbI_right_box_cnt">
+									<div class="first_address_input_box">
+										<input type="text" class="first_address_input">
+									</div>
+									<div class="second_address_input_box">
+										<input type="text" class="second_address_input">
+									</div>
+								</div>
+							</div>
+
+							<div class="mbI_section02_box">
+								<p class="mbI_left_txt">관심분야</p>
+								<div class="mbI_right_box_cnt">
+									<a href="#mbI_interest" class="mbI_interest_btn" data-rel="popup" data-position-to="window">관심분야를 선택해 주세요.</a>
+								</div>
+								<div data-role="popup" id="#mbI_interest" class="ui-content" data-theme="a" data-overlay-theme="a">
+									<p>I am positioned to the window.</p>
+								</div>
+<!-- 								<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-position-to="window">Basic Popup</a> -->
+<!-- 								<div data-role="popup" id="popupBasic"> -->
+<!-- 									<p>This is a completely basic popup, no options set.</p> -->
+<!-- 								</div> -->
+							</div>
+
+						</div>	
+					</div>
+
+					<div class="mbI_inner_section02">
+						<h3>본인인증</h3>	
+						<div class="mbI_inner_section02_box mbI_identity_box">
+							<p class="identity_txt">정보 수정시 본인 인증이 반드시 필요합니다.</p>
+							<div class="get_confirm_number_box">
+								<div class="get_confirm_number_input_box">
+									<input type="text" class="get_confirm_number_input" placeholder="휴대폰 번호 또는 이메일" />
+								</div>
+								<button type="button" class="get_confirm_btn">인증번호 받기</button>
+							</div>
+							<div class="confirm_number_box">
+								<div class="confirm_number_input_box">
+									<input type="text" class="confirm_number_input"/>
+								</div>
+								<button type="button" class="certify_confirm_btn">인증하기</button>
+								<p class="check_certify_confirm">인증되었습니다.</p>
+							</div>   
+						</div>
+					</div>
+
+				</section>
+
+				
+
+				<div class="mbI_btn_box">
+					<button type="button" class="save_info">저장하기</button>
+				</div>
+				
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

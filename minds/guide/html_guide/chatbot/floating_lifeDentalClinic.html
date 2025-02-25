@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>	
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<link rel="shortcut icon" type="image/x-icon" href="../resources/images/ico_favicon_60x60.png">
+<link rel="stylesheet" type="text/css" href="../resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />		
+<title>floating || chatBot</title>
+</head>
+<body>
+	
+<style type="text/css">    
+/* 적용할 css */	
+#chatbot {display:block; overflow:hidden; position:fixed; right:0; bottom:0; width:760px; height:130px; border-radius:10px; z-index:9999;}
+#chatbot.chatOpen {height:80%;}
+#chatbot_iframe {width:100%; height:100%; border:none;} 
+.chatGreeting {display:block; position:fixed; right:100px; bottom:60px; margin-bottom:0; padding:10px; color:#fff; font-size:12px; text-align:right; border-radius:7px; background:#8dc73d; z-index:700; -webkit-animation-duration:1.2s; animation-duration:1.2s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:chatGreeting; animation-name:chatGreeting; animation-delay:0.5s;}
+@-webkit-keyframes chatGreeting {
+0%   {opacity:0; display:none; bottom:30px;}
+50%  {opacity:0; display:none; bottom:30px;}
+100% {opacity:1; display:block; bottom:60px;}
+}
+
+@keyframes chatGreeting {
+0%   {opacity:0; display:none; bottom:30px;}
+50%  {opacity:0; display:none; bottom:30px;}
+100% {opacity:1; display:block; bottom:60px;}
+}
+
+.chatGreeting.chatGreeting_hide {animation-delay:0s; -webkit-animation-duration:0.3s; animation-duration:0.3s; -webkit-animation-fill-mode:both; animation-fill-mode:both; -webkit-animation-name:chatGreeting_hide; animation-name:chatGreeting_hide; }
+@-webkit-keyframes chatGreeting_hide {
+0%   {opacity:1; display:block; bottom:60px;}
+100% {opacity:0; display:none; bottom:30px;}
+}
+
+@keyframes chatGreeting_hide {
+0%   {opacity:1; display:block; bottom:60px;}
+100% {opacity:0; display:none; bottom:30px;}
+}
+.powered {display:block; position:fixed; right:20px; bottom:30px; margin-bottom:0; color:#fff; font-size:12px; text-align:right; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.7); z-index:700;}
+.powered img {height:15px; margin:0 0 0 5px; vertical-align:middle;}
+    
+#chatbot.chatOpen .chatGreeting {display:none;}  
+#chatbot.chatOpen .powered {display:none;}    
+    
+@media screen and (max-width:760px) {
+#chatbot {right:0; bottom:0; border-radius:0; z-index:9999;}
+#chatbot #btn_goChat {bottom:10px; width:55px; margin-right:10px; padding:50px 0 0 0;}	
+#chatbot.chatOpen {right:0; bottom:0; width:100%; height:100%;}
+.powered {bottom:12px;}
+.chatGreeting {left:10px; text-align:left; word-break: keep-all;}
+}
+</style>
+<!-- //적용할 css -->	
+	
+<!-- 적용할 html -->
+<div id="chatbot">
+    <embed type="text/html" id="chatbot_iframe" src="chat_lifeDentalClinic.html">
+    <div class="chatGreeting">
+    안녕하세요! 인공지능 챗봇 '레타'입니다. 무엇을 도와드릴까요?<br>
+    Welcome! My name is 'Reta'. How may I assist you?
+    </div>
+    <p class="powered">Powered by <img src="../resources/images/img_tit_redtie.png" alt="RedTie Butler"></p>
+</div>	
+<!-- //적용할 html -->
+<!-- 적용할 script -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>	<!-- 기존 jquery library 있을 경우 제거 -->
+<script type="text/javascript">
+// iframe 자식 도메인
+document.domain = "10.122.66.179";
+</script>
+<!-- //적용할 script -->
+	
+	
+	
+	
+	
+</body>
+</html>

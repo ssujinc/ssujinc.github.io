@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8"/> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="format-detection" content="telephone=no"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/> 
+    <title>AI Human Builder</title>
+</head>
+<body>
+    <!-- #wrap -->
+    <div id="wrap" class="maumUI visual_header">
+
+        <!-- #header -->
+        <div id="header">
+            <!-- .maum_sta -->
+            <div class="maum_sta">
+                <h1><a href="https://maum.ai/">maum.ai</a></h1>
+                <!-- .maum_gnb -->
+                <div class="maum_gnb">
+                    <ul class="nav">
+                        <li>
+                            <a href="https://maum.ai/" class="go_employees" id="Button_Internal">직원용</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#none" onclick="go(); return false;" class="">서비스</a>
+                        </li>
+                        <li>
+                            <a href="http://maumacademy.maum.ai/" class="">아카데미</a>
+                        </li>
+                        <li>
+                            <a href="https://maum.ai/home/pricingPage?lang=ko" class="">가격정책</a>
+                        </li>
+                        <li>
+                            <a href="https://maum.ai/event/maumBook" target="_blank">이벤트</a>
+                        </li>
+                        <li>
+                            <a href="https://store.maum.ai/i" target="_blank">스토어</a>
+                        </li>
+                        <li>
+                    </li></ul>
+                </div>
+                <!-- //.maum_gnb -->
+                <!-- .maum_etc -->
+                <div class="maum_etc">
+                    <ul class="nav">
+                        <!-- 로그인X -->
+                        <li>
+                            <a class="btn_sign login_pop" href="#none">로그인</a>
+                        </li>
+                        <!-- //로그인X -->
+        
+                        <!-- 로그인O-->
+                        <li>
+                            <a class="btn_ico user" href="#none"><i class="fas fa-user-circle"></i><span>사용자</span></a>
+                            <div class="lstBox">
+                                <ul class="lst">
+                                    <li class="userInfo">
+                              <span class="thumb"><img src="/aiaas/common/images/ico_user_g.svg"
+                                                       alt="사용자"></span>
+                                        <span class="txt">
+                                <em class="userName">최수진</em>
+                                <em class="loginID">csj@mindslab.ai</em>
+                              </span>
+                                    </li>
+                                    <li><a href="/user/profileMain" target="_self" title="프로필">프로필</a></li>
+                                    <li><a href="/user/apiAccountMain" target="_self" title="API 정보">API 정보</a></li>
+                                    <li><a href="/user/paymentInfoMain" target="_self" title="결제정보">결제정보</a></li>
+                                    <li><a href="#none" onclick="document.getElementById('logout-form').submit();" title="로그아웃">로그아웃</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //로그인O-->
+        
+                        <li>
+                            <a class="btn_ico lang" href="#none"><i class="fas fa-globe"></i><span>언어</span></a>
+                            <div class="lstBox">
+                                <ul class="lst">
+                                    <li class="lang_li"><a href="#none">한국어</a></li>
+                                    <li class="lang_li"><a href="/?lang=en" target="_self" title="English">English</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="btn_ico app" href="#none"><span>웹 앱 및 서비스</span></a>
+                            <div class="appBox">
+                                <div class="tit">웹 앱 및 서비스</div>
+                                <ul class="lst">
+                                    <li>
+                                        <a href="/main/krMainHome" target="_blank" title="Cloud API">
+                                            <span class="ico"></span>
+                                            <em>Cloud API</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://builder.maum.ai/?lang=ko" target="_blank" title="AI Builder">
+                                            <span class="ico"></span>
+                                            <em>AI Builder</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://minutes.maum.ai/" target="_blank" title="maum 회의록">
+                                            <span class="ico"></span>
+                                            <em>maum 회의록</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://fast-aicc.maum.ai/login?lang=ko" target="_blank" title="FAST 대화형 AI">
+                                            <span class="ico"></span>
+                                            <em>FAST 대화형 AI</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ava.maum.ai/login" target="_blank">
+                                            <span class="ico"></span>
+                                            <em>AVA</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://edge.maum.ai/" target="_blank">
+                                            <span class="ico"></span>
+                                            <em>AI Edge</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://data.maum.ai/?lang=ko" target="_blank" title="maum DATA">
+                                            <span class="ico"></span>
+                                            <em>maum DATA</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/home/krEcomindsMain" target="_blank" title="eco MINDs">
+                                            <span class="ico"></span>
+                                            <em>eco MINDs</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://store.maum.ai" target="_blank" title="maum AI store">
+                                            <span class="ico"></span>
+                                            <em>maum AI store</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- //.maum_etc -->
+                <a class="btn_maum_ham" href="#none">모바일 전체메뉴
+                    <span class="line_top"></span>
+                    <span class="line_mid"></span>
+                    <span class="line_btm"></span>
+                </a>
+            </div>
+            <!-- //.maum_sta -->
+            <!-- .svc_sta -->
+            <div class="svc_sta" style="display: none;">
+                <!-- svc_visual -->
+                <div class="svc_visual">
+                    <h3>AI Edge</h3>
+                    <p class="bg_img"><img src="assets/images/img_visual01.png" alt="Edge AI 이미지"></p>
+                </div>
+                <!-- //svc_visual -->
+                <!-- .lnb -->
+                <div class="lnb">
+                    <h2>
+                        <a href="https://edge.maum.ai/" title="maum Edge" alt="AI Edge">AI Edge</a>
+                    </h2>
+
+                    <!-- [D] 로컬메뉴  -->
+                    <ul class="nav">
+                        <li><a class="active" href="#stn_overview">Overview</a></li>
+                        <li><a href="#stn_edgeDevice">Edge AI Device</a></li>
+                        <li><a href="#stn_edgeCloud">AI Computing Cloud</a></li>
+                        <li><a href="#stn_svcCase">고객 사례</a></li>
+                        <li><a href="#inquiry">문의하기</a></li>
+                    </ul>
+                </div>
+                <!-- //.lnb -->
+            </div>
+            <!-- //.svc_sta -->
+        </div>
+        <!-- //#header -->
+
+	    <!-- #contents -->
+        <div id="contents">
+            <!-- .content -->
+            <div class="content"> 
+                <div class="visual_cnt">
+                    <div class="visual_text">
+                        <h2><img src="assets/images/title_AHB.svg" alt="AI Human Builder"></h2>
+                        <h3>“세상의 모든 <b>AI</b>는 <b>마음</b>으로 통한다.”</h3>
+                        <p><img src="assets/images/title_maumai.svg" alt="인공인간 플랫폼 maum.ai"></p>
+                    </div>
+                    <div class="bg_vid">
+                        <video autoplay="autoplay" loop="loop" muted="muted" class="bg_video" id="vid">
+                            <source src="assets/video/Parallax_test02.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="section_top">
+                    <h3>Make Your Own AI Human</h3>
+                    <p>당신만의 인공인간은 어떤 모습인가요?<br>마인즈랩의 AI기술로 만들어보세요.</p>
+                    <span class="line"></span>
+                </div>
+                <ol class="accordion_wrap">
+                    <li class="accordion job_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_browser_56px.svg" alt="browser icon">
+                                </span>
+                                <p class="step_num">STEP 1</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">JOB</span>
+                                    <span class="tit_span">어떤 직업을 가진 인공인간을 찾고 계신가요?</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <div class="swiper job_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobRecep" name="rdJobBtn" value="rdJobRecep" />
+                                                <label for="rdJobRecep"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">리셉셔니스트</h4>
+                                            <p class="tit_txt_en">Receptionist</p>
+                                            <img src="assets/images/img_receptionist.jpg" alt="리셉셔니스트">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EB%A6%AC%EC%85%89%EC%85%94%EB%8B%88%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%84%B1" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobTouristG" name="rdJobBtn" value="rdJobTouristG" />
+                                                <label for="rdJobTouristG"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">관광 안내원</h4>
+                                            <p class="tit_txt_en">Tourist Guide</p>
+                                            <img src="assets/images/img_touristGuide.jpg" alt="관광 안내원">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EA%B4%80%EA%B4%91%EC%95%88%EB%82%B4%EC%9B%90" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobSeniorC" name="rdJobBtn" value="rdJobSeniorC" />
+                                                <label for="rdJobSeniorC"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">어르신 돌봄이</h4>
+                                            <p class="tit_txt_en">Elderly Care</p>
+                                            <img src="assets/images/img_elderlyCare.jpg" alt="어르신 돌봄이">
+                                            <a href="https://store.maum.ai/collections/ai-%EC%A0%9C%ED%92%88%EA%B5%B0/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EB%8F%8C%EB%B4%84%EC%9D%B4" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobSeller" name="rdJobBtn" value="rdJobSeller" />
+                                                <label for="rdJobSeller"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">셀러</h4>
+                                            <p class="tit_txt_en">Seller</p>
+                                            <img src="assets/images/img_seller.jpg" alt="셀러">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%85%80%EB%9F%AC-2" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobStenographer" name="rdJobBtn" value="rdJobStenographer" />
+                                                <label for="rdJobStenographer"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">속기사</h4>
+                                            <p class="tit_txt_en">Stenographer</p>
+                                            <img src="assets/images/img_stenographer.jpg" alt="속기사">
+                                            <a href="https://store.maum.ai/collections/ai-%EC%A0%9C%ED%92%88%EA%B5%B0/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%86%8D%EA%B8%B0%EC%82%AC%EC%9D%98-%EC%82%AC%EB%B3%B8" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobInstructor" name="rdJobBtn" value="rdJobInstructor" />
+                                                <label for="rdJobInstructor"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">강사</h4>
+                                            <p class="tit_txt_en">Instructor</p>
+                                            <img src="assets/images/img_instructor.jpg" alt="강사">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EA%B0%95%EC%82%AC" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobVocationalC" name="rdJobBtn" value="rdJobVocationalC" />
+                                                <label for="rdJobVocationalC"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">직업상담사</h4>
+                                            <p class="tit_txt_en">Vocational Counselor</p>
+                                            <img src="assets/images/img_jobCounselor.jpg" alt="직업상담사">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%A7%81%EC%97%85%EC%83%81%EB%8B%B4%EC%82%AC-1" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobHomeSh" name="rdJobBtn" value="rdJobHomeSh" />
+                                                <label for="rdJobHomeSh"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">쇼호스트</h4>
+                                            <p class="tit_txt_en">Home Shopping Host</p>
+                                            <img src="assets/images/img_homeShoppingHost.jpg" alt="쇼호스트">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%87%BC%ED%98%B8%EC%8A%A4%ED%8A%B8-%ED%99%9C%EC%84%B1" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobBankSG" name="rdJobBtn" value="rdJobBankSG" />
+                                                <label for="rdJobBankSG"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">청원경찰</h4>
+                                            <p class="tit_txt_en">Bank Security Guard</p>
+                                            <img src="assets/images/img_bankSecurityGuard.jpg" alt="청원경찰">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%B2%AD%EC%9B%90%EA%B2%BD%EC%B0%B0-%ED%99%9C%EC%84%B1" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobAnnouncer" name="rdJobBtn" value="rdJobAnnouncer" />
+                                                <label for="rdJobAnnouncer"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">아나운서</h4>
+                                            <p class="tit_txt_en">Announcer</p>
+                                            <img src="assets/images/img_announcer.jpg" alt="아나운서">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%82%AC%EC%9A%A9/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%95%84%EB%82%98%EC%9A%B4%EC%84%9C-%ED%99%9C%EC%84%B1" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobHcc" name="rdJobBtn" value="rdJobHcc" />
+                                                <label for="rdJobHcc"><span></span></label>
+                                            </div>                                            
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">해피콜 상담사</h4>
+                                            <p class="tit_txt_en">Happy Call Counselor</p>
+                                            <img src="assets/images/img_happyCallCounselor.jpg" alt="해피콜 상담사">
+                                            <a href="https://store.maum.ai/collections/ai-%EC%A0%9C%ED%92%88%EA%B5%B0/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EA%B3%A0%EA%B0%9D%EC%83%81%EB%8B%B4%EC%9B%90" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobTmqa" name="rdJobBtn" value="rdJobTmqa" />
+                                                <label for="rdJobTmqa"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">TMQA</h4>
+                                            <p class="tit_txt_en">Telemarketer QA</p>
+                                            <img src="assets/images/img_tmqa.jpg" alt="Telemarketer QA">
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobSecurityG" name="rdJobBtn" value="rdJobSecurityG" />
+                                                <label for="rdJobSecurityG"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">경비원</h4>
+                                            <p class="tit_txt_en">Security Guard</p>
+                                            <img src="assets/images/img_securityGuard.jpg" alt="경비원">
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobController" name="rdJobBtn" value="rdJobController" />
+                                                <label for="rdJobController"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">관제원</h4>
+                                            <p class="tit_txt_en">Controller</p>
+                                            <img src="assets/images/img_controller.jpg" alt="관제원">
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdJobDoorM" name="rdJobBtn" value="rdJobDoorM" />
+                                                <label for="rdJobDoorM"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">게이트 키퍼</h4>
+                                            <p class="tit_txt_en">Door’s Man</p>
+                                            <img src="assets/images/img_doorMan.jpg" alt="게이트 키퍼">
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion who_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_people_56px.svg" alt="people icon">
+                                </span>
+                                <p class="step_num">STEP 2</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">WHO</span>
+                                    <span class="tit_span">다양한 외모와 목소리를 골라보세요.</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <div class="swiper who_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoJeongSora" name="rdWhoBtn" value="rdWhoJeongSora" />
+                                                <label for="rdWhoJeongSora"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">정소라</h4>
+                                            <p class="tit_txt_en">Receptionist</p>
+                                            <img class="img_long" src="assets/images/img_JeongSora.png" alt="정소라">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/ai-human-smartbill" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img class="" src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoYouSeungmin" name="rdWhoBtn" value="rdWhoYouSeungmin" />
+                                                <label for="rdWhoYouSeungmin"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">유승민</h4>
+                                            <p class="tit_txt_en">You Seungmin</p>
+                                            <img class="img_long" src="assets/images/img_YouSeungmin.png" alt="유승민">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/%EC%98%81%EC%83%81-ai-human-%EC%9C%A0%EC%8A%B9%EB%AF%BC" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoLeeChangjin" name="rdWhoBtn" value="rdWhoLeeChangjin" />
+                                                <label for="rdWhoLeeChangjin"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">이창진</h4>
+                                            <p class="tit_txt_en">Lee Changjin</p>
+                                            <img class="img_long"src="assets/images/img_LeeChangjin.png" alt="이창진">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/%EC%98%81%EC%83%81-ai-human-%EC%9D%B4%EC%B0%BD%EC%A7%84" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoLeeChangjin" name="rdWhoBtn" value="rdWhoLeeChangjin" />
+                                                <label for="rdWhoLeeChangjin"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">송지은</h4>
+                                            <p class="tit_txt_en">Song Jieun</p>
+                                            <img class="img_long"src="assets/images/img_SongJieun.png" alt="송지은">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/%EC%98%81%EC%83%81-ai-human-%EC%A0%95%EC%86%8C%EB%9D%BC%EC%9D%98-%EC%82%AC%EB%B3%B8" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoMinKyeongsu" name="rdWhoBtn" value="rdWhoMinKyeongsu" />
+                                                <label for="rdWhoMinKyeongsu"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">민경수</h4>
+                                            <p class="tit_txt_en">Min Kyeongsu</p>
+                                            <img class="img_long"src="assets/images/img_MinKyeongsu.png" alt="민경수">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/%EB%AF%BC%EA%B2%BD%EC%88%98%EC%9D%98-%EC%82%AC%EB%B3%B8" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoParkCheolmin" name="rdWhoBtn" value="rdWhoParkCheolmin" />
+                                                <label for="rdWhoParkCheolmin"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">박철민</h4>
+                                            <p class="tit_txt_en">Park Cheolmin</p>
+                                            <img class="img_long"src="assets/images/img_ParkCheolmin.png" alt="박철민">
+                                            <a href="https://store.maum.ai/collections/ai-human/products/%EC%A0%95%EC%86%8C%EB%9D%BC" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoAvatarCustomize" name="rdWhoBtn" value="rdWhoAvatarCustomize" />
+                                                <label for="rdWhoAvatarCustomize"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">아바타 제작</h4>
+                                            <p class="tit_txt_en">Avatar Customize</p>
+                                            <img class="img_long"src="assets/images/img_AvatarCustomize.png" alt="아바타 제작">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%A0%9C%EC%9E%91/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%95%84%EB%B0%94%ED%83%80" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoVoiceModel" name="rdWhoBtn" value="rdWhoVoiceModel" />
+                                                <label for="rdWhoVoiceModel"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">목소리 모델</h4>
+                                            <p class="tit_txt_en">Voice Model</p>
+                                            <img class="img_long"src="assets/images/img_VoiceModel.png" alt="목소리 모델">
+                                            <a href="https://ava.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdWhoCustomize" name="rdWhoBtn" value="rdWhoCustomize" />
+                                                <label for="rdWhoCustomize"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">별도 제작</h4>
+                                            <p class="tit_txt_en">Customize</p>
+                                            <img class="img_long"src="assets/images/img_AvatarCustomize.png" alt="별도 제작">
+                                            <a href="https://store.maum.ai/collections/ai-human-%EC%A0%9C%EC%9E%91/products/%EC%9D%B8%EA%B3%B5%EC%9D%B8%EA%B0%84-%EC%84%B1%EC%9A%B0" class="btn_detail_link">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion work_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_job_56px.svg" alt="job icon">
+                                </span>
+                                <p class="step_num">STEP 3</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">WORK</span>
+                                    <span class="tit_span">인공인간이 할 수 있는 다양한 일이 있어요.</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <div class="work_cnt">
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkCounseling" disabled>
+                                    <label for="chkWorkCounseling">상담</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkGreeting">
+                                    <label for="chkWorkGreeting">인사</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkCompanyI">
+                                    <label for="chkWorkCompanyI">회사소개</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkAccessControl">
+                                    <label for="chkWorkAccessControl">출입통제</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkCommutManage">
+                                    <label for="chkWorkCommutManage">출퇴근관리</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkBodyTempD">
+                                    <label for="chkWorkBodyTempD">체온감지</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWork24Care" disabled>
+                                    <label for="chkWork24Care">24시간 돌봄</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkEmergCall" disabled>
+                                    <label for="chkWorkEmergCall">위급상황 비상연락</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkBackBusiG" disabled>
+                                    <label for="chkWorkBackBusiG">은행 업무 안내</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkTourGuide" disabled>
+                                    <label for="chkWorkTourGuide">관광 안내(다국어)</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkProductAnnoun" disabled>
+                                    <label for="chkWorkProductAnnoun">상품 안내</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkShoppLive" disabled>
+                                    <label for="chkWorkShoppLive">24시간 쇼핑 라이브</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkMultiLecture" disabled>
+                                    <label for="chkWorkMultiLecture">다국어 강의</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkQandA" disabled>
+                                    <label for="chkWorkQandA">질의응답</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkEmployInfo" disabled>
+                                    <label for="chkWorkEmployInfo">취업 정보 안내</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkRecommResume" disabled>
+                                    <label for="chkWorkRecommResume">이력서 추천</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkRecommCareer" disabled>
+                                    <label for="chkWorkRecommCareer">진로 추천</label>
+                                </div>
+                                <div class="chk_round">
+                                    <input type="checkbox" name="chkWorkBtn" id="chkWorkWriteMinutes" disabled>
+                                    <label for="chkWorkWriteMinutes">회의록 작성</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion display_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_kiosk_56px.svg" alt="kiosk icon">
+                                </span>
+                                <p class="step_num">STEP 4</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">DISPLAY</span>
+                                    <span class="tit_span">어디에서 보여주고 싶으신가요?</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <div class="swiper display_slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdDispKiosk" name="rdDispBtn" value="rdDispKiosk" />
+                                                <label for="rdDispKiosk"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">키오스크 55”</h4>
+                                            <p class="tit_txt_en">KIOSK 55”</p>
+                                            <div class="box_area">
+                                                <p>근접센서</p>
+                                                <p>Edge A1</p>
+                                                <p class="disabled">열화상 카메라</p>
+                                            </div>
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdDispPc" name="rdDispBtn" value="rdDispPc" />
+                                                <label for="rdDispPc"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">PC</h4>
+                                            <p class="tit_txt_en">Desktop</p>
+                                            <div class="box_area">
+                                                <p>근접센서</p>
+                                                <p>Edge A1</p>
+                                                <p class="disabled">열화상 카메라</p>
+                                            </div>
+                                            <a href="https://store.maum.ai/" class="btn_detail_link">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdDispTablet" name="rdDispBtn" value="rdDispTablet" />
+                                                <label for="rdDispTablet"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">태블릿</h4>
+                                            <p class="tit_txt_en">Tablet</p>
+                                            <div class="box_area">
+                                                <p>근접센서</p>
+                                                <p>Edge A1</p>
+                                                <p class="disabled">열화상 카메라</p>
+                                            </div>
+                                            <a href="https://store.maum.ai/" class="btn_detail_link">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide disabled">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdDispWeb" name="rdDispBtn" value="rdDispWeb" disabled />
+                                                <label for="rdDispWeb"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">Web</h4>
+                                            <p class="tit_txt_en">WWW</p>
+                                            <div class="box_area">
+                                                <p class="disabled">Softwear Only</p>
+                                            </div>
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide disabled">
+                                        <div class="rd_cnt">
+                                            <div class="rd_cont">
+                                                <input type="radio" id="rdDispApp" name="rdDispBtn" value="rdDispApp" disabled />
+                                                <label for="rdDispApp"><span></span></label>
+                                            </div>
+                                        </div>
+                                        <div class="slide_cnt_cont">
+                                            <h4 class="tit_txt">App.</h4>
+                                            <p class="tit_txt_en">Aplication</p>
+                                            <div class="box_area">
+                                                <p class="disabled">Softwear Only</p>
+                                            </div>
+                                            <a href="https://store.maum.ai/" class="btn_detail_link" target="_blank">
+                                                자세히 보기
+                                                <img src="assets/images/icon_export_16px.svg" alt="내보내기 아이콘">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion tools_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_brief_56px.svg" alt="brief icon">
+                                </span>
+                                <p class="step_num">STEP 5</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">TOOLS</span>
+                                    <span class="tit_span">마인즈랩 인공인간의 다양한 기능을 만나보세요!</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <div class="tools_cnt">
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsVoice" disabled>
+                                    <label for="chkToolsVoice">음성봇</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsTmqa" disabled>
+                                    <label for="chkToolsTmqa">TMQA</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsChatbotM" checked disabled>
+                                    <label for="chkToolsChatbotM">챗봇 메이커</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsEdgeAI" checked disabled>
+                                    <label for="chkToolsEdgeAI">Edge AI</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsOnDevice" disabled>
+                                    <label for="chkToolsOnDevice">회의록<br>On-device</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsOnPromise" disabled>
+                                    <label for="chkToolsOnPromise">회의록<br>On-promise</label>
+                                </div>
+                                <div class="chk_box">
+                                    <input type="checkbox" name="chkToolsBtn" id="chkToolsCloudM" disabled>
+                                    <label for="chkToolsCloudM">Cloud 회의록</label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accordion orderDetails_accd">
+                        <div class="acd_title">
+                            <div class="title_left">
+                                <span class="title_icon">
+                                    <img src="assets/images/ico_list_56px.svg" alt="list icon">
+                                </span>
+                                <p class="step_num">Completion</p>
+                                <h3 class="acd_tit">
+                                    <span class="tit_title">Order Details</span>
+                                    <span class="tit_span">당신만의 인공인간은 이렇게 만들어집니다.</span>
+                                </h3>
+                            </div>
+                            <div class="title_right">
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                        <div class="acd_cnt">
+                            <table class="orderDetails_cnt">
+                                <colgroup>
+                                    <col width="136px;">
+                                    <col width="*">
+                                </colgroup>
+                                <tr>
+                                    <th>JOB</th>
+                                    <td>
+                                        <div class="select">
+                                            <div>
+                                                <p class="txt_details">리셉셔니스트</p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>WHO</th>
+                                    <td>
+                                        <div class="select">
+                                            <div>
+                                                <p class="txt_details">유승민 <span class="fw300">(1개월)</span></p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">130,000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>WORK</th>
+                                    <td>
+                                        <div class="select">
+                                            <div>
+                                                <p class="txt_details">인사 / 회사소개 / 출입통제 / 출퇴근관리</p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">6,000,000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>DISPLAY</th>
+                                    <td>
+                                        <div class="select">
+                                            <div>
+                                                <p class="txt_details">KIOSK 55”<span class="fw300">(Android)</span></p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">4,000,000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="line0">
+                                    <th>TOOLS</th>
+                                    <td>
+                                        <div class="select">
+                                            <div>
+                                                <p class="txt_details">[챗봇 메이커] <span class="fw300">(maum.ai 구독회원 무료)</span></p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">0</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="txt_details">[Edge AI]</p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">700,000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="line0">
+                                    <th> </th>
+                                    <td>
+                                        <div class="total">
+                                            <div>
+                                                <p class="txt_details">Total</p>
+                                                <div class="pirce">
+                                                    <span class="won">₩</span>
+                                                    <span class="cost">10,929,000</span>
+                                                </div>
+                                            </div>
+                                            <p class="vat">(VAT 별도)</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="estimate">
+                    <h3>인공인간 제작을 의뢰합니다.</h3>
+
+                    <div class="estimate_table">
+                        <div class="estimate_tr">
+                            <div class="estimate_th">
+                                <b>이름</b>(필수)
+                            </div>
+                            <div class="estimate_td">
+                                <input type="text" placeholder="이름을 입력해 주세요.">
+                            </div>
+                        </div>
+                        <div class="estimate_tr">
+                            <div class="estimate_th">
+                                <b>이름</b>(필수)
+                            </div>
+                            <div class="estimate_td">
+                                <input type="text" placeholder="‘-’없이 연락처를 입력해 주세요.">
+                            </div>
+                        </div>
+                        <div class="estimate_tr">
+                            <div class="estimate_th">
+                                <b>회사/소속</b>
+                            </div>
+                            <div class="estimate_td">
+                                <input type="text" placeholder="회사명이나 소속단체를 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="estimate_tr">
+                            <div class="estimate_th">
+                                <b>연락가능 시간대</b>
+                            </div>
+                            <div class="estimate_td">
+                                <input type="text" placeholder="ex)저녁7시 이후">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rd_area">
+                        <div class="rd_cont">
+                            <input type="radio" id="rdAgree" name="rdAgreeBtn" value="rdAgree" />
+                            <label for="rdAgree"><span></span></label>
+                        </div>
+                        <div>
+                            <strong>동의합니다.</strong>
+                            <p>수집하는 개인정보 항목 : 이름, 연락처<br>
+                                작성해주시는 개인 정보는 문의 접수 및 고객 불만 해결을 위해 1년간 보관됩니다.<br>
+                                본 동의를 거부할 수 있으나, 미동의 시 견적서 접수가 불가능합니다.</p>
+                        </div>
+                    </div>
+
+                    <button class="send">견적서 보내기</button>
+                </div>
+            </div>
+            <!-- //.content -->
+        </div>
+        <!-- //#content -->
+
+        <!-- footer -->
+        <div id="footerLanding">
+            <div class="footer_inner">
+                <div class="col">
+                    <div class="contact">
+                        <a href="tel:16613222">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_headset_line.svg" alt="전화 걸기">
+                            <span>1661-3222</span>
+                        </a>
+                        <a href="mailto:hello@mindslab.ai">
+                            <img src="https://maum.ai/aiaas/kr/images/landing/ico_email_line.svg" alt="메일 보내기">
+                            <span>hello@mindslab.ai</span>
+                        </a>
+                    </div>
+                    <div class="col_inner">
+                        <dl class="cs_info">
+                            <dt>상담시간 | </dt>
+                            <dd> <span>평일 09:00 ~ 18:00</span> <span>(점심시간 12:30 ~ 13:30),</span> <span>공휴일 휴무</span></dd>
+                        </dl>
+                        <div class="sns">
+                            <a href="https://www.facebook.com/mindsinsight" target="_blank" title="페이스북 바로가기"><img src="https://maum.ai/aiaas/kr/images/landing/ico_sns_facebook.svg" alt="페이스북 아이콘"></a>
+                            <a href="https://www.youtube.com/channel/UC8ocQaJFp-adzGtwcBuS3iQ?view_as=subscriber" target="_blank" title="유튜브 바로가기"><img src="https://maum.ai/aiaas/kr/images/landing/ico_sns_youtube.svg" alt="유튜브 아이콘"></a>
+                            <a href="https://post.naver.com/my.nhn?memberNo=45704243" target="_blank" title="네이버 블로그 바로가기"><img src="https://maum.ai/aiaas/kr/images/landing/ico_sns_naverblog.svg" alt="네이버블로그 아이콘"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="links">
+                        <a href="https://mindslab.ai:8080/kr/company" target="_blank">회사소개</a>
+                        <a href="http://bit.ly/mindslab_recruit" target="_blank">채용공고</a>
+                        <a href="https://maum.ai/home/krTermsMain" target="_blank">이용약관</a>
+                        <a href="https://maum.ai/home/krTermsMain#conditions" target="_blank">개인정보처리방침</a>
+                    </div>
+                    <address>
+                        <span>(주) 마인즈랩 경기도 성남시 분당구 대왕판교로644번길 49 다산타워 6층</span><br>
+                        <span>대표 유태준 |</span>
+                        <span>사업자 등록번호 314-86-55446 |</span>
+                        <span>통신판매업신고번호 2019-대전유성-0094</span>
+                    </address>
+                    <p class="copyright">
+                        Copyright © 2021 MINDsLab. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- script -->
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/html5div.js"></script>
+    <script type="text/javascript" src="assets/js/html5shiv.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/swiper.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+        //scroll event
+        var wrapOffset = $('#wrap').offset();
+
+        if ($(document).scrollTop() > wrapOffset.top) {
+            $('#wrap').addClass('transform');
+        } else {
+            $('#wrap').removeClass('transform');
+        }
+
+        $(window).scroll(function() {
+            var scrollLocate = $(window).scrollTop();
+
+            $('.maumUI.transform .maum_sta').css('left', 0 - $(this).scrollLeft());
+
+            if ($(document).scrollTop() > wrapOffset.top) {
+                $('#wrap').addClass('transform');
+            } else {
+                $('#wrap').removeClass('transform');
+            }
+            if (scrollLocate > 50) {
+                $('#header').addClass('transform');
+            }
+            if (scrollLocate < 50) {
+                $('#header').removeClass('transform');
+            }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){ 
+            $(".accordion .acd_title").click(function() {			
+                $(this).toggleClass("selected");
+                $(".accordion .acd_title").not(this).removeClass("selected"); 
+                var target = $(this).siblings(".acd_cnt");
+                var other = $(".accordion .acd_title").not(this).parents(".accordion").find(".acd_cnt");
+                target.stop().slideToggle(600);
+                other.stop().slideUp(600);
+            });
+            
+            var jobSwiper = new Swiper(".job_slider", {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                // scrollbar: {
+                //     el: '.job_scrollbar',
+                //     hide: "none",
+                //     draggable: true,
+                //     snapOnRelease: false
+                // }
+            });
+
+            var whoSwiper = new Swiper(".who_slider", {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                // scrollbar: {
+                //     el: '.who_scrollbar',
+                //     hide: "none",
+                //     draggable: true,
+                //     snapOnRelease: false
+                // }
+            });
+
+            var displaySwiper = new Swiper(".display_slider", {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                // scrollbar: {
+                //     el: '.who_scrollbar',
+                //     hide: "none",
+                //     draggable: true,
+                //     snapOnRelease: false
+                // }
+            });
+            
+            $("input[name='rdJobBtn']:radio, input[name='rdWhoBtn']:radio, input[name='rdDispBtn']:radio").change(function () {
+                $(this).parents(".accordion").addClass("on");
+            });
+
+            $("input[name='chkWorkBtn']:checkbox").change(function () {
+                $(this).parents(".accordion").addClass("on");
+                $(".tools_accd").addClass("on");
+                if( $("input[name='chkWorkBtn']:checked").length == 0 ){
+                    $(this).parents(".accordion").removeClass("on");
+                    $(".tools_accd").removeClass("on");
+                }
+            });
+
+        });
+      </script>
+</body>
+</html>

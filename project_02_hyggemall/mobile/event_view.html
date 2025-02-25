@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/event_view.css">
+  	<title>event view</title>    
+</head>
+<body id="eventV" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content">
+			<ul class="tab tab_eventV">
+				<li class="tab_btn" onclick="tabover('eventV', 0)"><a href="javascript:void()">진행중 이벤트</a></li>
+				<li class="tab_btn" onclick="tabover('eventV', 1)"><a href="javascript:void()">종료된 이벤트</a></li>
+	        </ul>		
+
+			<div class="inner_content">
+				<div id="ongoing" class="eventV_tabcontent tabcnt_eventV0">
+					<div class="eventV_title_box">
+						<p class="eventV_title">
+							<span class="eventV_title_txt eventV_left">제목</span>
+							<span class="eventV_title_txt eventV_right">휘게 포인트 1만점 100% 증정</span>
+						</p>
+						<p>
+							<span class="eventV_left">기간</span>
+							<span class="eventV_right eventb_period">2018.04.01 - 2018.04.30</span>
+						</p>
+					</div>
+					<div class="eventV_img">
+						<img src="asset/img/m_event_view.jpg" alt="" />
+					</div>
+					<div class="eventV_list_box">
+						<p>
+							<span class="eventV_left">이전글</span>
+							<span class="eventV_right"><a href="">뮤지컬 맨오브라만차 초대권 증정 이벤트</a></span>
+						</p>
+						<p>
+							<span class="eventV_left">다음글</span>
+							<span class="eventV_right"><a href="">세계명작극장展 초대 이벤트</a></span>
+						</p>
+					</div>
+					<button type="button" class="eventV_go_list_btn" onclick="location.href='event.html'">목록</button>		
+				</div>
+
+				<div id="exiting" class="eventV_tabcontent tabcnt_eventV1">
+				</div>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

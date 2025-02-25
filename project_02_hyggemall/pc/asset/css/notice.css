@@ -1,0 +1,40 @@
+@charset "utf-8";
+select::-ms-expand { display:none; } 
+
+/* layout */
+.notice_section01 { width:100%; height:79px; background:#fff; }
+.notice_section02 { width:960px; height:auto; margin:0 auto; background:#fff; }
+
+
+/* 공통 */
+.notice_inner_section { width:100%; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+
+
+/*---------- section01 ----------*/
+.notice_inner_section01 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; }
+.notice_inner_section01 h2 { margin:0; padding:0 0 24px; }
+
+
+
+/*---------- section02 ----------*/
+.notice_section02 .notice_inner_section table { width:100%; }
+.notice_section02 .notice_inner_section table tr { border-bottom:1px solid #424852; }
+.notice_section02 .notice_inner_section table th { height:48px; vertical-align:middle; text-align:center; font-weight:normal; font-size:16px; color:#636c77; font-family:'GodoM'; }
+.notice_section02 .notice_inner_section ol { width:100%; }
+.notice_section02 .notice_inner_section ol>li { width:100%; border-bottom:1px solid #e4e8eb; min-height:48px; }
+.notice_section02 .notice_inner_section ol>li:last-child { border-bottom:0;}
+.notice_section02 .notice_inner_section ul { width:100%; height:48px; cursor:pointer; }
+.notice_section02 .notice_inner_section ul li { float:left; line-height:48px; font-size:14px; }
+.notice_section02 .notice_inner_section ul:after { clear:both; display:block; content:''; }
+.notice_section02 .notice_inner_section .width124 { width:124px; text-align:center; color:#a9b0bb; font-family:'NBGothicB'; }
+.notice_section02 .notice_inner_section .width668 { width:668px; color:#636c77; box-sizing:border-box; padding-left:48px; font-family:'NBGothicR'; }
+.notice_section02 .notice_inner_section .width168 { width:168px; color:#636c77; box-sizing:border-box; font-family:'NBGothicL';  }
+.notice_section02 .notice_inner_section .notice_box { height:auto; clear:both; box-sizing:border-box; width:100%; border-top:1px solid #e4e8eb; padding:48px 168px 48px 172px; background:#f4f6f8; color:#636c77; font-size:14px; font-family:'NBGothicL'; line-height:120%; display:none; }
+.notice_section02 .notice_inner_section .notice_box:after { clear:both; content:''; display:block; }
+
+
+
+
+
+
+

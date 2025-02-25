@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+    <title>Order Complete</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="cart_status">
+	    <div class="inner_cart_status">
+	       <div class="shopping_basket cart_detail_box">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">장바구니</h3>	           
+	               <p class="cart_box_txt">주문하실 상품을 선택해주세요.</p>
+	           </div>
+	       </div>
+	       <span class="cart_action"></span>
+	       <div class="order_payment cart_detail_box">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">주문/결제</h3>	           
+	               <p class="cart_box_txt">주문정보를 확인 후 결제해 주세요.</p>
+	           </div>
+	       </div>
+	       <span class="cart_action"></span>
+	       <div class="order_complete cart_detail_box_on">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">주문완료</h3>	           
+	               <p class="cart_box_txt">결제가 완료되었습니다.</p>
+	           </div>
+	       </div>
+	    </div>
+	</section>
+	
+	<section class="orderC_section_complete">
+	    <h2>주문이 성공적으로 완료되었습니다.</h2>
+	    <p class="orderC_expalin"><span>김휘게</span> 고객님, 감사힙니다.</p>
+	    <p class="orderC_order_number">주문번호 <span class="red-color">2018050400001</span></p>
+	    <a href="" class="orderC_history_go_btn">주문내역 상세보기</a>
+	    <p class="orderC_txt">주문내역에 관한 안내는 마이페이지 > 주문내역 보기에서도 확인이 가능합니다.</p>
+	</section>
+	
+	<section class="orderC_section01">
+	    <div class="orderC_inner_section01">
+	        <table>
+                <colgroup>
+                    <col style="width:48px;">
+                    <col style="width:484px;">
+                    <col style="width:124px;">
+                    <col style="width:100px;">
+                    <col style="width:80px;">
+                    <col style="width:124px;">
+                </colgroup>
+	            <tr>
+	                <th></th>
+	                <th>상품정보</th>
+	                <th>판매가</th>
+	                <th>포인트</th>
+	                <th>수량</th>
+	                <th>합계</th>
+	            </tr>
+	            <tr>
+	                <td></td>
+	                <td>
+	                    <img src="asset/img/cart_01.jpg" class="cart_img" alt="" />
+	                    <p>
+	                        <span class="book_name">파피용</span>
+	                        <span  class="book_explain">베르나르 베르베르 지음 · 열린책들 · 2013년 5월 30일 출간</span>
+	                    </p>
+	                </td>
+	                <td>
+	                    <p class="benefit_price">10%</p>
+	                    <p class="orderC_selling_price"><span>12,420</span>원</p>
+	                </td>
+                    <td>
+                        <p class="benefit_point">5%</p> 
+                        <p class="orderC_point"><span>690</span>P</p>
+                    </td>
+                    <td>
+                        <p class="orderC_number">2</p>
+                    </td>
+                    <td>
+                        <p class="orderC_total_price"><span>24,840</span>원</p>
+                    </td>
+	            </tr>
+	            <tr>
+	                <td></td>
+	                <td>
+	                    <img src="asset/img/cart_02.jpg" class="cart_img" alt="" />
+	                    <p>
+	                        <span class="book_name">워너원 포토에세이 : 우리 기억 잃어버리지 않게</span>
+	                        <span class="book_explain">CJ E&M 지음 · 아르테팝(artePOP) · 2018년 04월 22일 출간</span>
+	                    </p>
+	                </td>
+	                <td>
+	                    <p class="benefit_price">10%</p>
+	                    <p class="orderC_selling_price"><span>28,800</span>원</p>
+	                </td>
+                    <td>
+                        <p class="benefit_point">5%</p> 
+                        <p class="orderC_point"><span>690</span>P</p>
+                    </td>
+                    <td>
+                         <p class="orderC_number">1</p>
+                    </td>
+                    <td>
+                        <p class="orderC_total_price"><span>28,800</span>원</p>
+                    </td>
+	            </tr>
+	        </table>
+	        <div class="orderC_total_box">
+	            <p>수량 <b>총 <span class="red-color">3</span>개</b></p>
+	            <div class="orderC_total_price_box">
+	                <p class="only_txt">최종결제금액</p>
+	                <p class="orderC_total_payment"><span>53,640</span>원</p>
+	            </div>
+	        </div>
+	    </div>
+	   
+	</section>
+	
+	<section class="orderC_section02">
+	    <h3>결제정보</h3>
+	    <div class="orderC_inner_section02">
+	        <table>
+	            <tr>
+	                <td>주문일시</td>
+	                <td>2018.05.04 10:36:25</td>
+	            </tr>
+	            <tr>
+	                <td>휘게북스 캐시</td>
+	                <td>2,000 캐시 사용</td>
+	            </tr>
+	            <tr>
+	                <td>휘게북스 포인트</td>
+	                <td>0 P 사용</td>
+	            </tr>
+	            <tr>
+	                <td>최종 결제금액</td>
+	                <td>51,640 원</td>
+	            </tr>
+	            <tr>
+	                <td>결제 수단</td>
+	                <td>신용카드 (법인)</td>
+	            </tr>
+	        </table>
+	    </div>
+	    <div class="orderC_section02_bottom">
+            <div class="orderC_btn_box">
+                <input type="button" class="go_shopping_btn orderC_btn" value="쇼핑계속하기" />
+                <input type="button" class="shoppgin_basket_btn orderC_btn" value="장바구니" />
+                <a href="order_list.html" class="orderC_detail_btn orderC_btn">주문내역 상세보기</a>
+            </div>
+        </div>
+	    
+	</section>
+	
+    <?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

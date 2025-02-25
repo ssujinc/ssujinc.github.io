@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; background:#fff; }
+#wrap .content { background:#fff; width:100%; height:auto; border-width:0; overflow:visible; padding:0; } 
+
+/* terms */
+#wrap .terms_inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:24px; } 
+#wrap .terms_inner_content.tab_fixed { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:24px; padding-top:60px; } 
+
+.terms_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.terms_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+.terms_tab.tab_fixed { width:100%; position:fixed; top:0; background:rgba(255,255,255,0.75); }
+
+.terms_section01 ul { width:100%; height:auto; }
+.terms_section01 li { width:100%; height:auto; line-height:16px; font-size:12px; margin-top:20px; }
+.terms_section01 li:nth-child(1) { margin-top:0; }
+.terms_section01 li b { display:block; font-family:'NBGothicB'; font-weight:normal; color:#424852; } 
+.terms_section01 li p { display:block; font-family:'NBGothicL'; font-weight:normal; color:#636c77; line-height:16px; } 
+
+.terms_inner_content .back_btn { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px;  }
+.terms_inner_content .back_btn:hover { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px;  }
+
+
+/* privacy */
+#wrap .privacy_inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:48px 24px 24px; } 
+#wrap .privacy_inner_content.tab_fixed { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:24px; padding-top:60px; } 
+
+.privacy_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.privacy_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+.privacy_tab.tab_fixed { width:100%; position:fixed; top:0; background:rgba(255,255,255,0.75); }
+
+.privacy_section01 table { width:100%; height:auto; border-spacing:0; border-collapse:collapse; font-size:12px; font-family:'NBGothicL'; color:#636c77; }
+.privacy_section01 table tr th { height:40px; background:#e4e8eb; text-align:center; vertical-align:middle; color:#424852; font-size:12px; font-family:'NBGothicB'; text-shadow:none; box-shadow:none; line-height:100%; }
+.privacy_section01 table tr td { vertical-align:middle; padding:3%; box-sizing:border-box; border:1px solid #e4e8eb; text-align:center; }
+.privacy_section01 table tr td.borL0 { border-left:0; }
+.privacy_section01 table tr td.borR0 { border-right:0; }
+.privacy_section01 table tr td.textalignL { text-align:left; }
+.privacy_section01 table tr td b { color:#424852; font-family:'NBGothicB'; font-weight:normal; line-height:inherit; }
+
+.privacy_inner_content .back_btn { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px; }
+.privacy_inner_content .back_btn:hover { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px; }
+
+
+
+
+
+@media screen and (max-width:375px) {
+	.privacy_section01 table { width:100%; height:auto; border-spacing:0; border-collapse:collapse; font-size:10px; font-family:'NBGothicL'; color:#636c77; }
+	.privacy_section01 table tr td { padding:2%; }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {	
+
+	.privacy_section01 table tr td { padding:2% 1%; }
+
+	.terms_inner_content .back_btn { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:16px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px; }
+	.terms_inner_content .back_btn:hover { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:16px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px; }
+
+	.privacy_inner_content .back_btn { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:16px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px;  }
+	.privacy_inner_content .back_btn:hover { display:block; width:48%; height:48px; text-align:center; line-height:48px; background:#d94452; border-radius:24px; color:#fff; font-size:16px; font-family:'GodoM'; font-weight:normal; text-shadow:none; box-shadow:none; padding:0; margin:48px auto 40px;  }
+
+}
+
+
+
+
+

@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* layout */
+.order_section01 { width:960px; margin:0 auto; }
+.order_section02 { width:960px; margin:68px auto 100px; }
+
+
+/* order_section01 */
+.order_inner_section01 table { width:100%; height:auto; }
+.order_inner_section01 table tr:nth-child(1) { height:48px; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.order_inner_section01 table tr th { text-align:center; vertical-align:middle; font-family:'GodoM'; font-size:16px; color:#636c77; }
+.order_inner_section01 table tr { border-bottom:1px solid #cad0d7; }
+.order_inner_section01 table tr:last-child { border-bottom:0; }
+.order_inner_section01 table tr td { padding:24px 0; text-align:center; vertical-align: middle; }
+.order_inner_section01 table tr td:nth-child(2) { vertical-align: middle; text-align:left; }
+.order_inner_section01 table tr td:nth-child(2) img { float:left; vertical-align: middle; margin-right:16px; box-sizing:border-box; border:1px solid #cad0d7; width:92px; height:134px; }
+.order_inner_section01 table tr td:nth-child(2) p { float:left; vertical-align: middle; margin-top:48px; }
+.order_inner_section01 table tr td:nth-child(2) p span { display:block; }
+.order_inner_section01 table tr td:nth-child(2) p .book_name { font-size:16px; font-family:'NBGothicB'; color:#424852; margin-bottom:12px; }
+.order_inner_section01 table tr td:nth-child(2) p .book_explain { font-size:12px; font-family:'NBGothicL'; color:#a9b0bb; }
+.order_inner_section01 table tr td .benefit_price { width:30px; display:inline-block; margin-bottom:12px; }
+.order_inner_section01 table tr td .benefit_point { width:19px; display:inline-block; margin-bottom:12px; }
+.order_inner_section01 table tr td .order_selling_price { font-size:16px; color:#424852; font-family:'GodoM'; }
+.order_inner_section01 table tr td .order_point { font-size:16px; color:#424852; font-family:'GodoM'; }
+.order_inner_section01 table tr td .order_total_price { font-size:16px; color:#424852; font-family:'GodoM'; }
+.order_inner_section01 table tr td .order_number { font-size:16px; font-family:'GodoM'; color:#424852; }
+.order_inner_section01 .order_total_box { width:100%; height:68px; line-height:68px; }
+.order_inner_section01 .order_total_box { width:100%; height:68px; line-height:68px; border-top:1px solid #424852; border-bottom:2px solid #424852; }
+.order_inner_section01 .order_total_box { width:100%; height:68px; line-height:68px; box-sizing:border-box; padding:0 24px 0 48px; border-top:1px solid #424852; border-bottom:2px solid #424852; margin-bottom:48px; }
+.order_inner_section01 .order_total_box>p { float:left; font-family:'NBGothicL'; color:#636c77; font-size:14px; height:100%; }
+.order_inner_section01 .order_total_box>p b { font-family:'NBGothicB'; }
+.order_inner_section01 .order_total_box .order_total_price_box { float:right; width:auto; height:100%; }
+.order_inner_section01 .order_total_box .order_total_price_box .only_txt { float:left; font-size:14px; color:#636c77; font-family:'NBGothicL'; margin-right:16px;}
+.order_inner_section01 .order_total_box .order_total_price_box .order_total_payment { float:right; font-size:16px; font-family:'GodoM'; color:#d94452; }
+.order_inner_section01 .order_total_box .order_total_price_box .order_total_payment span { font-size:24px; }
+.order_inner_section01 .order_section01_bottom { width:100%; height:40px; }
+.order_inner_section01 .order_section01_bottom .order_btn_box { float:right; height:100%; }
+.order_inner_section01 .order_section01_bottom .order_btn_box .order_btn { float:left; margin:0; margin-right:16px; width:168px; height:40px; line-height:38px; padding:0; box-sizing:border-box; border-radius:20px; text-align:center; font-size:16px; font-family:'GodoM'; }
+.order_inner_section01 .order_section01_bottom .order_btn_box .go_shopping_btn { color:#636c77; background:#fff; border:1px solid #636c77; }
+.order_inner_section01 .order_section01_bottom .order_btn_box .choice_product_btn { color:#fff; background:#4a88da; border:1px solid #4a88da; }
+.order_inner_section01 .order_section01_bottom .order_btn_box .all_product_btn { color:#fff; background:#d94452; border:1px solid #d94452; margin-right:0; }
+.cart_service_guide_box { padding-top:68px; width:100%; height:auto; }
+.cart_service_guide_box h4 { font-size:14px; color:#636c77; font-family:'NBGothicB'; line-height:16px; height:16px; padding-left:20px; background:url(../img/service_guide.png) left top no-repeat; padding-bottom:10px; }
+.cart_service_guide_box ul li { line-height:24px; font-size:12px; color:#636c77; font-family:'NBGothicL';}
+.cart_service_guide_box ul li:before { content:'\2219'; padding-right:4px; }
+
+
+.order_section02 h3 { font-size:20px; }
+.order_section02 .order_inner_section02 { width:100%; height:266px; border-bottom:1px solid #424852; border-top:2px solid #424852; box-sizing:border-box; }
+.order_section02 .order_inner_section02 .order_section02_left { float:left; width:644px; height:262px; box-sizing:border-box; padding:24px; }
+.order_section02 .order_inner_section02 .order_section02_right { float:right; width:316px; height:262px; box-sizing:border-box; background:#f4f6f8; padding:24px; }
+.order_section02 .order_inner_section02 .order_left_box { width:100%; height:30px; margin-bottom:16px; }
+.order_section02 .order_inner_section02 .order_left_box_cnt { width:485px; float:right; }
+.order_section02 .order_inner_section02 .order_left_txt { width:111px; font-family:'NBGothicB'; color:#424852; font-size:14px; line-height:30px; float:left; }
+.order_section02 .order_inner_section02 .order_use_cash_box .order_left_txt { width:84px; float:left; }
+.order_section02 .order_inner_section02 .order_cash_question { width:16px; height:16px; float:left; margin-top:7px; }
+.order_section02 .order_inner_section02 .order_use_cash_box { position:relative; }
+.order_section02 .order_inner_section02 .order_txt_box { width:168px; height:30px; box-sizing:border-box; border-bottom:1px solid #cad0d7; margin-right:12px; float:left; }
+.order_section02 .order_inner_section02 .order_txt_box input { width:130px; float:left; text-align:right; font-family:'NBGothicR'; color:#424852; font-size:14px; height:100%; padding:0; margin:0; line-height:30px; border:0; }
+.order_section02 .order_inner_section02 .order_txt_box span { margin-left:10px; display:block; width:auto; float:right; font-family:'NBGothicL'; color:#636c77; font-size:14px; line-height:30px; }
+.order_section02 .order_inner_section02 .order_money_btn { float:left; cursor:inherit; width:68px; height:30px; padding:0; margin:0 12px 0 0; color:#a9b0bb; font-family:'NBGothicL'; font-size:12px; border:1px solid #e4e8eb; background:#fff; }
+.order_section02 .order_inner_section02 .order_money_btn_on { float:left; width:68px; height:30px; padding:0; margin:0 12px 0 0; color:#636c77; font-family:'NBGothicL'; font-size:12px; border:1px solid #cad0d7; background:#fff; }
+.order_section02 .order_inner_section02 .order_cash_explain { float:left; color:#a9b0bb; font-family:'NBGothicL'; font-size:14px; height:30px; line-height:30px; }
+
+/* order_section02_right */
+.order_section02 .order_inner_section02 .order_section02_right h4 { color:#424852; font-family:'NBGothicB'; font-size:12px; line-height:100%; margin:0; padding:0; }
+.order_section02 .order_inner_section02 .order_section02_right h2 { text-align:left; margin:0; padding:24px 0;border-bottom:1px solid #e4e8eb; }
+.order_section02 .order_inner_section02 .order_section02_right table { width:100%; margin-top:20px; }
+.order_section02 .order_inner_section02 .order_section02_right table td { border:0; font-family:'NBGothicL'; color:#636c77; font-size:14px; height:28px; vertical-align:middle;}
+.order_section02 .order_inner_section02 .order_section02_right table td:first-child { width:92px; text-align:left; }
+.order_section02 .order_inner_section02 .order_section02_right table td:last-child { width:177px; text-align:right; }
+
+/* tooltip */
+.cash_tooltip { z-index:100; display:none; width:411px; height:auto; position:absolute; top:27px; left:84px; background:#fff; border:2px solid #d94452; box-sizing:border-box; padding:14px; }
+.cash_tooltip p { font-family:'NBGothicL'; font-size:14px; color:#636c77; line-height:24px; }
+.cash_tooltip p b { font-weight:normal; font-family:'NBGothicB'; }
+.cash_tooltip .tooltip_close_btn { position:absolute; right:10px; top:10px; background:none; border:0; outline:0; width:9px; height:9px; padding:0; }
+
+/* select box*/
+.order_section02 .order_inner_section02 .bank_kind_select { width:200px; height:30px; padding-left:12px; font-size:12px; font-family:'NBGothicL'; color:#636c77; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 180px 9px; box-sizing:border-box; }
+select::-ms-expand { display:none; } 
+.order_section02 .order_inner_section02 .number_kind_select { width:66px; height:30px; padding-left:12px; font-family:'NBGothicR'; font-size:14px; color:#424852; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 46px 9px; box-sizing:border-box; float:left; }
+
+/* pay_cellphone */
+.order_section02 .order_inner_section02 .pay_cellphone { display:none; }
+.order_section02 .order_inner_section02 .pay_cellphone span { float:left; display:block; height:30px; line-height:30px; font-size:14px; color:#424852; font-family:'NBGothicR'; margin:0 10px; }
+.order_section02 .order_inner_section02 .pay_cellphone input { width:60px; height:30px; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; text-align:center; padding:0; margin:0; float:left; color:#424852; font-family:'NBGothicR'; }
+.order_section02 .order_agree_box { width:585px; margin:24px auto; }
+.order_section02 .order_pay_btn { width:168px; height:48px; border-radius:24px; background:#d94452; color:#fff; font-size:24px; font-family:'GodoM'; text-align:center; padding:0; vertical-align:middle; margin:0 auto; display:block; border:0; }
+
+/* pay_method_radio */
+.pay_method_radio { margin-top:8px;display:block; float:left; position:relative; padding-left:22px; cursor:pointer; font-size:14px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; color:#636c77; font-family:'NBGothicL'; margin-right:24px; }
+.pay_method_radio:last-child { margin-right:0; }
+.pay_method_radio input { position:absolute; opacity:0; cursor:pointer; }
+.method_checkmark { position:absolute; top:0; left:0; height:12px; width:12px; background-color:#fff; border-radius:50%; border:1px solid #cad0d7; box-sizing:border-box; }
+.pay_method_radio input:checked ~ .method_checkmark { background-color:#fff; border:1px solid #cad0d7; }
+.method_checkmark:after { content: ""; position: absolute; display:none; }
+.pay_method_radio input:checked ~ .method_checkmark:after { display:block; }
+.pay_method_radio .method_checkmark:after { top:2px; left:2px; width:6px; height:6px; border-radius:50%; background:#424852; }
+
+/* card_divide_radio */
+.card_divide_radio { margin-top:8px;display:block; float:left; position:relative; padding-left:22px; cursor:pointer; font-size:14px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; color:#636c77; font-family:'NBGothicL'; margin-right:24px; }
+.card_divide_radio:last-child { margin-right:0; }
+.card_divide_radio input { position:absolute; opacity:0; cursor:pointer; }
+.card_checkmark { position:absolute; top:0; left:0; height:12px; width:12px; background-color:#fff; border-radius:50%; border:1px solid #cad0d7; box-sizing:border-box; }
+.card_divide_radio input:checked ~ .card_checkmark { background-color:#fff; border:1px solid #cad0d7; }
+.card_checkmark:after { content: ""; position: absolute; display:none; }
+.card_divide_radio input:checked ~ .card_checkmark:after { display:block; }
+.card_divide_radio .card_checkmark:after { top:2px; left:2px; width:6px; height:6px; border-radius:50%; background:#424852; }
+
+/* order_agree checkbox */
+.order_agree { display:inline-block; position:relative; padding-left:36px; cursor: pointer; color:#636c77; font-family:'NBGothicL'; font-size:14px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; height:24px; line-height:24px; width:auto; }
+.order_agree input { position:absolute; opacity:0; cursor:pointer; }
+.order_agree_checkmark { position:absolute; top:0; left:0; height:24px; width:24px; background:url('../img/order_check.png') left top no-repeat; 
+}
+.order_agree input:checked ~ .order_agree_checkmark { background:url('../img/order_check.png') left -24px no-repeat; }
+.order_agree_checkmark:after { content:""; position:absolute; display:none; }
+.order_agree input:checked ~ .order_agree_checkmark:after { display:block; }
+
+
+
+
+
+
+
+
+
+

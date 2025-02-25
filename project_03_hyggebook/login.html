@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <title>HYGGE_Login</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>로그인<span class="snb_txt">Login</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                                로그인
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="login_cnt">
+                <div class="login_cnt">
+                    <ul class="tab tab_login" id="tab">
+                        <li class="tab_btn login_in" onclick="tabover('login', 0)"><a href="javascript:void()">
+                            <div>
+                                <span class="background"></span>
+                                <div class="login_txt">
+                                    <span class="login_explain">login</span>
+                                    <p class="tab_subject">로그인</p>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="tab_btn find_id" onclick="tabover('login', 1)"><a href="javascript:void()">
+                            <div>
+                                <span class="background"></span>
+                                <div class="login_txt">
+                                    <span class="login_explain">Find Your ID</span>
+                                    <p class="tab_subject">아이디 찾기</p>
+                                </div>
+                            </div>
+                        </a></li>
+                        <li class="tab_btn find_pw" onclick="tabover('login', 2)"><a href="javascript:void()">
+                            <div>
+                                <span class="background"></span>
+                                <div class="login_txt">
+                                    <span class="login_explain">Find Your Password</span>
+                                    <p class="tab_subject">비밀번호 찾기</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    </ul>	
+
+                    <div id="loing_in" class="tabcontent tabcnt_login0">
+                        <div class="tab_txt">
+                            <div class="txt_summary">회원으로 로그인하시면 모든 서비스를 제한없이 이용하실 수 있습니다.<br />
+                            아직 아이디가 없으시면 회원으로 가입하세요. 
+                            <div class="join">회원가입</div>
+                            </div>
+                        </div>
+                        <form action="" class="login_form">
+                            <p>
+                                <label for="login_id"><span>아이디</span> <input type="text" id="login_id"></label>
+                            </p>
+                            <p>
+                                <label for="login_pw"><span>비밀번호</span> <input type="text" id="login_pw"></label>
+                            </p>
+                            <p class="remember_checkbox">
+                                <label for="idPw_remember"><input type="checkbox" id="idPw_remember"><span>아이디/비밀번호 기억</span></label>
+                            </p>
+                            <div class="btn">로그인</div>
+                        </form>
+                    </div>
+                    
+                    <div id="find_id" class="tabcontent tabcnt_login1">
+                        <div class="tab_txt">
+                            <div class="txt_summary">아이디는 회원가입시 등록한 이름(실명)과 이메일을 입력하시면 정보를 확인하실 수 있습니다.<br />
+                            비밀번호는 암호화되어 있으므로 아이디인증 후 새로운 비밀번호로 재등록하셔야 합니다.
+                            </div>
+                        </div>
+                        <form action="" class="findId_form">
+                            <p>
+                                <label for="name"><span>이름(실명)</span> <input type="text" id="name"></label>
+                            </p>
+                            <p>
+                                <label for="email"><span>이메일</span> <input type="text" id="email"></label>
+                            </p>
+                            <div class="btn">아이디 찾기</div>
+                        </form>
+                    </div>
+
+                    <div id="find_pw" class="tabcontent tabcnt_login2">
+                        <div class="tab_txt">
+                            <div class="txt_summary">아이디는 회원가입시 등록한 이름(실명)과 이메일을 입력하시면 정보를 확인하실 수 있습니다.<br />
+                            비밀번호는 암호화되어 있으므로 아이디인증 후 새로운 비밀번호로 재등록하셔야 합니다.
+                            </div>
+                        </div>
+                        <form action="" class="findPw_form_f">
+                            <p class="explain">
+                                <span>인증단계</span>
+                                <span class="explain_txt"><b>아이디 인증</b> > 비밀번호찾기 질문인증 > 비밀번호 재등록</span>
+                            </p>
+                            <p>
+                                <label for="id_find"><span>아이디</span> <input type="text" id="id_find"></label>
+                            </p>
+                            <div class="btn">아이디 인증 요청</div>
+                        </form>
+                        <form action="" class="findPw_form_s">
+                            <p class="explain">
+                                <span>인증단계</span>
+                                <span class="explain_txt">아이디 인증 > <b>비밀번호찾기 질문인증</b> > 비밀번호 재등록</span>
+                            </p>
+                            <p>
+                                <span>인증질문</span>
+                                <span class="certification_question">내가 좋아하는 캐릭터는?</span>
+                            </p>
+                            <p>
+                                <label for="id_find"><span>아이디</span> <input type="text" id="id_find"></label>
+                            </p>
+                            <div class="btn">답변 인증 요청</div>
+                        </form>
+                        <form action="" class="findPw_form_t">
+                            <p class="explain">
+                                <span>인증단계</span>
+                                <span class="explain_txt">아이디 인증 > 비밀번호찾기 질문인증 > <b>비밀번호 재등록</b></span>
+                            </p>
+                            <p>
+                                <label for="re_password"><span>비밀번호</span> <input type="text" id="re_password"></label>
+                            </p>
+                            <p>
+                                <label for="confirm_password"><span>비번확인</span> <input type="text" id="confirm_password"></label>
+                            </p>
+                            <div class="btn">새 비밀번호 등록</div>
+                        </form>
+                    </div>     
+                </div>
+            </div>
+
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

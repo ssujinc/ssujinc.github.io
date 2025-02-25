@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Loaders</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Components</span></li>
+							<li><span>Loaders</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Loader (Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>line-scale</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="line-scale-pulse">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>line-scale-pulse-out</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="line-scale-pulse-out">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>line-scale-pulse-out-rapid</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="line-scale-pulse-out-rapid">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- line-scale-pulse --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="line-scale-pulse"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- line-scale-pulse-out --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="line-scale-pulse-out"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- line-scale-pulse-out-rapid --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="line-scale-pulse-out-rapid"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Loader (wave)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>ball-scale-wave</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="ball-scale-wave">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>line-scale-wave</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="line-scale-wave">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- ball-scale-wave --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="ball-scale-wave"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- line-scale-wave --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="line-scale-wave"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Loader (rotate)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>ball-rotate</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="ball-rotate">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>ball-scale-rotate</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="ball-scale-rotate">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- ball-rotate --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="ball-rotate"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- ball-scale-rotate --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="ball-scale-rotate"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Loader (spin)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>ball-fade-spin</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="ball-fade-spin">
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                                <span>&nbsp;</span>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>line-fade-spin</dt>
+									<dd>
+                                        <div class="lds">
+                                            <div class="line-fade-spin">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- ball-fade-spin --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="ball-fade-spin"&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+        &lt;span&gt;&nbsp;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- line-fade-spin --&gt;
+&lt;div class="lds"&gt;
+    &lt;div class="line-fade-spin"&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+                
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("loaders")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('loaders > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

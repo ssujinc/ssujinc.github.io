@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+    <title>detail</title>    
+ </head>
+ <body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">국내도서</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box">
+                <ul>
+                    <li><a href="">국내도서</a></li>
+                    <li><a href="">해외도서</a></li>
+                    <li><a href="">웹소설</a></li>
+                    <li><a href="">펜시몰</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">여행</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box" style="width:338px;">
+                <ul>
+                    <li><a href="">소설</a></li>
+                    <li><a href="">시/에세이</a></li>
+                    <li><a href="">인문</a></li>
+                    <li><a href="">가정/육아</a></li>
+                    <li><a href="">요리</a></li>
+                    <li><a href="">건강</a></li>
+                    <li><a href="">취미/실용/스포츠</a></li>
+                    <li><a href="">경제/경영</a></li>
+                    <li><a href="">자기계발</a></li>
+                    <li><a href="">정치/사회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">역사/문화</a></li>
+                    <li><a href="">종교</a></li>
+                    <li><a href="">예술/대중문화</a></li>
+                    <li><a href="">중/고등참고서</a></li>
+                    <li><a href="">기술/공학</a></li>
+                    <li><a href="">외국어</a></li>
+                    <li><a href="">과학</a></li>
+                    <li><a href="">취업/수험서</a></li>
+                    <li><a href="">여행</a></li>
+                    <li><a href="">컴퓨터/IT</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">잡지</a></li>
+                    <li><a href="">청소년</a></li>
+                    <li><a href="">초등참고서</a></li>
+                    <li><a href="">유아(0~7세)</a></li>
+                    <li><a href="">어린이(초등)</a></li>
+                    <li><a href="">어린이영어</a></li>
+                    <li><a href="">만화</a></li>
+                    <li><a href="">대학교재</a></li>
+                    <li><a href="">어린이전집</a></li>
+                    <li><a href="">한국소개도서</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">해외여행</a>
+                <span class="select_arrow"></span>
+            </p>
+	    </div>
+	</section>
+	<section class="detail_section01">
+	    <div class="detail_section01_left">
+	        <img src="asset/img/detail_bookimg.jpg" alt="">
+	    </div>
+	    <div class="detail_section01_right">
+	        <img class="detail_recommend" src="asset/img/recommend.jpg" alt="">
+	        <div class="detail_explain">
+                <h2 class="detail_title">배틀트립</h2>
+                <h3 class="detail_subtitle">“이번 황금연휴, 어떻게 보낼까?” 달력을 넘기며 징검...</h3>
+                <ul>
+                    <li>KBS 배틀트립 제작팀,  우지경 지음</li>
+                    <li>웅진지식하우스</li>
+                    <li>2018년 4월 27일 출간</li>
+                </ul>
+                <ul>
+                    <li>ISBN 9788959972630</li>
+                    <li>페이지정보 준비중</li>
+                    <li>140 * 190(mm)</li>
+                </ul>
+	        </div>
+	        <div class="detail_explain02">
+                <div class="detail_review">
+                    <p class="star04"></p> 
+                    <!-- class 명: star_non/star01/star02/star03/star04/star05 -->
+                    <p class="detail_review_num">리뷰 <span>20</span>건</p>
+                    <button class="pink-color review_btn" onclick="scrolling('.detail_article7')">리뷰쓰기</button>
+                </div>
+                <div class="detail_selling_price">
+                    <p class="detail_selling_price_p">판매가</p>
+                    <p class="detail_cost_price"><span>18,800</span>원 &#9654;</p>
+                    <p class="detail_sale_price"><span>16,920</span>원</p>
+	                <p class="benefit_price">10%</p>
+	                <p class="benefit_point">5%</p>
+                </div>
+                <div class="detail_receive_box">
+                    <p class="detail_receive_num">현재 해당 도서의 준비수량은 <span>0권</span>입니다.</p>
+                    <button class="red-color red-border btn receive_btn">입고알림</button>
+                </div>
+	        </div>
+	        <div class="detail_order_total_box">
+                <div>
+                    <div class="detail_order_num">
+                        <p class="detail_order_p">주문수량</p>
+                        <div class="detail_order_count_box">
+                            <button class="detail_order_minus_btn detail_order_count_btn">
+                                <img src="asset/img/minus.png" alt="">
+                            </button>
+                            <input type="text" class="detail_order_count" value="1" maxlength="3" />
+                            <button class="detail_order_plus_btn detail_order_count_btn">
+                                <img src="asset/img/plus.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="detail_order_total">
+                        <p class="detail_order_p">주문합계</p>
+                        <p class="detail_sale_price"><span>16,920</span>원</p>
+                    </div>
+                </div>
+                <div class="cart_btn_box">
+                    <a href="" class="baro-btn">바로드림</a>
+                    <button class="cart-btn">카트담기</button>
+                </div>
+	        </div>
+	    </div>
+	</section>
+	<section class="detail_section02">
+	    <div class="detail_tab_btn_box">
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article1')">책 소개</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article2')">작가 소개</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article3')">목차</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article4')">작가의 말</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article5')">책 속에서</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article6')">출판사 리뷰</button>
+	        <button type="button" class="detail_tabl_btn" onclick="scrolling('.detail_article7')">평점/리뷰</button>
+	    </div>
+	    <article class="detail_article detail_article1">
+	        <h4>책 소개</h4>
+	        <div class="article_in">
+	            <b>KBS 〈배틀트립〉에서 엄선한 12개국 25개 도시,<br>
+	            시청률 1위를 찍은 히든 코스와 버킷리스트 여행지 총망라!</b>
+	            <br><br>
+	            “이번 황금연휴, 어떻게 보낼까?” 달력을 넘기며 징검다리 연휴를 눈여겨본 이들이라면 누구나 ‘가성비 갑’ 알짜배기 여행을 꿈꿀 것이다. 날이 짧아서, 예산이 부족해서, 뻔한 여행을 피하고 싶어서 고민이라면 KBS 〈배틀트립〉 공식 여행서를 주목해보자. 2주년 특집 방송과 함께 야심 차게 준비한 이 책에는 그동안 방문했던 29개국 78개 도시 가운데 시청률 1위를 찍은 레전드 코스가 알차게 담겼다.
+                <br><br>
+                시간의 제약으로 소개하지 못했던 맛집과 비밀 코스, 여행 팁 등이 수록되어 있으며, 대한민국 여행 예능의 최강자 〈배틀트립〉답게 스타들이 설계하고 100인의 판정단이 검증한 최고의 여행 코스를 제안한다. 특히 하나의 국가와 도시에서도 초급, 중급, 고급 코스별로 달리 소개된 여행지를 2박 3일, 3박 4일의 일정에 담아 효율적인 동선을 제안하기에 이 책 한 권이면 12개국 25개 도시 어디로든 완벽한 여행을 떠날 수 있다. 당신의 열정과 시간만 허락한다면. ? 
+	        </div>	        
+	    </article>
+	    <article class="detail_article detail_article2">
+	        <h4>작가 소개</h4>
+	        <div class="article_in">
+                <b>KBS 배틀트립 제작팀</b>
+                <br><br>
+                KBS 〈배틀트립〉 제작팀은 ‘당신의 취향을 저격하는 실속 있는 여행정보와 N가지 꿀팁’이라는 슬로건을 내걸고, 훌쩍 떠나고 싶지만 어디를 가야 할지 모르는 시청자들을 위해 특별한 여행을 제안해왔다. 대한민국 지상파 방송 최초로 ‘셀럽들의 히든 여행지’를 소개한 뒤 100명의 여행 판정단이 승자를 뽑는 ‘배틀 콘셉트’로 화제를 모았다.<br>
+                2016년 4월, 첫 방송을 선보인 이래 152명의 배우, 가수, 개그맨 등이 국내외 28개 국가를 방문해 다양한 여행을 소개해왔으며, 2인 1조 혹은 3인 1조로 구성된 셀럽들이 직접 투어 이름을 정하고 여행 루트를 설계하는 리얼 버라이어티 형태이기에 ‘남들 다 가본 흔한 여행’과는 차별화된 정보를 선사한다. 특히 사이판을 30번 이상 방문한 쿨 이재훈, 파타야를 27번 방문했다는 개그맨 김민교, 필리핀에서 유년 시절을 보낸 2NE1 산다라박은 현지인보다 더 현지인다운 여행 팁을 전수해 여행 마니아들에게 큰 호응을 얻었다.<br> 
+                이 책 [배틀트립]은 KBS 〈배틀트립〉의 ‘N가지 여행 꿀팁’ 가운데 알짜배기 정보만을 선별한 여행서로, 일정별로 한눈에 보기 쉽게 정리되어 있으며, 시간의 제약으로 미방영된 맛집과 액티비티 예약법, 역사적 배경, 코스별 동선 등 각종 여행 팁들을 알뜰하게 담아냈다. 
+                <br><br>
+                연출 손지원, 이유민, 구민정, 오윤진<br>
+                외주 연출 김재원, 박근호, 전선영, 정아영, 채가영, 이유라, 박수현, 송슬기, 심은영<br>
+                작가 박원우, 최은영, 하선정, 박자영, 이효연, 임승화, 황인선, 송다인, 김현정, 백설아, 이한솔
+            </div>
+	    </article>
+	    <article class="detail_article detail_article3">
+	        <h4>목차</h4>
+	        <div class="article_in">
+                추천의 글<br>
+                프롤로그 <br>
+                <br> 
+                EUROPE <br>
+                러시아 블라디보스토크 <br>
+                김옥빈·김현숙·유세윤·뮤지<br> 
+                2시간 반만에 도착하는 유럽 <br>
+                친구끼리 오블라디 오블라다 투어 <br>
+                <br>
+                영국 런던 <br>
+                이규한·김기방 <br>
+                런던에서 56시간 스톱오버 여행, <br>
+                Beer&Bread BB투어<br>                
+            </div>               
+            <div class="article_more">
+                    <br>
+                    폴란드×헝가리 <br>
+                    김소은·조보아 <br>
+                    여심 홀릭, 역대급 로맨틱 여행 <br>
+                    소보루 투어 <br>
+                    <br>
+                    AMERICA <br>
+                    미국 사이판 <br>
+                    이재훈·뮤지·예정화 <br>
+                    육해공 액티비티의 끝판왕, 사이판 <br>
+                    낮이밤이 투어 <br>
+                    <br>
+                    미국 라스베이거스 <br>
+                    소유·다솜 <br>
+                    24시간 잠들지 않는 밤의 도시, 라스베이거스 <br>
+                    빵빵 투어 <br>
+                    <br>
+                    캐나다 밴프×캘거리<br> 
+                    이기우·이이경<br> 
+                    천혜의 대자연을 품은 단풍국 캐나다 <br>
+                    뻥뻥 투어 <br>
+                    <br>
+                    ASIA <br>
+                    아랍에미리트연방 두바이 <br>
+                    서효림·이청아 <br>
+                    거부할 수 없는 중동의 매력, 두바이 <br>
+                    스톱오버 여행의 간판스타 두바이 <br>
+                    <br>
+                    타이완 타이베이 <br>
+                    신동·김신영·비투비 <br>
+                    타이완의 오랜 정취부터 맛집까지, 오감만족 플랜! <br>
+                    가라대만×뚜이뚜이빵빵 <br>
+                    <br>
+                    브루나이 반다리스리브가완 <br>
+                    로이킴·에디킴·박재정 <br>
+                    나만 알고 싶은 숨은 여행지, 황금의 왕국 브루나이 <br>
+                    에로박 투어 <br>
+                    <br>
+                    일본 간사이 <br>
+                    조세호·남창희 <br>
+                    미식의 천국, 간사이 <br>
+                    조슐랭과 떠나는 남교익 여행 
+                    <br>
+                    일본 홋카이도 <br>
+                    박나래·장도연·이국주 <br>
+                    새로운 매력이 넘치는 홋카이도 <br>
+                    캐도, 캐도 북해도 <br>
+                    <br>
+                    태국 방콕×치앙마이 <br>
+                    김민교·한정수·임형준·서인영·이지혜 <br>
+                    먹방과 쇼핑, 액티비티까지 논스톱 여행! <br>
+                    MK 투어×걸크러시 투어 <br>
+                    <br>
+                    필리핀 마닐라×코론섬 <br>
+                    산다라박·강승현 <br>
+                    동남아의 편견을 날려버린 <br>
+                    다라 투어 총결산<br> 
+                    <br>
+                    OCEANIA <br>
+                    호주 케언스×브리즈번 <br>
+                    정진운·권혁수·써니·효연 <br>
+                    현지인들이 전하는 호주 핫플레이스 대방출! <br>
+                    호케호케 투어×브리즈버닝 투어
+                </div>
+            <div class="detail_article_btn_box">
+                <button class="article_more_btn">더보기</button>
+                <button class="article_close_btn">닫기</button>
+            </div>
+	    </article>
+	    <article class="detail_article detail_article4">
+	        <h4>작가의 말</h4>
+	        <div class="article_in">
+                윤동주의 10편의 詩를 재해석하면서 詩를 품은 그림을 그렸다. <br>
+                선을 긋고 그리면서 알았다.<br> 
+                백 년 전 그가 바라보던 하늘의 별들과 <br>
+                백 년 후 내가 바라보는 하늘의 별들이 <br>
+                같은 별이었다. <br>
+                <br>
+                단순한 재현이 아닌 <br>
+                그가 바라본 세상을 그리고 싶었다 <br>
+                그가 절규한 그리움을 그리고 싶었다 <br>
+                그의 언덕에 서서 별들을 바라보며 <br>
+                그가 되뇐 詩들이 그림 속의 언어가 될 수 있게 <br>
+                그가 헤아린 별들이 그림 속에서 빛날 수 있게 <br>
+                그의 막대기로 詩를 그리고 싶었다 <br>
+                <br>
+                2017년 12월 <br>
+                전형근         
+            </div>
+	    </article>
+	    <article class="detail_article detail_article5">
+	        <h4>책 속에서</h4>
+	        <div class="article_in">
+                우리가 사는 세상을 파티장이라고 가정해보자. 내향적인 사람들은 벽에 기대어 가만히 서 있고, 외향적인 사람들은 무대 중앙을 거침없이 돌아다니는 모습이 연상될 것이다. 하지만 인생은 그렇게 단순하지 않으며 흑백논리로 구분 지을 수 없다. 스스로 어떤 유형에 속한다고 생각하거나 그런 유형으로 여겨져 왔다고 해도 개의치 말자.우리는 자신이 가진 고유한 기질이 지닌 특성을 더 깊게 이해해야 한다. p8-9 <br>
+                <br>
+                내향성이 부끄럼과 불안감을 동반할 수 있지만, 그것으로 내향성을 정의할 수는 없다. 내향적인 사람 중에는 사회활동을 열심히 하는 이들도 있는데, 그 상태에서는 외향
+                적인 사람과 구별하기 어렵다. 그 활동이 끝난 뒤 얼마나 피로감을 느끼느냐에 따라 분류할 수 있다. 누군가 부끄러움이 많고 다가가기 어려워 보인다고 할 때, 그 사람은 내향적이라기보다 그저 사회활동에 능숙하지 못한 것일 수도 있다. 한 개인의 활동 자체만을 놓고 그 사람을 내향적이다, 아니다로 정확하게 판단하기는 어렵다. p32<br>
+                <br>
+                내 친구는 마주친 사람들과 아주 친밀해지는 것처럼 보였다. 그런데 흥미로운 대화가 오가는 것을 계속 지켜보면서 나는 케이티에게 의미가 있는 것은 소통 자체이지 친구를 새로 사귀는 것이 아니라는 점을 깨달았다. 물론 이런 일은 내향적인 사람에게는 악몽이 될 수 있다. 아무 목표나 소득 없이 이루어지는 사회활동이기 때문이다. 외
+            </div>
+            <div class="article_more">
+                    <br>
+                    폴란드×헝가리 <br>
+                    김소은·조보아 <br>
+                    여심 홀릭, 역대급 로맨틱 여행 <br>
+                    소보루 투어 <br>
+                    <br>
+                    AMERICA <br>
+                    미국 사이판 <br>
+                    이재훈·뮤지·예정화 <br>
+                    육해공 액티비티의 끝판왕, 사이판 <br>
+                    낮이밤이 투어 <br>
+                    <br>
+                    미국 라스베이거스 <br>
+                    소유·다솜 <br>
+                    24시간 잠들지 않는 밤의 도시, 라스베이거스 <br>
+                    빵빵 투어 <br>
+                    <br>
+                    캐나다 밴프×캘거리<br> 
+                    이기우·이이경<br> 
+                    천혜의 대자연을 품은 단풍국 캐나다 <br>
+                    뻥뻥 투어 <br>
+                    <br>
+                    ASIA <br>
+                    아랍에미리트연방 두바이 <br>
+                    서효림·이청아 <br>
+                    거부할 수 없는 중동의 매력, 두바이 <br>
+                    스톱오버 여행의 간판스타 두바이 <br>
+                    <br>
+                    타이완 타이베이 <br>
+                    신동·김신영·비투비 <br>
+                    타이완의 오랜 정취부터 맛집까지, 오감만족 플랜! <br>
+                    가라대만×뚜이뚜이빵빵 <br>
+                    <br>
+                    브루나이 반다리스리브가완 <br>
+                    로이킴·에디킴·박재정 <br>
+                    나만 알고 싶은 숨은 여행지, 황금의 왕국 브루나이 <br>
+                    에로박 투어 <br>
+                    <br>
+                    일본 간사이 <br>
+                    조세호·남창희 <br>
+                    미식의 천국, 간사이 <br>
+                    조슐랭과 떠나는 남교익 여행 
+                    <br>
+                    일본 홋카이도 <br>
+                    박나래·장도연·이국주 <br>
+                    새로운 매력이 넘치는 홋카이도 <br>
+                    캐도, 캐도 북해도 <br>
+                    <br>
+                    태국 방콕×치앙마이 <br>
+                    김민교·한정수·임형준·서인영·이지혜 <br>
+                    먹방과 쇼핑, 액티비티까지 논스톱 여행! <br>
+                    MK 투어×걸크러시 투어 <br>
+                    <br>
+                    필리핀 마닐라×코론섬 <br>
+                    산다라박·강승현 <br>
+                    동남아의 편견을 날려버린 <br>
+                    다라 투어 총결산<br> 
+                    <br>
+                    OCEANIA <br>
+                    호주 케언스×브리즈번 <br>
+                    정진운·권혁수·써니·효연 <br>
+                    현지인들이 전하는 호주 핫플레이스 대방출! <br>
+                    호케호케 투어×브리즈버닝 투어
+                </div>
+            <div class="detail_article_btn_box">
+                <button class="article_more_btn">더보기</button>
+                <button class="article_close_btn">닫기</button>
+            </div>
+	    </article>
+	    <article class="detail_article detail_article6">
+	        <h4>출판사 리뷰</h4>
+	        <div class="article_in">
+                시를 그린다」<br>
+                <br>
+                “형근이 형, 윤동주 탄생 100주년인데, 윤동주 시집 하나 새롭게 만들어보면 어떨까?”<br>
+                “뭔 소리야?”<br>
+                “윤동주의 시를 형이 좀 그려보란 얘기야.”<br>
+                “자다가 봉창 두드리는 것도 아니고, 뜬금없이 시를 그리라니?”<br>
+                “일단 사무실로 좀 나와. 만나서 얘기해.”<br>
+                <br>
+                지난 9월 초, 그러니까 석 달 전의 일이다. 형이 지난 몇 년 여러 프로젝트를 벌이면서도 틈틈이 그래픽 포엠 작업을 해왔다는 것을 알고 있던 터라 이참에 윤동주의 시로 제대로 된 그래픽 포엠 시집을 한 권 만들자고 제안한 것이다. 여유가 별로 없어서, 한 달 안에 끝낼 수 있겠냐고, 한 달 안에 끝내야 한다고, 짧게 덧붙였다.
+            </div>
+            <div class="article_more">
+                    <br>
+                    폴란드×헝가리 <br>
+                    김소은·조보아 <br>
+                    여심 홀릭, 역대급 로맨틱 여행 <br>
+                    소보루 투어 <br>
+                    <br>
+                    AMERICA <br>
+                    미국 사이판 <br>
+                    이재훈·뮤지·예정화 <br>
+                    육해공 액티비티의 끝판왕, 사이판 <br>
+                    낮이밤이 투어 <br>
+                    <br>
+                    미국 라스베이거스 <br>
+                    소유·다솜 <br>
+                    24시간 잠들지 않는 밤의 도시, 라스베이거스 <br>
+                    빵빵 투어 <br>
+                    <br>
+                    캐나다 밴프×캘거리<br> 
+                    이기우·이이경<br> 
+                    천혜의 대자연을 품은 단풍국 캐나다 <br>
+                    뻥뻥 투어 <br>
+                    <br>
+                    ASIA <br>
+                    아랍에미리트연방 두바이 <br>
+                    서효림·이청아 <br>
+                    거부할 수 없는 중동의 매력, 두바이 <br>
+                    스톱오버 여행의 간판스타 두바이 <br>
+                    <br>
+                    타이완 타이베이 <br>
+                    신동·김신영·비투비 <br>
+                    타이완의 오랜 정취부터 맛집까지, 오감만족 플랜! <br>
+                    가라대만×뚜이뚜이빵빵 <br>
+                    <br>
+                    브루나이 반다리스리브가완 <br>
+                    로이킴·에디킴·박재정 <br>
+                    나만 알고 싶은 숨은 여행지, 황금의 왕국 브루나이 <br>
+                    에로박 투어 <br>
+                    <br>
+                    일본 간사이 <br>
+                    조세호·남창희 <br>
+                    미식의 천국, 간사이 <br>
+                    조슐랭과 떠나는 남교익 여행 
+                    <br>
+                    일본 홋카이도 <br>
+                    박나래·장도연·이국주 <br>
+                    새로운 매력이 넘치는 홋카이도 <br>
+                    캐도, 캐도 북해도 <br>
+                    <br>
+                    태국 방콕×치앙마이 <br>
+                    김민교·한정수·임형준·서인영·이지혜 <br>
+                    먹방과 쇼핑, 액티비티까지 논스톱 여행! <br>
+                    MK 투어×걸크러시 투어 <br>
+                    <br>
+                    필리핀 마닐라×코론섬 <br>
+                    산다라박·강승현 <br>
+                    동남아의 편견을 날려버린 <br>
+                    다라 투어 총결산<br> 
+                    <br>
+                    OCEANIA <br>
+                    호주 케언스×브리즈번 <br>
+                    정진운·권혁수·써니·효연 <br>
+                    현지인들이 전하는 호주 핫플레이스 대방출! <br>
+                    호케호케 투어×브리즈버닝 투어
+                </div>
+            <div class="detail_article_btn_box">
+                <button class="article_more_btn">더보기</button>
+                <button class="article_close_btn">닫기</button>
+            </div>
+	    </article>
+	    <article class="detail_article detail_articel_review detail_article7">
+	        <h4>평점/리뷰</h4>
+	        <div class="article_in">
+	            <h6># 이 책을 평가해주세요!</h6>
+	            <div class="evaluate_star_box">
+	                <p class="star_rating_p">별점 평가하기</p>
+	                <div class="detail_review_star">
+                       <p class="star_rating">
+                            <input id="rating5" type="radio" name="rating" value="5">
+                            <label for="rating5">5</label>
+                            <input id="rating4" type="radio" name="rating" value="4">
+                            <label for="rating4">4</label>
+                            <input id="rating3" type="radio" name="rating" value="3">
+                            <label for="rating3">3</label>
+                            <input id="rating2" type="radio" name="rating" value="2" >
+                            <label for="rating2">2</label>
+                            <input id="rating1" type="radio" name="rating" value="1">
+                            <label for="rating1">1</label>
+                        </p>
+                        <p class="star_num"><span>0</span> / 5</p>
+	                </div>
+	            </div>
+	            <div class="detail_review_write">
+	                <p class="review_write_p">한 줄 리뷰 작성</p>
+	                <input type="text" placeholder="책에 대한 간단한 평가를 작성해주세요." />
+                    <input type="button" value="등록" class="review_btn red-color red-border" />
+	            </div>               
+                <div class="detail_review_list_box">
+                    <p class="detail_review_list">
+                        <span class="star05"></span>
+                        <span class="detail_review_txt">위하여서, 거선의 이것은 눈이 가지에 위하여서 얼마나 것이다. 피고 있는 이상의 청춘은 할지라도 찾아 끝에 봄바람이다. 청춘 구하지때</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">cjh****</span>
+                            <span class="review_list_date">2018-03-27</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star03"></span>
+                        <span class="detail_review_txt">책이 참 좋은거 같네요. 잘보겠습니다.</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">ska******</span>
+                            <span class="review_list_date">2018-03-05</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star04"></span>
+                        <span class="detail_review_txt">아주 좋습니다. 강력 추천합니다.</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">sji*****</span>
+                            <span class="review_list_date">2018-01-11</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star04"></span>
+                        <span class="detail_review_txt">아주 좋습니다. 강력 추천합니다.</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">sji*****</span>
+                            <span class="review_list_date">2018-01-11</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star04"></span>
+                        <span class="detail_review_txt">아주 좋습니다. 강력 추천합니다.</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">sji*****</span>
+                            <span class="review_list_date">2018-01-11</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star04"></span>
+                        <span class="detail_review_txt">아주 좋습니다. 강력 추천합니다.</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">sji*****</span>
+                            <span class="review_list_date">2018-01-11</span>                        
+                        </span>
+                    </p>
+                    <p class="detail_review_list">
+                        <span class="star03"></span>
+                        <span class="detail_review_txt">2주만에 오픽 끝내 봅시다!!</span>
+                        <span class="review_list_detail">
+                            <span class="review_list_id">qla******</span>
+                            <span class="review_list_date">2018-03-15</span>                        
+                        </span>
+                    </p>
+                </div>     
+                <div class="detail_review_list_box_more">
+                   
+                </div>     
+                <button class="review_more_btn btn ">더보기</button>
+	        </div>
+	    </article>
+	</section>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

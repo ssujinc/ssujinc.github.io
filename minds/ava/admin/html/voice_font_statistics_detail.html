@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Font 통계</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="#"></a></h1>
+    <ul class="gnb">
+      <li><a href="./member.html">회원관리</a></li>
+      <li class="active"><a href="./statistics.html">통계</a>
+        <ul class="lnb">
+          <li><a href="./user_statistics.html">유저 통계</a></li>
+          <li><a href="./voice_font_statistics.html">Voice Font 통계</a></li>
+        </ul>
+      </li>
+      <li><a href="./question.html">문의</a></li>
+      <li><a href="#">공지사항</a></li>
+    </ul>
+  </header>
+  <!-- class 에 revenue_no 추가시 수익없는 경우 출력 -->
+  <div id="wrap" class="voice_font_statistics_detail">
+    <h2>Voice Font 통계 > 상세조회</h2>
+    <div class="information">
+      <div class="information_image jkim-72"></div>
+      <div class="information_write">
+        <ul>
+          <li>
+            <ul>
+              <li><span class="label">폰트명</span><span>제이킴</span></li>
+              <li class="revenue_no"><span class="label">소속</span><span class="revenue_no">샌드박스</span></li>
+            </ul>
+            <ul>
+              <li><span class="label">모델 업로드 날짜</span><span>22.02.02</span></li>
+              <li><span class="label">TTS Request 명</span><span>Jkim</span></li>
+              <li><span class="label">녹음자</span><span>김건우</span></li>
+            </ul>
+            <ul>
+              <li class="revenue revenue_no"><span class="label">수익 분배 대상</span><span class="revenue_no">Y</span></li>
+              <li><span class="label">계약자</span><span>AICS, 이규민 매니저</span></li>
+              <li class="revenue_no"><span class="label">입금계좌</span><span class="revenue_no">우리은행 1002-048-123456</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr>
+        <ul>
+          <li>
+            <ul class="information_total">
+              <li><span class="label">누적 변환량</span><span>999,999,999</span><span class="percent">(99.9%)</span></li>
+              <li><span class="label">누적 다운로드량</span><span>999,999,999</span><span class="percent">(99.9%)</span></li>
+              <li class="revenue_no"><span class="label">누적 배분 금액</span><span class="revenue_no">999,999,999</span></li>
+            </ul>
+            <ul class="information_month">
+              <li><span class="label">당월 변환량</span><span>999,999,999</span><span class="percent">(99.9%)</span></li>
+              <li><span class="label">당월 다운로드량</span><span>999,999,999</span><span class="percent">(99.9%)</span></li>
+              <li class="revenue_no"><span class="label">당월 배분 예상금액</span><span class="revenue_no">999,999,999</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <button class="button_modify">수정</button>
+    </div>
+    <form action="">
+      <div class="admin-select">
+        <select name="year" id="year">
+          <option value="0">2021년</option>
+          <option value="1">2020년</option>
+        </select>
+      </div>
+      <div class="table voice_font_statistics_detail">
+        <ul class="thead">
+          <li>월</li>
+          <li>변환량</li>
+          <li>다운로드량</li>
+          <li>수익분배 금액</li>
+          <li>수익분배 완료 여부</li>
+          <li>완료자</li>
+        </ul>
+        <div class="tbody">
+          <ul class="tbody_tr">
+            <li><span>12</span></li>
+            <li><span>658,118</span><span>(17.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li><span><button>완료 표시하기</button></span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>11</span></li>
+            <li><span>598,787</span><span>(10.3%)</span></li>
+            <li><span>477,577</span><span>(9.3%)</span></li>
+            <li><span>246,999,874 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>10</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>15,787,998 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>9</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>8</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>7</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>6</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>5</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr">
+            <li><span>4</span></li>
+            <li><span>658,118</span><span>(17.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li><span><button>완료 표시하기</button></span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>3</span></li>
+            <li><span>598,787</span><span>(10.3%)</span></li>
+            <li><span>477,577</span><span>(9.3%)</span></li>
+            <li><span>246,999,874 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>2</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>15,787,998 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_end">
+            <li><span>1</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li class="revenue_end"><span>처리 완료</span></li>
+            <li><span>lkm@mindslab.ai</span></li>
+          </ul>
+          <ul class="tbody_tr revenue_total">
+            <li><span>합계</span></li>
+            <li><span>658,118</span><span>(9.3%)</span></li>
+            <li><span>477,577</span><span>(7.3%)</span></li>
+            <li><span>589,871,361 원</span></li>
+            <li><span>-</span></li>
+            <li><span>-</span></li>
+          </ul>
+        </div>
+      </div>
+        </div>
+        <div class="paging">
+      <ul>
+        <li class="prev"><a href="#"><i class="icon-ico-paging-arrow-prev-36px"></i></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li class="active"><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li class="next active"><a href="#"><i class="icon-ico-paging-arrow-next-36px"></i></a></li>
+      </ul>
+        </div>
+    </form>
+  </div>
+  <footer>
+    <p>&copy; Minds Lab.</p>
+  </footer>
+
+
+
+  <div id="detail_information_modify" class="modal">
+    <div class="modal_bg"></div>
+
+    <div class="modal_contents">
+      <i class="icon-ico-cancel-24px modal_close"></i>
+      <h4>상세정보수정</h4>
+      <!-- 아래 div에 revenue_no class 추가 시 수익분배 대상이 아닐 시 화면 출력 -->
+      <div class="contents_area">
+        <form action="">
+          <div class="information_image jkim-72"></div>
+          <label for="font_name">폰트명</label>
+          <input type="text" id="font_name" value="제이킴" readonly />
+          <label for="company">소속</label>
+          <input type="text" id="company" value="정규민" readonly />
+          <label for="upload_date">모델 업로드 날짜</label>
+          <input type="date" id="upload_date" value="2022-02-02" />
+          <label for="tts_request_name">TTS Request 명</label>
+          <input type="text" id="tts_request_name" value="Jkim" />
+          <label for="recorder">녹음자</label>
+          <input type="text" id="recorder" value="김건우">
+          <label for="revenue">수익 분배 대상</label>
+          <div class="revenue-select">
+            <select name="revenue" id="revenue" onchange="verifyAnswer()">
+              <option value="0">해당 (Y)</option>
+              <option value="1">미해당 (N)</option>
+            </select>
+          </div>
+          <label for="contractor">계약자</label>
+          <input type="text" id="contractor" value="AICS, 이규민 매니저" />
+          <label for="bank">입금 계좌 은행</label>
+          <div class="admin-select">
+            <select name="bank" id="bank">
+              <option value="0">우리 은행</option>
+              <option value="1">농협</option>
+              <option value="2">국민 은행</option>
+              <option value="3">신한 은행</option>
+            </select>
+          </div>
+          <label for="bank_number">입금 계좌 번호</label>
+          <input type="text" id="bank_number" value="1002-048-123-456" />
+        </form>
+        <div class="buttons">
+          <button class="cancel">취소</button>
+          <button type="submit">변경 사항 저장</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/admin.js"></script>
+
+<script>
+  var x, i, j, l, ll, selElmnt, a, b, c;
+  var bank = document.getElementById("bank");
+  var bankNumber = document.getElementById("bank_number");
+
+  x = document.getElementsByClassName("revenue-select");
+  l = x.length;
+  for (i = 0; i < l; i++) {
+    selElmnt = x[i].getElementsByTagName("select")[0];
+    ll = selElmnt.length;
+    a = document.createElement("DIV");
+    a.setAttribute("class", "revenue-selected");
+    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+    x[i].appendChild(a);
+
+    b = document.createElement("DIV");
+    b.setAttribute("class", "admin-items select-hide");
+    for (j = 0; j < ll; j++) {
+
+      c = document.createElement("DIV");
+      c.innerHTML = selElmnt.options[j].innerHTML;
+      c.addEventListener("click", function (e) {
+
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            console.log(s.selectedIndex);
+            if (s.selectedIndex == 1) {
+              //disable all
+              bank.disabled = true;
+              bank.nextElementSibling.nextElementSibling.style.visibility = 'hidden';
+              bank.parentElement.style.backgroundColor = '#e3e8eb';
+              c.setAttribute("class", "disabled-select");
+              bankNumber.readOnly = true;
+            } else if (s.selectedIndex == 0) {
+              //enable all the
+              bank.disabled = false;
+              bank.nextElementSibling.nextElementSibling.style.visibility = 'visible';
+              bank.parentElement.style.backgroundColor = '#FFFFFF';
+              c.removeAttribute("class", "disabled-select");
+              bankNumber.readOnly = false;
+            }
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+      });
+      b.appendChild(c);
+    }
+    x[i].appendChild(b);
+    a.addEventListener("click", function (e) {
+      console.log(a);
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
+  }
+
+  function closeAllSelect(elmnt) {
+
+    var x, y, i, xl, yl, arrNo = [];
+    x = document.getElementsByClassName("revenue-items");
+    y = document.getElementsByClassName("revenue-selected");
+    xl = x.length;
+    yl = y.length;
+    for (i = 0; i < yl; i++) {
+      if (elmnt == y[i]) {
+        arrNo.push(i)
+      } else {
+        y[i].classList.remove("select-arrow-active");
+      }
+    }
+    for (i = 0; i < xl; i++) {
+      if (arrNo.indexOf(i)) {
+        x[i].classList.add("select-hide");
+        console.log(x[i]);
+      }
+    }
+  }
+  
+  document.querySelector('#detail_information_modify .modal_contents button.cancel').addEventListener('click', (e) => {
+    alert('수정한 정보를 저장하지 않고 나가시겠습니까?');
+    document.querySelectorAll('.modal').forEach(open_modals => {
+      open_modals.style.display = 'none';
+    })
+  })
+</script>
+
+</html>

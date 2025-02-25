@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/status_board.css">
+<!-- //css -->
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading --> 
+    
+<!-- #wrap -->
+<div id="wrap">
+	<!-- #header -->
+	<div id="header">
+		<div class="lot_col02">
+			<h1>
+				<span>MINDsLab</span>
+				<em>퍼블리싱 현황판</em>
+			</h1>
+		</div>
+		<div class="lot_col02">
+			<!-- .nav_status -->
+			<div class="nav_status">
+				<ul></ul>
+			</div>
+			<!-- //.nav_status -->
+		</div>
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .section -->
+			<div class="stn allBoxType">
+				<!-- .stn_tit -->
+				<div class="stn_tit">
+					<h4>예시</h4>
+					<div class="s_db">
+						<dl>
+							<dt>총 페이지 :</dt>
+							<dd class="allNum">7</dd>
+						</dl>
+						<dl>
+							<dt>완료 :</dt>
+							<dd class="completeNum"></dd>
+						</dl>
+						<dl>
+							<dt>진척률 :</dt>
+							<dd class="statusNum"></dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //.stn_tit -->
+				<!-- .stn_cont -->
+				<div class="stn_cont">
+					<table class="tbl_lineType">
+						<caption class="hide">퍼블리싱 리스트</caption>
+						<colgroup>
+							<col width="40"><col width="150"><col width="150"><col width="150"><col width="80">
+							<col><col width="100"><col width="70"><col width="70"><col>	
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">구분</th>
+								<th scope="col">URL</th>
+								<th scope="col">날짜</th>
+								<th scope="col">상태</th>
+								<th scope="col">담당자</th>
+								<th scope="col">비고</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">1Depth Title</td>
+								<td class="col_2depth">2Depth Menu</td>
+								<td class="col_3depth">Page Name</td>
+								<td class="col_point">popup</td>
+								<td class="col_url"><a href="#" target="_blank">/URL</a></td>
+								<td class="col_date">2019.09.11</td>
+								<td class="col_state">
+									<span class="stand">대기</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">홍길동</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">1Depth Title</td>
+								<td class="col_2depth">2Depth Menu</td>
+								<td class="col_3depth">Page Name</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="#" target="_blank">/URL</a></td>
+								<td class="col_date"></td>
+								<td class="col_state">
+									<span class="working">작업중</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">김수한무</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">1Depth Title</td>
+								<td class="col_2depth">2Depth Menu</td>
+								<td class="col_3depth">Page Name</td>
+								<td class="col_point">layer popup</td>
+								<td class="col_url"><a href="#" target="_blank">/URL</a></td>
+								<td class="col_date"></td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">홍길동</td>
+								<td class="col_memo"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //.stn_cont -->
+			</div>
+			<!-- //.section -->
+			<!-- .section -->
+			<div class="stn allBoxType">
+				<!-- .stn_tit -->
+				<div class="stn_tit">
+					<h4>규칙 가이드</h4>
+					<div class="s_db">
+						<dl>
+							<dt>총 페이지 :</dt>
+							<dd class="allNum">7</dd>
+						</dl>
+						<dl>
+							<dt>완료 :</dt>
+							<dd class="completeNum"></dd>
+						</dl>
+						<dl>
+							<dt>진척률 :</dt>
+							<dd class="statusNum"></dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //.stn_tit -->
+				<!-- .stn_cont -->
+				<div class="stn_cont">
+					<table class="tbl_lineType">
+						<caption class="hide">퍼블리싱 리스트</caption>
+						<colgroup>
+							<col width="40"><col width="150"><col width="150"><col width="150"><col width="80">
+							<col><col width="100"><col width="70"><col width="70"><col>		
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">구분</th>
+								<th scope="col">URL</th>
+								<th scope="col">날짜</th>
+								<th scope="col">상태</th>
+								<th scope="col">담당자</th>
+								<th scope="col">비고</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">규칙 가이드</td>
+								<td class="col_2depth">기본정책</td>
+								<td class="col_3depth">마크업 환경</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0101.html" target="_blank">pc/rule/0101.html</a></td>
+								<td class="col_date">2019.09.11</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">표준규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0102.html" target="_blank">pc/rule/0102.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">코드규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0103.html" target="_blank">pc/rule/0103.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">네임규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0104.html" target="_blank">pc/rule/0104.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">마크업 개발 단계</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0105.html" target="_blank">pc/rule/0105.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">웹접근성 유의사항</td>
+								<td class="col_3depth">역할별 체크리스트</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0201.html" target="_blank">pc/rule/0201.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">웹접근성 개선작업 프로세스</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0202.html" target="_blank">pc/rule/0202.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">기본규칙 정의</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0203.html" target="_blank">pc/rule/0203.html</a></td>
+								<td class="col_date">2019.10.16</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">웹접근성 고려사항</td>
+								<td class="col_3depth">인식의 용이성</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0301.html" target="_blank">pc/rule/0301.html</a></td>
+								<td class="col_date">2019.10.17</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">운용이 용이성</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0302.html" target="_blank">pc/rule/0302.html</a></td>
+								<td class="col_date">2019.10.17</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">이행의 용이성</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0303.html" target="_blank">pc/rule/0303.html</a></td>
+								<td class="col_date">2019.10.18</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">견고성</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../rule/0304.html" target="_blank">pc/rule/0304.html</a></td>
+								<td class="col_date">2019.10.18</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>							
+						</tbody>
+					</table>
+				</div>
+				<!-- //.stn_cont -->
+			</div>
+			<!-- //.section -->
+			<!-- .section -->
+			<div class="stn allBoxType">
+				<!-- .stn_tit -->
+				<div class="stn_tit">
+					<h4>마크업 가이드</h4>
+					<div class="s_db">
+						<dl>
+							<dt>총 페이지 :</dt>
+							<dd class="allNum">7</dd>
+						</dl>
+						<dl>
+							<dt>완료 :</dt>
+							<dd class="completeNum"></dd>
+						</dl>
+						<dl>
+							<dt>진척률 :</dt>
+							<dd class="statusNum"></dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //.stn_tit -->
+				<!-- .stn_cont -->
+				<div class="stn_cont">
+					<table class="tbl_lineType">
+						<caption class="hide">퍼블리싱 리스트</caption>
+						<colgroup>
+							<col width="40"><col width="150"><col width="150"><col width="150"><col width="80">
+							<col><col width="100"><col width="70"><col width="70"><col>	
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">구분</th>
+								<th scope="col">URL</th>
+								<th scope="col">날짜</th>
+								<th scope="col">상태</th>
+								<th scope="col">담당자</th>
+								<th scope="col">비고</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">마크업 가이드</td>
+								<td class="col_2depth">가이드 요약</td>
+								<td class="col_3depth">유의사항</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0101.html" target="_blank">pc/mock_up/0101.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">개요</td>
+								<td class="col_3depth">Style Guide 필요성</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0201.html" target="_blank">pc/mock_up/0201.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">Style Guide 요소</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0202.html" target="_blank">pc/mock_up/0202.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">Style Guide 용어</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0203.html" target="_blank">pc/mock_up/0203.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">네이밍 규칙</td>
+								<td class="col_3depth">기본 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0301.html" target="_blank">pc/mock_up/0301.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">id 및 class 네이밍 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0302.html" target="_blank">pc/mock_up/0302.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">이미지 네이밍 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0303.html" target="_blank">pc/mock_up/0303.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">파일 및 폴더 네이밍 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0304.html" target="_blank">pc/mock_up/0304.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">HTML 코드 작성 규칙</td>
+								<td class="col_3depth">기본 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0401.html" target="_blank">pc/mock_up/0401.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">들여쓰기 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0402.html" target="_blank">pc/mock_up/0101.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">빈 줄</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0403.html" target="_blank">pc/mock_up/0403.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">DTD 및 인코딩</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0404.html" target="_blank">pc/mock_up/0404.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">주석</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0405.html" target="_blank">pc/mock_up/0405.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">초기파일</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0406.html" target="_blank">pc/mock_up/0406.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">HTML 엘리먼트 작성 규칙</td>
+								<td class="col_3depth">기본 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0501.html" target="_blank">pc/mock_up/0501.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">전역 구조화 엘리먼트</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0502.html" target="_blank">pc/mock_up/0502.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">폼 엘리먼트</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0503.html" target="_blank">pc/mock_up/0503.html</a></td>
+								<td class="col_date">2019.10.07</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">표 엘리먼트</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0504.html" target="_blank">pc/mock_up/0504.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">기타 엘리먼트</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0505.html" target="_blank">pc/mock_up/0505.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">CSS 코드 작성 규칙</td>
+								<td class="col_3depth">기본 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0601.html" target="_blank">pc/mock_up/0601.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">들여쓰기</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0602.html" target="_blank">pc/mock_up/0602.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">공백</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0603.html" target="_blank">pc/mock_up/0603.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">빈 줄</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0604.html" target="_blank">pc/mock_up/0604.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">줄 바꿈</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0605.html" target="_blank">pc/mock_up/0605.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">인코딩</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0606.html" target="_blank">pc/mock_up/0606.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">선택자</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0607.html" target="_blank">pc/mock_up/0607.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">z-index</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0608.html" target="_blank">pc/mock_up/0608.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">핵</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0609.html" target="_blank">pc/mock_up/0609.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">미디어 타입</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0610.html" target="_blank">pc/mock_up/0610.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">CSS 선언 타입</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0611.html" target="_blank">pc/mock_up/0611.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">주석</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0612.html" target="_blank">pc/mock_up/0612.html</a></td>
+								<td class="col_date">2019.10.14</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">파일 분기</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0613.html" target="_blank">pc/mock_up/0613.html</a></td>
+								<td class="col_date">2019.10.1</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">초기파일</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0614.html" target="_blank">pc/mock_up/0614.html</a></td>
+								<td class="col_date">2019.10.1</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">Javascript 코드 작성 규칙</td>
+								<td class="col_3depth">기본 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0701.html" target="_blank">pc/mock_up/0701.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">들여쓰기</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0702.html" target="_blank">pc/mock_up/0702.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">연산자</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0703.html" target="_blank">pc/mock_up/0703.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">괄호</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0704.html" target="_blank">pc/mock_up/0704.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">주석</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0705.html" target="_blank">pc/mock_up/0705.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">변수 선언</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0706.html" target="_blank">pc/mock_up/0706.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">함수 선언</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0707.html" target="_blank">pc/mock_up/0707.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">문장 규칙</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0708.html" target="_blank">pc/mock_up/0708.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">금지항목 및 주의사항</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0709.html" target="_blank">pc/mock_up/0709.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">ES6+</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0710.html" target="_blank">pc/mock_up/0710.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">javascript 선언 타입</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0711.html" target="_blank">pc/mock_up/0711.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">부록 A. 코딩 시 참고 사항</td>
+								<td class="col_3depth">웹표준 기반의 마크업</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0801.html" target="_blank">pc/mock_up/0801.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">크로스 브라우징 범위</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0802.html" target="_blank">pc/mock_up/0802.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">단위 변환</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0803.html" target="_blank">pc/mock_up/0803.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">부록 B. 예약어 목록</td>
+								<td class="col_3depth">네이밍 예약어</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="../mock_up/0901.html" target="_blank">pc/mock_up/0901.html</a></td>
+								<td class="col_date">2019.10.15</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //.stn_cont -->
+			</div>
+			<!-- //.section -->
+			<!-- .section -->
+			<div class="stn allBoxType">
+				<!-- .stn_tit -->
+				<div class="stn_tit">
+					<h4>설계 가이드</h4>
+					<div class="s_db">
+						<dl>
+							<dt>총 페이지 :</dt>
+							<dd class="allNum">7</dd>
+						</dl>
+						<dl>
+							<dt>완료 :</dt>
+							<dd class="completeNum"></dd>
+						</dl>
+						<dl>
+							<dt>진척률 :</dt>
+							<dd class="statusNum"></dd>
+						</dl>
+					</div>
+				</div>
+				<!-- //.stn_tit -->
+				<!-- .stn_cont -->
+				<div class="stn_cont">
+					<table class="tbl_lineType">
+						<caption class="hide">퍼블리싱 리스트</caption>
+						<colgroup>
+							<col width="40"><col width="150"><col width="150"><col width="150"><col width="80">
+							<col><col width="100"><col width="70"><col width="70"><col>	
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">번호</th>
+								<th scope="col">1Depth</th>
+								<th scope="col">2Depth</th>
+								<th scope="col">3Depth</th>
+								<th scope="col">구분</th>
+								<th scope="col">URL</th>
+								<th scope="col">날짜</th>
+								<th scope="col">상태</th>
+								<th scope="col">담당자</th>
+								<th scope="col">비고</th>
+							</tr>	
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth">설계 가이드</td>
+								<td class="col_2depth">GENERAL</td>
+								<td class="col_3depth">head</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0101_head.html" target="_blank">pc/plan/0101_head.html</a></td>
+								<td class="col_date">2019.10.04</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">body</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0102_body.html" target="_blank">pc/plan/0102_body.html</a></td>
+								<td class="col_date">2019.10.04</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">structure</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0103_structure.html" target="_blank">pc/plan/0103_structure.html</a></td>
+								<td class="col_date">2019.10.04</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">status board</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0104_status_board.html" target="_blank">pc/plan/0104_status_board.html</a></td>
+								<td class="col_date">2019.09.11</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">COLOR</td>
+								<td class="col_3depth">COLOR PALETTE</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0401_color.html" target="_blank">pc/plan/0401_color.html</a></td>
+								<td class="col_date">2019.09.11</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">FONT FACE</td>
+								<td class="col_3depth">ROBOTO</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0301_roboto.html" target="_blank">pc/plan/0301_roboto.html</a></td>
+								<td class="col_date">2019.10.02</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">NOTO SANS KR</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0302_notoSans.html" target="_blank">pc/plan/0302_notoSans.html</a></td>
+								<td class="col_date">2019.10.02</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">SPOQA HAN SANS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0302_notoSans.html" target="_blank">pc/plan/0303_spoqaHan.html</a></td>
+								<td class="col_date">2019.10.02</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">COMPONENTS</td>
+								<td class="col_3depth">BUTTONS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0201_buttons.html" target="_blank">pc/plan/0201_buttons.html</a></td>
+								<td class="col_date">2019.09.24</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">INPUTS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0202_inputs.html" target="_blank">pc/plan/0202_inputs.html</a></td>
+								<td class="col_date">2019.09.24</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">DROPDOWNS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0203_dropdowns.html" target="_blank">pc/plan/0203_dropdowns.html</a></td>
+								<td class="col_date">2019.09.24</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">LOADERS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0204_loaders.html" target="_blank">pc/plan/0204_loaders.html</a></td>
+								<td class="col_date">2019.09.25</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">TABLES</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0205_tables.html" target="_blank">pc/plan/0205_tables.html</a></td>
+								<td class="col_date">2019.09.25</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">ICONS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0206_icons.html" target="_blank">pc/plan/0206_icons.html</a></td>
+								<td class="col_date">2019.09.26</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">CHARTS</td>
+								<td class="col_3depth">BAR CHARTS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0501_barCharts.html" target="_blank">pc/plan/0501_barCharts.html</a></td>
+								<td class="col_date">2019.10.03</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">LINE CHARTS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0502_lineCharts.html" target="_blank">pc/plan/0502_lineCharts.html</a></td>
+								<td class="col_date">2019.10.03</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">SCATTER CHARTS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0503_scatterCharts.html" target="_blank">pc/plan/0503_scatterCharts.html</a></td>
+								<td class="col_date">2019.10.03</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth"></td>
+								<td class="col_3depth">OTHER CHARTS</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0504_otherCharts.html" target="_blank">pc/plan/0504_otherCharts.html</a></td>
+								<td class="col_date">2019.10.03</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+							<tr>
+								<td class="col_num" scope="row"></td>
+								<td class="col_1depth"></td>
+								<td class="col_2depth">EXAMPLE</td>
+								<td class="col_3depth">CHATBOT</td>
+								<td class="col_point">page</td>
+								<td class="col_url"><a href="0601_chatbot.html" target="_blank">pc/plan/0601_chatbot.html</a></td>
+								<td class="col_date">2019.09.27</td>
+								<td class="col_state">
+									<span class="complete">완료</span>
+									<!-- [D] 상태별 클래스명 stand:대기, working:작업중, complete:완료 -->
+								</td>
+								<td class="col_worker">유명종</td>
+								<td class="col_memo"></td>
+							</tr>
+                            
+
+						</tbody>
+					</table>
+				</div>
+				<!-- //.stn_cont -->
+			</div>
+			<!-- //.section -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+	    <div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->   
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		// header dropdown			   
+		$('.stn.allBoxType .stn_tit').click(function(){	
+			$(this).parent().toggleClass('close');
+		});
+		
+		// section별 총 페이지수	
+		$('.stn.allBoxType .stn_tit .s_db dl dd.allNum').each(function(){					
+			var trLength = $(this).parents('.stn.allBoxType').find('.tbl_lineType tbody tr').length;
+			
+			$(this).text(trLength);
+		});
+		
+		// section별 완료 페이지수	
+		$('.stn.allBoxType .stn_tit .s_db dl dd.completeNum').each(function(){					
+			var cplLength = $(this).parents('.stn.allBoxType').find('span.complete').length;
+			
+			$(this).text(cplLength);
+		});
+		
+		// section별 진척률	
+		$('.stn.allBoxType .stn_tit .s_db dl dd.statusNum').each(function(){					
+			var allNumTxt = $(this).parents('.s_db').find('.allNum').text();
+			var completeNumTxt = $(this).parents('.s_db').find('.completeNum').text();
+			var statusNum = completeNumTxt / allNumTxt * 100;
+			
+			$(this).text(Math.round(statusNum) + '%');
+		});		
+		
+		// 전체 진척률
+		$('.nav_status ul').each(function(){
+			var totalNum = 0;			
+			$('.stn.allBoxType .allNum').each(function() {
+				totalNum += Number($(this).text());
+			});
+			
+			var totalLength = $('.stn.allBoxType span.complete').length;
+			var totalStatus = (Math.round(totalLength / totalNum * 100) + '%');
+			var totalHtml =
+				'<li class="total">'
+				+'	<em>'
+				+'		<span class="tit">전체</span>'
+				+'		<span class="txt">'+ totalNum +'p / '+ totalStatus +'</span>'
+				+'		<span class="bar" style="width:'+ totalStatus +'"></span>'
+				+'	</em>'
+				+'</li>';
+					
+			$(this).append(totalHtml);
+		});
+				
+		// section별 ID 부여
+		$('.stn.allBoxType').each(function(i){	
+			var stbTitle = $(this).find('.stn_tit h4').text();
+			var stnStatus = $(this).find('.statusNum').text();
+			var graphHtml =
+				'<li>'
+				+'	<a href="#goStn'+i+'">'
+				+'		<span class="tit">'+ stbTitle +'</span>'
+				+'		<span class="txt">'+ stnStatus +'</span>'
+				+'		<span class="bar" style="width:'+ stnStatus +'"></span>'
+				+'	</a>'
+				+'</li>';
+			
+			$(this).attr('id', 'goStn'+i);	
+			$('.nav_status ul').append(graphHtml);
+		});
+		
+		// top button
+		var scrollTop = $(window).scrollTop();
+		
+		$('.btn_goTop').on('click',function(){
+			$('html, body').animate({
+				scrollTop: 0
+			}, 300);
+		});			
+	});	
+	
+	$(window).scroll(function () {
+		var scrollTop = $(window).scrollTop();
+
+		// wide_imgBox scroll animation
+		if( scrollTop > 50) {	
+			$('#header').addClass('fixed');
+			$('.btn_goTop').css({
+				right: 10,
+				opacity: 1,
+			}, 100);
+		} else {  
+			$('#header').removeClass('fixed');
+			$('.btn_goTop').css({
+				right: -50,
+				opacity: 0,
+			}, 100);
+		}
+
+	});
+	
+});	
+	
+
+</script>
+</body>
+</html>

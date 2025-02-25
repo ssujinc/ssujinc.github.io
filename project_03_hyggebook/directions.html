@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <title>HYGGE_Directions</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>오시는 길<span class="snb_txt">Directions</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="next_page">
+                                매장안내
+                            </div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                                오시는 길
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="directions_cnt">
+                <div class="directions_cnt">
+                    <h2 class="directions_tit">- 약도 및 교통안내</h2>
+                    <div class="direction_map">
+                        <img src="images/map.jpg" alt="약도" />
+                    </div>
+                    <div class="direction_api">
+                        <img src="images/directions.jpg" alt="다음 약도" />
+                    </div>
+                </div>
+                <!-- /.directions_cnt --> 
+            </div>
+
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

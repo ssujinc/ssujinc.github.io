@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/detail.css">
+	<script type="text/javascript" src="asset/js/detail.js"></script>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery(".classRemove").removeClass().addClass("classRemove");
+		});
+	</script>
+  	<title>detail</title>    
+ </head>
+ <body id="detail" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content">
+			<div class="path">
+				<select name="select-native" id="select-native">
+					<option value="all">전체</option> 
+					<option value="1">소설</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+			    </select>
+			</div>
+
+			<div class="inner_content">
+				<section class="detail_section1">
+					<p class="recommend"></p>	
+					<h2 class="detail_title">곰돌이 푸, 서두르지 않아도 괜찮아</h2>
+					<h3 class="detail_subtitle">언제나 오늘이 처음인 우리에게</h3>
+					<div class="detail_explain">
+						<p>곰돌이 푸 지음</p>
+						<span class="bar"></span>
+						<p>알에이치코리아</p>
+						<span class="bar"></span>
+						<p>2018년 05월 08일 출간</p>
+					</div>
+					<div class="detail_explain margintop8">
+						<p><b>ISBN</b> 9788925563367</p>
+						<span class="bar"></span>
+						<p>216쪽</p>
+						<span class="bar"></span>
+						<p>137 * 189 (mm)</p>
+					</div>					
+					<div class="detail_price_box">
+						<div class="detail_bookimg">
+							<img src="asset/img/detail_bookimg.jpg" alt="">
+						</div>
+						<div class="detail_book_price">
+							<div>
+								<p class="detail_tit">정가</p>
+								<p class="detail_price">13,800원</p>
+							</div>
+							<div>
+								<p class="detail_tit">판매가</p>
+								<p class="detail_selling_price"><span>12,420</span>원</p>
+								<p class="benefit_price_box">(<span class="beneft_price">10%</span> <span class="benefit_img"></span> )</p>
+							</div>
+							<div>
+								<p class="detail_tit">적립금</p>
+								<p class="benefit_point">5% <span class="benefit_img"></span></p>
+							</div>
+						</div>
+					</div>
+					<div class="detail_receive_box">
+						<p class="detail_receive_num">현재 해당 도서의 준비수량은 <span>0권</span>입니다.</p>
+						<button class="red-color red-border btn receive_btn">입고알림</button>
+					</div>
+					<span class="vertical_line"></span>
+					<div class="detail_order_total_box">
+						<div class="detail_order_count_box">
+                            <button class="detail_order_minus_btn detail_order_count_btn">
+                                <img src="asset/img/m_minus.png" alt="">
+                            </button>
+							<div class="detail_order_count_input">
+	                            <input type="text" class="detail_order_count" value="1" maxlength="3" />
+							</div>
+                            <button class="detail_order_plus_btn detail_order_count_btn">
+                                <img src="asset/img/m_plus.png" alt="">
+                            </button>
+                        </div>
+						<div class="detail_order_total">
+							<p class="detail_order_p">주문합계</p>
+							<p class="detail_sale_price"><span>16,920</span>원</p>
+						</div>
+					</div>
+					<div class="cart_btn_box">
+						<a href="" class="baro-btn">바로드림</a>
+						<button class="cart-btn">카트담기</button>
+					</div>
+				</section>
+
+				<section class="detail_section2">
+					<div class="panel_category detail_panel" data-role="collapsible-set" data-corners="false" data-iconpos="right">
+						<article data-role="collapsible" data-collapsed="false" class="first_detail detail_article">
+							<h3 class="red_color">책소개</h3>
+							<div class="detail_inner_content">
+								<p><b>디즈니의 사랑스러운 푸가 전하는 삶의 여유!</b></p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article">
+							<h3>작가 소개</h3>
+							<div class="detail_inner_content">
+								<p><b>블라블라</b></p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article">
+							<h3>목차</h3>
+							<div class="detail_inner_content">
+								<p><b>블라블라</b></p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p>
+							</div>
+							<div class="detail_inner_more">
+								<br>
+								폴란드×헝가리 <br>
+								김소은·조보아 <br>
+								여심 홀릭, 역대급 로맨틱 여행 <br>
+								소보루 투어 <br>
+								<br>
+								AMERICA <br>
+								미국 사이판 <br>
+								이재훈·뮤지·예정화 <br>
+								육해공 액티비티의 끝판왕, 사이판 <br>
+								낮이밤이 투어 <br>
+								<br>
+								미국 라스베이거스 <br>
+								소유·다솜 <br>
+								24시간 잠들지 않는 밤의 도시, 라스베이거스 <br>
+								빵빵 투어 <br>
+								<br>
+								캐나다 밴프×캘거리<br> 
+								이기우·이이경<br> 
+								천혜의 대자연을 품은 단풍국 캐나다 <br>
+								뻥뻥 투어 <br>
+								<br>
+								ASIA <br>
+								아랍에미리트연방 두바이 <br>
+								서효림·이청아 <br>
+								거부할 수 없는 중동의 매력, 두바이 <br>
+								스톱오버 여행의 간판스타 두바이 <br>
+								<br>
+								타이완 타이베이 <br>
+								신동·김신영·비투비 <br>
+								타이완의 오랜 정취부터 맛집까지, 오감만족 플랜! <br>
+								가라대만×뚜이뚜이빵빵 <br>
+								<br>
+								브루나이 반다리스리브가완 <br>
+								로이킴·에디킴·박재정 <br>
+								나만 알고 싶은 숨은 여행지, 황금의 왕국 브루나이 <br>
+								에로박 투어 <br>
+							</div>
+							<div class="detail_article_btn_box">
+								<button class="article_more_btn">더보기</button>
+								<button class="article_close_btn">닫기</button>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article">
+							<h3>작가의 말</h3>
+							<div class="detail_inner_content">
+								<p><b>블라블라</b></p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article">
+							<h3>책 속에서</h3>
+							<div class="detail_inner_content">
+								<p><b>블라블라</b></p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article">
+							<h3>출판사 리뷰</h3>
+							<div class="detail_inner_content">
+								<p><b>블라블라</b></p><br>
+								<p>적당한 손해를 감수하더라도 내가 가진 소중한 것을 잃지 않겠다는 일관성 있는 삶의 태도로 살아가는 것. 그것이 겉으로 보기에 영리해 보이지는 않지만 푸의 일이 결국엔 잘되는 이유다. 무심코 스쳐 지나갈 수 있는 바쁜 일상 속에서 “걱정 마. 언젠가는 목적지에 도착할 수 있을 거야. 다만 나를 잃지만 않으면 돼”라고 응원하는 푸의 따뜻하고 진심어린 목소리를 통해 삶을 잠시 돌아볼 여유를 갖고, 빠르지도 느리지도 않은 속도로 오늘을 살아갈 수 있을 것이다.</p><br>
+								<p>곰돌이 푸, 서두르지 않아도 괜찮아』는 꾸밈없이 순수하고 진실한 마음으로 세상을 바라보고 생각하며, 서두르는 법이 없이 늘 여유로운 미소를 짓고 느릿느릿한 몸짓으로 숲속을 거니는 곰돌이 푸의 메시지와 삽화를 엮은 책이다. 오늘날을 살아가는 우리에게 의미 있는 지혜를 담은 푸의 이야기와 함께 삶의 방식에 관한 오래된 경전인 《논어》의 혜안을 담았다. </p>
+							</div>
+						</article>
+						<article data-role="collapsible" class="detail_article detail_articel_review">
+							<h3>평점/리뷰</h3>
+							<div class="detail_inner_content">
+								<div class="evaluate_star_box">
+									<p class="star_rating_p">별점 평가하기</p>
+									<div class="detail_review_star">
+									   <p class="star_rating">
+											<input id="rating5" type="radio" name="rating" value="5">
+											<label for="rating5" class="classRemove">5</label>
+											<input id="rating4" type="radio" name="rating" value="4">
+											<label for="rating4" class="classRemove">4</label>
+											<input id="rating3" type="radio" name="rating" value="3">
+											<label for="rating3" class="classRemove">3</label>
+											<input id="rating2" type="radio" name="rating" value="2" >
+											<label for="rating2" class="classRemove">2</label>
+											<input id="rating1" type="radio" name="rating" value="1">
+											<label for="rating1" class="classRemove">1</label>
+										</p>
+										<p class="star_num"><span>0</span> / 5</p>
+									</div>
+								</div>
+
+								<div class="detail_review_write">
+									<p class="review_write_p">한 줄 리뷰 작성</p>
+									<textarea name="" id="" class="review_text_box" placeholder="책에 대한 간단한 평가를 작성해주세요." ></textarea>
+<!-- 									<input type="text" placeholder="책에 대한 간단한 평가를 작성해주세요." /> -->
+									<div class="review_btn_box">
+										<input type="button" value="등록" class="review_btn" />
+									</div>
+								</div>
+								<div class="detail_review_list_box">
+									<div class="detail_review_list">
+										<div class="review_detail_box">
+											<span class="star05 star"></span>
+											<span class="review_list_detail">
+												<span class="review_list_id">cjh****</span>
+												<span class="review_list_date">2018-03-27</span>      
+											</span>
+										</div>	
+										<span class="detail_review_txt">위하여서, 거선의 이것은 눈이 가지에 위하여서 얼마나 것이다. 피고 있는 이상의 청춘은 할지라도 찾아 끝에 봄바람이다. 청춘 구하지때</span>
+									</div>
+									<div class="detail_review_list">
+										<div class="review_detail_box">
+											<span class="star03 star"></span>
+											<span class="review_list_detail">
+												<span class="review_list_id">ska******</span>
+												<span class="review_list_date">2018-03-27</span>      
+											</span>
+										</div>	
+										<span class="detail_review_txt">책이 참 좋은거 같네요. 잘보겠습니다.</span>
+									</div>
+
+								</div>
+
+							</div>							
+						</article>
+						<article data-role="collapsible" class="detail_article detail_return_article">
+							<h3>반품/교환</h3>
+							<div class="detail_inner_content">
+								<p>상품 설명에 반품/ 교환 관련한 안내가 있는 경우 그 내용을 우선으로 합니다. (업체 사정에 따라 달라질 수 있습니다)</p>
+								<div class="return_table">
+									<table>
+										<tr>
+											<td>반품/교환 방법</td>
+											<td>홈 > 고객센터 > 자주찾는질문 “반품/교환/환불” 안내 참고 또는 1:1상담게시판</td>
+										</tr>
+										<tr>
+											<td>반품/교환 가능 기간</td>
+											<td>반품, 교환은 배송완료 후 7일 이내, 상품의 결함 및 계약내용과 다를 경우 문제발견 후 30일 이내에 신청가능</td>
+										</tr>
+										<tr>
+											<td>반품/교환 비용</td>
+											<td>변심 혹은 구매착오의 경우에만 반송료 고객부담(별도 지정 택배사 없음)</td>
+										</tr>
+										<tr>
+											<td>반품/교환 불가사유</td>
+											<td>
+												<ul>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">소비자의 책임 사유로 상품 등이 손실 또는 훼손된 경우</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우<br>: 예) 화장품, 식품, 가전제품 등</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">복제가 가능한 상품 등의 포장을 훼손한 경우<br>: 예) 음반/DVD/비디오, 소프트웨어, 만화책, 잡지, 영상 화보집</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우 (GIFT주문제작 상품)</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">시간의 경과에 의해 재판매가 곤란한 정도로 가치가 현저히 감소한 경우</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">전자상거래 등에서의 소비자보호에 관한 법률이 정하는 소비자 청약철회 제한 내용에 해당되는 경우</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">해외주문 상품(도서 및 음반)의 경우 (파본/훼손/오발송 상품을 제외)</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">중고 상품 등 재고의 추가 확보가 어려운 경우 (교환은 어려우나 반품은 가능)</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">그밖에 월간지, 화보집, 사진집, 그림도감, 시집류, 중고학습서, 카세트테입, 만화, 입시자료, 악보, 지도, 여성실용 서적 등(파본/훼손/오발송 상품을 제외)</span>
+													</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>소비자 피해보상 환불지연에 따른 배상</td>
+											<td>
+												<ul>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">상품의 불량에 의한 반품, 교환, A/S, 환불, 품질보증 및 피해보상 등에 관한 사항은 소비자 분쟁해결기준 (공정거래위원회고시)에 준하여 처리됨</span>
+													</li>
+													<li>
+														<span class="dot">·</span>
+														<span class="txt">대금 환불 및 환불지연에 따른 배상금 지급 조건, 절차 등은 전자상거래 등에서의 소비자 보호에 관한 법률에 따라 처리함</span>
+													</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</article>
+
+					</div> <!-- /.detail_panel -->
+				</section>
+			</div>
+			
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

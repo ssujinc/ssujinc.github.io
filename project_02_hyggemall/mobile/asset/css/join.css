@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; }
+#wrap .ui-content { border-width:0; overflow:visible; overflow-x:hidden; padding:0; }
+#wrap .content { background:#fff; width:100%; height:auto; } 
+#wrap .inner_content { background:#fff; width:100%; min-height:794px; box-sizing:border-box; padding:48px 24px; font-family:'NBGothicR'; color:#424852; font-size:16px; } 
+
+
+.join_body .ui-input-text { margin:0; box-shadow:none; text-shadow:none; border-radius:0; border:0; height:100%; }
+.join_body .error { border:1px solid #d94452 !important; z-index:10; }
+
+input[type="text"]::placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]:-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]::-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="password"]::placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="password"]:-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="password"]::-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+
+.warning_red { display:block; font-size:14px; color:#d94452; font-family:'NBGothicR'; margin-top:12px; line-height:inherit; }
+
+.join_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.join_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#d94452; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+
+/* join_input_box */
+.join_body .join_input_box { display:block; width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; font-family:'NBGothicR'; color:#424852; font-size:16px; margin:0; padding:0 0 0 24px; margin-top:16px; vertical-align:middle; }
+.join_body .join_id_box { margin-top:0; }
+.join_body .join_input_box  .join_id { width:100%; height:100%; padding:0; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.join_body .join_input_box  .join_pw { width:100%; height:100%; padding:0; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+
+/* join_name_box */
+.join_body .join_name_box { margin-top:16px; position:relative; width:100%; height:auto; }
+.join_body .join_name_box:after { clear:both; display:block; content:''; }
+.join_body .join_name_box .join_name_input_box { max-width:272px; width:70%; height:48px; background:#fff; box-sizing:border-box; border:1px solid #a9b0bb; font-family:'NBGothicR'; color:#424852; font-size:16px; margin:0; padding:0 0 0 24px; vertical-align: middle; float:left; }
+.join_body .join_name_box .join_name_input_box .ui-input-text { width:80%; float:left; }
+.join_body .join_name_box .join_name_input_box .join_name {  width:100%; height:100%; padding:0; font-family:'NBGothicR'; color:#424852; font-size:16px; } 
+.join_body .join_name_box .join_name_input_box .join_name_check { display:block; float:right; width:16px; height:12px; margin:17px 12px 0 0; background:url('../img/m_confirm_number_check.png') left top no-repeat; background-size:cover; }
+/* gender_box */
+.join_body .join_name_box .gender_btn { position:absolute; padding:0; margin:0; width:48px; height:48px; text-align:center; color:#a9b0bb; font-size:14px; font-family:'NBGothicL'; border:1px solid #a9b0bb; box-sizing:border-box; background:#fff; float:left; text-shadow:none; box-shadow:none; border-radius:0; font-weight:normal; }
+.join_body .join_name_box .gender_man { right:47px; z-index:0;}
+.join_body .join_name_box .gender_woman { right:0; z-index:0; }
+.join_body .join_name_box .gender_on { font-family:'NBGothicR'; color:#424852; border:1px solid #4a88da; z-index:1; font-weight:normal; }
+
+
+
+
+
+/* join_check_id_box */
+.join_body .join_check_id_box a { display:block; float:left; border:1px solid #4a88da; padding:8px 10px; text-align:center; font-size:14px; font-family:'NBGothicR'; color:#4a88da; border-radius:4px; margin-top:12px; text-shadow:none; box-shadow:none; }
+.join_body .join_check_id_box:after { clear:both; content:''; display:block; }
+.join_body .join_check_id_box a.join_go_login { margin-right:12px; }
+
+
+/* join_number_box */
+.join_body .join_number_box { width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; margin:16px 0 0; padding:0 0 0 24px; vertical-align:middle; }
+.join_body .join_number_box:after { content:''; display:block; clear:both; }
+.join_body .join_number_box .ui-input-text { float:left; width:42%; height:100%; vertical-align:middle; box-sizing:border-box; border:0; text-shadow:none; background:none; color:#424852; margin:0; font-size:16px; font-family:'NBGothicR'; padding:0; box-shadow:none; }
+.join_body .join_number_box .join_number_input { box-sizing:border-box; border:0; padding:0; width:100%; height:100%; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px;  }
+.join_body .join_number_box .join_check_member_btn { float:right; margin:7px 8px 0 8px; width:auto; height:32px; padding:0; padding:8px 4px; color:#a9b0bb; border:1px solid #cad0d7; outline:0; border-radius:4px; font-family:'NBGothicR'; font-size:14px; background:#fff; text-shadow:none; box-shadow:none; font-weight:normal; }
+.join_body .join_number_box .join_cn_check { display:block; float:right; width:16px; height:12px; margin:17px 0 0 0; background:url('../img/m_confirm_number_check.png') left top no-repeat; background-size:cover; }
+
+/* join_check_number_box */
+.join_body .join_check_number_box .join_input_box { position:relative; }
+.join_body .join_check_number_box .join_input_box .ui-input-text { width:70%; }
+.join_body .join_check_number_box .join_input_box .confirm_number { box-sizing:border-box; border:0; padding:0; width:100%; height:100%; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.join_body .join_check_number_box .join_confirm_number_btn { position:absolute; right:8px; top:8px; width:48px; height:32px; padding:0; margin:0; color:#a9b0bb; border:1px solid #cad0d7; outline:0; border-radius:4px; font-family:'NBGothicR'; font-size:14px; background:#fff; box-shadow:none; text-shadow:none; font-weight:normal; }
+.join_body .join_check_number_box .join_confirm_number_btn:hover {border:1px solid #4a88da !important; color:#4a88da !important; }
+.join_body .join_check_number_box .join_confirm_number_btn:active {border:1px solid #4a88da !important; color:#4a88da !important; }
+
+
+/* join_email */
+.join_body .join_email_box .join_email { box-sizing:border-box; border:0; padding:0; width:100%; height:100%; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+
+/* join_alert */
+.join_body .join_alert { width:100%; height:auto; box-sizing:border-box; padding:0; font-family:'NBGothicL'; font-size:14px; color:#636c77; line-height:18px; color:#a9b0bb; margin:24px 0; }
+.join_body .join_alert b { color:#636c77; font-family:'NBGothicB'; font-weight:normal; }
+.join_body .join_alert b a { color:#636c77; font-family:'NBGothicB'; font-weight:normal; }
+
+
+/* join_btn */
+.join_body .join_btn_box { width:100%; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; border-radius:24px; }
+.join_body .join_btn_box .ui-btn { width:100%; height:100%; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; margin:0; font-weight:normal; text-shadow:none; box-shadow:none; }
+
+
+
+
+
+.id_warning { display:none; }
+.join_check_id_box { display:none; }
+.pw_warning { display:none; }
+.gender_warning { display:none; }
+.gender_check { display:none; }
+.join_check_number_box { display:none; }
+.join_no_member { display:none; }
+.number_warning { display:none; }
+.email_warning { display:none; }
+.join_body .join_number_box .join_cn_check { display:none; }
+.join_body .join_name_box .join_name_input_box .join_name_check { display:none; }
+
+
+
+@media screen and (max-width:720px) {
+
+}
+
+
+@media screen and (max-width:375px) {
+	.join_body .join_name_box .join_name_input_box { width:64%; }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {	
+	.join_body .join_name_box .join_name_input_box { width:60%; }
+	.join_body .join_name_box .join_name_input_box .join_name_check { margin:17px 8px 0 0; }
+	.join_body .join_number_box .ui-input-text { width:39%; }
+	.join_body .join_number_box .join_check_member_btn { margin:7px 4px 0 4px; padding:8px 4px; font-size:12px; }
+	.join_body .join_input_box { padding:0 0 0 12px; }
+	.join_body .join_name_box .join_name_input_box { padding:0 0 0 12px; }
+	.join_body .join_number_box { padding:0 0 0 12px; }
+	.join_body .join_number_box .join_number_input { font-size:14px; }
+}
+
+
+
+

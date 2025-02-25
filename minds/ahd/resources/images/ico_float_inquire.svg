@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="39" viewBox="0 0 47 39">
+    <defs>
+        <filter id="2dp8734vpa">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="4gu09dtuhb" width="182.8%" height="214.3%" x="-41.4%" y="-57.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="r5ltbztcec" d="M0 0L28.431 0 28.431 20.412 0 20.412z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#2dp8734vpa)" transform="translate(-1868 -517) translate(1860 510)">
+                <g filter="url(#4gu09dtuhb)" transform="translate(17 16)">
+                    <mask id="gprh6b774d" fill="#fff">
+                        <use xlink:href="#r5ltbztcec"/>
+                    </mask>
+                    <path fill="#3A3A3C" d="M25.744 16.99c.198.199.198.522 0 .721-.1.1-.23.15-.36.15-.13 0-.26-.05-.358-.15l-6.749-6.783-2.626 2.639c-.395.398-.915.597-1.435.597s-1.04-.2-1.437-.597l-2.625-2.64-6.749 6.784c-.099.1-.23.15-.359.15-.13 0-.26-.05-.359-.15-.198-.2-.198-.522 0-.722l6.749-6.783-6.749-6.783c-.198-.2-.198-.523 0-.722.198-.2.52-.2.718 0l10.092 10.144c.192.193.447.299.719.299.27 0 .526-.106.718-.299L25.026 2.701c.198-.2.52-.2.718 0 .198.2.198.522 0 .722l-6.749 6.783 6.749 6.783zM26.4 0H2.03C.91 0 0 .916 0 2.041v16.33c0 1.125.91 2.041 2.03 2.041H26.4c1.12 0 2.031-.916 2.031-2.041V2.04C28.431.916 27.52 0 26.401 0z" mask="url(#gprh6b774d)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

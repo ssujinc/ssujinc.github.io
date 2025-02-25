@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>폼 엘리먼트</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>HTML 엘리먼트 작성 규칙</span></li>
+							<li><span>폼 엘리먼트</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">폰 컨트롤 엘리먼트를 마크업할 때 &lt;form&gt;, &lt;fieldset&gt;, &lt;legend&gt; 엘리먼트를 다음과 같이 선언합니다. 단, 필요에 따라 개별적으로 사용할  수 있습니다.</p>
+                        <div class="txt_bg mgb10">
+&lt;form&gt;<br>
+&lt;fieldset&gt;<br>
+&lt;legend&gt;개인정보&lt;/legend&gt;  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;[form control element here]<br>
+&lt;/fieldset&gt;<br>
+&lt;/form&gt;
+                        </div>
+                        <dl class="dl_lst">
+                            <dt>A. &lt;fieldset&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;form&gt; 엘리먼트의 자식 노드로 선언하여 폰 컨트롤 엘리먼트들을 그루핑하기 위해 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;form&gt;<br>
+<em class="ft_clr_red">&lt;fieldset&gt;</em><br>
+&lt;legend&gt;개인정보&lt;/legend&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[stuff]<br>
+<em class="ft_clr_red">&lt;/fieldset&gt;</em><br>
+&lt;/form&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. &lt;legend&gt;</dt>
+                            <dd>
+                                <p class="txt">폰 컨트롤 그룹인 &lt;fieldset&gt;의 자식 엘리먼트로서 폰 컨트롤 엘리먼트들의 그룹 이름을 표현하기 위해 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;form&gt;<br>
+&lt;fieldset&gt;<br>
+<em class="ft_clr_red">&lt;legend&gt;개인정보&lt;/legend&gt;</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;[stuff]<br>
+&lt;/fieldset&gt;<br>
+&lt;/form&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. &lt;input&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;label&gt; 엘리먼트, title 애트리뷰트, alt 애트리뷰트를 통해 스크린 리더 사용자는 주변 맥락에 대한 이해 없이 각 엘리먼트에 독립적으로  접근해도 폰을 이해할 수 있습니다. 웹 접근성 항목은 6. 웹 접근성 보장 방법을 참조합니다.</p>
+                                <div class="txt_bg">
+<em class="ft_clr_red">&lt;label for="user_id"&gt;아이디&lt;/label&gt;</em><br>
+&lt;input type="text" id="user_id" name="user_id"&gt;<br>
+&lt;input type="image" src="btn_confirm.gif" <em class="ft_clr_red">alt="확인"</em>&gt;<br>
+<br>
+<em class="ft_clr_red">&lt;label for="num1"&gt;유선전화&lt;/label&gt;</em><br>
+&lt;input type="text" id="num1" name="num1" <em class="ft_clr_red">title="지역번호"</em>&gt;
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="txt mgb5">다음과 같이 type값에 따라 애트리뷰트를 선언합니다.</p>
+                                <p class="txt">type이 text인 경우: type, id, title, value, accesskey 순서로 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;input <em class="ft_clr_red">type="text"</em> <em class="ft_clr_orange">id</em>="user_id" <em class="ft_clr_orange">title</em>="사용자ID" <em class="ft_clr_orange">value</em>="아이디를 입력하세요" <em class="ft_clr_orange">accesskey</em>="l"&gt;
+                                </div>
+                                <ul class="lst">
+                                    <li>동일한 스타일의 텍스트필드이나 너비값이 다를 경우 style 애트리뷰트를 이용하여 width값을 제어합니다.</li>
+                                    <li>텍스트필드에 가이드를 위한 내용이 들어갈 경우 value 애트리뷰트를 선택적으로 사용할 수 있습니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <p class="txt">1type이 radio, checkbox일 경우: type, name, id, checked 순서로 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;input <em class="ft_clr_red">type="radio"</em> <em class="ft_clr_orange">name</em>="vt_align" <em class="ft_clr_orange">id</em>="align_lft" <em class="ft_clr_orange">checked</em>="checked"&gt;&lt;label for="align_lft"&gt;왼쪽정렬&lt;/label&gt;<br>
+&lt;input type="radio" <em class="ft_clr_orange">name</em>="vt_align" id="align_cnt"&gt; &lt;label for="align_cnt"&gt;가욲데정렬&lt;/label&gt;<br>
+&lt;input type="radio" <em class="ft_clr_orange">name</em>="vt_align" id="align_rgt"&gt; &lt;label for="align_rgt"&gt;오른쪽정렬&lt;/label&gt;<br>
+   <br>                                 
+&lt;input <em class="ft_clr_red">type="checkbox"</em> <em class="ft_clr_orange">name</em>="sports" <em class="ft_clr_orange">id</em>="soccer" <em class="ft_clr_orange">checked</em>="checked"&gt; &lt;label for="soccer"&gt;축구&lt;/label&gt;<br>
+&lt;input type="checkbox" <em class="ft_clr_orange">name</em>="sports" id="basketball"&gt; &lt;label for="basketball"&gt;농구&lt;/label&gt;<br>
+&lt;input type="checkbox" <em class="ft_clr_orange">name</em>="sports" id="tennis"&gt; &lt;label for="tennis"&gt;테니스&lt;/label&gt;
+                                </div>
+                                <ul class="lst">
+                                    <li>그루핑이 필요하면 선택적으로 name 애트리뷰트를 이용하여 항목들을 그루핑합니다.</li>
+                                    <li>기본 선택에 대한 표현이 필요할경우 checked="checked"라고 표기합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <p class="txt">type이 image일 경우: type, src, alt 순서로 애트리뷰트를 선언합니다. alt 애트리뷰트를 반드시 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;input <em class="ft_clr_red">type="image"</em> <em class="ft_clr_orange">src</em>="img/btn_confirm.gif" <em class="ft_clr_orange">alt</em>="확인"&gt;
+                                </div>
+                                <p class="txt">type 이 file일 경우: type 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;input <em class="ft_clr_red">type="file"</em>&gt;
+                                </div>
+                                <p class="txt">type 이 button, reset, submit 일 경우: type 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;input <em class="ft_clr_red">type="button"</em>&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. &lt;select&gt;</dt>
+                            <dd>
+                                <p class="txt">동일한 스타일의 셀렉트 박스이나 너비값이 다르면 선택적으로 style 애트리뷰트를 이용하여 width값을 제어합니다.</p>
+                                <div class="txt_bg">
+&lt;select (<em class="ft_clr_red">id</em>=" ") (<em class="ft_clr_red">title</em>=" ") <em class="ft_clr_red">style="width:100px"</em>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;등급&lt;/option&gt;<br>
+&lt;/select&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. &lt;label&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;input&gt;(text, checkbox, radio, file, password), &lt;select&gt;, &lt;textarea&gt;와 같은 폰 엘리먼트는 for 애트리뷰트를 부여하여 해당 엘리먼트의  id값과 동일한 이름으로 연결(coupling)합니다. 단, 레이블 명이 위치한 공간이 없는 경우 title 애트리뷰트로 대체할 수 있습니다.</p>
+                                <div class="txt_bg">
+&lt;input type="radio" name="alignment" <em class="ft_clr_red">id="align_left"</em>&gt; &lt;label <em class="ft_clr_red">for="align_lft"</em>&gt;왼쪽정렧&lt;/label&gt;<br>
+&lt;input type="checkbox" name="sports" <em class="ft_clr_red">id="soccer"</em>&gt; &lt;label <em class="ft_clr_red">for="soccer"</em>&gt;축구&lt;/label&gt;
+                                </div>
+                                <p class="txt">단, &lt;label&gt; 안에 &lt;input&gt; 앨리먼트가 있는 경우 for와 id를 이용하여 연결하지 않아도 됩니다.</p>
+                                <div class="txt_bg">
+&lt;label&gt;&lt;input type="checkbox" name="sports"&gt;축구&lt;/label&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>F. &lt;textarea&gt;</dt>
+                            <dd>
+                                <p class="txt">cols, rows 순서로 애트리뷰트를 선언합니다.<br>CSS를 정상적으로 불러오지 못하는 상황에서도 사용에 문제가 없도록 col, rows의 애트리뷰트값은 각각 최소 30, 5 이상이 되도록 선언한  다. &lt;label&gt;로 커플링 할 수 없는 경우 title을 사용하여도 무방하며 id, title 순서로 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;textarea <em class="ft_clr_red">cols</em>="30" <em class="ft_clr_red">rows</em>="5" (<em class="ft_clr_red">id</em>=" ") (<em class="ft_clr_red">title</em>=" ")&gt;&lt;/textarea&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>G. &lt;button&gt;</dt>
+                            <dd>
+                                <p class="txt">type 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;button <em class="ft_clr_red">type="button"</em>&gt;열기&lt;/button&gt;
+&lt;button <em class="ft_clr_red">type="submit"</em>&gt;전송&lt;/button&gt;
+                                </div>
+                                <ul class="lst">
+                                    <li>type 애트리뷰트를 button으로 선언하여 열기/닫기, 접기/펼치기 등의 UI를 제어합니다.</li>
+                                    <li>폰 전송 역할을 하는 버튼은 submit 타입을 사용합니다.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(5) span:contains("폼 엘리먼트")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('폼 엘리먼트 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

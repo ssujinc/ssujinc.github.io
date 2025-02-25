@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- sns share -->
+    <meta property="og:title" content="AVA - AI Virtual Avatar">
+    <meta property="og:image" content="../imgs/share-img.png">
+    <!-- <meta property="og:description" content=""> -->
+    <!-- <meta name="description" content=""> -->
+    <link rel="apple-touch-icon" href="../imgs/iphone-touch-img.png">
+
+    <title>AVA</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container main">
+        <!-- <div id="top_banner">
+            <div class="top_banner_contents">
+                <div class="event"></div>
+                <div class="text_20000"></div>
+                <p class="today_close_box">
+                    <input type="checkbox" id="today_close" value="Y">
+                    <label for="today_close">오늘 하루 보지 않기</label>
+                </p>
+                <a href="#" title="닫기" class="top_banner_close" onclick="javascript:closeWin(1);"></a>
+            </div>
+        </div> -->
+        <nav id="nav">
+            <div class="nav_mobile_header mobile">
+                <div class="menu_box">
+                    <i class="icon-ico-handle-24px"></i>
+                </div>
+                <h1 class="logo">
+                    <a href="../index.html">
+                        <img src="../imgs/signature.svg" alt="logo">
+                    </a>
+                </h1>
+            </div>
+            <button class="script_all_player">
+                <i class="icon-ico-play-white-24px"></i>
+                <span>전체 재생</span>
+            </button>
+            <div class="nav_inner">
+                <div class="close_btn_con mobile">
+                    <i class="icon-ico-cancel-24px"></i>
+                </div>
+                <div class="nav_cnt">
+                    <div class="nav_cnt_top">
+                        <h1 class="logo">
+                            <a href="../index.html"></a>
+                        </h1>
+                        <div class="my_info">
+                            <ul class="my_info_ul">
+                                <li class="list">
+                                    <span class="mi_list_span">TTS Builder123456789</span> 님
+                                    <div class="icon_bg_24">
+                                        <i class="icon-ico-down-24px"></i>
+                                    </div>
+                                    <ul class="my_info_list_ul">
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <div class="icon_bg_40 bg_purple">
+                                                    <i class="icon-ico-edit-24px"></i>
+                                                </div>
+                                                <span>개인정보 변경</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <div class="icon_bg_40 bg_blue">
+                                                    <i class="icon-ico-lock-24px"></i>
+                                                </div>
+                                                <span>비밀번호 변경</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                <div class="icon_bg_40 bg_sky_blue">
+                                                    <i class="icon-ico-logout-24px"></i>
+                                                </div>
+                                                <span>로그아웃</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav_cnt_btm">
+                        <div class="function_list list">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_purple">
+                                            <i class="icon-ico-new-24px"></i>
+                                        </div>
+                                        <span>새파일</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_blue">
+                                            <i class="icon-ico-folder-24px"></i>
+                                        </div>
+                                        <span>불러오기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_sky_blue">
+                                            <i class="icon-ico-save-24px"></i>
+                                        </div>
+                                        <span>저장하기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_blue_green">
+                                            <i class="icon-ico-saveas-24px"></i>
+                                        </div>
+                                        <span>다른이름으로 저장하기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_green">
+                                            <i class="icon-ico-download-24px"></i>
+                                        </div>
+                                        <span>전체 다운로드</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="icon_bg_40 bg_yellow_green">
+                                            <i class="icon-ico-delete-24px"></i>
+                                        </div>
+                                        <span>전체 대본 삭제</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="./payments.html" target="_blank">
+                                        <div class="icon_bg_40 bg_purple">
+                                            <i class="icon-ico-creditcard-24px"></i>
+                                        </div>
+                                        <span>결제하기</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./payments_management.html" target="_blank">
+                                        <div class="icon_bg_40 bg_blue">
+                                            <i class="icon-ico-board-24px"></i>
+                                        </div>
+                                        <span>결제관리</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./download_list.html" target="_blank">
+                                        <div class="icon_bg_40 bg_sky_blue">
+                                            <i class="icon-ico-list-24px"></i>
+                                        </div>
+                                        <span>다운로드 내역</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)" class="using_tips">
+                                        <div class="icon_bg_40 bg_purple">
+                                            <i class="icon-ico-info-24px"></i>
+                                        </div>
+                                        <span>사용 팁</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./notice_list.html" class="new_notice">
+                                        <div class="icon_bg_40 bg_blue">
+                                            <i class="icon-ico-notification-24px"></i>
+                                        </div>
+                                        <span>공지사항</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./faq.html">
+                                        <div class="icon_bg_40 bg_sky_blue">
+                                            <i class="icon-ico-question-24px"></i>
+                                        </div>
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./inquire.html">
+                                        <div class="icon_bg_40 bg_blue_green">
+                                            <i class="icon-ico-mail-24px"></i>
+                                        </div>
+                                        <span>문의하기</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer mobile">
+                            <ul class="nav_ft_top">
+                                <li><a href="javascript:void()">회사소개</a></li>
+                                <li><a href="javascript:void()">이용약관</a></li>
+                                <li><a href="javascript:void()">개인정보처리방침</a></li>
+                            </ul>
+                            <ul class="nav_ft_btm">
+                                <li>대표 유태준</li>
+                                <li>사업자 등록번호 314-86-55446</li>
+                                <li>
+                                    <address>경기도 성남시 분당구 대왕판교로 664번길 49 6층</address>
+                                </li>
+                                <li>고객센터 <em>1661-3222</em></li>
+                                <li><em>&copy;Minds Lab.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section id="character_list">
+            <div class="character_list">
+                <ul class="charL_ul">
+                    <li class="charL_list">
+                        <div class="avatar qquaddurup-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>꽈뚜룹</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>꽈뚜룹</em></li>
+                            <li>#스트리머 #남자 #트위치 #신나는</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar kimdoe-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>김도</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>김도</em></li>
+                            <li>#스트리머 #남자 #트위치 #하이톤</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar wanana-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>와나나</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>와나나</em></li>
+                            <li>#스트리머 #트위치 #하이톤 #캐릭터느낌</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar yeokka-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>여까</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>여까</em></li>
+                            <li>#스트리머 #남자 #트위치#침착한</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar jkim-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>제이킴</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>제이킴</em></li>
+                            <li>#스트리머 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar suhyun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>박수현</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>박수현</em></li>
+                            <li>#스트리머 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+              <div class="avatar femaleannouncer-72">
+                <div class="icon_bg_24 bg_blue_green">
+                  <i class="icon-ico-speaker-16px"></i>
+                </div>
+              </div>
+              <p>정소라</p>
+              <ul class="avatar_detail_info">
+                <li><em>정소라</em></li>
+                <li>#여자 #20대 #아나운서</li>
+                <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="avatar femalegeneral-72">
+                <div class="icon_bg_24 bg_blue_green">
+                  <i class="icon-ico-speaker-16px"></i>
+                </div>
+              </div>
+              <p>정소라</p>
+              <ul class="avatar_detail_info">
+                <li><em>정소라</em></li>
+                <li>#여자 #20대 #일반인</li>
+                <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="avatar fairytale-72">
+                <div class="icon_bg_24 bg_blue_green">
+                  <i class="icon-ico-speaker-16px"></i>
+                </div>
+              </div>
+              <p>정소라</p>
+              <ul class="avatar_detail_info">
+                <li><em>정소라</em></li>
+                <li>#여자 #20대 #구연동화</li>
+                <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+              </ul>
+            </li> -->
+                    <li class="charL_list">
+                        <div class="avatar readbooks-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>책 읽어주는 여자</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>책 읽어주는 여자</em></li>
+                            <li>#성우 #여자 #40대 #책</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar sponge-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>스폰지</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>스폰지</em></li>
+                            <li>#캐릭터 #남자 #발랄한 #10대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar yejun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>예준</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>예준</em></li>
+                            <li>#발랄한 #남자 #10대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar seohyun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>서현</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>서현</em></li>
+                            <li>#발랄한 #여자 #10대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar yunjung-72"></div>
+                        <div class="icon_bg_24 bg_blue_green">
+                            <i class="icon-ico-speaker-16px"></i>
+                            <span class="speaker_txt mobile">미리듣기</span>
+                        </div>
+                        <p>윤정</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>윤정</em></li>
+                            <li>#친근한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar junyoung-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>준영</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>준영</em></li>
+                            <li>#성우 #남자 #침착한 #30대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar yeeun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>예은</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>예은</em></li>
+                            <li>#성우 #여자 #침착한 #20대 </li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar sunghun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>성훈</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>성훈</em></li>
+                            <li>#친근한 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar minjun-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>민준</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>민준</em></li>
+                            <li>#차분한 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar jungwo-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>정우</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>정우</em></li>
+                            <li>#진중한 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar sangjin-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>상진</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>상진</em></li>
+                            <li>#차분한 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar hyesu-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>혜수</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>혜수</em></li>
+                            <li>#개성있는 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar soyeon-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>소연</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>소연</em></li>
+                            <li>#차분한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar yuri-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>유리</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>유리</em></li>
+                            <li>#정직한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar jiyeon-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>지연</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>지연</em></li>
+                            <li>#차분한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar mina-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>민아</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>민아</em></li>
+                            <li>#발랄한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar charlie-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>찰리</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>찰리</em></li>
+                            <li>#차분한 #남자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                    <li class="charL_list">
+                        <div class="avatar melina-72">
+                            <div class="icon_bg_24 bg_blue_green">
+                                <i class="icon-ico-speaker-16px"></i>
+                                <span class="speaker_txt mobile">미리듣기</span>
+                            </div>
+                        </div>
+                        <p>멜리나</p>
+                        <ul class="avatar_detail_info">
+                            <li><em>멜리나</em></li>
+                            <li>#차분한 #여자 #20대</li>
+                            <li><a href="javascript:void(0)"><em>캐릭터 변경</em></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="charL_next">
+                    <i class="icon-ico-arrow-next-24px"></i>
+                </div>
+            </div>
+            <div class="char_all_btn mobile">
+                <span>전체보기</span>
+                <i class="icon-ico-arrow-down-16px"></i>
+            </div>
+        </section>
+        <section id="mini_map">
+            <h3>Mini Map</h3>
+            <ul>
+                <li><a href="#">Script <em>001</em></a></li>
+                <li><a href="#">Script <em>002</em></a></li>
+                <li><a href="#">Script <em>003</em></a></li>
+                <li><a href="#">Script <em>004</em></a></li>
+                <li><a href="#">Script <em>005</em></a></li>
+                <li><a href="#">Script <em>006</em></a></li>
+                <li><a href="#">Script <em>007</em></a></li>
+                <li><a href="#">Script <em>008</em></a></li>
+                <li><a href="#">Script <em>009</em></a></li>
+                <li><a href="#">Script <em>010</em></a></li>
+                <li><a href="#">Script <em>011</em></a></li>
+                <li><a href="#">Script <em>012</em></a></li>
+                <li><a href="#">Script <em>013</em></a></li>
+                <li><a href="#">Script <em>014</em></a></li>
+                <li><a href="#">Script <em>015</em></a></li>
+                <li><a href="#">Script <em>016</em></a></li>
+                <li><a href="#">Script <em>017</em></a></li>
+                <li><a href="#">Script <em>018</em></a></li>
+                <li><a href="#">Script <em>019</em></a></li>
+                <li><a href="#">Script <em>020</em></a></li>
+            </ul>
+        </section>
+        <section id="script_list">
+            <ul>
+                <li id="script001" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>001</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar qquaddurup-56"></div>
+                                <button><span>꽈뚜룹</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10"
+                                class="warning">욕설, 비속어, 정치적 단어, 성적인 단어</textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script002" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>002</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar minjun-56"></div>
+                                <button><span>민준</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script003" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>003</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar hyesu-56"></div>
+                                <button><span>혜수</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script004" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>004</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar sunghun-56"></div>
+                                <button><span>성훈</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script005" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>005</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar jungwo-56"></div>
+                                <button><span>정우</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script006" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>006</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar yejun-56"></div>
+                                <button><span>예준</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script007" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>007</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar minjun-56"></div>
+                                <button><span>민준</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script008" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>008</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar readbooks-56"></div>
+                                <button><span>책 읽어주는 여자</span></button>
+                                </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script009" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>009</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar sponge-56"></div>
+                                <button><span>스폰지</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li id="script010" class="script">
+                    <ul>
+                        <li class="index">
+                            <i class="icon-ico-handle-24px"></i>
+                            <span>Script <em>010</em></span>
+                            <audio></audio>
+                            <div class="audio_player">
+                                <span class="start_time">00:00</span>
+                                <div class="time_line_bg">
+                                    <div class="time_line"></div>
+                                </div>
+                                <span class="end_time">00:00</span>
+                            </div>
+                            <div class="function_buttons">
+                                <i id="audio_play_button"
+                                    class="icon-ico-play-speaker-16px icon_bg_24 bg_purple tooltip">
+                                    <span class="tooltip_text">한칸재생</span>
+                                </i>
+                                <i class="icon-ico-copy-16px icon_bg_24 bg_blue tooltip">
+                                    <span class="tooltip_text">복사하기</span>
+                                </i>
+                                <i class="icon-ico-delete-16px icon_bg_24 bg_sky_blue tooltip">
+                                    <span class="tooltip_text">한줄삭제</span>
+                                </i>
+                            </div>
+                        </li>
+                        <li class="conversation">
+                            <div class="cnv_avator">
+                                <div class="avatar jungwo-56"></div>
+                                <button><span>정우</span></button>
+                            </div>
+                            <textarea name="script" id="" cols="30" rows="10" placeholder="내용을 입력해주세요."></textarea>
+                        </li>
+                    </ul>
+                    <div class="add"></div>
+                </li>
+            </ul>
+        </section>
+        
+        <div class="modal" style="display:none;"> <!-- 사용 팁 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents tips_modal">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>
+                    <img src="../imgs/signature.svg" alt="AVA">
+                    <span>사용팁</span>
+                </h4>
+                <section>
+                    <div class="tab_slider_area">
+                        <ul class="tab_btn_area">
+                            <li class="tab_btn on" rel="tab1">특수문자 활용</li>
+                            <li class="tab_btn" rel="tab2">보이스 선택</li>
+                        </ul>
+                    </div>
+                    <div class="tab_cnt_area">
+                        <div id="tab1" class="tab_cnt">
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>특수문자 활용</h5>
+                                    <p>특수한 기호들을 활용하면 자연스러운 음성을 표현하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <h6 class="tab_cnts_tit">1. 쉼표 사용</h6>
+                                    <p class="tab_cnts_txt">쉼표(,)를 활용하여 일정한 간격으로 문장내에 쉬는 구간을 만들어 자연스러운 발화 표현이 가능합니다. 스피커버튼을 눌러 확인하세요.</p>
+                                </div>
+                                <div class="tab_img_area">
+                                    <div class="tI_top tI_cnt">
+                                        <p class="tI_txt"><em>쉼표가 없는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/no_comma.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character01_01.png" alt="쉼표가 없는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character01_01_m.png" alt="쉼표가 없는 경우 이미지">
+                                        </div>
+                                    </div>
+                                    <div class="tI_btm tI_cnt">
+                                        <p class="tI_txt"><em>쉼표가 있는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/yes_comma.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character01_02.png" alt="쉼표가 있는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character01_02_m.png" alt="쉼표가 있는 경우 이미지">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>특수문자 활용</h5>
+                                    <p>특수한 기호들을 활용하면 자연스러운 음성을 표현하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <h6 class="tab_cnts_tit">2. 마침표 사용</h6>
+                                    <p class="tab_cnts_txt">마침표(.)를 활용하여 띄어서 읽어야 하는 문장을 지정하실 수 있습니다.  스피커 버튼을 눌러 확인하세요.</p>
+                                </div>
+                                <div class="tab_img_area">
+                                    <div class="tI_top tI_cnt">
+                                        <p class="tI_txt"><em>마침표가 없는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/no_period.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character02_01.png" alt="마침표가 없는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character02_01_m.png" alt="마침표가 없는 경우 이미지">
+                                        </div>
+                                    </div>
+                                    <div class="tI_btm tI_cnt">
+                                        <p class="tI_txt"><em>마침표가 있는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/yes_period.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character02_02.png" alt="마침표가 있는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character02_02_m.png" alt="마침표가 있는 경우 이미지">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>특수문자 활용</h5>
+                                    <p>특수한 기호들을 활용하면 자연스러운 음성을 표현하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <h6 class="tab_cnts_tit">3. 물음표 사용</h6>
+                                    <p class="tab_cnts_txt">물음표(?)를 활용하여 원하는 부분의 톤을 높여 묻는 대화체를 자연스럽게 표현할 수 있습니다.  스피커 버튼을 눌러 확인하세요.</p>
+                                </div>
+                                <div class="tab_img_area">
+                                    <div class="tI_top tI_cnt">
+                                        <p class="tI_txt"><em>물음표가 없는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/no_question-mark.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character03_01.png" alt="물음표가 없는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character03_01_m.png" alt="물음표가 없는 경우 이미지">
+                                        </div>
+                                    </div>
+                                    <div class="tI_btm tI_cnt">
+                                        <p class="tI_txt"><em>물음표가 있는 경우</em></p>
+                                        <div class="img_area">
+                                            <a href="javascript:void(0)" onclick="playAudio('../voice/yes_question-mark.wav')" class="speak"></a>
+                                            <img class="pc_980" src="../imgs/tips_character03_02.png" alt="물음표가 있는 경우 이미지">
+                                            <img class="mo_980" src="../imgs/tips_character03_02_m.png" alt="물음표가 있는 경우 이미지">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab_cnt">
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>보이스 선택</h5>
+                                    <p>캐릭터, 개별 화자를 손쉽게 변경하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <h6 class="tab_cnts_tit">1. 화자 변경</h6>
+                                    <p class="tab_cnts_txt v2">
+                                        <span class="alphabet">A. </span>
+                                        <span class="txt">대본에 어울리는 목소리 설정을 위해 ‘화자 변경’을 선택하세요.<br>(‘캐릭터 이름’위에 마우스 포인터를 위치하면 ‘화자 변경’으로 텍스트가 바뀝니다.)</span>
+                                    </p>
+                                </div>
+                                <div class="tab2_img">
+                                    <img class="pc_980" src="../imgs/tips_voice01.png" alt="화자 변경 이미지">
+                                    <img class="mo_980" src="../imgs/tips_voice01_m.png" alt="화자 변경 이미지">
+                                </div>
+                            </div>
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>보이스 선택</h5>
+                                    <p>캐릭터, 개별 화자를 손쉽게 변경하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <div class="tips_voice02">
+                                        <p class="tab_cnts_txt v2">
+                                            <span class="alphabet">B. </span>
+                                            <span class="txt">캐릭터의 음성을 미리듣기하여 원하는 음성을 선별 할 수 있습니다. 대본에 어울리는 목소리로 바꿔보세요!</span>
+                                        </p>
+                                        <div class="tab2_img">
+                                            <img class="pc_980" src="../imgs/tips_voice02_01.png" alt="Sapmle 음성 듣기">
+                                            <img class="mo_980" src="../imgs/tips_voice02_01_m.png" alt="Sapmle 음성 듣기">
+                                        </div>
+                                    </div>
+                                    <div class="tips_voice02">
+                                        <p class="tab_cnts_txt v2">
+                                            <span class="alphabet">C. </span>
+                                            <span class="txt">원하는 화자 선택을 완료한 후 ‘캐릭터 선택’버튼을 누르시면 해당 화자로 변경됩니다.</span>
+                                        </p>
+                                        <div class="tab2_img">
+                                            <img class="pc_980" src="../imgs/tips_voice02_02.png" alt="캐릭터 선택하기">
+                                            <img class="mo_980" src="../imgs/tips_voice02_02_m.png" alt="캐릭터 선택하기">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>보이스 선택</h5>
+                                    <p>캐릭터, 개별 화자를 손쉽게 변경하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts">
+                                    <h6 class="tab_cnts_tit">2. 캐릭터 변경</h6>
+                                    <p class="tab_cnts_txt v2">
+                                        <span class="alphabet">A. </span>
+                                        <span class="txt">스크립트 내의 특정 캐릭터를 일괄적으로 다른 캐릭터로 변경하기 위해서는 상단에 위치한 캐릭터 패널을 통하여 변경하실 수 있습니다.</span>
+                                    </p>
+                                </div>
+                                <div class="tab2_img center">
+                                    <img class="pc_980" src="../imgs/tips_voice03.png" alt="마우스 오버랩">
+                                    <img class="mo_980" src="../imgs/tips_voice03_m.png" alt="마우스 오버랩">
+                                </div>
+                                <div class="tab_cnts">
+                                    <p class="tab_cnts_txt v2">
+                                        <span class="alphabet">B. </span>
+                                        <span class="txt">바꾸고자 하시는 보이스의 <em class="blue_point">캐릭터 변경</em>을 누르면 캐릭터 선택창이 열립니다.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab_cnts_area">
+                                <div class="tab_cnts_header">
+                                    <h5>보이스 선택</h5>
+                                    <p>캐릭터, 개별 화자를 손쉽게 변경하실 수 있습니다.</p>
+                                </div>
+                                <div class="tab_cnts voice04">
+                                    <p class="tab_cnts_txt v2">
+                                        <span class="alphabet">C. </span>
+                                        <span class="txt">sample 미리듣기를 통해 음성을 미리 들어보고 선택하실 수 있습니다.</span>
+                                    </p>
+                                </div>
+                                <div class="tab2_img center">
+                                    <img class="pc_980" src="../imgs/tips_voice04.png" alt="B.Sample 음성듣기, D.선택완료">
+                                    <img class="mo_980" src="../imgs/tips_voice04_m.png" alt="B.Sample 음성듣기, D.선택완료">
+                                </div>
+                                <div class="tab_cnts voice04">
+                                    <p class="tab_cnts_txt v2">
+                                        <span class="alphabet">D. </span>
+                                        <span class="txt">캐릭터 선택 버튼을 누르거나, 원하는 캐릭터의 패널을 선택한 뒤 하단의 선택완료 버튼을 누르면,<br>기존 캐릭터로 만들어진 모든 스크립트가 선택한 캐릭터로 변경됩니다.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab_cnt_btn">
+                        <button type="button" class="prev_btn">
+                            <i class="icon-ico-prev-24px"></i>
+                        </button>
+                        <button type="button" class="next_btn on">
+                            <i class="icon-ico-next-24px"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="warning" class="modal" style="display:none;"> <!-- 동의하기 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close md_mobile"></i>
+                <h4>WARNING</h4>
+                <p>
+                    비속어, 욕설 또는 정치적, 성적인 단어가 포함된 문장을 TTS로 변환하여 부적절한 용도로 이용하는 경우 모든 법적인 책임은 사용자에게 있습니다.</br>
+                    <span>동의 시, 해당 문장들에 대한 데이터가 수집되며 법적 문제 발생 시 증거자료로 활용될 수 있습니다.</span></br>
+                    <em class="ft14">동의하시겠습니까?</em>
+                </p>
+                <div class="modal_btn_area">
+                    <button class="cancel">닫기</button>
+                    <button>동의하기</button>
+                </div>
+                <ul>
+                    <li class="list_style"></li>
+                    <li>동의하지 않고 창을 닫으실 경우, 문장에 포함된 모든 비속어/욕설/정치적/성적 단어들은 <em>자동으로 삭제</em>됩니다.</li>
+                    <li class="list_style"></li>
+                    <li>해당 <em>동의는 7일간 유효</em>하며 7일 이후 재 동의 해주셔야 합니다.</li>
+                </ul>
+            </div>
+        </div>
+        <div id="notice" class="modal" style=""> <!-- 공지 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close md_mobile"></i>
+                <h4>NOTICE</h4>
+                <p>무료회원의 경우 TTS 변환과 재생에 한하여 무제한으로 사용하실 수 있습니다.</br>
+                    <em>결제하기</em>를 이용하시면 TTS 변환 결과물을 <em>다운로드</em>하여 자유롭게 활용이 가능합니다.<br>
+                    AVA에서 TTS를 마음껏 사용해보세요!
+                </p>
+                <div class="modal_btn_area">
+                    <button>시작하기</button>
+                </div>
+                <div class="check_today_close">
+                    <input type="checkbox" id="today_closed" value="Y" />
+                    <label for="today_closed">오늘 하루 보지 않기</label>
+                </div>
+            </div>
+        </div>
+        <div id="character_change" class="modal" style="display:none;"> <!-- 캐릭터 선택 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents modal_character_change">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>캐릭터 변경</h4>
+                <!-- <em>선택한 캐릭터</em> 부분은 선택한 캐릭터의 이름으로 바뀜 -->
+                <section>
+                    <p>모든 <em>상진</em> 캐릭터가 <em>선택한 캐릭터</em>로 변경됩니다.</p>
+                    <div class="list_wrap">
+                        <div>
+                            <input type="checkbox" name="characters" id="jkim" onclick="doOpenCheck(this);">
+                            <label for="jkim">
+                                <div class="avatar jkim-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>제이킴</em></li>
+                                    <li><em>KOR</em> 스트리머 - 제이킴</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="suhyun" onclick="doOpenCheck(this);">
+                            <label for="suhyun">
+                                <div class="avatar suhyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>박수현</em></li>
+                                    <li><em>KOR</em> 스트리머 - 박수현</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="readbooks" onclick="doOpenCheck(this);">
+                            <label for="readbooks">
+                                <div class="avatar readbooks-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>책 읽어주는 여자</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yunjung" onclick="doOpenCheck(this);">
+                            <label for="yunjung">
+                                <div class="avatar yunjung-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>윤정</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yejun" onclick="doOpenCheck(this);">
+                            <label for="yejun">
+                                <div class="avatar yejun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>예준</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 남아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="seohyun" onclick="doOpenCheck(this);">
+                            <label for="seohyun">
+                                <div class="avatar seohyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>서현</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 여아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sponge" onclick="doOpenCheck(this);">
+                            <label for="sponge">
+                                <div class="avatar sponge-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>스폰지</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="mina" onclick="doOpenCheck(this);">
+                            <label for="mina">
+                                <div class="avatar mina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>민아</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jiyeon" onclick="doOpenCheck(this);">
+                            <label for="jiyeon">
+                                <div class="avatar jiyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>지연</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 자연스러운</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yuri" onclick="doOpenCheck(this);">
+                            <label for="yuri">
+                                <div class="avatar yuri-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>유리</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 정직한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="soyeon" onclick="doOpenCheck(this);">
+                            <label for="soyeon">
+                                <div class="avatar soyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>소연</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="ria" onclick="doOpenCheck(this);">
+                            <label for="ria">
+                                <div class="avatar hyesu-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>혜수</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 개성있는</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sangjin" onclick="doOpenCheck(this);">
+                            <label for="sangjin">
+                                <div class="avatar sangjin-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>상진</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jungwo" onclick="doOpenCheck(this);">
+                            <label for="jungwo">
+                                <div class="avatar jungwo-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>정우</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 진중한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="minjun" onclick="doOpenCheck(this);">
+                            <label for="minjun" class="current">
+                                <div class="avatar minjun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>민준</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sunghun" onclick="doOpenCheck(this);">
+                            <label for="sunghun">
+                                <div class="avatar sunghun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>성훈</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="charlie" onclick="doOpenCheck(this);">
+                            <label for="charlie">
+                                <div class="avatar charlie-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>Charlie</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="melina" onclick="doOpenCheck(this);">
+                            <label for="melina">
+                                <div class="avatar melina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>Melina</em></li>
+                                    <li><em>ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal_btn_area">
+                        <button disabled>선택 완료</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="all_character" class="modal" style="display:none;"> <!-- add 20210311 모바일 전체보기 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents modal_character_change modal_character_all">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>전체보기</h4>
+                <section>
+                    <p><em>선택된 캐릭터</em>가 스크립트로 생성됩니다.</p>
+                    <div class="list_wrap">
+                        <div>
+                            <input type="checkbox" name="characters" id="jkim" onclick="doOpenCheck(this);">
+                            <label for="jkim">
+                                <div class="avatar jkim-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>제이킴</em></li>
+                                    <li><em>KOR</em> 스트리머 - 제이킴</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="suhyun" onclick="doOpenCheck(this);">
+                            <label for="suhyun">
+                                <div class="avatar suhyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>박수현</em></li>
+                                    <li><em>KOR</em> 스트리머 - 박수현</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="readbooks" onclick="doOpenCheck(this);">
+                            <label for="readbooks">
+                                <div class="avatar readbooks-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>책 읽어주는 여자</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yunjung" onclick="doOpenCheck(this);">
+                            <label for="yunjung">
+                                <div class="avatar yunjung-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>윤정</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yejun" onclick="doOpenCheck(this);">
+                            <label for="yejun">
+                                <div class="avatar yejun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>예준</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 남아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="seohyun" onclick="doOpenCheck(this);">
+                            <label for="seohyun">
+                                <div class="avatar seohyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>서현</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 여아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sponge" onclick="doOpenCheck(this);">
+                            <label for="sponge">
+                                <div class="avatar sponge-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>스폰지</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="mina" onclick="doOpenCheck(this);">
+                            <label for="mina">
+                                <div class="avatar mina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>민아</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jiyeon" onclick="doOpenCheck(this);">
+                            <label for="jiyeon">
+                                <div class="avatar jiyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>지연</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 자연스러운</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yuri" onclick="doOpenCheck(this);">
+                            <label for="yuri">
+                                <div class="avatar yuri-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>유리</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 정직한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="soyeon" onclick="doOpenCheck(this);">
+                            <label for="soyeon">
+                                <div class="avatar soyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>소연</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="ria" onclick="doOpenCheck(this);">
+                            <label for="ria">
+                                <div class="avatar hyesu-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>혜수</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 개성있는</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sangjin" onclick="doOpenCheck(this);">
+                            <label for="sangjin">
+                                <div class="avatar sangjin-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>상진</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jungwo" onclick="doOpenCheck(this);">
+                            <label for="jungwo">
+                                <div class="avatar jungwo-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>정우</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 진중한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="minjun" onclick="doOpenCheck(this);">
+                            <label for="minjun">
+                                <div class="avatar minjun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>민준</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sunghun" onclick="doOpenCheck(this);">
+                            <label for="sunghun">
+                                <div class="avatar sunghun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>성훈</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="charlie" onclick="doOpenCheck(this);">
+                            <label for="charlie">
+                                <div class="avatar charlie-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>Charlie</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="melina" onclick="doOpenCheck(this);">
+                            <label for="melina">
+                                <div class="avatar melina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>Melina</em></li>
+                                    <li><em>ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="speaker_change" class="modal" style="display:none;"> <!-- 화자변경 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents modal_character_change modal_speaker_change">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>화자 변경</h4>
+                <section>
+                    <p>해당 스크립트의 화자가 선택한 캐릭터로 변경됩니다.</p>
+                    <div class="list_wrap">
+                        <div>
+                            <input type="checkbox" name="characters" id="jkim">
+                            <label for="jkim">
+                                <div class="avatar jkim-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>제이킴</em></li>
+                                    <li><em>KOR</em> 스트리머 - 제이킴</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="suhyun">
+                            <label for="suhyun">
+                                <div class="avatar suhyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>                        
+                                <ul class="avatar_detail_info">
+                                    <li><em>박수현</em></li>
+                                    <li><em>KOR</em> 스트리머 - 박수현</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="readbooks">
+                            <label for="readbooks">
+                                <div class="avatar readbooks-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>책 읽어주는 여자</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yunjung">
+                            <label for="yunjung">
+                                <div class="avatar yunjung-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>윤정</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yejun">
+                            <label for="yejun">
+                                <div class="avatar yejun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>예준</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 남아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="seohyun">
+                            <label for="seohyun">
+                                <div class="avatar seohyun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>서현</em></li>
+                                    <li><em>KOR/ENG</em> 어린이 - 여아</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sponge">
+                            <label for="sponge">
+                                <div class="avatar sponge-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>스폰지</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="mina">
+                            <label for="mina">
+                                <div class="avatar mina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>민아</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jiyeon">
+                            <label for="jiyeon">
+                                <div class="avatar jiyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>지연</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 자연스러운</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="yuri">
+                            <label for="yuri">
+                                <div class="avatar yuri-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>유리</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 정직한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="soyeon">
+                            <label for="soyeon">
+                                <div class="avatar soyeon-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>소연</em></li>
+                                    <li><em>KOR/ENG</em> 성인여자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="ria">
+                            <label for="ria">
+                                <div class="avatar ria-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>리아</em></li>
+                                    <li><em>KOR/ENG</em> 성인 여자 - 개성있는</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sangjin">
+                            <label for="sangjin">
+                                <div class="avatar sangjin-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>상진</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 발랄한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="jungwo">
+                            <label for="jungwo">
+                                <div class="avatar jungwo-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>정우</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 진중한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="minjun">
+                            <label for="minjun" class="current">
+                                <div class="avatar minjun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>민준</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 차분한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="sunghun">
+                            <label for="sunghun">
+                                <div class="avatar sunghun-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>성훈</em></li>
+                                    <li><em>KOR/ENG</em> 성인 남자 - 친근한</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="charlie">
+                            <label for="charlie">
+                                <div class="avatar charlie-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>Charlie</em></li>
+                                    <li><em>ENG</em> 성인 남자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="characters" id="melina">
+                            <label for="melina">
+                                <div class="avatar melina-72"></div>
+                                <div class="icon_bg_24 bg_blue_green">
+                                    <i class="icon-ico-speaker-16px"></i>
+                                    <span class="prev_listen">미리듣기</span>
+                                </div>
+                                <ul class="avatar_detail_info">
+                                    <li><em>Melina</em></li>
+                                    <li><em>ENG</em> 성인 여자</li>
+                                    <li><a href=""><em>캐릭터 선택</em></a></li>
+                                </ul>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="personal_info_modify" class="modal" style="display:none;"> <!-- 개인정보 변경 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents modal_m">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>개인정보 변경</h4>
+                <section>
+                    <p>변경하실 정보를 입력하고 저장하세요.</p>
+                    <form action="">
+                        <label for="email">E Mail</label>
+                        <input type="email" value="khr@mindslab.ai" readonly disabled />
+
+                        <label for="name">Name(Nick name) <strong>*</strong></label>
+                        <input type="text" placeholder="이름(별명)을 입력해주세요." />
+
+                        <label for="contact_info">Contact Info. <strong>*</strong></label>
+                        <input type="number" placeholder="연락 가능한 전화번호를 '-'(하이픈)없이 입력해주세요." />
+
+                        <label for="company">Company</label>
+                        <input type="text" placeholder="회사/소속을 입력해주세요." />
+
+                        <div class="modal_btn_area">
+                            <button type="submit">확인</button>
+                        </div>
+                        <div class="close"></div>
+                    </form>
+                    <a href="">회원탈퇴 ></a>
+                </section>
+            </div>
+        </div>
+        <div id="password_modify" class="modal" style="display:none;"> <!-- 비밀번호 변경 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents modal_m">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>비밀번호 변경</h4>
+                <section>
+                    <p>보안을 위해 비밀번호를 주기적으로 변경해주세요.</p>
+                    <form action="">
+                        <label for="old_password">Old Password<strong>*</strong></label>
+                        <input type="password" placeholder="기존 비밀번호를 입력하세요." />
+
+                        <label for="new_password">New Password<strong>*</strong></label>
+                        <input type="password" class="new_password" placeholder="새로운 비밀번호를 입력하세요." />
+                        <p class="password error">영문, 숫자, 특수문자를 포함하여 8자 이상 입력하세요.</p>
+
+                        <label for="new_password_confirm" class="error">New Password Confirm<strong>*</strong></label>
+                        <input type="password" placeholder="새로운 비밀번호를 다시한번 입력하세요." />
+                        <p class="error_txt">비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p>
+                        
+                        <div class="modal_btn_area">
+                            <button type="submit">확인</button>
+                        </div>
+                        <div class="close"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div id="logout" class="modal" style="display:none;"> <!-- 로그아웃 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>로그아웃</h4>
+                <section>
+                    <p>
+                        저장하지 않은 작업들은 모두 삭제됩니다. <br />
+                        로그아웃 하시겠습니까?
+                    </p>
+                    <div class="modal_btn_area">
+                        <button onclick="location.href='../index.html'">확인</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="new_file" class="modal" style="display:none;"> <!-- 새파일 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>새파일</h4>
+                <section>
+                    <p>
+                        확인을 누르시면 저장하지 않은 내용은 삭제됩니다. <br />
+                        새 파일을 열까요?
+                    </p>
+                    <div class="modal_btn_area">
+                        <button>확인</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="import" class="modal" style="display:none;"> <!-- 불러오기 -->
+            <div class="modal_bg"></div>
+            <!-- div class = "empty" 추가시 empty 화면 출력 -->
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>불러오기</h4>
+                <section>
+                    <p>내용을 확인하고 파일을 열어주세요.</p>
+                    <!-- 추가 된 div class="empty_area" -->
+                    <div class="empty_area">
+                        <img src="../imgs/ico-empty-68-px.png" alt="empty">
+                        <p>불러올 내용이 없습니다.</p>
+                    </div>
+                    <div class="contents_area">
+                        <div class="import_lists">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="import_list" id="list1" hidden checked />
+                                    <label for="list1">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list2" hidden />
+                                    <label for="list2">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list3" hidden />
+                                    <label for="list3">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list4" hidden />
+                                    <label for="list4">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list5" hidden />
+                                    <label for="list5">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list6" hidden />
+                                    <label for="list6">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list7" hidden />
+                                    <label for="list7">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list8" hidden />
+                                    <label for="list8">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list9" hidden />
+                                    <label for="list9">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list10" hidden />
+                                    <label for="list10">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="import_list" id="list11" hidden />
+                                    <label for="list11">
+                                        <span class="date">2020.11.10 08:30</span>
+                                        <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의 품에는</p>
+                                        <i class="icon-ico-solid-delete-24px"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="import_list_contents">
+                            <p>2020.11.10 08:30</p>
+                            <p class="title">청춘 품에 풀이 칼이다. 방황하여도 그들의</p>
+                            <ul class="selected_character_list">
+                                <li class="jungwo-36"></li>
+                                <li class="sangjin-36"></li>
+                                <li class="minjun-36"></li>
+                                <li class="sunghun-36"></li>
+                                <li class="seohyun-36"></li>
+                                <li class="yejun-36"></li>
+                                <li class="hyesu-36"></li>
+                                <li class="mina-36"></li>
+                                <li class="jiyeon-36"></li>
+                            </ul>
+                            <ul class="selected_script">
+                                <li class="selected_script_contents">
+                                    <ul>
+                                        <li class="character_name">정우</li>
+                                        <li class="character_script">
+                                            청춘 품에 풀이 칼이다. 방황하여도, 그들의 얼마나 듣는다. 우리는 군영과 대중을 우리의 인도하겠다는 싶이 없으면, 황금시대다. 이것이야말로
+                                            꽃이 가슴에 꽃 원질이 인생에
+                                            부패뿐이다.
+                                            싶이 살았으며, 보이는 쓸쓸하랴? 충분히 할지니, 것이다.보라, 공자는 우리 보라. 우리 것이다.보라, 인류의 이것이다. 따뜻한 설산에서 그들은
+                                            투명하되 발휘하기 위하여서.
+                                            품으며,
+                                            과실이 방황하였으며, 인간의 힘있다. 얼음이 위하여서 있는 있는가?
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character_name">상진</li>
+                                        <li class="character_script">
+                                            청춘 품에 풀이 칼이다. 방황하여도, 그들의 얼마나 듣는다. 우리는 군영과 대중을 우리의 인도하겠다는 싶이 없으면, 황금시대다. 이것이야말로
+                                            꽃이 가슴에 꽃 원질이 인생에
+                                            부패뿐이다.
+                                            싶이 살았으며, 보이는 쓸쓸하랴? 충분히 할지니, 것이다.보라, 공자는 우리 보라.
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li class="character_name">책 읽어주는 여자</li>
+                                        <li class="character_script">
+                                            청춘 품에 풀이 칼이다. 방황하여도, 그들의 얼마나 듣는다. 우리는 군영과 대중을 우리의 인도하겠다는 싶이 없으면, 황금시대다. 이것이야말로
+                                            꽃이 가슴에 꽃 원질이 인생에
+                                            부패뿐이다.
+                                            싶이 살았으며, 보이는 쓸쓸하랴? 충분히 할지니, 것이다.보라, 공자는 우리 보라. 우리 것이다.보라, 인류의 이것이다. 따뜻한 설산에서 그들은
+                                            투명하되 발휘하기 위하여서.
+                                            품으며,
+                                            과실이 방황하였으며, 인간의 힘있다. 얼음이 위하여서 있는 있는가?
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal_btn_area">
+                        <button>확인</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="save" class="modal" style="display:none;"> <!-- 저장하기 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>저장하기</h4>
+                <section>
+                    <p>
+                        작업하신 파일을 저장합니다. 파일 제목을 입력하세요.
+                    </p>
+                    <form action="">
+                        <label for="save_title"></label>
+                        <input type="text" placeholder="파일 제목을 입력하세요." class="error">
+                        <p class='error_txt'>중복된 파일명이 존재합니다. 다른 이름을 입력해주세요.</p>
+                        <div class="modal_btn_area">
+                            <button type="submit">저장하기</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div id="new_name_save" class="modal" style="display:none;"> <!-- 다른이름으로 저장하기 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>다른이름으로 저장하기</h4>
+                <section>
+                    <p>
+                        작업하신 파일을 새 이름으로 저장합니다. 파일 제목을 입력하세요.
+                    </p>
+                    <form action="">
+                        <label for="save_title"></label>
+                        <input type="text" id="save_title" placeholder="다른이름으로저장하기(1)" class="error">
+                        <p class="error_txt">중복된 파일명이 존재합니다. 다른 이름을 입력해주세요.</p>
+                        <div class="modal_btn_area">
+                            <button type="submit">확인</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div id="all_download" class="modal" style="display:none;"> <!-- 전체 다운로드 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>전체 다운로드</h4>
+                <section>
+                    <!-- form class="overbalance" 추가시 초과안내사항 및 버튼 변경 -->
+                    <form action="" class="">
+                        <!-- label class="error" 추가시 제목,체크박스,안내글 경고 추가 -->
+                        <label for="download_title" class="error"></label>
+                        <input type="text" id="download_title" placeholder="파일 제목을 입력해주세요.">
+                        <p class="error_txt">제목이 입력되지 않았습니다.</p>
+                        <div>
+                            <p>파일 다운로드 방식</p>
+                            <input type="radio" id="individual" value="개별 파일다운로드" name="file" checked>
+                            <label for="individual">개별 파일다운로드</label>
+                            <input type="radio" id="all" value="전체 파일다운로드" name="file">
+                            <label for="all">전체 파일다운로드</label>
+                        </div>
+                        <div>
+                            <p>파일 포맷 형식</p>
+                            <input type="radio" id="wav" value="wav" name="format">
+                            <label for="wav">wav</label>
+                            <input type="radio" id="mp3" value="mp3" name="format" checked>
+                            <label for="mp3">mp3</label>
+                        </div>
+                        <div>
+                            <!-- input class="error" 추가시 제목,체크박스,안내글 경고 추가 -->
+                            <input type="checkbox" id="deduction_agree" class="error">
+                            <label for="deduction_agree">글자 수 차감 동의</label>
+                            <ul>
+                                <li class="deduction_agree_title">다운로드 글자 수</li>
+                                <li class="deduction_agree_contents">
+                                    <ul>
+                                        <li class="current_use"><span>400,676</span>자</li>
+                                        <li>/</li>
+                                        <li class="hold_words"><span>600,445</span>자 (보유)</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="deduction_info">
+                                글자 수에 따라 많은 시간이 소요될 수 있습니다.<br>
+                                <em>다운로드 내역</em>에서 파일을 확인해주세요.
+                            </p>
+                            <p class="deduction_info overbalance">
+                                보유 글자수가 부족합니다.<br>
+                                다운로드를 원하시면 플랜을 업그레이드 해주세요.
+                            </p>
+                            <p>글자 수 차감 동의를 하셔야 다운로드 하실 수 있습니다.</p>
+                        </div>
+                        <div class="modal_btn_area">
+                            <button type="submit">다운로드</button>
+                            <button class="overbalance" onclick="window.open('./payments.html');">플랜 업그레이드 하기</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <div id="free_member_download" class="modal" style="display:none;"> <!-- 맴버십 플랜 결제 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>멤버십 플랜을 이용해주세요.</h4>
+                <p>
+                    현재 이용중인 플랜이 없습니다.<br />
+                    다운로드 하시려면 멤버십 플랜을 결제해주세요.
+                </p>
+                <div class="modal_btn_area">
+                    <button class="cancel">취소</button>
+                    <button>결제하기</button>
+                </div>
+            </div>
+        </div>
+        <div id="all_delete" class="modal" style="display:none;"> <!-- 전체 대본 삭제 -->
+            <div class="modal_bg"></div>
+            <div class="modal_contents">
+                <i class="icon-ico-cancel-24px modal_close"></i>
+                <h4>전체 대본 삭제</h4>
+                <section>
+                    <p>
+                        확인을 누르시면 저장하지 않은 대본은 모두 삭제됩니다. 캐릭터는 사라지지 않습니다.<br>전체 대본을 삭제할까요?
+                    </p>
+                    <div class="modal_btn_area">
+                        <button class="cancel">취소</button>
+                        <button>삭제하기</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast">
+        <!-- 다운로드 진행중 입니다. 가 내려간 이후에 토스트 -->
+        <div class="toast_item">
+            <div class="toast_icon"></div>
+            <p class="toast_text">잠시후 다운로드 내역을 확인해주세요.</p>
+            <div class="toast_close"></div>
+        </div>
+        <!-- 다운로드 진행중 입니다. 가 먼저 토스트 -->
+        <!-- <div class="toast_item">
+        <div class="toast_icon"></div>
+        <p class="toast_text">서버로부터 다운로드를 요청합니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_download_fail">
+        <div class="toast_icon"></div>
+        <p class="toast_text">다운로드를 실패하였습니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_save">
+        <div class="toast_icon"></div>
+        <p class="toast_text">저장되었습니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_clipboard_copy">
+        <div class="toast_icon"></div>
+        <p class="toast_text">클립보드에 복사되었습니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_script_delete">
+        <div class="toast_icon"></div>
+        <p class="toast_text">스크립트가 삭제되었습니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_all_delete">
+        <div class="toast_icon"></div>
+        <p class="toast_text">전체 삭제되었습니다.</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_information_script">
+        <div class="toast_icon"></div>
+        <p class="toast_text">Information script</p>
+        <div class="toast_close"></div>
+        </div>
+        <div class="toast_item toast_item_warning_script">
+        <div class="toast_icon"></div>
+        <p class="toast_text">Warning script</p>
+        <div class="toast_close"></div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.js"></script>
+    <script type="text/javascript" src="../js/html5div.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <script>
+        // 캐릭터 1개씩만 선택가능하게하기
+        function doOpenCheck(check) {
+            var object = document.getElementsByName("characters");
+            for (var i = 0; i < object.length; i++) {
+                if (object[i] != check) {
+                    object[i].checked = false;
+                }
+            }
+        }
+        document.querySelectorAll('.toast .toast_item>.toast_close').forEach(toast_close => {
+            toast_close.addEventListener('click', function () {
+                console.log('close');
+                toast_close.parentElement.setAttribute('style', 'display: none;');
+            })
+        });
+        document.getElementById('audio_play_button').addEventListener('click', function () {
+            document.getElementById('warning').style.display = 'block';
+        })
+
+        // document.getElementById('top_banner').addEventListener('click', function () {
+        //   this.remove();
+        // })
+
+        function setCookie(name, value, expirehours) {
+            var todayDate = new Date();
+            todayDate.setHours(todayDate.getHours() + expirehours);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
+
+        function closeWin() {
+            if (document.getElementById("today_close").checked) {
+                setCookie("ncookie", "done", 24);
+            }
+            document.getElementById('top_banner').remove();
+        }
+
+        function characterListSlider() {
+            $chlSlider = $('.charL_ul');
+            
+            $chlSlider.slick({
+                unslick:true,
+                responsive: [{
+                    breakpoint: 9999,
+                    settings: "unslick"
+                },{
+                    breakpoint: 1080,
+                    settings: {
+                        centerPadding: '0',
+                        infinite: true,
+                        draggable: true,
+                        autoplay: false,
+                        speed: 1000,
+                        autoplaySpeed:6000,
+                        pauseOnHover:false,
+                        arrows: false,
+                        mobileFirst: true,
+                        slidesToShow:6,
+                        slidesToScroll:6,
+                        dots:false,
+                    }
+                },{
+                    breakpoint: 980,
+                    settings: {
+                        centerPadding: '0',
+                        infinite: true,
+                        draggable: true,
+                        autoplay: false,
+                        speed: 1000,
+                        autoplaySpeed:6000,
+                        pauseOnHover:false,
+                        arrows: false,
+                        mobileFirst: true,
+                        slidesToShow:5,
+                        slidesToScroll:5,
+                        dots:false,
+                    }
+                },{
+                    breakpoint: 768,
+                    settings: {
+                        centerPadding: '0',
+                        infinite: true,
+                        draggable: true,
+                        autoplay: false,
+                        speed: 1000,
+                        autoplaySpeed:6000,
+                        pauseOnHover:false,
+                        arrows: false,
+                        mobileFirst: true,
+                        slidesToShow:3,
+                        slidesToScroll:3,
+                        dots:false,
+                    }
+                }/* ,{
+                    breakpoint: 980,
+                    settings: {
+                        centerPadding: '0',
+                        infinite: true,
+                        draggable: true,
+                        autoplay: true,
+                        speed: 1000,
+                        autoplaySpeed:6000,
+                        pauseOnHover:false,
+                        arrows: false,
+                        slidesToShow:3,
+                        slidesToScroll:1,
+                        dots:true,
+                    }
+                } */] 
+            });
+            
+            $('.charL_next').click(function(){
+                $chlSlider.slick('slickNext');
+            })
+        }
+
+        $(document).ready(function(){
+            characterListSlider();
+            $(window).on('resize orientationchange', function() {
+                $('.charL_ul').slick('resize');
+            });
+        });
+
+        /* top_banner */
+        /* cookiedata = document.cookie;
+        if (cookiedata.indexOf("ncookie=done") < 0) {
+          document.getElementById('top_banner').style.display = "block";
+        } else {
+          document.getElementById('top_banner').remove();
+        } */
+    </script>
+</body>
+</html>

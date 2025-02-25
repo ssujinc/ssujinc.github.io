@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>주석</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>Javascript 코드 작성 규칙</span></li>
+							<li><span>주석</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. 한 줄 주석</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>하단의 코드를 설명하기 위해 독립된 줄에 주석 작성합니다.</li>
+                                    <li>주석 앞의 코드를 설명하기 위해 줄 끝에 주석 작성합니다.</li>
+                                    <li>여러 줄에 걸친 설명일 때는 사용하지 않습는다.</li>
+                                    <li>독립된 줄에 한 줄 주석 작성 시에는 설명할 코드와 같은 단계 들여쓰기 사용하며, 이전 줄은 한 줄 비운다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-12 한줄 주석 사용 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">// 이 줄은 나이가 20살 이상일 때만 실행됩니다.</em> <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t" rowspan="2">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// 이 줄은 나이가 20살 이상일 때만 실행됩니다.  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br> 
+<br>  <em class="ft_clr_red">                                
+&nbsp;&nbsp;&nbsp;&nbsp;// 이 코드는 만으로 나이가 20세 이상인 것이 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// 그냥 20세 이상 아니아니 이게 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// 아 아닙니다 만으로 나이가 20세 이상인<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// 사람을 판별하기 위한 조건문입니다  <br></em>
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. 여러 줄 주석</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>첫 번째 줄은 여러 줄 주석을 여는 방법인 /*를 삽입하며, 다른 텍스트는 넣지 않습는다.</li>
+                                    <li>그 다음 줄 부터는 *와 텍스트를 입력하는데 첫 째 줄의 *과 열을 맞춘다. *과 텍스트 사이에는 공백 하나를 넣어준다.</li>
+                                    <li>마지막 줄은 여러 줄 주석을 닫는 방법인 */를 삽입하며 다른 텍스트는 넣지 않습는다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-13 여러 줄 주석 사용 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">/ *</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;*이 코드는 만으로 나이가 20세 이상인 것이 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*그냥 20세 이상 아니아니 이게 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*아 아닙니다 만으로 나이가 20세 이상인<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*사람을 판별하기 위한 조건문입니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*/
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t" rowspan="2">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;/ *<br>
+&nbsp;&nbsp;&nbsp;&nbsp;이 코드는 만으로 나이가 20세 이상인 것이 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;그냥 20세 이상 아니아니 이게 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;아 아닙니다 만으로 나이가 20세 이상인<br>
+&nbsp;&nbsp;&nbsp;&nbsp;사람을 판별하기 위한 조건문입니다.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*/  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+if (age &gt; 20) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">//</em>이 코드는 만으로 나이가 20세 이상인 것이 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">//</em>그냥 20세 이상 아니아니 이게 아니고<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">//</em>아 아닙니다 만으로 나이가 20세 이상인<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<em class="ft_clr_red">//</em>사람을 판별하기 위한 조건문입니다 <br>
+&nbsp;&nbsp;&nbsp;&nbsp;showAdultMovie();<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(7) span:contains("주석")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('주석 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

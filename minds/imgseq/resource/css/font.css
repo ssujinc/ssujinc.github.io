@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* MINDsLab. CSJ. 20220331 */
+
+/* SCDream */
+@font-face {
+  font-family:'SCDream';
+  font-style:normal;
+  font-weight:300;
+  src:local('SCDream3'), local('SCDream3'),
+      url('../fonts/SCDream3.otf') format('opentype');
+}
+@font-face {
+  font-family:'SCDream';
+  font-style:normal;
+  font-weight:500;
+  src:local('SCDream5'), local('SCDream5'),
+      url('../fonts/SCDream5.otf') format('opentype');
+}
+@font-face {
+  font-family:'SCDream';
+  font-style:normal;
+  font-weight:800;
+  src:local('SCDream7'), local('SCDream7'),
+      url('../fonts/SCDream7.otf') format('opentype');
+}

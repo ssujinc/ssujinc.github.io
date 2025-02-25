@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>javascript 선언 타입</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>Javascript 코드 작성 규칙</span></li>
+							<li><span>javascript 선언 타입</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. includ</dt>
+                            <dd>
+                                <p class="txt">&lt;script&gt;요소는 &lt;head&gt;요소 안에 쓰는 것이 일반적이다. 이런 형식을 취한 목적은 CSS나 자바스크립트와 같은 외부 파일 참조를 한 곳에서 처리하기 위함이다. 하지만 이런 형식은 CSS와 자바스크립트를 전부 다운로드하고, 파싱하고, 컴파일 할 때까지 페이지의 렌더링을 멈  추게 합니다. 브라우저는 &lt;body&gt; 요소를 만나게 되면서 렌더링이 시작되기 때문이다. 특히 자바스크립트를 많이 사용하는 페이지일수록 이런 지연은 눈에 띌 정도로 커진다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-40 javqscript include 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;HTML Page&lt;/title&gt;<br>
+&lt;script src="../js/jquery-1.11.2.min.js"&gt;&lt;/script&gt;<br>
+&lt;script src="../js/common.js"&gt;&lt;/script&gt;<br>
+&lt;script src="../js/applicationMain.js"&gt;&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+...
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;HTML Page&lt;/title&gt;<br>
+&lt;!-- 공통요소 head안, 맨 마지막에 씀 --&gt;<br>
+&lt;script src="../js/jquery-1.8.3.min.js"&gt;&lt;/script&gt;<br>
+&lt;body&gt;<br>
+...<br>
+&lt;!– 해당 페이지 요소 body안, 맨 마지막에 씀 --&gt;<br>
+<br>
+&lt;script src="../js/common.js"&gt;&lt;/script&gt;&lt;/head&gt;<br>
+&lt;script src="../js/applicationMain.js"&gt;&lt;/script&gt;<br>
+&lt;script type=“text/javascript"&gt;<br>
+...<br>
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>                                
+                        </dl> 
+                        <dl class="dl_lst">
+                            <dt>B. jQuery 라이브러리 사용법</dt>
+                            <dd>
+                                <p class="txt">jQuery 같은 오픈 소스들은 어디서나 직접 접근이 가능한 url을 제공하는데, 외부 사정에 의해 url이 변경되거나 장애가 발생할 경우, 그 영향이 해당 서비스에 그대로 반영되어 장애로까지 이어질 수 있기 때문에 외부 url 대신 프로젝트 저장소에 소스 코드를 직접 다운로드해서 사용합니다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-41 jQuery 라이브러리 사용 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;HTML Page&lt;/title&gt;<br>
+&lt;script src="http://code.jquery.com/jquery-  1.8.3.min.js"&gt;&lt;/script&gt;<br>"
+...
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;title&gt;HTML Page&lt;/title&gt;<br>
+&lt;script src="../js/jquery-1.8.3.min.js"&gt;&lt;/script&gt;<br>
+...
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>                                
+                        </dl>                        
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(7) span:contains("javascript 선언 타입")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('javascript 선언 타입 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>속성</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>CSS 코드 작성 규칙</span></li>
+							<li><span>속성</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>속성 선언 순서</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dd>
+                                <p class="txt">속성을 선언할 때는 그 쓰임새가 레이아웃과 관련이 큰 것에서 시작하여 레이아웃과 무관한 것 순서로 선언합니다. 관련 속성은 대표되는 속  성 다음으로 선언하며, 표 5-11에 표기된 순서대로 선언합니다. 대표되는 속성 중 (그룹) 표기된 것은 약식속성으로, 약식속성을 선언했을 때 속성 값의 순서와 동일하게 전체속성을 선언하며 표 5-12에  표기된 순서를 참고합니다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="순서/의미/대표되는속성/관련속성으로 구성됨">
+                                    <caption>5-10 속성 선언 순서</caption>
+                                    <colgroup>
+                                        <col width="15%"><col width="15%"><col width="15%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">순서</th>
+                                            <th class="al_l" scope="col">의미</th>
+                                            <th class="al_l" scope="col">대표되는 속성(그룹)</th>
+                                            <th class="al_l" scope="col">관련속성</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">1</td>
+                                            <td class="al_l">표시</td>
+                                            <td class="al_l">display</td>
+                                            <td class="al_l">visibility</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">2</td>
+                                            <td class="al_l">넘침</td>
+                                            <td class="al_l">Overflow</td>
+                                            <td class="al_l">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">3</td>
+                                            <td class="al_l">흐름</td>
+                                            <td class="al_l">float</td>
+                                            <td class="al_l">clear</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">4</td>
+                                            <td class="al_l">위치</td>
+                                            <td class="al_l">position</td>
+                                            <td class="al_l">top, right, bottom, left, z-index</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">5</td>
+                                            <td class="al_l">크기</td>
+                                            <td class="al_l">width &amp; height</td>
+                                            <td class="al_l">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">6</td>
+                                            <td class="al_l">간격</td>
+                                            <td class="al_l">margin &amp; padding (그룹)</td>
+                                            <td class="al_l">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">7</td>
+                                            <td class="al_l">테두리</td>
+                                            <td class="al_l">border (그룹)</td>
+                                            <td class="al_l">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">8</td>
+                                            <td class="al_l">배경</td>
+                                            <td class="al_l">background (그룹)</td>
+                                            <td class="al_l">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">9</td>
+                                            <td class="al_l">폰트</td>
+                                            <td class="al_l">font (그룹)</td>
+                                            <td class="al_l">color, letter-spacing, text-align, text-decoration, text-indent, vertical-align, white-space 등</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">10</td>
+                                            <td class="al_l">동작</td>
+                                            <td class="al_l">animation</td>
+                                            <td class="al_l">animation, transform, transition, marquee 등</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">11</td>
+                                            <td class="al_l">기타</td>
+                                            <td class="al_l">-</td>
+                                            <td class="al_l">위에 언급되지 않은 나머지 속성들로 폰트의 관련 속성 이후에 선언 하며, 기타 속성 내의 선언 순서는 무관함</td>                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="tbl_des">* [속성 선언 순서 기준: 1~6: 레이아웃, 7~8: 테두리/배경, 9: 폰트, 10: 동작, 11: 기타]</p>
+                            </dd>   
+                            <dd>
+                                <table class="tbl_line" summary="약식속성/전체속성 선언 순서으로 구성됨">
+                                    <caption>5-11 약식속성의 전체속성 선언 순서</caption>
+                                    <colgroup>
+                                        <col width="15%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">약식속성</th>
+                                            <th class="al_l" scope="col">전체속성 선언 순서</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">margin</td>
+                                            <td class="al_l">margin-top, margin-right, margin-bottom, margin-left</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">Padding</td>
+                                            <td class="al_l">border-top, border-right, border-bottom, border-left, border-width, border-top-width, border-right-width,  border-bottom-width, border-left-width, border-style, border-top-style, border-right-style, border-bottom-style,  border-left-style, border-color, border-top-color, border-right-color, border-bottom-color, border-left-color,  border-image, border-radius, border-collapse, border-spacing</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">background</td>
+                                            <td class="al_l">background-color, background-image, background-position, background-repeat, background-size, background-  attachment, background-origin, background-clip</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">animation</td>
+                                            <td class="al_l">animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">transition</td>
+                                            <td class="al_l">transition-property, transition-duration, transition-timing-function, transition-delay</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">font</td>
+                                            <td class="al_l">font-family, font-style, font-size, font-weight, font-variant, line-height</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                        </dl>                     
+                    </div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>속성 값 축약</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dd>
+                                <p class="txt">CSS 최적화를 위해 다음과 같이 속성 값을 축약합니다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="축약 전/축약 후/설명으로 구성됨">
+                                    <caption>5-12 속성 값 축약 예</caption>
+                                    <colgroup>
+                                        <col width="15%"><col width="15%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">축약 전</th>
+                                            <th class="al_l" scope="col">축약 후</th>
+                                            <th class="al_l" scope="col">설명</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">#555555</td>
+                                            <td class="al_l">#555</td>
+                                            <td class="al_l">16진수 컬러 코드값</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#ff4400</td>
+                                            <td class="al_l">#f40</td>
+                                            <td class="al_l">동일한 값으로 이루어진 16진수 컬러 코드값은 세 자리수로 축약하여 사용합니다.<br>단 인터넷 익스플로러 전용 속성인 CSS filter를 사용했을 경우 축약 속성을 인식  하지 못하는 오류가 있기 때문에 속성 값을 축약하지 않습는다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">background-position:left center</td>
+                                            <td class="al_l">background-position:0 50%</td>
+                                            <td class="al_l">위치값<br>문자로 표현한 위치값은 숫자로 변경합니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">top:0px</td>
+                                            <td class="al_l">top:0</td>
+                                            <td class="al_l">0의 단위<br>속성 값이 0일 경우 단위를 표시하지 않습는다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">padding:20px 20px  20px 20px</td>
+                                            <td class="al_l">padding:20px</td>
+                                            <td class="al_l" rowspan="3">동일한 속성 값<br>상, 우, 하, 좌의 속성 값이 동일하면 축약합니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">margin:0 auto 0 auto</td>
+                                            <td class="al_l">margin:0 auto</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">padding:20px 30px 20px 30px</td>
+                                            <td class="al_l">padding:20px 30px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                            <dd>
+                                <dl class="helpBox ico_refer">
+                                    <dt>참고</dt>
+                                    <dd>
+                                        <p class="txt">문자로 표현된 위치값을 숫자로 변환할 때 다음과 같이 합니다.<br>top, left → 0	right, bottom → 100%</p>
+                                    </dd>
+                                </dl>
+                            </dd>   
+                        </dl>                     
+                    </div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>약식 속성 사용 범위</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">CSS 최적화를 위해 다음과 같이 속성 값을 축약합니다.</p>
+                        <dl class="dl_lst">
+                            <dt>A. border</dt>
+                            <dd>
+                                <p class="txt">속성 값은 border-width, border-style, border-color 순서로 선언합니다. 테두리 스타일 속성을 초기 선언할 때는 반드시 border 단일 속성을 사용하고, 이후 테두리의 부분적인 속성이 변경될 경우 border 관련  속성(border-width, border-style, border-color)을 선언합니다. 작성 예는 다음과 같다.</p>
+                                <div class="txt_bg">
+.class{<em class="ft_clr_red">border</em>:1px solid #ccc}<br>
+.class01{<em class="ft_clr_red">border-color</em>:#666}<br>
+.class0102{<em class="ft_clr_red">border-style</em>:dotted}<br>
+.class_top01 {<em class="ft_clr_red">border-top</em>:1px solid #ccc}<br>
+.class_top0201{<em class="ft_clr_red">border-top-color</em>:#666}<br>
+.class_top0202{<em class="ft_clr_red">border-top-style</em>:dotted}
+                                </div>
+                                <p class="txt">테두리의 상, 우, 하, 좌 스타일이 2개 이상 다르면, 공통 스타일을 약식 속성으로 선언한 후 다른 부분은 관련 속성으로 선언합니다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 5-13 테두리 스타일이 2개 이상 다를 경우 약식 속성 선언의 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">.class{border:1px solid #ddd;border-bottom:1px solid #eee;border-left:1px solid #eee}</td>
+                                            <td class="al_l">.class{border:1px solid;border-color:#ddd #ddd #eee #eee}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">.class{border-top:1px solid #ddd;border-right:1px dotted #ddd;border-bottom:1px solid #eee;border-left:1px dotted #eee}</td>
+                                            <td class="al_l">.class{border:1px;border-style:solid dotted;border-color:#ddd #ddd  #eee #eee}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                        </dl>    
+                        <dl class="dl_lst">
+                            <dt>B. background</dt>
+                            <dd>
+                                <p class="txt">속성 값은 background-color, background-image, background-repeat, background-position, background-size, background-attachment,  background-orition, background-clip 순서로 선언합니다. 배경 스타일 속성을 초기 선언할 때는 반드시 background 단일 속성을 사용하며, 이후 배경의 부분적인 속성이 변경될 경우 background관련 속성(background-color, background-image, background-repeat, background-position, background-size, background-attachment,  background-orition, background-clip)을 선언합니다. 작성 예는 다음과 같다.</p>
+                                <div class="txt_bg">
+.class{<em class="ft_clr_red">background</em>:#ccc url(bg.gif) no-repeat}<br>
+.class_v1{<em class="ft_clr_red">background-position</em>:0 -50px}<br>
+.class_v2{<em class="ft_clr_red">background-position</em>:0 -100px}
+                                </div>
+                            </dd>
+                        </dl>   
+                        <dl class="dl_lst">
+                            <dt>B. font</dt>
+                            <dd>
+                                <p class="txt">폰트 스타일은 약식 속성으로 선언하지 않습는다. 폰트 스타일을 약식 속성으로 선언하면 다음과 같은 문제가 발생합니다. 아래와 같이 선언하면, font-weight:bold는 상속되지 않고 font 속성의 디폴트값인 font-weight:normal로 변경되기 때문에 불필요한 속성  값을 선언해야 하는 문제가 발생합니다.</p>
+                                <div class="txt_bg">
+.class{font-weight:bold;font-size:12px;font-family:dotum}<br>
+.class p{font:15px gulim}
+                                </div>
+                                <p class="txt">결국, class p의 폰트 스타일은 아래와 같아진다.</p>
+                                <div class="txt_bg">
+.class p{font-family:gulim;font-style:normal;font-variant:normal;font-weight:normal;font-size:15px;line-height:normal}
+                                </div>
+                            </dd>
+                        </dl> 
+                    </div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>한글 폰트 선언</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">영문폰트만 선언할 경우 특정 브라우저에서 폰트를 올바르게 출력하지 못하는 경우가 있으므로 한글 폰트 선언시 한글, 영문 폰트를 모두 선언합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 5-14 폰트 선언 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">font-family:'돋움'</td>
+                                            <td class="al_l">font-family:'돋움',dotum</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                        </dl>
+                    </div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(6) span:contains("속성")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('속성 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

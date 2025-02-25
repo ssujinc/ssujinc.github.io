@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>	
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>	
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../resources/css/font.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/swiper.min.css" />
+<link rel="stylesheet" type="text/css" href="../resources/css/chatbot2.css" />
+<!-- //css -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->	
+<title>Chat || MindsLab</title>
+</head>
+
+<body>
+	
+<button type="button" id="btn_goChat" style="background-image:url(../resources/images/ico_chat.png)">챗봇</button>
+	
+<!-- #chatUI_wrap -->
+<div id="chatUI_wrap">
+	<!-- .chatUI_top -->
+	<div class="chatUI_top">
+		<h1>MindsLab Chatbot UI</h1>
+		<button type="button" class="btn_chatClose" title="close">close</button>
+	</div>
+	<!-- //.chatUI_top -->
+	
+	<!-- .chatUI_mid -->
+	<div class="chatUI_mid">
+		<ul class="lst_talk">
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">병원 소개해줘</em>
+					<div class="date">2019.09.25 12:00</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">끊임없는 도전과 열정으로 높은 수준의 진료, 교육, 연구를 성취함으로써 인류의 건강한 삶에 기여하는 서울 아산병원입니다.</div>
+				</div>
+				<div class="bot_msg">
+					<div class="generic"> 
+						<span class="generic_img">
+							<img src="http://www.amc.seoul.kr/asan/images/hospitalinfo/img_introRolling02.jpg" alt="마인즈랩">
+						</span>
+						<span class="generic_url">
+							<a href="http://www.amc.seoul.kr/asan/main.do" target="_blank">www.amc.seoul.kr</a>
+						</span>
+					</div>
+					<div class="date">2019.09.25 12:00</div>
+				</div> 
+            </li>
+            
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">내 치료는 지금 어느 단계이니?</em>
+					<div class="date">2019.09.25 12:00</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">현재 항암치료 1주차이세요.<br>예상되는 치료 여정을 보여드릴께요.</div>
+				</div>
+				<div class="bot_msg">
+					<div class="img">
+						<img src="../resources/images/sample/asan_01.png" alt="뚜봇">
+					</div> 
+					<div class="date">2019.09.25 12:00</div>
+				</div> 
+            </li>
+		</ul>
+        <!-- 
+		<ul class="lst_talk">
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">갑자기 어지러워</em>
+					<div class="date">2019.09.25 12:00</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">항암치료동안 일시적으로 어지러울 수 있어요. 대처방안을 알려드릴게요.</div>
+				</div>
+				<div class="bot_msg">	
+					<div class="generic"> 
+						<span class="generic_tit bg_asan">
+							<strong>어지럼증의 대처방안</strong>
+						</span>
+						<span class="generic_des">
+                            <ul class="lst">
+                                <li>계단을 올라가거나 내려갈 때 난간을 붙잡고 천천히 움직입니다.</li>
+                                <li>밤 동안 충분한 수면을 취하고, 자주 휴식을 취합니다.</li>
+                                <li>꼭 필요한 활동 위주로 생활하고, 어지러움이 심할 때는 잠시 활동을 쉽니다.</li>
+                            </ul>
+                        </span>
+					</div>
+					<div class="date">2019.09.25 12:00</div>
+				</div>
+            </li>
+            
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">어지러워서 견디기 힘들어</em>
+					<div class="date">2019.09.25 12:01</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">의료진에게 연결할게요</div>
+				</div>
+				<div class="bot_msg">	
+					<div class="btnItem"> 
+						<ul>
+							<li><a class="active" href="#">연결 하기</a></li>
+							<li><a href="#">연결 취소</a></li>
+						</ul>
+					</div>	
+					<div class="date">2019.09.25 12:01</div>
+				</div>	
+            </li>
+		</ul> 
+        -->
+        <!-- 
+		<ul class="lst_talk">
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">배고픈데 뭘 먹지?</em>
+					<div class="date">2019.09.25 12:02</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">수술한지 얼마 안되셨네요.<br>닭죽을 드시는 것은 어떠세요?</div>
+					<div class="date">2019.09.25 12:02</div>
+				</div>	
+            </li>
+            
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">어떻게 만들지?</em>
+					<div class="date">2019.09.25 12:02</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">조리법 동영상을 보여드릴께요.</div>
+					<div class="date">2019.09.25 12:02</div>
+				</div>	
+            </li>
+            <li class="botMsg_swiper">	
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a class="swiper_item" href="#" target="_self"> 
+							<span class="item_img"><img src="../resources/images/sample/sample_asan01.jpg" alt="이미지 명"><img class="ico_play" src="../resources/images/ico_play_w.png" alt="이미지 명"></span>
+							<span class="item_tit">01. 쌀 씻기</span>
+							<span class="item_txt">쌀은 씻어서 2~3시간가량 물에 불린 다음 채반에 건져 물기를 빼 놓는다.</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="swiper_item" href="#" target="_self"> 
+							<span class="item_img"><img src="../resources/images/sample/sample_asan02.jpg" alt="이미지 명"><img class="ico_play" src="../resources/images/ico_play_w.png" alt="이미지 명"></span>
+							<span class="item_tit">02. 닭 삶기</span>
+							<span class="item_txt">닭은 깨끗이 손질해서 물을 붓고 대파, 마늘을 넣어 푹 삶는다.(국물의 기름기를 위해 껍질을 벗기고 조리한다.)</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="swiper_item" href="#" target="_self"> 
+							<span class="item_img"><img src="../resources/images/sample/sample_asan03.jpg" alt="이미지 명"><img class="ico_play" src="../resources/images/ico_play_w.png" alt="이미지 명"></span>
+							<span class="item_tit">03. 죽 끓이기</span>
+							<span class="item_txt">닭이 충분히 익으면 건져 뼈는 발라내고 고기는 찢어 놓는다. 국물을 체에 받쳐 놓는다. 닭육수에 불린 쌀을 넣고 가끔 저으면서 끓인다.(나무주걱을 사용해야 죽이 삭지 않는다.)</span>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="swiper_item" href="#" target="_self"> 
+							<span class="item_img"><img src="../resources/images/sample/sample_asan04.jpg" alt="이미지 명"><img class="ico_play" src="../resources/images/ico_play_w.png" alt="이미지 명"></span>
+							<span class="item_tit">04. 마무리</span>
+							<span class="item_txt">쌀알이 펴지면 닭고기를 넣고 2∼3분간 더 끓여서 소금으로 간을 하고 참기름을 넣는다.</span>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+            </li>
+		</ul>
+        -->
+        <!--
+		<ul class="lst_talk">
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">약 먹을 시간인데…내가 약을 먹었었나?</em>
+					<div class="date">2019.09.25 12:05</div>
+				</div>				
+			</li>
+            
+			<li class="bot">
+				<div class="bot_msg">				
+					<div class="txt">아직 약을 안 드셨네요,<br>
+OOO 2알을 드셔야합니다. <br>
+혹시 진통이 심하신 경우 OOO 1알을 추가로 드시라는 처방이
+있습니다..</div>
+					<div class="date">2019.09.25 12:05</div>
+				</div> 
+            </li>
+		</ul>
+        -->
+	</div>
+	<!-- //.chatUI_mid -->
+	
+	<!-- .chatUI_btm -->
+	<div class="chatUI_btm">
+		<form method="post" action="" id="formChat" name="formChat">
+			<textarea class="textArea" rows="1" placeholder="메세지를 입력해 주세요"></textarea>
+			<input type="submit" name="btn_chat" id="btn_chat" class="btn_chat" title="전송" value="전송">
+		</form>
+	</div>
+	<!-- //#chatUI_btm -->
+</div>
+<!-- //#chatUI_wrap -->
+	
+<!-- script -->	
+<script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script type="text/javascript" src="../resources/js/swiper.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+		// iframe 부모 도메인
+		document.domain = "10.122.66.179";
+		
+		// 날짜, 요일 시간 정의	
+		var year  = new Date().getFullYear();  //현재 년도
+		var month = new Date().getMonth()+1;  //현재 월
+		var date  = new Date().getDate();  //현재 일
+		var week  = new Array('일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'); //요일 정의
+		var thisWeek  = week[new Date().getDay()];	//현재 요일
+
+		var ampm = new Date().getHours() >= 12 ? '오후' : '오전';
+		var	thisHours = new Date().getHours() >=13 ?  new Date().getHours()-12 : new Date().getHours(); //현재 시
+		var	thisMinutes = new Date().getMinutes() < 10 ? '0' + new Date().getMinutes() : new Date().getMinutes(); //현재 분
+		var NowTime = thisHours + ':' + thisMinutes;
+		
+		// 오늘 날짜 입력
+		$('.lst_talk').each(function(){			
+			$(this).prepend('<li class="newDate"><span>' + year + '년 ' + month +'월 ' + date +'일 ' + thisWeek + '</span></li>');
+		});
+		
+		// chatbot open
+		$('#btn_goChat').on('click', function(){
+			$(this).addClass('goChat_hide');
+			$('#chatUI_wrap').addClass('chatUI_show');
+			
+			$('#chatbot', parent.document).addClass('chatOpen');	
+			
+			// 스크롤 하단으로 이동
+			var scrollHeight = $('.lst_talk').height();
+
+			$('.chatUI_mid').animate({
+				scrollTop: scrollHeight
+			},150);
+			return false;
+		});
+		
+		// chatbot close
+		$('.btn_chatClose').on('click', function(){
+			$('#btn_goChat').removeClass('goChat_hide');
+			$('#chatUI_wrap').addClass('chatUI_hide');
+			$('#chatUI_wrap').removeClass('chatUI_show');
+			setTimeout(function() {
+				$('#chatbot', parent.document).removeClass('chatOpen');	
+				$('#chatUI_wrap').removeClass('chatUI_hide');
+			}, 800);
+		});
+		
+		// 채팅입력 (Shift + Enter)
+		$('.chatUI_btm .textArea').keyup(function(e) { 
+			e.preventDefault(); 
+			var scrollHeight = $('.lst_talk').height();
+			var chatMidHeight = $('.chatUI_mid').height();
+			var txtHeight = $('.chatUI_btm .textArea').height();
+			var code = e.keyCode ? e.keyCode : e.which; if (code == 13) // EnterKey 
+			
+			{ 
+				if (e.shiftKey === true) { 
+					// shift + Enter
+					$('.chatUI_mid').css({
+						'height': chatMidHeight - 18,
+					});
+					$('.chatUI_btm .textArea').css({
+						'height' : txtHeight + 18,
+					});
+					$('.chatUI_mid').animate({
+						scrollTop: scrollHeight
+					},150);
+				} else { 
+					// Enter
+					$('.chatUI_btm #btn_chat').submit(); 
+					$('.chatUI_btm .textArea').val('');
+					$('.chatUI_mid').css({
+						'height' : '',
+					});
+					$('.chatUI_btm .textArea').css({
+						'height' : '',
+					});
+					$('.chatUI_mid').animate({
+						scrollTop: scrollHeight
+					},150);
+				} 
+				return false; 
+			} 
+		});
+	});	
+});	
+
+</script>
+<script type="text/javascript">
+// swiper
+var swiper = new Swiper('.botMsg_swiper', {
+	speed : 200,
+	slidesPerView:2,
+	spaceBetween: 10,
+	centeredSlides: false,
+	pagination: {
+		el: '.swiper-pagination',
+	clickable: true,
+	},
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+	
+});
+</script>
+	
+<!-- script -->		
+</body>
+</html>

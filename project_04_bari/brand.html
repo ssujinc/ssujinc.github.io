@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>
+	<link rel="stylesheet" href="resources/css/brand.css" />
+	<script>
+		$(window).on("load", function(){
+			var nav = $(".navName").val();
+			$(".gnb ."+nav).addClass("on");
+		});
+	</script>
+	<title>BARI BRAND</title>
+ </head>
+ <body>
+    <input type="hidden" value="brand" class="navName">
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+	?>
+	
+	<div id="container">	
+		<img class="brandm_img" src="resources/img/brand_main.jpg" alt="BRRI WHAT A MEAL" />
+		<div class="br_cont_taste">
+			<img class="whata_simbol" src="resources/img/whata_meal_simbol.png" alt="WHAT A MEAL simbol" />
+			<p class="br_title"><b>BARI</b>'s Taste</p>
+			<p class="br_subtitle"><b>&#8190;건강과 맛&#8125;</b> 두가지만 담겠습니다.</p>
+			<p class="br_txt">
+				슈퍼 푸드볼 카페 ‘바리’는 새롭고 신선한 맛을 즐겁게 즐기실 수 있도록 <b>익숙하지만 특별하게, 가볍지만 균형 잡힌, 완벽한 한 끼를 담겠습니다.</b><br />
+				풍부한 영양소와 면역력을 강화하는 슈퍼푸드 식재료로, 몸에 필요한 영양소를 골고루 섭취할 수 있도록 설계한 균형 잡힌 메뉴로,<br />
+				천연 조미료, 저염식, 저당분, 저열량식의 건강한 레시피로 맛있게 만들겠습니다. <br />
+				바리는 친환경 식자재와 GF(gluten free) 누들을 사용하고 있으며, 비건 고객을 위해 비건 치즈, 아몬드 우유 등을 사용하고 있습니다.<br />
+				<b>비건(Vegan) & 넌비건(Non-Vegan) 모두가 맛있게 즐기실 수 있는 완벽한 한 끼를 만들기 위해 노력하겠습니다.</b>
+			</p>
+			<img src="resources/img/brand_taste.jpg" alt="BARI's Taste" />
+		</div>
+		<div class="br_cont_promise">
+			<img class="whata_simbol" src="resources/img/whata_meal_simbol.png" alt="WHAT A MEAL simbol" />
+			<p class="br_title"><b>BARI</b>'s Promise</p>
+			<div>
+				<div class="fl">
+					<p class="br_subtitle2">Fresh</p>
+					<p class="br_txt2">바리의 모든 식재료는 매일 새벽에 정성스럽게 준비하여 최고의 신선함을<br />담겠습니다.</p>
+					<p class="br_subtitle2">Balanced Nutrition</p>
+					<p class="br_txt2">대표 슈퍼푸드인 연어, 아사이베리, 현미, 귀리 등으로 풍부한 영양소와<br />면역력을 강화하고, 저칼로리 식재료로 균형 잡힌 영양을 담겠습니다.</p>
+					<p class="br_subtitle2">Clean</p>
+					<p class="br_txt2">조리시 재료는 친환경, 최고급 식자재만을 사용하여 깨끗하고 바르게<br />만들겠습니다.</p>
+					<p class="br_subtitle2">Pleasure</p>
+					<p class="br_txt2">바리만의 철학과 특별한 레시피로 신선함과 균형 잡힌 영양, 맛있는 즐거움을<br />담겠습니다.</p>
+				</div>		
+				<img class="fr" src="resources/img/brand_promise.jpg" alt="BARI's Promise" />
+			</div>
+		</div>
+		<div class="br_cont_materials">
+			<img class="whata_simbol" src="resources/img/whata_meal_simbol.png" alt="WHAT A MEAL simbol" />
+			<p class="br_title"><b>BARI</b>'s Food materials</p>
+			<!-- <table>
+				<colgroup>
+					<col style="width:326px;"/>
+					<col style="width:327px;"/>
+					<col style="width:327px;"/>
+				</colgroup>
+				<tr>
+					<td>
+						<img src="resources/img/brand_materials_1.jpg" alt="BARI's Food materials 1" />
+						<table class="dimmed">
+							<tr>
+								<td>
+									<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+									<h2>: 비건치즈</h2>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<img src="resources/img/brand_materials_2.jpg" alt="BARI's Food materials 2" />
+						<div class="dimmed">
+							<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+							<h2>: 비건치즈</h2>
+						</div>
+					</td>
+					<td>
+						<img src="resources/img/brand_materials_3.jpg" alt="BARI's Food materials 3" />
+						<div class="dimmed">
+							<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+							<h2>: 비건치즈</h2>
+						</div>
+					</td>
+				<tr>
+				</tr>
+					<td>
+						<img src="resources/img/brand_materials_4.jpg" alt="BARI's Food materials 4" />
+						<div class="dimmed">
+							<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+							<h2>: 비건치즈</h2>
+						</div>
+					</td>
+					<td>
+						<img src="resources/img/brand_materials_5.jpg" alt="BARI's Food materials 5" />
+						<div class="dimmed">
+							<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+							<h2>: 비건치즈</h2>
+						</div>
+					</td>
+					<td>
+						<img src="resources/img/brand_materials_6.jpg" alt="BARI's Food materials 6" />
+						<div class="dimmed">
+							<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+							<h2>: 비건치즈</h2>
+						</div>
+					</td>
+				</tr>	
+			</table> -->
+			<ul>
+				<li>
+					<img src="resources/img/brand_materials_1.jpg" alt="BARI's Food materials 1" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="resources/img/brand_materials_2.jpg" alt="BARI's Food materials 2" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="resources/img/brand_materials_3.jpg" alt="BARI's Food materials 3" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="resources/img/brand_materials_4.jpg" alt="BARI's Food materials 4" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="resources/img/brand_materials_5.jpg" alt="BARI's Food materials 5" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="resources/img/brand_materials_6.jpg" alt="BARI's Food materials 6" />
+					<div class="dimmed">
+						<div>
+							<div>
+								<p>코코넛 오일로 만들어<br />더욱 안심하고 먹을 수 있는<br />식물성 치즈</p>
+								<h2>: 비건치즈</h2>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+ </body>
+</html>

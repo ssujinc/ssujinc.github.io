@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <script>
+            function WindPopup(){
+                var url = "popup.html";
+                var name = "popup";
+                var option = "width=566, height = 747, top = 20, left = 20, location = no,scrollbars=1"
+                window.open(url, name, option);
+            }
+            $(function(){
+                WindPopup();
+            })
+        </script>
+        <title>HYGGE</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="banner">
+                <button type="button" class="prev"></button>
+                <div class="banner">                  
+                </div>
+                <button type="button" class="next"></button>
+            </div>
+            <!-- /#banner -->
+            
+            <div id="main_content">
+                <ul>
+                    <li class="cnt_fir">
+                        <a href="hotissue.html">
+                            <p class="cnt_tit">핫이슈</p>
+                            <img src="images/index_/box1.jpg" alt="휘게서점" />
+                            <p class="cnt_name">청주에 처음! 책과 문화가 만나다!</p>
+                            <p class="cnt_txt">문화/교육/엔터테인먼트가 복합 된 대형 서점구성<br/>Book & Fancy Floor</p>
+                        </a>
+                    </li>
+                    <li class="cnt_sc">
+                        <a href="theme_planning.html">
+                            <p class="cnt_tit">테마기획</p>
+                            <div>
+                                <ul class="fir_ul">
+                                    <li>
+                                        <img src="images/index_/box2_1.jpg" alt="딜리버링해피니스" />
+                                    </li>
+                                    <li>
+                                        <p class="cnt_txt">
+                                        <span>[주목] "재미만으로는 부족하다, 희한함을 창조하라" - 박소령·스타트업 퍼블리대표, 『딜리버링 해피니스</span>
+                                        [박소령의 올댓비지니스] 토니 셰이 '딜리버링 해피니스' 하버드를 대표하는 IT업계 대표주자를 꼽아보라면 빌 게이츠와 마크 저커버그가 연달아 머릿속에...
+                                        </p>
+                                    </li>
+                                </ul>
+                                <ul class="sc_ul">
+                                    <li>
+                                        <img src="images/index_/box2_2.jpg" alt="동아전과" />
+                                    </li>
+                                    <li>
+                                        <p class="cnt_txt">
+                                            <span>[행사안내] 초등학생 학습참고서 10% 할인</span>
+                                            초등학교 학습참고서(전과 등) 10% 할인행사<br />
+                                            <span class="mg_b">위치 : 참고서 특별 행사장</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="cnt_thd">
+                        <a href="cultural_event.html">
+                            <p class="cnt_tit">휘게북클럽 이벤트</p>
+                            <div class="event_img">
+                                <img src="images/index_/box3_1.jpg" alt="x이벤트" />
+                                <img src="images/index_/box3_2.jpg" alt="이벤트2" />
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div id="content_foot">
+                    <div id="notice">
+                        <h3 class="notice_tit">공지사항</h3>
+                        <div class="notice">
+                            <a href="javascript:void()" class="list1">휘게문고 북클럽 회원을 위한 포인트적립 안내</a>
+                            <a href="javascript:void()" class="list2">휘게문고223 북클럽 회원을 위한 포인트적립 안내</a>
+                        </div>
+                        <div class="notice_btn">
+                            <button type="button" class="up"></button>
+                            <button type="button" class="down"></button>
+                        </div>
+                    </div>
+                    <div id="num">
+                        <h3 class="num_tit">고객센터</h3>
+                        <p><span>1588-2022</span> (AM 09:00 - PM06:00)</p>
+                    </div>                  
+                </div>
+                
+            </div>
+            <!-- /#content -->
+            
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

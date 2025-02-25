@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable=no">
+    <title>maum image sequence player</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./resource/css/reset.css" />
+    <link rel="stylesheet" href="./resource/css/font.css" />
+    <link rel="stylesheet" href="./resource/css/style.css" />
+  </head>
+  <body>
+    <!-- #wrap -->
+    <div id="wrap" class="pc aniNon">
+
+      <!-- .road_page -->
+      <!-- 페이지 로딩 시 이펙트 -->
+      <!-- <div class="road_page">
+        <img src="./resource/images/spinner.svg" alt="로딩이미지">
+      </div> -->
+      <!-- //.road_page -->
+
+      <!-- #header -->
+      <div id="header">
+        <div class="inner_header">
+          <h1 class="logo">
+            <a href="#" title="로고 이미지"></a>
+          </h1>
+        </div>
+      </div>
+      <!-- //#header -->
+
+      <!-- .btn_menu_wrap -->
+      <div class="btn_menu_wrap">
+        <button class="btn_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <div class="menu_wrap">
+          <div class="menu_div">
+            <p class="menu_wrap_tit">Settings</p>
+            <div class="menu_select_wrap">
+              <div class="select_area select_human_wrap">
+                <p>
+                  <em>인공인간</em>
+                  <span>AI Human</span>
+                </p>
+                <ul>
+                  <li class="on">
+                    <label for="rdoModel01">
+                      <input type="radio" id="rdoModel01" name="model" checked>
+                      <img src="./resource/images/img_model_female_button.png" alt="여성 모델">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="select_area select_clothes_wrap">
+                <p>
+                  <em>의상</em>
+                  <span>Clothing Color</span>
+                </p>
+                <ul>
+                  <li class="col_light_ivory on">
+                    <label for="rdoClothes01">
+                      <input type="radio" id="rdoClothes01" name="clothes" checked>
+                      <span>Light<br>Ivory</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="select_area select_bg_wrap">
+                <p>
+                  <em>배경</em>
+                  <span>Background</span>
+                </p>
+                <ul>
+                  <li class="on">
+                    <label for="rdoBg01">
+                      <input type="radio" id="rdoBg01" name="bg" checked>
+                      <img src="./resource/images/img_office_01_96px.png" alt="오피스 배경1">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg02">
+                      <input type="radio" id="rdoBg02" name="bg">
+                      <img src="./resource/images/img_office_02_96px.png" alt="오피스 배경2">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg03">
+                      <input type="radio" id="rdoBg03" name="bg">
+                      <img src="./resource/images/img_office_03_96px.png" alt="오피스 배경3">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg04">
+                      <input type="radio" id="rdoBg04" name="bg">
+                      <img src="./resource/images/img_office_04_96px.png" alt="오피스 배경4">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg06">
+                      <input type="radio" id="rdoBg06" name="bg" class="videoBg">
+                      <img src="./resource/images/img_video_02_192px.gif" alt="비디오 배경1">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg07">
+                      <input type="radio" id="rdoBg07" name="bg" class="videoBg">
+                      <img src="./resource/images/img_video_03_192px.gif" alt="비디오 배경2">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="rdoBg08">
+                      <input type="radio" id="rdoBg08" name="bg" class="videoBg">
+                      <img src="./resource/images/img_video_04_192px.gif" alt="비디오 배경3">
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="btn_apply btn_blur">apply</button>
+          </div>
+        </div>
+      </div>
+      <!-- //.btn_menu_wrap -->
+
+      <!-- #contents -->
+      <div id="contents" class="fhd">
+        <div class="bg_wrap">
+          <div class="bg_blur"></div>
+          <img class="bg_img" src="./resource/images/bg_office_img_01.png" alt="bg" />
+          <video class="bg_vid" autoplay loop muted playsinline src="./resource/images/bg_office_mov_06.mp4"></video>
+        </div>
+
+        <!-- .ai_human_wrap -->
+        <div class="stn ai_human_wrap">
+          <div class="ai_human_div">
+            <div class="bg_hd">
+              <video class="bg_vid" autoplay loop muted playsinline src="./resource/images/bg_office_mov_06.mp4"></video>
+            </div>
+            <div class="ai_human_body">
+              <!-- [D] 이미지 시퀀스 자리 -->
+              <img class="img_human_body" src="./resource/images/img_fhd_model_female.png" alt="행동 영상" />
+            </div>
+            <!-- [D] 얼굴 자리 -->
+            <!-- <div class="ai_human_head">
+              <img class="img_human_head" src="./resource/images/face_0000.png" alt="얼굴" />
+            </div> -->
+          </div>
+          <div class="bubble_wrap">
+            <div class="bubble_scroll">
+            </div>
+          </div>
+        </div>
+        <!-- //.ai_human_wrap -->
+
+
+        <div class="input_wrap">
+          <div class="input_form">
+            <form action="">
+              <button type="button" class="btn_input">인공인간의 발화 텍스트를 입력해보세요.</button>
+              <div class="input_area">
+                <div class="btn_emo_wrap">
+                  <button type="button" class="emo_normal" data-emo="normal"></button>
+                  <button type="button" class="emo_happy" data-emo="happy"></button>
+                  <button type="button" class="emo_sad" data-emo="sad"></button>
+                </div>
+                <button type="button" class="btn_emotion emo_normal"></button>
+                <div class="txtarea_div">
+                  <textarea class="textareaTxt"rows="1"></textarea>
+                </div>
+                <button type="button" class="btn_submit"></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+      <!-- //#contents -->
+    </div>
+    <!-- //#wrap -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./resource/js/common.js"></script>
+  </body>
+</html>

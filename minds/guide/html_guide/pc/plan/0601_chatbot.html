@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Chatbot</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Example</span></li>
+							<li><span>Chatbot</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Floating</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- 챗봇이 설치되어야 하는 사이트에 아래요소를 추가 해야 합니다 -------------------- --&gt;
+&lt;!-- css --&gt;	
+&lt;style type="text/css"&gt;
+#chatbot {display:block; overflow:hidden; position:fixed; right:0; bottom:0; width:760px; height:130px; border-radius:10px; z-index:9999;}
+#chatbot.chatOpen {height:80%;}
+#chatbot_iframe {width:100%; height:100%; border:none;} 
+.powered {display:block; position:fixed; right:20px; bottom:30px; margin-bottom:0; color:#fff; font-size:12px; text-align:right; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.7); z-index:700;}
+#chatbot.chatOpen .powered {display:none;}    
+
+@media screen and (max-width:760px) {
+    #chatbot {right:0; bottom:0; width:100%; height:100%; border-radius:0;}
+    #chatbot #btn_goChat {bottom:10px; width:55px; margin-right:10px; padding:50px 0 0 0;}	
+    #chatbot.chatOpen {right:0; bottom:0; width:100%; height:100%;}
+    .powered {bottom:12px;}
+}
+&lt;/style&gt;
+&lt;!-- //css --&gt;	
+	
+&lt;!-- html --&gt;
+&lt;div id="chatbot"&gt;
+    &lt;embed type="text/html" id="chatbot_iframe" src="챗봇 URL"&gt;
+    &lt;p class="powered"&gt;Powered by RedTie Inc&lt;/p&gt;
+&lt;/div&gt;	
+&lt;!-- //html --&gt;
+	
+&lt;!-- script --&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"&gt;&lt;/script&gt;	&lt;!-- 기존 jquery library 있을 경우 제거 --&gt;
+&lt;script type="text/javascript"&gt;
+    // 챗봇 도메인 주소
+    document.domain = "챗봇 도메인 주소";
+&lt;/script&gt;
+&lt;!-- //script --&gt;
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+        <div id="chatbot">
+            <embed type="text/html" id="chatbot_iframe" src="../../chatbot/chat2.html">
+        </div>	
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("Chatbot")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('Chatbot > HTML GUIDE');
+            });            
+		});
+	});
+});	
+</script>
+<!-- 적용할 css -->	
+<style type="text/css">
+#chatbot {display:block; overflow:hidden; position:fixed; right:0; bottom:0; width:760px; height:130px; border-radius:10px; z-index:9999;}
+#chatbot.chatOpen {height:80%;}
+#chatbot_iframe {width:100%; height:100%; border:none;} 
+.powered {display:block; position:fixed; right:20px; bottom:30px; margin-bottom:0; color:#fff; font-size:12px; text-align:right; text-shadow:1px 1px 3px rgba(0, 0, 0, 0.7); z-index:700;}
+#chatbot.chatOpen .powered {display:none;}    
+    
+@media screen and (max-width:760px) {
+#chatbot {right:0; bottom:0; width:100%; height:100%; border-radius:0;}
+#chatbot #btn_goChat {bottom:10px; width:55px; margin-right:10px; padding:50px 0 0 0;}	
+#chatbot.chatOpen {right:0; bottom:0; width:100%; height:100%;}
+.powered {bottom:12px;}
+}
+</style>
+<script type="text/javascript">
+// iframe 자식 도메인
+document.domain = "10.122.66.179";
+</script>
+</body>    
+</html>

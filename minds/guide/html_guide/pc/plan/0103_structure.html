@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Structure</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>General</span></li>
+							<li><span>Structure</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>HTML 마크업 구조</h4>
+					</div>
+					<div class="stn_cont">
+                        <div class="viewBox">
+                            <div class="preview">
+                                <!-- .html_structure -->
+                                <div class="html_structure">
+                                    <div class="html_wrap">
+                                        #wrap (감싸기)
+                                        <div class="html_skipNav">#skipNav(Skip Navigation)</div>
+                                        <div class="html_header">
+                                            #header (머리글)                                            
+                                            <div class="html_sta">.sta (Service Title Area)</div>
+                                            <div class="html_gnb">.gnb (Global Navigation Bar)</div>
+                                            <div class="html_lnb">.lnb (Local Navigation Bar)</div>                                            
+                                        </div>
+                                        <div class="html_container">
+                                            #container (컨테이너)
+                                            <div class="html_snb">#snb (Side  Navigation Bar)</div>
+                                            <div class="html_contents">
+                                                #contents
+                                                <div class="html_path">.path (문서 경로)</div>
+                                                <div class="html_stn">.stn (section)</div>
+                                                <div class="html_stn">.stn (section)</div>
+                                            </div>
+                                            <div class="html_aside">#aside (곁가지)</div>
+                                        </div>
+                                        <div class="html_footer">#footer (바닥글)</div>
+                                    </div>
+                                </div>
+                                <!-- //.html_structure -->
+                            </div>
+                            <div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- &lt;body&gt; 안에 작성 -------------------- --&gt;
+&lt;!-- #wrap --&gt;
+&lt;div id="wrap"&gt;
+    &lt;!-- #skipNav --&gt;
+    &lt;div id="skipNav"&gt;
+        &lt;a href="#contents"&gt;본문 바로가기&lt;/a&gt;
+        &lt;a href="#gnb"&gt;주메뉴 바로가기&lt;/a&gt;
+        &lt;a href="#snb"&gt;서브메뉴 바로가기&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;!-- //#skipNav --&gt;
+	&lt;!-- #header --&gt;
+	&lt;div id="header"&gt;	
+		&lt;div class="lot_col02"&gt;
+			&lt;h1&gt;
+				&lt;span&gt;MINDsLab&lt;/span&gt;
+				&lt;em&gt;HTML GUIDE&lt;/em&gt;
+			&lt;/h1&gt;
+		&lt;/div&gt;
+		&lt;div class="lot_col02"&gt;
+			&lt;!-- .sta --&gt;
+			&lt;div class="sta"&gt;
+				&lt;!-- .gnb --&gt;
+				&lt;div id="gnb" class="gnb"&gt;
+					&lt;ul class="nav_gnb"&gt;
+						&lt;li&gt;&lt;a href="#none"&gt;주메뉴 01&lt;/a&gt;&lt;/li&gt;	
+						&lt;li&gt;&lt;a href="#none"&gt;주메뉴 02&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="#none"&gt;주메뉴 03&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;!-- //.gnb --&gt;
+				&lt;!-- .srchBox --&gt;
+				&lt;div class="srchBox"&gt;
+					&lt;input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요."&gt;
+					&lt;button type="button" class="btn_ico" data-tooltip="main_srch"&gt;검색&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;!-- //.srchBox --&gt;
+				&lt;!-- .etc --&gt;
+				&lt;div class="etc"&gt;
+					&lt;!-- .nav_download --&gt;
+					&lt;ul class="nav_download"&gt;
+						&lt;li&gt;&lt;a href="#none" download&gt;다운로드 01&lt;span&gt;(버전)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;	
+						&lt;li&gt;&lt;a href="#none" download&gt;다운로드 021&lt;span&gt;(버전)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;!-- //.nav_download --&gt;
+					&lt;!-- .nav_etc --&gt;
+					&lt;ul class="nav_etc"&gt;
+						&lt;!-- .alarm --&gt;
+						&lt;li class="lst_dropdown ico_alarm"&gt;
+							&lt;div class="tit_dropdown"&gt;
+								&lt;button type="button" class="btn_dropdown"&gt;&lt;span&gt;알람&lt;/span&gt;&lt;/button&gt;
+								&lt;span class="num"&gt;2&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;dl class="cont_dropdown"&gt;
+								&lt;dt class="tit"&gt;
+									&lt;strong&gt;알람&lt;/strong&gt;
+									&lt;span class="svcBox"&gt;2 NEW&lt;/span&gt;
+								&lt;/dt&gt;
+								&lt;dd class="cont"&gt;
+									&lt;ul class="lst"&gt;
+										&lt;li&gt;
+											&lt;a href="#"&gt;
+												&lt;span class="txt"&gt;가나다라 마바사 아자차 카타파하&lt;/span&gt;
+											&lt;/a&gt;
+										&lt;/li&gt;	
+										&lt;li class="al_c"&gt;알림 내역이 없습니다.&lt;/li&gt;
+									&lt;/ul&gt;
+								&lt;/dd&gt;
+							&lt;/dl&gt;
+						&lt;/li&gt;
+						&lt;!-- //.alarm --&gt;
+						&lt;!-- .profile --&gt;
+						&lt;li class="lst_dropdown ico_avatar"&gt;
+							&lt;div class="tit_dropdown"&gt;
+								&lt;button type="button" class="btn_dropdown"&gt;
+									&lt;span&gt;profile&lt;/span&gt;
+									&lt;!-- &lt;img src="resources/images/sample/img_profile.png" alt="프로필 사진"&gt; --&gt;
+								&lt;/button&gt;
+							&lt;/div&gt;
+							&lt;div class="cont_dropdown"&gt;
+								&lt;ul class="lst"&gt;
+									&lt;li&gt;&lt;a class="ico_profile" href="#"&gt;설정&lt;/a&gt;&lt;/li&gt;
+									&lt;li&gt;&lt;a class="ico_logout"  href="#"&gt;로그아웃&lt;/a&gt;&lt;/li&gt;
+								&lt;/ul&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;!-- //.profile --&gt;
+					&lt;/ul&gt;
+					&lt;!-- //.nav_etc --&gt;
+				&lt;/div&gt;
+				&lt;!-- //.etc --&gt;
+			&lt;/div&gt;
+			&lt;!-- //.sta --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //#header --&gt;
+	
+	&lt;hr&gt;
+	
+	&lt;!-- #container --&gt;
+	&lt;div id="container"&gt;
+		&lt;!-- #snb --&gt;
+		&lt;div id="snb"&gt;
+        
+		&lt;/div&gt;
+		&lt;!-- //#snb --&gt;
+		
+		&lt;!-- #contents --&gt;
+		&lt;div id="contents"&gt;
+			&lt;!-- .content --&gt;
+			&lt;div class="content"&gt;
+				&lt;!-- .titArea --&gt;
+				&lt;div class="titArea"&gt;
+					&lt;h3&gt;page name&lt;/h3&gt;
+					&lt;div class="path"&gt;
+						&lt;ul class="path_nav"&gt;
+							&lt;li&gt;&lt;a class="home" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a class="home" href="#"&gt;1Depth&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&gt;&lt;a class="home" href="#"&gt;2Depth&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;span&gt;3Depth&lt;/span&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- //.titArea --&gt;
+                
+				&lt;!-- .section --&gt;
+				&lt;div class="stn contBoxType"&gt;
+					&lt;div class="stn_tit"&gt;
+						&lt;h4&gt;section Title&lt;/h4&gt;
+					&lt;/div&gt;
+					&lt;div class="stn_cont"&gt;
+                        section Contents
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- //.section--&gt;
+			&lt;/div&gt;
+			&lt;!-- //.content --&gt;
+		&lt;/div&gt;
+		&lt;!-- //#contents --&gt;
+		&lt;a href="#header" class="btn_goTop"&gt;&lt;span&gt;페이지 위로&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!-- //#container --&gt;
+	
+	&lt;hr&gt;
+	
+	&lt;!-- #footer --&gt;
+	&lt;div id="footer"&gt;
+		footer
+	&lt;/div&gt;
+	&lt;!-- //#footer --&gt;
+&lt;/div&gt;
+&lt;!-- //#wrap --&gt;</code>
+</pre>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Script</h4>
+					</div>
+					<div class="stn_cont">
+                        <div class="viewBox">
+                            <div class="preview lot_row ">
+								문서의 머리에 script 요소를 두면 로딩과 함께 스크립트가 실행됩니다. 문서 전체에 걸쳐 기능을 제어해야 하거나 문서 본문을 처리하기 전에 스크립트가 실행될 필요가 있을때 문서의 머리에 둡니다. 문서의 &lt;/body&gt; 직전에 script 요소를 두게 되면 문서의 마지막에 스크립트가 실행됩니다. 이는 접속자들의 화면에 HTML의 구조와 CSS의 디자인을 먼저 적용하고 렌더링되기 때문에 문서 로딩의 체감시간을 줄일 수 있습니다.
+                            </div>
+                            <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 공통 script --&gt;
+&lt;script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="사용하고자 하는 script library"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../../resources/js/common.js"&gt;&lt;/script&gt;
+
+&lt;!-- page Landing --&gt;  
+&lt;script type="text/javascript"&gt;   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+&lt;/script&gt; 
+&lt;!-- script --&gt;  
+&lt;script type="text/javascript"&gt;
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //해당 페이지에서만 사용할 script
+	});
+});	
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("structure")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('structure > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

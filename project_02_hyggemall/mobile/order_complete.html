@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/order_complete.css">
+  	<title>order completion</title>    
+</head>
+<body id="orderC" data-role="page" class="orderC_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+
+		<div class="content" data-role="content">
+			<div class="orderC_tab">
+				<h2>주문완료</h2>
+			</div>
+
+			<div class="inner_content">
+				
+				<section class="orderC_section01">
+					<div class="orderC_inner_section01">
+						<h2>주문이 성공적으로 완료되었습니다.</h2>
+						<h3><span>김휘게</span>고객님, 감사합니다.</h3>
+						<h4>주문번호 <span>2018050400001</span></h4>
+					</div>
+				</section>
+
+				<section class="orderC_section02">
+					<table>
+						<tr>
+							<td>
+								<h3 class="book_name">곰돌이 푸, 서두르지 않아도 괜찮아</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/detail_bookimg.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>12,420</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>690</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<p>주문수량 <span>2</span></p>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>24,840</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="book_name">거래의 기술</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/cart_01.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>19,800</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>1,100</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<p>주문수량 <span>2</span></p>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>19,800</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="cart_total_box">
+						<div class="cart_select_pick_box">
+							<p class="only_txt">주문상품 수량</p> 
+							<p class="cart_select_pick">3개</p>
+						</div>
+						<div class="cart_total_price_box">
+							<p class="only_txt">최종결제금액</p>
+							<p class="cart_total_payment"><span>53,640</span>원</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="orderC_section03">
+					<h3>결제정보</h3>
+					<div class="orderC_inner_section03">
+
+						<div class="orderC_section03_box">
+							<p class="order_left_txt">주문일시</p>
+							<p class="order_right_box_cnt">2018.05.04 10:36:25</p>
+						</div>
+						
+						<div class="orderC_section03_box">
+							<p class="order_left_txt">휘게북스 캐시</p>
+							<p class="order_right_box_cnt">2,000 캐시 사용</p>
+						</div>
+
+						<div class="orderC_section03_box">
+							<p class="order_left_txt">휘게북스 포인트</p>
+							<p class="order_right_box_cnt">0 P 사용</p>
+						</div>
+						
+						<div class="orderC_section03_box ">
+							<p class="order_left_txt">최정 결제 금액</p>
+							<p class="order_right_box_cnt">51,640 원</p>
+						</div>
+						
+						<div class="orderC_section03_box ">
+							<p class="order_left_txt">결제수단</p>
+							<p class="order_right_box_cnt">신용카드(법인)</p>
+						</div>
+						
+					</div>
+				</section>
+
+				<div class="orderC_btn_box">
+					<a href="index.html" class="go_shopping_btn orderC_btn">쇼핑하기</a>
+					<a href="order_list.html" class="orderC_detail_btn orderC_btn">상세보기</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

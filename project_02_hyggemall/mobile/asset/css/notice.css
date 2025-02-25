@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; background:#fff; }
+#wrap .content { background:#fff; width:100%; height:auto; border-width:0; overflow:visible; padding:0; } 
+#wrap .inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:48px 24px 64px 24px; } 
+
+
+.notice_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.notice_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+
+
+.notice_section01 ol { width:100%; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.notice_section01 ol>li { width:100%; border-bottom:1px solid #e4e8eb; min-height:64px; }
+.notice_section01 ol>li:last-child { border-bottom:0; }
+.notice_section01 ol ul { width:100%; height:auto; cursor:pointer; box-sizing:border-box; padding:15px 24px; }
+.notice_section01 ol ul li { width:100%; font-size:14px; color:#636c77; }
+.notice_section01 ol ul .notice_subject { font-family:'NBGothicR'; line-height:inherit; }
+.notice_section01 ol ul .notice_date { font-size:12px; font-family:'NBGothicL'; line-height:100%; margin-top:12px; }
+.notice_section01 ol ul:after { clear:both; display:block; content:''; }
+.notice_section01 ol .notice_box { height:auto; clear:both; box-sizing:border-box; width:100%; border-top:1px solid #e4e8eb; padding:24px; background:#f4f6f8; color:#636c77; font-size:12px; font-family:'NBGothicL'; line-height:120%; display:none; }
+.notice_section01 ol .notice_box:after { clear:both; content:''; display:block; }
+
+
+
+
+
+
+
+@media screen and (max-width:375px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:360px) {	
+	.notice_section01 ol>li { min-height:57px; }
+	.notice_section01 ol ul { padding:10px 12px; }
+	.notice_section01 ol ul .notice_subject { font-size:12px; }
+	.notice_section01 ol ul .notice_date { font-size:10px; }
+	.notice_section01 ol .notice_box { padding:12px; }
+}
+
+
+
+

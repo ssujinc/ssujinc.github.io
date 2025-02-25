@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+
+    <!---------------------- General Resources ---------------------->
+    <!-- General CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/chatbotAvatar.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/swiper.min.css">
+
+    <!-- General Script -->
+    <script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-migrate-3.3.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/swiper.min.js"></script>
+    <script type="text/javascript" src="resources/js/chatbotAvatar.js"></script>
+
+    <title>ChatbotAvatar</title>
+</head>
+<body>
+    <!-- #btn_chatbotAvatar -->
+        <button type="button" id="btn_chatbotAvatar">
+            <!-- <span class="txt">마음까지 생각하는 마음AI입니다.<br>궁금한 점을 물어보거나<br>스크롤을 이동해 보세요</span> -->
+            <span class="txt"><em>AI Human</em>에 <br>대해 소개해 드릴게요.<br>저를 클릭해 주세요.</span>
+            <span class="img"><img src="resources/images/img_avatar_jsr.png" alt="아바타"></span>
+        </button>
+    <!-- //#btn_chatbotAvatar -->
+
+    <!-- #chatUI_wrap -->
+    <div id="chatbotAvatar_wrap"> 
+        <div class="contBox">
+            <div class="cont_top">
+                <h1 class="logo"></h1>
+                <ul class="cont_ul">
+                    <li>
+                        <button type="button" class="btn_setting"><i class="fa fa-cog"></i>설정</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn_full"><i class="fa fa-window-maximize"></i>전체화면</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn_minimize"><i class="fa fa-window-close"></i>닫기</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cont_mid">
+                <div class="stn">
+                    <div class="mid_btn_area">
+                        <button type="button" class="btn_avatar active">아바타</button>
+                        <button type="button" class="btn_history">히스토리</button>
+                    </div>
+                    <!-- [D] 히스토리일때  ".scrollBox" 에 ".history" 를 추가해주세요.-->
+                    <div class="scrollBox">
+                        <p class="info_txt">스크롤을 이동해보세요!</p>
+                        <ul class="chat_lst ">
+                            <li class="question">
+                                <span class="txt">마음회의록이 뭐야?</span>
+                            </li>
+                            <li class="avatar">
+                                <span class="avatar_img">
+                                    <img src="resources/images/img_avatar_jsr.png" alt="아바타">
+                                </span>
+                                <p class="txt">
+                                    아바타엔진에는 AI모델의 모습과 목소리로 원하는 문장을 입력하여 만들 수 있는 립싱크아바타와 원하는 얼굴과 행동을 합쳐 만들 수 있는 페이스아바타가 있습니다. 마인즈랩의 클라우드 API 엔진을 지금 바로 비즈니스에 적용할 수 있습니다. 태초의 빛이 현재 지구에 도달하는 과정에서 물질의 이끌림에 의해 미세하게 왜곡된 새로운 패턴이 포착됐다고 스페이스 닷컴이 22일 보도했다.
+                                    <a href="http://ava.maum.ai" class="chatbot_parent_link">클라우드회의록 바로가기</a>
+                                </p>
+                            </li>
+                            
+                            <!-- 
+                                [D] 답변을 기다리는 중에 이 <li>로 넣어주세요. 
+                                로딩 중일때는 버튼, 글씨 입력 창을 다 비활성화 해주세요. 
+                                테스트로  catbotAvatar.js 에 스크립트로 넣어놓았습니다. (172~175번줄)
+                                <li class="avatar loading" style="display:block;"> 에 붙은 style 도 test용으로 써놓은것입니다.
+                                개발시 삭제해주세요.
+                            -->
+                            <!-- <li class="avatar loading" style="display:block;">
+                                <p class="txt">
+                                    <span class="lds-ellipsis">
+                                        <em></em><em></em><em></em><em></em>
+                                    </span>
+                                </p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- [D] 히스토리일때 ".videoBox" 는 안 보여집니다. -->
+                <div class="videoBox ">
+                    <div class="video videoWholeBody" style="z-index:0;">
+                        <!-- <video class="video_base" autoplay loop muted playsinline="" crossorigin="anonymous" src="https://media.maum.ai/media/service-dev/ai-human/display-prod/mute/mute_pcmcolor_lipsync_server.mp4" width="1920" height="1080"></video>
+                        <canvas class="video_vid" width="1920" height="1080"></canvas> -->
+                        <!-- <video class="video_base" autoplay loop playsinline="" crossorigin="anonymous" src="resources/video/motion.mp4" width="1920" height="1080"></video>
+                        <canvas class="video_vid" width="1920" height="1080"></canvas> -->
+                        <video class="video_base" autoplay loop muted playsinline="" crossorigin="anonymous" src="resources/video/motion01.mp4" width="1280" height="720" controlsList="nodownload"></video>
+                        <canvas class="video_vid" width="1280" height="720"></canvas>
+                    </div>
+                    <div class="video_btn">
+                        <button type="button" class="btn_vid btn_pause"><i class="fas fa-pause"></i></button>
+                        <button type="button" class="btn_vid btn_mute"><i class="fa"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cont_btm">
+                <div class="conversationRecogBox button active">
+                    <div class="crb_cnt">
+                        <div class="recogBoxBtn swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <button type="button">AI avatar</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">데이터 바우처</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">마인즈랩 서비스</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">챗봇</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">어떻게 사용해?</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">이건 얼마야?</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">데이터 바우처</button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <button type="button">마인즈랩 서비스</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conversationRecogBox text">
+                    <div class="crb_cnt">
+                        <form method="POST" action="">
+                            <!-- [D] A라고 쳤을때 나오는 자동완성 -->
+                            <div class="auto_complete">
+                                <button type="button"><em>A</em>pi</button>
+                                <button type="button"><em>A</em>I cloud</button>
+                                <button type="button"><em>A</em>I avatar</button>
+                                <button type="button"><em>A</em>vatar</button>
+                                <button type="button"><em>A</em>I</button>
+                            </div>
+                            <div class="text_area">
+                                <textarea type="text" placeholder="궁금한 점을 물어보세요."></textarea>
+                                <button type="button" class="btn_send" title="전송하기"><i class="fa fa-long-arrow-alt-up"></i>전송하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="conversationRecogBox voice">
+                    <div class="crb_cnt">
+                        <!-- [D] 스트리밍 지원시 -->
+                        <div class="enter_voice_area voice_streaming" style="display:none;">
+                            <div class="equalizer">
+                                <span class="guide_txt">음성을 듣고 있어요!</span>
+                                <img src="resources/images/img_equalizer.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- // [D] 스트리밍 지원시 -->
+
+                        <!-- [D] 스트리밍 미 지원시 -->
+                        <div class="enter_voice_area voice_no_streaming">
+                            <div class="equalizer">
+                                <span class="guide_txt">음성을 듣고 있어요!</span>
+                                <img src="resources/images/img_equalizer.svg" alt="">
+                            </div>
+                            <button type="button" class="btn_send" title="전송하기"><i class="fa fa-long-arrow-alt-up"></i>전송하기</button>
+                        </div>
+                        <!-- //[D] 스트리밍 미 지원시 -->
+
+                        <div class="reEnter_voice" style="display:none;">
+                            <button type="button" class="btn_reQuestion">입력하기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btm_btn_area">
+                    <div class="btm_btn_inner">
+                        <button type="button" class="controller_btn btn_button_cvsn active" data-btn="button"><i class="fa fa-bolt"></i>버튼대화</button>
+                        <button type="button" class="controller_btn btn_text_cvsn" data-btn="text"><i class="fa fa-keyboard"></i>텍스트대화</button>
+                        <button type="button" class="controller_btn btn_voice_cvsn" data-btn="voice"><i class="fa fa-microphone"></i>음성대화</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lowPowerBox">
+                <div class="lp_div">
+                    <p class="tit">저전력 모드</p>
+                        
+                    <div class="desc">
+                        <p>원활한 대화를 원하실 경우<br><em>설정>배터리</em>에서<br><em>저전력 모드를 해제</em>해 주세요.</p>
+                    </div>   
+    
+                    <button type="button" class="btn_check">확인</button>          
+                </div>         
+            </div>
+        </div>            
+    </div>
+    <!-- //#chatUI_wrap -->
+
+    <!-- [P] 퍼블리싱에서 캔버스를 사용하기 위해 작성해 놓았습니다. 개발에서는 필요치 않습니다. -->
+    <script>        
+        const video05 = document.querySelector('.video_base');
+        let width05 = video05.width;
+        let height05 = video05.height;
+
+        const canvas05 = document.querySelector('.video_vid');
+        canvas05.setAttribute('height', height05);
+        const ctx05 = canvas05.getContext('2d');
+
+        window.addEventListener('load', drawVideo05);
+        
+        function drawVideo05(){
+            ctx05.drawImage(video05, 0, 0, width05, height05);
+        
+            let frame05 = ctx05.getImageData(0, 0, width05, height05);
+            for(let i = 0; i < frame05.data.length; i += 4){
+                let r = frame05.data[i];      // red
+                let g = frame05.data[i + 1];  // green
+                let b = frame05.data[i + 2];  // blue               
+        
+                if( r < 140 && g >= 170 && b < 131 ){
+                    frame05.data[i + 3] = 0;
+                }
+            }
+            ctx05.putImageData(frame05,0,0);
+        
+            requestAnimationFrame(drawVideo05);
+        }
+        
+        // var iframefloatingVideo = document.getElementById("iframe_chatbotAvatar").contentWindow.document.getElementsByClassName("video_base");
+
+        // Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+        //     get: function () {
+        //         return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        //     }
+        // });
+
+
+        function iOS() {
+            return [
+                'iPad Simulator',
+                'iPhone Simulator',
+                'iPod Simulator',
+                'iPad',
+                'iPhone',
+                'iPod'
+            ].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+        }
+        if( iOS ){
+            var promise = $('.video video').get(0).play();
+            if (promise !== undefined) {
+                promise.then(_ => {
+                }).catch(error => {
+                    document.querySelector(".lowPowerBox").style.display="block";
+                    $('.btn_check').on('click', function () {
+                        document.querySelector(".lowPowerBox").style.display="none";
+                        video05.play();
+                    });
+                });
+            }
+        }
+        
+        // detect low-power-mode
+        if( /Android/i.test(navigator.userAgent)) {
+        }else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            // var promise = $('.video video').get(0).play();
+            // if (promise !== undefined) {
+            //     promise.then(_ => {
+            //         alert("d");
+            //     }).catch(error => {
+            //         document.querySelector(".lowPowerBox").style.display="block";
+            //         $('.btn_check').on('click', function () {
+            //             document.querySelector(".lowPowerBox").style.display="none";
+            //             video05.play();
+            //         });
+            //     });
+            // }
+            
+          /*   video05.addEventListener('suspend', () => {
+                if( !video05.playing ) {
+                // if( video05.paused ) {
+                    alert("저전력");
+                    document.querySelector(".lowPowerBox").style.display="block";
+                    $('.btn_check').on('click', function () {
+                        document.querySelector(".lowPowerBox").style.display="none";
+                        video05.play();
+                    });
+                } else {
+                    document.querySelector(".lowPowerBox").style.display="none";
+                }
+            });
+                // iphone is in low power mode
+                // var wrap = document.getElementById("chatbotAvatar_wrap");
+                // if ( wrap.className.indexOf("open") !== -1 ){
+                //     if( video05.paused ) {
+                //         alert("d");
+                //         document.querySelector(".lowPowerBox").style.display="block";
+                //         alert("저전력");
+                //         // $(".lowPowerBox").css("display","block");
+                //         $('.btn_check').on('click', function () {
+                //             document.querySelector(".lowPowerBox").style.display="none";
+                //             video05.play();
+                //         });
+                //     }
+                // }
+             */
+        }else {
+            // 그 외 디바이스
+        }
+
+    </script>
+</body>
+</html>

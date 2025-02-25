@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+    
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>코드규칙</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">규칙 가이드</a></li>
+							<li><span>기본정책</span></li>
+							<li><span>코드규칙</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 웹페이지 및 어플리케이션 제작 시 참고해야 할 사항에 대해 기술합니다.</li>
+							<li>이 문서는 웹기술을 활용하여 서비스를 만드는 모든 이를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>코드규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>들여쓰기</dt>
+                            <dd>1탭 들여쓰기 하며, 1탭의 크기는 공백 4칸으로 설정합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>빈줄</dt>
+                            <dd>가독성을 고려하여 빈 줄을 추가합니다. 단, 1줄을 초과하지 않습는다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>주석</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>시작은 영역 이름으로 시작하며 끝의 표시는 이름 앞에 //로 구분합니다.</li>
+                                    <li>목적이 있는 주석은 구분을 앞에 표시합니다. (예: Dev, Pub, 수정, 고도화)</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <div class="viewBox">
+                                    <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 이름 --&gt;
+&lt;div&gt;
+    &lt;p&gt;영역주석 : 시작과 끝이 있고, 마크업의 영역을 표시합니다.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- //이름 --&gt;
+ 
+&lt;!-- [D] Dev 설명 --&gt;
+&lt;!-- [P] Pub 설명 --&gt;
+&lt;!-- [A] All 설명 --&gt;
+&lt;p&gt;설명주석 : 시작과 끝이 없고, 개발팀(Dev)에게 전달내용을 설명합니다. &lt;/p&gt;
+&lt;p&gt;설명주석 : 시작과 끝이 없고, 퍼블팀(Pub)에게 전달내용을 설명합니다. &lt;/p&gt;
+&lt;p&gt;설명주석 : 시작과 끝이 없고, 모든팀(All)에게 전달내용을 설명합니다. &lt;/p&gt;
+ 
+&lt;!-- 수정 20181130 이름 설명 --&gt;
+&lt;!-- 추가 20181130 이름 설명 --&gt;
+&lt;!-- 삭제 20181130 이름 설명 --&gt;
+&lt;!-- 고도화1 20181130 이름 설명 --&gt;
+&lt;p&gt;기록주석 : 단건인 경우 유형별로 구분하고 설명합니다.&lt;/p&gt;
+&lt;p&gt;기록주석 : 다건인 경우 단위별로 구분하고 설명합니다.&lt;/p&gt;
+&lt;p&gt;기록주석 : 단순구조인 경우 닫기주석을 생략할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;기록주석 : 다중구조인 경우 닫기주석을 사용합니다.&lt;/p&gt;
+&lt;!-- //수정 --&gt;
+ 
+&lt;!-- [구분] 주제
+    - 제목: 설명
+    - 제목: 설명
+--&gt;
+&lt;p&gt;전달할 내용이 많은 경우 여러줄로 설명합니다. &lt;/p&gt;</code>
+</pre>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기록주석</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">수정할 내용이 많은 다중구조는 닫기주석을 적용합니다.</p>
+                        <dl class="dl_lst" style="margin-top:10px;">
+                            <dt>인라인</dt>
+                            <dd>
+                                <div class="viewBox">
+                                    <div class="codeview lot_row">
+<pre>
+<code data-language="html"><div>
+    (내용생략) <!-- 수정: 20181130 이름 설명 -->
+</div></code>
+</pre>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>단순구조</dt>
+                            <dd>
+                                <div class="viewBox">
+                                    <div class="codeview lot_row">
+<pre>
+<code data-language="html"><!-- 수정: 20181130 이름 설명 -->
+<div>
+    (내용생략)
+</div></code>
+</pre>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>다중구조</dt>
+                            <dd>
+                                <div class="viewBox">
+                                    <div class="codeview lot_row">
+<pre>
+<code data-language="html">
+<!-- 수정: 20181130 이름 설명 -->
+<div>
+    (내용생략)
+</div>
+<div>
+    (내용생략)
+</div>
+<!-- //수정: 20181130 이름 설명 --></code>
+</pre>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_rule.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a class="active" href="0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("코드규칙")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('코드규칙 > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

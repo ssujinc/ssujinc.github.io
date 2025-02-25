@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/cart.css">
+	<script type="text/javascript" src="asset/js/cart.js"></script>
+	
+	<script>
+		jQuery(document).ready(function(){
+			jQuery(".classRemove").removeClass().addClass("classRemove");
+		});
+	</script>	
+	
+  <title>cart</title>    
+</head>
+<body id="cart" data-role="page" class="cart_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+
+		<div class="content" data-role="content">
+			<div class="cart_tab">
+				<h2>장바구니</h2>
+			</div>
+
+			<div class="inner_content">
+				
+				<section class="cart_section01">
+					<p>쇼핑카트 보관기간은 최대  <span>90</span>일이며,<br>판매 종료 상품 및 품절된 상품은 리스트가 자동으로 삭제됩니다.</p>
+				</section>
+
+				<section class="cart_section02">
+					<table>
+						<colgroup>
+							<col style="width:10%;">
+							<col style="width:90%;">
+						</colgroup>
+						<tr>
+							<th class="input_box">
+								<label for="checkall" class="classRemove checkall"><span class="checkboximg"></span></label>
+								<input class="checkbox" type="checkbox" id="checkall" />
+							</th>
+							<th>
+								<label for="checkall" class="checkall_txt">전체선택</label>
+								<input class="cart_delete_btn classRemove" type="button" value="선택삭제" />
+							</th>	
+						</tr>
+						<tr>
+							<td>
+								<input class="checkbox checkChild" type="checkbox" id="cart1" name="chk" />
+								<label for="cart1"class="classRemove"><span class="checkboximg"></span></label>
+							</td>
+							<td>
+								<h3 class="book_name">곰돌이 푸, 서두르지 않아도 괜찮아</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/detail_bookimg.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>12,420</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>690</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<button class="cart_order_minus_btn cart_order_count_btn">
+												 <img src="asset/img/m_minus.png" alt="">
+											</button>
+											<div class="cart_order_count_input">
+												<input type="text" class="cart_order_count" value="2" maxlength="3" />
+											</div>
+											<button class="cart_order_plus_btn cart_order_count_btn">
+												<img src="asset/img/m_plus.png" alt="">
+											</button>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>24,840</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="checkbox" type="checkbox" id="cart2" name="chk" />
+								<label for="cart2" class="classRemove"><span class="checkboximg"></span></label>
+							</td>
+							<td>
+								<h3 class="book_name">거래의 기술</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/cart_01.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>19,800</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>1,100</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<button class="cart_order_minus_btn cart_order_count_btn">
+												 <img src="asset/img/m_minus.png" alt="">
+											</button>
+											<div class="cart_order_count_input">
+												<input type="text" class="cart_order_count" value="1" maxlength="3" />
+											</div>
+											<button class="cart_order_plus_btn cart_order_count_btn">
+												<img src="asset/img/m_plus.png" alt="">
+											</button>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>19,800</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="cart_total_box">
+						<div class="cart_select_pick_box">
+							<p class="only_txt">선택상품 수량</p> 
+							<p class="cart_select_pick">3개</p>
+						</div>
+						<div class="cart_total_price_box">
+							<p class="only_txt">결제예정금액</p>
+							<p class="cart_total_payment"><span>53,640</span>원</p>
+						</div>
+					</div>
+						
+					<div class="cart_btn_box">
+						<input type="button" class="cart_btn" value="주문하기" />
+					</div>
+
+				</section>
+				
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

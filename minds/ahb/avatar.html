@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+
+    <!-- icon (Chrome & Opera) -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/ico_maumAI_60x60.ico" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/mvp.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="https://sds.maum.ai/css?host=mindslab"/><!-- Chatbot -->
+
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="https://sds.maum.ai/js/mindslab"></script><!-- Chatbot -->
+
+    <script type="text/javascript" src="assets/js/messages.js"></script>
+	<script type="text/javascript" src="assets/js/Sortable.min.js"></script>
+    <title>AI Human Builder</title>
+</head>
+<body>
+    <!-- .page loading -->
+    <div id="pageldg">
+        <span class="out_bg">
+            <em>
+                <strong>&nbsp;</strong>
+                <strong>&nbsp;</strong>
+                <strong>&nbsp;</strong>
+                <b>&nbsp;</b>
+            </em>
+        </span>
+    </div>
+    <!-- //.page loading -->
+
+    <!-- [P] 프로젝트 등록 -->
+    <div id="pop_pjt_add" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap w500">
+            <div class="pop_top"><h2>프로젝트 시작하기 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <div class="pop_mid bg_lightblue">
+                <div class="dlBox">
+                    <dl class="dl_tbl">
+                        <dt><em>STEP 01.</em> 제작할 AI Human 템플릿 선택해 주세요.</dt>
+                        <dd class="pjt_radio">
+                            <div class="radio_box">
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_avatar" class="ipt_radio" checked="" value="AVATAR">
+                                    <label for="rd_avatar">
+                                        <img src="assets/image/img_projectThumb_avatar.png" alt="영상제작용 템플릿 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">영상제작용 템플릿</span>
+                                            <span class="desc">#아나운서 #큐레티어 # 북 리더</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_consult" class="ipt_radio" value="MANAGE">
+                                    <label for="rd_consult">
+                                        <img src="assets/image/img_projectThumb_counseling.png" alt="상담용 템플릿 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">상담용 템플릿</span>
+                                            <span class="desc">#상담봇 #리셉셔니스트 #가이드봇 #마케터</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_none" class="ipt_radio" value="NONE">
+                                    <label for="rd_none">
+                                        <img src="assets/image/img_projectThumb_diy.png" alt="템플릿 없음 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">템플릿 없음</span>
+                                            <span class="desc">AI process과정을 직접 제작</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_tbl">
+                        <dt><em>STEP 02.</em> 프로젝트 이름</dt>
+                        <dd>
+                            <input type="text" id="proj_name" class="ipt_txt w100" placeholder="프로젝트 명을 입력해 주세요.">
+                            <span class="error">Project name already exists</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" id="btn_pjt_add" class="blue_btn">등록</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[P] 프로젝트 등록 -->
+
+    <!-- [P] 프로젝트 관리 -->
+    <div id="pop_pjt_modify" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap w500">
+            <div class="pop_top"><h2>프로젝트 관리 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <div class="pop_mid bg_lightblue">
+                <p class="error">All project names must be unique</p>
+                <ul id="sortable" class="ui-sortable">
+                    <li id="731" class="ui-state-default mod-projects ui-sortable-handle">
+                        <input placeholder="dddf"><button type="button" class="btn_pjt_delete">삭제</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" id="btn_pjt_modify" class="blue_btn ">저장</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[P] 프로젝트 관리 -->
+        
+    <!-- [L] 라이선스 등록-->
+    <div id="pop_license_add" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap pop_license_add">
+            <div class="pop_top"><h2>라이선스 등록 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid">
+                <p>고객님의 이메일로 발송된 주문확인서 내의 인증키를 입력하세요.</p>
+                <div class="license_check error">
+                    <!-- [D] 실시간 체크 클래스 넣어주세요.
+                          에러일땐 error, 
+                          일치하면 success -->
+                    <input type="text" placeholder="예) 1234-abcd-5678-efgx">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+                <div class="lc_txt">
+                    <p class="sucess">사용 가능한 라이선스 입니다.</p>
+                    <p class="error">유효하지 않은 라이선스 입니다.</p>
+                </div>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button type="button" class="blue_btn" id="Button_Ok">등록</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[L] 라이선스 등록-->
+    
+    <!-- 삭제 팝업 -->
+    <div id="pop_delete" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>프로젝트를 정말 삭제 하시겠습니까?<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <p>상담 AI 프로젝트일 경우, 서비스가 중단될 수 있습니다.</p>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" class="blue_btn" id="Button_Ok">삭제</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //삭제 팝업 -->
+
+    <!-- 로그아웃 팝업-->
+    <div class="pop_simple mvp_pop" id="api_logout">
+        <div class="mvp_pop_bg"></div>
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_hd"><h2>Logout<em class="fas fa-times ico_close"></em></h2></div>
+            <!-- .pop_bd -->
+            <div class="pop_bd">AI Human Builder를 로그아웃 하겠습니까?</div>
+            <!-- //.pop_bd -->
+            <div class="btn">
+                <button type="button" id="Button_LogoutCancel">아니오</button>
+                <button type="button" class="blue_btn" id="Button_LogoutOk">네</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //로그아웃 팝업-->
+    
+    <!-- 알림 팝업 -->
+    <div id="Popup_Message" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>알림<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <p>변경된 사항이 있습니다.<br>프로젝트를 저장하시겠습니까?</p>
+            </div>
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" class="blue_btn" id="Button_Ok">저장</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //알림 팝업 -->
+    
+    <!-- 사용량 부족 팝업 -->
+    <div id="pop_lackUsage" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>알림<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <p>잔여 글자수가 부족하여 다운로드 받으실 수 없습니다.<br>스토어에서 구매하시겠습니까?</p>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" class="blue_btn" id="Button_Ok" onclick="redirectStore()">스토어 바로가기</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //사용량 부족 팝업 -->
+        
+    <!-- 확대보기 -->
+    <div id="pop_show_preview" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>확대보기 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <div class="vid_box">
+                    <div class="watermark_box">
+                        <img src="assets/image/img-watermark-200px.svg" class="watermark" alt="maum.ai 워터마크">
+                        <p class="user_id">hailey</p>
+                    </div>
+                    <video src="https://media.maum.ai/media/service-dev/ai-human/builder-dev/avatar/lipSync_model_broadcaster.mp4" id="preview_vid" style="object-fit:contain;" controls>
+                    <!-- <div class="img_none"></div> -->
+                    </video>
+                </div>
+            </div>
+            <!-- //.pop_mid -->
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //확대보기 -->
+
+    <!-- 배경선택 -->
+    <div id="pop_select_background" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap pop_select_background">
+            <div class="pop_top"><h2>배경 선택 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid">
+                <p class="tac">AI Human의 배경을 선택해 주세요.</p>
+                <div class="sb_tab_wrap">
+                    <ul class="tabs_ul">
+                        <li class="tab_link on" data-tab="basicImg">기본 배경</li>
+                        <li class="tab_link" data-tab="uploadImg">이미지 업로드</li>
+                    </ul>
+                    <div id="basicImg" class="tab_cnt on">
+                        <div class="tab_cnt_area">
+                            <ul class="tab_cnt_list">
+                                <!-- [D] 선택되었을 때 ".selected" 넣어주세요. -->
+                                <li class="basic_bg selected">
+                                    <div class="img_none"></div>
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <div class="bg_none"></div>
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="uploadImg" class="tab_cnt">
+                        <div class="tab_cnt_area">
+                            <ul class="tab_cnt_list">
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <div class="img_none"></div>
+                                    <div class="border"></div>
+                                </li>
+                                <!-- [D] 선택되었을 때 ".selected" 넣어주세요. -->
+                                <li class="basic_bg selected">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                                <li class="basic_bg">
+                                    <i class="fas fa-times btn_delete">삭제</i>
+                                    <img src="assets/image/img_bg_sample.png" alt="기본이미지 샘플">
+                                    <div class="border"></div>
+                                </li>
+                            </ul>
+                            <div class="tab_cnt_btm">
+                                <p>
+                                    위 화면에 마우스로 파일을 끌어오거나, 
+                                    <button class="upload" id="uploadFile">
+                                        <label for="imgSampleInputFile" class="">파일 선택</label>
+                                        <input type="file" id="imgSampleInputFile" class="" accept=".gif, .png, .jpg">
+                                    </button>
+                                    을 클릭하여 파일을 업로드 하세요.
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="tab_cnt_desc">
+                            <li>· 내보내기 이후 배경 변경 시, 영상 재생이 원활하지 않을 수 있습니다.</li>
+                            <li>· 업로드용 이미지 파일은 <b>gif, jpg, png</b>만 지원하며 최대 5MB까지 업로드 할 수 있습니다.</li>
+                            <li>· 이미지의 파일 이름은 영문, 숫자, 하이픈(-), 언더바(_)만 사용 가능하며, 한글 및 특수문자 및 <br>&nbsp;&nbsp;공백이 사용된  파일명은 등록이 불가능합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button type="button" class="blue_btn" id="Button_Ok">선택완료</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //배경선택 -->
+
+    <!-- 내보내기 -->
+    <div id="scenario_output_box" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap scenario_output_box">
+            <div class="pop_top"><h2>내보내기<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid">
+                <div class="output_tab_wrap">
+                    <ul class="tabs_ul">
+                        <li class="tab_link on" data-tab="fullScreen">Full Screen</li>
+                        <li class="tab_link" data-tab="floating">Floating</li>
+                    </ul>
+                    <div id="fullScreen" class="tab_cnt on">
+                        <div class="output_cnt"><p>&lt;script type="text/javascript"&gt;window.onload = function () {var iframe = document.createElement("iframe");iframe.id = "myframe";iframe.src = "https://human.maum.ai/?background=1&amp;scenario=1&amp;avatar=1";iframe.frameBorder = "0";iframe.allow = "camera;microphone";document.body.appendChild(iframe);document.getElementsByTagName("html")[0].style.height = "100%";document.getElementsByTagName("body")[0].style.height = "100%";window.parent.document.getElementById("myframe").width = "100%";window.parent.document.getElementById("myframe").height = "100%";};&lt;/script&gt;</p></div>
+                    </div>
+                    <div id="floating" class="tab_cnt">
+                        <div class="output_cnt"><p>
+                            &lt;!-- header에 추가 --&gt;&lt;!link rel="stylesheet" href="https://sds.maum.ai/css?host=마인즈랩 챗봇" /&gt;&lt;!-- body 가장 하단에 추가 --&gt;&lt;script&gt; src="https://sds.maum.ai/js/마인즈랩 챗봇"&gt;&lt;/script&gt;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button class="blue_btn" type="button"><i class="fa fa-link"></i> 복사하기</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //내보내기 -->
+
+    <!-- 실행시 로딩 팝업 -->
+    <div id="loading_play" class="modal_pop">
+        <div class="popWrap loading_play">
+            <div class="popmid">
+                <div class="loading_playDiv">
+                    <div class="loadingPlay"><div></div><div></div><div></div><div></div></div>
+                </div>
+                <p>아바타가 생성 중입니다.<br>잠시만 기다려주세요!</p>
+            </div>
+        </div>
+    </div>
+     <!-- //실행시 로딩 팝업 -->
+
+    <div class="menu_wrap">
+        <div class="hamberger_button">
+            <em class="fas fa-bars"></em>
+            <!--        <em class="fas fa-angle-double-left"></em>-->
+            <a herf="https://builder.maum.ai/">AI Human Builder</a>
+        </div>
+
+            <!-- [P] 추가 -->
+        <div class="projectBox">
+            <a href="javascript:void(0)" class="btn_project_add btn_modal_open" data-popup="pop_pjt_add"><span>새 프로젝트</span></a>
+            <dl class="dlBox">
+                <dt>
+                    <h3>프로젝트 목록</h3>
+                    <a href="javascript:void(0)" class="btn_pjt_setup btn_modal_open" data-popup="pop_pjt_modify" title="프로젝트 관리">프로젝트 관리</a>
+                </dt>
+                <dd>
+                    <ul class="lst menu-projects">
+                        <!-- ******* script로 구현 *******-->
+                        <li class="">
+                            <a href="javascript:void(0)" class="">
+                                <span>dd</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>dddf</span>
+                            </a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        
+        <a href="javascript:void(0)" class="btn_license_add btn_modal_open" data-popup="pop_license_add"><i class="fas fa-key"></i><span>라이선스 등록</span></a>
+    </div>
+
+   <!-- #container -->
+    <div id="container">
+        <!-- .contents -->
+        <div class="contents">
+            <div class="mvp_box mvp_box02">
+                <div class="mvp_top">
+                    <div class="mvp_top_area">
+                        <span class="btn_help">
+                            <a href="https://drive.google.com/file/d/1S6avadjuFMKfOrwDEWbiAE4NorEau-vk/view?usp=sharing" title="도움말" target="_blank">
+                                <em class="fas fa-info"></em> 도움말
+                            </a>
+                        </span>
+                        <h1><a href="https://builder.maum.ai/"><small></small> AI Human Builder</a></h1>
+                        <div class="fr_btn">
+                            <!-- .etcmenu -->
+                            <div class="etcmenu">
+                                <div class="userBox">
+                                    <dl class="">
+                                        <dt class="ico_user"><em class="far fa-user"></em></dt>
+                                        <dd>
+                                            <a target="_self" href="javascript:void(0)">csj@mindslab.ai</a>
+                                            <em class="fas fa-chevron-up"></em>
+                                        </dd>
+                                    </dl>
+                                    <ul class="lst">
+                                        <li class="ico_profile"><a target="_blank" href="https://maum.ai/user/profileMain?lang=ko">프로필</a></li>
+                                        <li class="ico_account"><a target="_blank" href="https://maum.ai/user/apiAccountMain?lang=ko">이용내역</a></li>
+                                        <li class="ico_payment"><a target="_blank" href="https://maum.ai/user/paymentInfoMain?lang=ko">결제내역</a></li>
+                                        <li class="ico_logout"><a href="#" class="btn_logout">로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lang_box">
+                                <!-- 하단 스크립트 처리 -->
+                                <!-- //.etcmenu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script_wrap">
+                    <div class="script_area">
+                        <div class="pjt_infoBox active">
+                            <h3 class="tit">프로젝트</h3>
+                            <span class="txt"> 프로젝트</span>
+                        </div>
+
+                        <!-- .stn stn_top -->
+                        <div class="stn stn_top">
+                            <div class="character_list">
+                                <ul class="charL_ul">
+                                    <li class="charL_list">
+                                        <!-- [D] ".charL_pic"에 ".active"를 주어서 선택되었다는 것을 표시해주세요.
+                                        -->
+                                        <div class="charL_pic btn_modal_open" data-popup="pop_lackUsage"> 
+                                            <img src="assets/image/jungsora-114px.png" alt="정소라">
+                                            <p class="charL_name">정소라</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase charL_usage">잔여 <span><em>240,0000</em> 자</span></button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/minkyungsoo-114px.png" alt="민경수">
+                                            <p class="charL_name">민경수</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/parkculmin-114px.png" alt="박철민">
+                                            <p class="charL_name">박철민</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase charL_usage">잔여 <span><em>240,0000</em> 자</span></button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/parkculmin-114px.png" alt="박철민">
+                                            <p class="charL_name">박철민</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/minkyungsoo-114px.png" alt="민경수">
+                                            <p class="charL_name">민경수</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/minkyungsoo-114px.png" alt="민경수">
+                                            <p class="charL_name">민경수</p>
+                                            <button class="btn_charL_preview btn_modal_open" data-popup="pop_show_preview" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/jungsora-114px.png" alt="정소라">
+                                            <p class="charL_name">정소라</p>
+                                            <button class="btn_charL_preview btn_modal_open" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/jungsora-114px.png" alt="정소라">
+                                            <p class="charL_name">정소라</p>
+                                            <button class="btn_charL_preview btn_modal_open" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                    <li class="charL_list">
+                                        <div class="charL_pic">
+                                            <img src="assets/image/jungsora-114px.png" alt="정소라">
+                                            <p class="charL_name">정소라</p>
+                                            <button class="btn_charL_preview btn_modal_open" title="미리보기"><span>미리보기</span><i class="fa fa-volume"></i></button>
+                                        </div>
+                                        <div class="charL_btn_area">
+                                            <button class="btn_charL_purchase">스토어 구입하기</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //.stn stn_top -->
+                        
+                        <div class="mvp_contents">
+                            <!-- .stn stn_board -->
+                            <div class="stn_board">
+                                <div class="board_top">
+                                    <button class="btn_reset" id="resetFlow"><em class="fas fa-undo"></em>&nbsp;&nbsp;
+                                        설정 초기화
+                                    </button>
+                                    <button class="play btn_modal_open" id="Button_MVPExec" data-popup="loading_play"><em class="fas fa-project-diagram"></em> 실행</button>
+                                    <button class="btn_save btn_modal_open" type="submit" id="saveFlow_btn" data-popup="Popup_Message">저장</button>
+                                </div>
+                                <!-- .stn_cnt -->
+                                <div class="stn_cnt script_list">
+                                    <ul id="script_ul">
+                                        <li id="script001" class="script">
+                                            <ul>
+                                                <li class="index">
+                                                    <span>Script <em>001</em></span>
+                                                    <div class="function_buttons">
+                                                        <button class="btn_play_preview btn_script_function" title="미리보기">
+                                                            <i class="fas fa-play-circle"></i>
+                                                            <span>미리보기</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="개별 다운로드">
+                                                            <i class="fas fa-download"></i>
+                                                            <span>개별 다운로드</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="복제하기">
+                                                            <i class="fas fa-clone"></i>
+                                                            <span>복제하기</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="한줄삭제">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                            <span>한줄삭제</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li class="conversation">
+                                                    <div class="cnv_avator">
+                                                        <div class="avatar">
+                                                            <img src="assets/image/jungsora-72px.png" alt="정소라">
+                                                            <p class="avator_name">정소라</p>
+                                                        </div>
+                                                        <div class="avatar">
+                                                            <img src="assets/image/img_bg01_72.png" alt="배경1" class="btn_modal_open" data-popup="pop_select_background">
+                                                            <p class="avator_back">배경1</p>
+                                                        </div>
+                                                    </div>
+                                                    <textarea name="script" id="" cols="30" rows="10" class="warning">욕설, 비속어, 정치적 단어, 성적인 단어</textarea>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="script002" class="script">
+                                            <ul>
+                                                <li class="index">
+                                                    <span>Script <em>002</em></span>
+                                                    <div class="function_buttons">
+                                                        <button class="btn_play_preview btn_script_function" title="미리보기">
+                                                            <i class="fas fa-play-circle"></i>
+                                                            <span>미리보기</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="개별 다운로드">
+                                                            <i class="fas fa-download"></i>
+                                                            <span>개별 다운로드</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="복제하기">
+                                                            <i class="fas fa-clone"></i>
+                                                            <span>복제하기</span>
+                                                        </button>
+                                                        <button class="btn_script_function" title="한줄삭제">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                            <span>한줄삭제</span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                                <li class="conversation">
+                                                    <div class="cnv_avator">
+                                                        <div class="avatar">
+                                                            <img src="assets/image/jungsora-72px.png" alt="정소라">
+                                                            <p class="avator_name">정소라</p>
+                                                        </div>
+                                                        <div class="avatar">
+                                                            <div class="img_none"></div>
+                                                            <p class="avator_back">배경2</p>
+                                                        </div>
+                                                    </div>
+                                                    <textarea name="script" id="" cols="30" rows="10" class="" placeholder="내용을 입력해주세요."></textarea>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="add"></div>
+
+                                    <!-- [D] 내보내기 버튼만 추가함 (현재 페이지와는 무관)-->
+                                    <button id="linkBtn_ai_humanSpeech" class="blue_link_btn blue_link_big_btn btn_export btn_modal_open" data-popup="scenario_output_box">내보내기</button>
+                                </div>
+                            </div>
+                            <!-- //.stn stn_board -->
+
+                            <!-- .stn stn_preview -->
+                            <div class="stn_preview">
+                                <ul class="sub_menu">
+                                    <li>미리보기</li>
+                                </ul>
+                                <!-- .stn_cnt -->
+                                <div class="stn_cnt">
+                                    <div class="preview_select">
+                                        <div class="preview_video">
+                                            <button class="btn_pxpand btn_modal_open" data-popup="pop_show_preview" title="확대보기"><i class="fas fa-expand-arrows-alt"></i><span>확대보기</span></button>
+                                            <button class="btn_play btn_play_play">
+                                                <i class="far"></i>
+                                            </button>
+                                            <!-- <div class="img_none"></div> -->
+                                            
+                                            <div class="watermark_box">
+                                                <img src="assets/image/img-watermark-200px.svg" class="watermark" alt="maum.ai 워터마크">
+                                                <p class="user_id">hailey</p>
+                                            </div>
+                                            <video src="https://media.maum.ai/media/service-dev/ai-human/builder-dev/avatar/lipSync_model_broadcaster.mp4"></video>
+                                        </div>
+                                        <button class="btn_all_download">전체 다운로드</button>
+                                    </div>
+                                </div>
+                                <!-- //.stn_cnt -->
+                            </div>
+                            <!-- //.stn stn_preview -->
+                        </div>
+                        <!-- //.mvp_contents -->
+                        
+                        <div id="Layer_AudioPlayer">
+                            <audio id="AudioPlayer_TTS" controls hidden>
+                                <source id="AudioSource_TTS" src="" type="audio/wav"/>
+                            </audio>
+
+                            <audio id="AudioPlayer" controls hidden>
+                                <source id="AudioSource" src="" type="audio/wav"/>
+                            </audio>
+
+                            <audio id="AudioPlayer_mix" controls hidden>
+                                <source id="AudioSource_mix" src="" type="audio/wav"/>
+                            </audio>
+                            <audio id="AudioPlayer_req" controls hidden>
+                                <source id="AudioSource_req" src="" type="audio/wav"/>
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //.contents -->
+
+        <!-- #footer -->
+        <div id="footer">
+            <div class="lot_c">
+                <div class="cyrt">
+                    <p> © Copyright 2020  ㈜ 마인즈랩   경기도 성남시 분당구 대왕판교로644번길 49 다산타워 6층 ㅣ 대표 유태준 ㅣ사업자 등록번호 314-86-55446
+                        <a href="javascript:void(0)" class="contact_btn"> ㅣ 문의하기 ㅣ </a>
+                        <a href="https://maum.ai/home/krTermsMain" target="_blank">이용약관</a>
+                    </p>
+                </div>
+                <!-- 			<div class="cyrt"><span>MINDsLab &copy; 2019</span></div> -->
+            </div>
+        </div>
+        <!-- //#footer -->
+
+    </div>
+    <!-- //#container -->
+
+    <!--    공통 푸터 부분-->
+    <!--<iframe src="https://maum.ai/serviceLanding/krFooter" class="footer_iframe"></iframe>-->
+    <script>
+        $(function(){
+            /*
+            ** logout 버튼 클릭
+            */
+            $(".btn_logout").on("click", function () {
+                $("#api_logout").fadeIn();
+            });
+
+            /*
+            ** logout 취소
+            */
+            $('#Button_LogoutCancel').on("click", function () {
+                $("#api_logout").fadeOut();
+            });
+
+            /*
+            ** 로그아웃 실행
+            */
+            $('#Button_LogoutOk').on("click", function () {
+                $("#api_logout").fadeOut();
+                $(".etcmenu").hide();
+                window.location.href = "/security/logout";
+            });
+
+            $(".btn_modal_open").on("click", function () {
+                var popupId = "#" + $(this).attr("data-popup");
+               
+                $("body").css('overflow', 'hidden');
+
+                $("body").find(popupId).wrap('<div class="lyrWrap"></div>');
+                $("body").find(popupId).before('<div class="lyr_bg"></div>');
+
+                //Layer popup close
+                $(".btn_modal_close, .blue_btn").on("click", function () {
+                    $("body").css("overflow","");
+                    $(".lyr_bg").fadeOut(800).remove();
+                    $("body").find(popupId).unwrap('<div class="lyrWrap"></div>');
+                });
+            });
+
+            $(".btn_play").on("click", function(){
+                if( $(this).hasClass("btn_play_play") ){
+                    $(this).siblings("video").get(0).play();
+                    $(this).addClass("btn_play_pause").removeClass("btn_play_play") ;
+                } else {
+                    $(this).siblings("video").get(0).pause();
+                    $(this).addClass("btn_play_play").removeClass("btn_play_pause") ;
+                }
+            })
+
+            $("#pop_show_preview .btn_modal_close").on("click", function(){
+                $(this).parents(".modal_pop").find("video").get(0).pause();
+            })
+
+            $(".tabs_ul li").click(function(){
+                var tab_id = $(this).attr("data-tab");
+                $(this).siblings(".tab_link").removeClass("on");
+
+                $(this).parent().siblings(".tab_cnt").removeClass("on");
+                $(this).addClass("on");
+                $("#"+tab_id).addClass("on");
+            })
+
+            // [D] 개발시 삭제
+            var playClicked;
+            $(".play.btn_modal_open").click(function(){
+                playClicked = true;
+            });
+            if( playClicked != true ){
+                setInterval(function(){
+                    $("body").css("overflow","");
+                    $("#loading_play").siblings(".lyr_bg").fadeOut(800).remove();
+                    $("body").find("#loading_play").unwrap('<div class="lyrWrap"></div>');
+                    playClicked = false;
+                },4000);
+            }
+            // [D] 개발시 삭제
+
+            // 프로젝트 등록 글자수 제한 팝업
+            $("#proj_name").on("keyup", function(){
+                if($(this).val().length > 25) {
+                    $(this).val($(this).val().substr(0, 25));
+                    alert("프로젝트명은 25글자 이내여야 합니다.")
+                }
+            });
+
+            // 스크립트 이동 
+            new Sortable(script_ul, {
+                animation: 150,
+                ghostClass: 'blue-background-class'
+            });
+
+            // 프로젝트 등록 포커스 
+            $(".btn_project_add").on("click", function(){
+                $("#proj_name").focus();
+                $("input:radio[name='rd_template']:radio[id='rd_avatar']").prop('checked', true);
+            });
+
+            // 아바타 선택시 active class 
+            $(".charL_pic").on("click", function(){
+                $(".charL_pic").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        document.getElementById('btn_pjt_add').addEventListener('click', function (e) {
+            e.stopPropagation();
+            let projectName = $("#proj_name").val();
+            if (projectName == '') {
+                alert("프로젝트 명을 입력해주세요");
+                $("#proj_name").focus();
+                return;
+            }
+        });
+
+        // 사용량 부족 스토어 바로가기
+        function redirectStore() {
+            let openNewWindow = window.open("about:blank");
+            openNewWindow.location.href = "https://store.maum.ai/";
+        }
+    </script>
+    <script>
+        let user_no = 9122;
+        let user_email = "csj@mindslab.ai";
+
+        let lang_code = "ko";
+
+        var newProjectTitle = "새 프로젝트";
+
+        let messages;
+        if (lang_code === 'ko')
+            messages = messages_ko;
+        else
+            messages = messages_en;
+
+
+        $(window).resize(function () {
+            var height = $(window).height(),
+                titleShow = $('.pjt_infoBox').hasClass('active');
+
+            // if (titleShow === true) {
+            //     $('.mvp_contents').css('height', height - 398 + 'px');
+            // } else {
+            //     $('.mvp_contents').css('height', height - 280 + 'px');
+            // }
+            $('.frameBox').css('height', height - 125 + 'px');
+        });
+
+        $(document).ready(function () {
+            $('em.fa-text-height').on('click', function () {
+                $(this).empty();
+                $(this).prependTo('eidj')
+            });
+
+            // 공통 팝업창 닫기
+            $('.ico_close, .pop_bg, .btn_close, .btn_lyrWrap_close').on('click', function () {
+                $('.pop_simple').fadeOut(300);
+                $('.lyr_service').fadeOut(200);
+                $('#mail_success').fadeOut(200);
+                $('body').css({
+                    'overflow': '',
+                });
+            });
+
+            // header user
+            $('.etcmenu .userBox dl dd').on('click', function () {
+                var statue = $('.etcmenu .userBox dl').attr('class');
+                $(this).parent().addClass('active');
+                $(this).children('em').attr('class', 'fas fa-chevron-up');
+                if (statue == "active") {
+                    $('.etcmenu .userBox dl').removeClass('active');
+                    $(this).children('em').attr('class', 'fas fa-chevron-down');
+
+                }
+            });
+
+            // $('#container').on('click',function(){
+            //     $('.etcmenu .userBox').removeClass('active');
+            // });
+
+            var height = $(window).height(),
+                titleShow = $('.pjt_infoBox').hasClass('active');
+
+            // if (titleShow === true) {
+            //     $('.mvp_contents').css('height', height - 398 + 'px');
+            // } else {
+            //     $('.mvp_contents').css('height', height - 348 + 'px');
+            // }
+            $('.frameBox').css('height', height - 125 + 'px');
+
+            $('.menu_wrap').hover(function () {
+                $('.menu_wrap').toggleClass('active');
+            });
+
+            $(".service_btn").on('click', function () {
+                $(this).toggleClass('active');
+                $(this).next(".dropdown-menu").slideToggle(200);
+            });
+
+            $('.service_layer').on('click', function () {
+                $('.lyr_service').fadeIn(200);
+            });
+
+            $('.mailing_btn').on('click', function () {
+                $('#lyr_mailing').fadeIn(200);
+                $('#name').val('');
+                $('#phone').val('');
+                $('#mail').val('');
+                $('#txt').val('');
+                $('.inquiry_box input, .inquiry_box textarea').siblings('label').show();
+                $('#title').text(messages.home.ask_custome_model);
+            });
+            $('.contact_btn').on('click', function () {
+                $('#lyr_mailing').fadeIn(200);
+                $('#title').text(messages.home.ask);
+
+            });
+            $('#callFlow_humanSpeech').on('click', function () {
+                var appName = "ai_humanSpeech";
+                callAppFlow(appName);
+            });
+            $('#callFlow_humanText').on('click', function () {
+                var appName = "ai_humanText";
+                callAppFlow(appName);
+            });
+            $('#callFlow_maumMinutes').on('click', function () {
+                var appName = "maum_minutes";
+                callAppFlow(appName);
+            });
+
+            $('#callFlow_fastAI').on('click', function () {
+                var appName = "fast_ai";
+                callAppFlow(appName);
+            });
+
+            $('#callFlow_kiosk').on('click', function () {
+                var appName = "kiosk";
+                callAppFlow(appName);
+            });
+
+            function validateEmail(sEmail) {
+                var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+                if (filter.test(sEmail)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            $('#sendMail').on('click', function () {
+                var name = $('#name').val();
+                var number = $('#phone').val();
+                var email = $('#mail').val();
+                var memo = $('#txt').val();
+                var pop_title = $('#title').text();
+                var param = location.search;
+                var noti;
+                var title;
+                if (name === '' || number === '' || email === '' || memo === '') {
+                    alert(messages.home.error_missing_input);
+
+                } else if (validateEmail(email) == false) {
+
+                    alert(messages.home.error_valid_email);
+
+                } else {
+
+                    if (pop_title == "나만의 모델 만들기 문의" || pop_title == "Ask to create custom models") {
+                        if (param == "?lang=en") {
+                            noti = "Sent from AI Human Builder(EN) inquiry for customized model";
+                        } else {
+                            noti = "AI Human Builder(KR) Customized Model 문의입니다.";
+                        }
+                        title = "[AI Human Builder] " + name + " 님의 Customized Model 문의입니다.";
+                    } else if (pop_title == "문의하기" || pop_title == "Ask Now") {
+                        if (param == "?lang=en") {
+                            noti = "Sent from AI Human Builder(EN)";
+                        } else {
+                            noti = "AI Human Builder(KR)에서 보낸 메일입니다.";
+                        }
+                        title = "[AI Human Builder] " + name + " 님의 문의입니다.";
+                    }
+                    var mailContents = "이름 : " + name + "<br>"
+                        + "전화번호 : " + number + "<br>"
+                        + "Email : " + email + "<br>"
+                        + "문의내용 : " + memo + "<br><br><br><br>"
+                        + noti;
+
+                    var formData = new FormData();
+                    formData.append('fromAddr', $("#mail").val());
+                    formData.append('toAddr', 'hello@mindslab.ai');
+                    formData.append('subject', title);
+                    formData.append('msg', mailContents);
+                    formData.append($("#key").val(), $("#value").val());
+
+                    console.log(formData);
+
+                    $.ajax({
+                        type: 'POST',
+                        async: true,
+                        url: '/sendmail/reqMail',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (result) {
+                            $('#name').val("");
+                            $('#phone').val("");
+                            $('#mail').val("");
+                            $('#txt').val("");
+                            console.log(result.toString());
+                            console.log("sending info success");
+
+                            $('#lyr_mailing').hide();
+                            $('#mail_success').fadeIn();
+                            var placeholderLabel = $('.inquiry_box input, .inquiry_box textarea');
+                            placeholderLabel.siblings('label').show();
+
+
+                        }, error: function (err) {
+                            console.log("error! ", err);
+                            alert(messages.home.error_sendMail);
+                        }
+                    });
+
+
+                }
+            });
+
+            // 인풋 라벨
+            var placeholderLabel = $('.inquiry_box input, .inquiry_box textarea');
+
+            placeholderLabel.on('focus', function () {
+                $(this).siblings('label').hide();
+            });
+
+            placeholderLabel.on('focusout', function () {
+                if ($(this).val() === '') {
+                    $(this).siblings('label').show();
+                }
+            });
+
+            $('.menu_wrap .menu_icons em, .menu_bar a').on('click', function () {
+                $('.projectBox .dlBox dd ul.lst li a').removeClass('active');
+            });
+
+            $('#pop_medel_add').each(function () {
+                //등록버튼 활성화
+                $('#pop_medel_add .ipt_txt, #pop_medel_add .textArea').on('keyup', function () {
+                    var model_addIptTxtlength = $('#pop_medel_add .ipt_txt.w100').val().length,
+                        model_addtextAreaTxtlength = $('#pop_medel_add .textArea').val().length;
+
+                    if (model_addIptTxtlength > 1 && model_addtextAreaTxtlength > 1) {
+                        $('#btn_model_add').prop('disabled', false); //버튼 활성화
+                    } else {
+                        $('#btn_model_add').prop('disabled', true); //버튼 비활성화
+                    }
+                });
+                //input radio check
+                $('.radioBox .ipt_radio').each(function () {
+                    $('.radioBox .ipt_radio').on('change', function () {
+                        var radioCheck = $(this).prop('checked'),
+                            personCheck = $(this).attr('class');
+
+                        if (radioCheck) {
+                            $(this).parent().find('.ipt_radio').prop('checked', false);
+                            $(this).prop('checked', true);
+                        }
+
+                        if (personCheck == 'ipt_radio go_person') {
+                            $(this).parent().find('.field_person').css('display', 'inline-block');
+                            $(this).parent().find('.field_person').focus();
+                        } else {
+                            $(this).parent().find('.field_person').css('display', 'none');
+                            $(this).parent().find('.field_person').val('');
+                        }
+                    });
+                });
+            });
+
+            // $('.stn_board').append('<a id="addNewProject" onclick="$(\'.btn_project_add\').trigger(\'click\');" class="blue_link_btn">' + newProjectTitle + '</a>');
+
+        });
+    </script>
+    <!--<script>
+        window.GitpleConfig = {"appCode": "ubFQIWPWwu4xGxC4kMsPhe2mei2533", "userLang": lang_code};
+        !function () {
+            function e() {
+                function e() {
+                    var e = t.contentDocument, a = e.createElement("script");
+                    a.type = "text/javascript", a.async = !0, a.src = window[n] && window[n].url ? window[n].url + "/inapp-web/gitple-loader.js" : "https://app.gitple.io/inapp-web/gitple-loader.js", a.charset = "UTF-8", e.head && e.head.appendChild(a)
+                }
+
+                var t = document.getElementById(a);
+                t || ((t = document.createElement("iframe")).id = a, t.style.display = "none", t.style.width = "0", t.style.height = "0", t.addEventListener ? t.addEventListener("load", e, !1) : t.attachEvent ? t.attachEvent("onload", e) : t.onload = e, document.body.appendChild(t))
+            }
+
+            var t = window, n = "GitpleConfig", a = "gitple-loader-frame";
+            if (!window.Gitple) {
+                document;
+                var i = function () {
+                    i.ex && i.ex(arguments)
+                };
+                i.q = [], i.ex = function (e) {
+                    i.processApi ? i.processApi.apply(void 0, e) : i.q && i.q.push(e)
+                }, window.Gitple = i, t.attachEvent ? t.attachEvent("onload", e) : t.addEventListener("load", e, !1)
+            }
+        }();
+        if (lang_code === 'ko')
+            Gitple('boot');
+    </script>-->
+    <!-- page Landing -->
+    <script type="text/javascript">
+        $(window).load(function () {
+            //page loading delete
+            $('#pageldg').addClass('pageldg_hide').delay(300).queue(function () {
+                $(this).remove();
+                // resetEngineStatus('a');
+            });
+        });
+    </script>
+
+    <!-- [P] 0715 추가 -->
+    <script type="text/javascript">
+        jQuery.event.add(window, "load", function () {
+
+            $(document).ready(function () {
+
+                // header user
+                $('.userBox dl').on('click', function () {
+                    $(this).parent().addClass('active');
+                });
+
+                $(document).on('click', function (e) {
+                    if (!$('.userBox').has(e.target).length) {
+                        $('.userBox').removeClass('active');
+                    }
+                });
+
+                //화면 로드 시 lang 체크
+                $('html').each(function () {
+                    var thisURL = $(location).attr('href'),
+                        urlStr = thisURL.substring(thisURL.indexOf("/?"));
+
+                    if (lang_code == 'en' || urlStr == '/?lang=en' || urlStr == '/?lang=en#none') {
+                        //lang_box ui
+                        $('.lang_box').children().remove();
+                        $('.lang_box').append('\
+                <span>English</span> \
+                <span><a href="?lang=ko">Korean</a></span>'
+                        );
+                        $('.stn_landing_cont .item_set.bg_blue .item_title, .stn_landing_cont .item_set.bg_blue ul.item_lst > li').addClass('en_blue');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .short_box').addClass('en_short_box');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .long_box').addClass('en_long_box');
+                        // $('.en_arrow').parent().parent('li').css('height', '97px');
+
+                        //html language
+                        $('html').attr('lang', 'en');
+
+                        //Live chat close
+                        $('body').addClass('lot_en');
+
+                        $('.btn_help').hide();
+                    } else {
+                        //lang_box ui
+                        $('.lang_box').children().remove();
+                        $('.lang_box').append('\
+                <span>한국어</span> \
+                <span><a href="?lang=en">English</a></span>'
+                        );
+                        $('.stn_landing_cont .item_set.bg_blue .item_title, .stn_landing_cont .item_set.bg_blue ul.item_lst > li').removeClass('en_blue');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .short_box').removeClass('en_short_box');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .long_box').removeClass('en_long_box');
+                        //html language
+                        $('html').attr('lang', 'ko');
+
+                        //Live chat close
+                        $('body').removeClass('lot_en');
+                    }
+                });
+            });
+        });
+
+        // function openModelRequest(obj, engineName) {
+        //     var winHeight = $(window).height() * 0.7,
+        //         hrefId = $(obj).attr('href');
+
+        //     $("#model_request_engine").html(engineName);
+        //     $("#model_request_title").val('');
+        //     $("#model_request_content").val('');
+        //     $('body').css('overflow', 'hidden');
+        //     $('body').find(hrefId).wrap('<div class="lyrWrap"></div>');
+        //     $('body').find(hrefId).before('<div class="lyr_bg"></div>');
+
+        //     //mid max-height
+        //     $('.lyrBox .lyr_mid').each(function () {
+        //         $(obj).css('max-height', Math.floor(winHeight) + 'px');
+        //     });
+
+        //     //Layer popup close
+        //     $('.btn_lyr_close, .lyr_bg').on('click', function () {
+        //         $('body').css('overflow', '');
+        //         $('body').find(hrefId).unwrap('<div class="lyrWrap"></div>');
+        //         $('.lyr_bg').remove();
+        //     });
+        // }
+
+        function submitModelRequest() {
+
+            var formData = new FormData();
+            formData.append('name', $("#model_request_name").text());
+            formData.append('engine', $("#model_request_engine").text());
+            formData.append('title', $("#model_request_title").val());
+            formData.append('content', $("#model_request_content").val());
+            formData.append('userNo', user_no.toString());
+            if ($(":input:radio[name=cd_basic]:checked").val() === undefined)
+                formData.append('phone', $("#model_request_phone_person").val());
+            else
+                formData.append('phone', $("#model_request_phone_basic").text());
+            if ($(":input:radio[name=mail_basic]:checked").val() === undefined)
+                formData.append('email', $("#model_request_email_person").val());
+            else
+                formData.append('email', $("#model_request_email_basic").text());
+            if (0) {
+                console.log('engine:' + $("#model_request_engine").text());
+                console.log('name:' + $("#model_request_name").text());
+                console.log('title:' + $("#model_request_title").val());
+                console.log('content:' + $("#model_request_content").val());
+
+                if ($(":input:radio[name=cd_basic]:checked").val() === undefined)
+                    console.log('phone:' + $("#model_request_phone_person").val());
+                else
+                    console.log('phone:' + $("#model_request_phone_basic").text());
+
+                if ($(":input:radio[name=mail_basic]:checked").val() === undefined)
+                    console.log('email:' + $("#model_request_email_person").val());
+                else
+                    console.log('email:' + $("#model_request_email_basic").text());
+            }
+
+            $.ajax({
+                type: 'POST',
+                async: false,
+                url: '/mvp/api/model_request/add',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (result) {
+                    console.log(result.toString());
+                    console.log("sending info success");
+                    alert(messages.home.success_model_request);
+                }, error: function (err) {
+                    console.log("error! ", err);
+                    alert(messages.home.error_model_request);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

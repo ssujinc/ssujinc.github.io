@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <script language="javascript">
+            jQuery(document).ready(function(){ 
+                jQuery('.best_contain').hover(function(){
+                    jQuery(this).find('.dimmed').css('display','block');
+                },function(){
+                    jQuery(this).find('.dimmed').css('display','none');
+                });
+            });
+        </script>
+        <title>HYGGE_Bestseller</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+            
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>베스트셀러<span class="snb_txt">Bestseller</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="next_page">
+                            이달의 책</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                            베스트셀러</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="bestseller_cnt">
+                <ul class="bestseller_cnt">
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">1</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">2</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">3</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">4</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">5</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">6</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">7</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">8</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">9</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">10</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">11</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">12</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">13</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">14</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">15</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">16</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">17</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">18</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">19</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="best_contain">
+                            <div>
+                                <span class="best_num">20</span>
+                                <div class="best_img">
+                                    <img src="images/bestseller_ex.jpg" alt="베스트셀러1" />
+                                    <div class="dimmed"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="best_tit">신경 끄기의 기술</span>
+                                <span class="best_txt">마크 맨슨(Mark Manson)/한채호 역/갤리온</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <title>HYGGE_Store Guidance</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>매장 안내도<span class="snb_txt">Store Guidance</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="next_page">
+                                매장안내
+                            </div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                                매장안내도
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="store_cnt">
+                <div class="store_cnt">
+                    <h2 class="store_tit">- 매장 평면도</h2>
+                    <div class="floor">
+                        <img src="images/store_map.png" alt="매장 평면도" />
+                    </div>
+                    <h2 class="store_tit">- 매장 전경</h2>
+                    <div class="foreground">
+                        <img src="images/store_img_01.jpg" alt="매장 전경1" />
+                        <img src="images/store_img_02.jpg" alt="매장 전경2" />
+                        <img src="images/store_img_03.jpg" alt="매장 전경1" />
+                        <img src="images/store_img_04.jpg" alt="매장 전경2" />
+                        <img src="images/store_img_05.jpg" alt="매장 전경1" />
+                        <img src="images/store_img_06.jpg" alt="매장 전경2" />
+                    </div>
+                </div>
+                <!-- /.store_cnt --> 
+            </div>
+            <!-- /#store_cnt --> 
+
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

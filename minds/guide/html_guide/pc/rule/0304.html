@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+    
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>견고성</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">규칙 가이드</a></li>
+							<li><span>웹접근성 고려사항</span></li>
+							<li><span>견고성</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 웹페이지 및 어플리케이션 제작 시 참고해야 할 사항에 대해 기술합니다.</li>
+							<li>이 문서는 웹기술을 활용하여 서비스를 만드는 모든 이를 대상으로 합니다.</li>
+                            <li class="ft_clr_orange">해당 내용은 웹접근성 콘텐츠 제작 시 적용해야 할 필수 요건입니다. 그 밖 콘텐츠 제작 시 적용시키지 않아도 무관합니다.</li>
+                            <li class="ft_clr_orange">어떠한 기술이 사용되더라도 내용은 항상 접근성이 보장되어야 한다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>문법 준수</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">웹 콘텐츠는 마크업 언어의 문법을 준수해야 한다.</p>
+                        <dl class="dl_lst">
+                            <dt>마크업 오류 방지</dt>
+                            <dd>
+                                <p class="txt">마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</p>
+                                <dl class="dl_lst">
+                                    <dt>여는 태그와 닫는 태그의 정확한 사용</dt>
+                                    <dd>
+                                        <p class="txt">태그의 열림과 닫힘이 일치해야 한다.</p>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;p&gt;&lt;b&gt;내용&lt;/p&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(X)</p>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;p&gt;&lt;b&gt;내용&lt;/b&gt;&lt;/p&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(O)</p>
+                                    </dd>
+                                </dl>
+                                <dl class="dl_lst">
+                                    <dt>태그의 정확한 중첩관계</dt>
+                                    <dd>
+                                        <p class="txt">태그의 중첩관계가 엇갈리지 않아야 한다.</p>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;span&gt;&lt;strong&gt;내용&lt;/span&gt;&lt;/strong&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(X)</p>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;span&gt;&lt;strong&gt;내용&lt;/strong&gt;&lt;/span&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(O)</p>
+                                    </dd>
+                                </dl>
+                                <dl class="dl_lst">
+                                    <dt>속성 이름과 속성 값의 정확한 사용</dt>
+                                    <dd>
+                                        <ul class="lst">
+                                            <li>속성 값은 반드시 따옴표(")로 묶습니다.</li>
+                                            <li>속성과 속성 사이에는 공백을 넣습니다.</li>
+                                            <li>동일한 속성을 두 번 이상 선언하지 않습니다.</li>
+                                            <li>속성 값으로 따옴표를 사용해야 할 경우에는 &quot;로 사용합니다.</li>
+                                        </ul>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;p class="notice" class="style"&gt;내용&lt;/p&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(X)</p>
+                                    </dd>
+                                    <dd>
+                                        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;p class="notice style"&gt;내용&lt;/p&gt;</code>
+</pre>
+                                        </div>
+                                        <p class="txt">(O)</p>
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->  
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>웹 애플리케이션 접근성</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">웹 애플리케이션은 접근성이 있어야 한다.</p>
+                        <dl class="dl_lst">
+                            <dt>웹 애플리케이션 접근성 준수</dt>
+                            <dd>
+                                <p class="txt">콘텐츠에 포함된 웹애플리케이션은 접근성이 있어야 한다.</p>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section--> 
+                <p class="origin_source">출처 : <a href="https://www.wah.or.kr:444/Participation/technique.asp?tab=4" target="_blank">웹 콘텐츠 제작기법 (웹접근성연구소)</a></p>
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_rule.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a class="active" href="0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("견고성")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('견고성 > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

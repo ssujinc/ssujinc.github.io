@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* layout */
+.orderC_section_complete { width:960px; margin:0 auto 28px; text-align:center; }
+.orderC_section01 { width:960px; margin:0 auto; }
+.orderC_section02 { width:960px; margin:68px auto 100px; }
+
+
+/* orderC_section_complete */
+.orderC_section_complete h2 { margin:0 0 16px; color:#424852; }
+.orderC_section_complete .orderC_expalin { font-size:14px; line-height:100%; color:#424852; font-family:'NBGothicB'; margin-bottom:36px; }
+.orderC_section_complete .orderC_order_number { font-size:14px; line-height:100%; color:#424852; font-family:'NBGothicB'; }
+.orderC_section_complete .orderC_history_go_btn { font-size:12px; line-height:24px; text-align:center; color:#fff; font-family:'NBGothicR'; width:124px; height:24px; border-radius:12px; background:#d94452; display:block; margin:16px auto; }
+.orderC_section_complete .orderC_txt { font-size:12px; line-height:100%; color:#636c77; font-family:'NBGothicL'; }
+
+
+
+
+/* orderC_section01 */
+.orderC_inner_section01 table { width:100%; height:auto; }
+.orderC_inner_section01 table tr:nth-child(1) { height:48px; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.orderC_inner_section01 table tr th { text-align:center; vertical-align:middle; font-family:'GodoM'; font-size:16px; color:#636c77; }
+.orderC_inner_section01 table tr { border-bottom:1px solid #cad0d7; }
+.orderC_inner_section01 table tr:last-child { border-bottom:0; }
+.orderC_inner_section01 table tr td { padding:24px 0; text-align:center; vertical-align: middle; }
+.orderC_inner_section01 table tr td:nth-child(2) { vertical-align: middle; text-align:left; }
+.orderC_inner_section01 table tr td:nth-child(2) img { float:left; vertical-align: middle; margin-right:16px; box-sizing:border-box; border:1px solid #cad0d7; width:92px; height:134px; }
+.orderC_inner_section01 table tr td:nth-child(2) p { float:left; vertical-align: middle; margin-top:48px; }
+.orderC_inner_section01 table tr td:nth-child(2) p span { display:block; }
+.orderC_inner_section01 table tr td:nth-child(2) p .book_name { font-size:16px; font-family:'NBGothicB'; color:#424852; margin-bottom:12px; }
+.orderC_inner_section01 table tr td:nth-child(2) p .book_explain { font-size:12px; font-family:'NBGothicL'; color:#a9b0bb; }
+.orderC_inner_section01 table tr td .benefit_price { width:30px; display:inline-block; margin-bottom:12px; }
+.orderC_inner_section01 table tr td .benefit_point { width:19px; display:inline-block; margin-bottom:12px; }
+.orderC_inner_section01 table tr td .orderC_selling_price { font-size:16px; color:#424852; font-family:'GodoM'; }
+.orderC_inner_section01 table tr td .orderC_point { font-size:16px; color:#424852; font-family:'GodoM'; }
+.orderC_inner_section01 table tr td .orderC_total_price { font-size:16px; color:#424852; font-family:'GodoM'; }
+.orderC_inner_section01 table tr td .orderC_number { font-size:16px; font-family:'GodoM'; color:#424852; }
+.orderC_inner_section01 .orderC_total_box { width:100%; height:68px; line-height:68px; }
+.orderC_inner_section01 .orderC_total_box { width:100%; height:68px; line-height:68px; border-top:1px solid #424852; border-bottom:2px solid #424852; }
+.orderC_inner_section01 .orderC_total_box { width:100%; height:68px; line-height:68px; box-sizing:border-box; padding:0 24px 0 48px; border-top:1px solid #424852; border-bottom:2px solid #424852; }
+.orderC_inner_section01 .orderC_total_box>p { float:left; font-family:'NBGothicL'; color:#636c77; font-size:14px; height:100%; }
+.orderC_inner_section01 .orderC_total_box>p b { font-family:'NBGothicB'; }
+.orderC_inner_section01 .orderC_total_box .orderC_total_price_box { float:right; width:auto; height:100%; }
+.orderC_inner_section01 .orderC_total_box .orderC_total_price_box .only_txt { float:left; font-size:14px; color:#636c77; font-family:'NBGothicL'; margin-right:16px;}
+.orderC_inner_section01 .orderC_total_box .orderC_total_price_box .orderC_total_payment { float:right; font-size:16px; font-family:'GodoM'; color:#d94452; }
+.orderC_inner_section01 .orderC_total_box .orderC_total_price_box .orderC_total_payment span { font-size:24px; }
+
+
+/* orderC_section02 */
+.orderC_section02 h3 { font-size:20px; }
+.orderC_section02 .orderC_inner_section02 { width:100%; height:223px; border-bottom:1px solid #424852; border-top:2px solid #424852; box-sizing:border-box; padding:22px 0 0 24px; }
+.orderC_section02 .orderC_inner_section02 table { width:100%; height:auto; }
+.orderC_section02 .orderC_inner_section02 table td { height:37px; text-align:left; vertical-align:middle; }
+.orderC_section02 .orderC_inner_section02 table td:first-child { width:138px; font-family:'NBGothicB'; font-size:14px; color:#424852; }
+.orderC_section02 .orderC_inner_section02 table td:last-child { font-family:'NBGothicL'; font-size:14px; color:#636c77; }
+
+/* orderC_section02_bottom */
+.orderC_section02 .orderC_section02_bottom { width:100%; height:40px; margin-top:48px; }
+.orderC_section02 .orderC_section02_bottom .orderC_btn_box { height:100%; width:536px; margin:0 auto; }
+.orderC_section02 .orderC_section02_bottom .orderC_btn_box .orderC_btn { float:left; margin:0; margin-right:16px; width:168px; height:40px; line-height:38px; padding:0; box-sizing:border-box; border-radius:20px; text-align:center; font-size:16px; font-family:'GodoM'; }
+.orderC_section02 .orderC_section02_bottom .orderC_btn_box .go_shopping_btn { color:#636c77; background:#fff; border:1px solid #636c77; }
+.orderC_section02 .orderC_section02_bottom .orderC_btn_box .shoppgin_basket_btn { color:#636c77; background:#fff; border:1px solid #636c77; }
+.orderC_section02 .orderC_section02_bottom .orderC_btn_box .orderC_detail_btn { color:#fff; background:#d94452; border:1px solid #d94452; margin-right:0; }
+
+
+
+
+
+
+
+
+
+

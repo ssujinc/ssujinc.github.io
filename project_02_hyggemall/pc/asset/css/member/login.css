@@ -1,0 +1,36 @@
+@charset "utf-8";
+.warning_red { display:block; font-size:14px; color:#d94452; font-family:'NBGothicR'; margin-top:12px; line-height:100%; }
+.login_body input[type="text"]::-ms-clear { display:none; }
+
+/* layout */
+.login_body { display:block; width:460px; margin:0 auto 0; padding-top:100px; }
+
+
+.login_body h1 { display:block; text-indent:-9999%; width:167px; height:71px; background:url(../../img/hygge_login.png) center no-repeat; margin:0 auto 48px; }
+.login_body .login_input { display:block; width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; font-family:'NBGothicR'; color:#424852; font-size:16px; margin:0; padding:0 0 0 24px; /*line-height:48px;*/ vertical-align: middle; }
+.login_body .login_id { margin-bottom:16px; }
+.login_body .login_btn { width:100%; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; margin-top:24px; }
+.login_body .error { border:1px solid #d94452; }
+.login_body .login_warning { display:none; }
+.login_body .login_find_idpw { display:block; text-align:center; width:169px; height:16px; margin:24px auto 0; }
+.login_body .login_find_idpw a { height:16px; line-height:16px; display:block; float:left; font-size:14px; color:#636c77; font-family:'NBGothicR'; }
+.login_body .login_find_idpw a.login_find_id { padding-right:12px; border-right:1px solid #a9b0bb; margin-right:12px; }
+.login_body .sns_login_box { width:100%; height:auto; margin-top:48px; }
+.login_body .sns_login_box h3 { font-size:18px; font-family:'GodoM'; color:#424852; font-weight:normal; line-height:100%; margin-bottom:24px; }
+.login_body .sns_login_box .sns_login_btn { display:block; padding:0; margin:0; width:100%; height:48px; border-radius:24px; font-size:18px; font-family:'GodoM'; background:#fff; outline:0; margin-bottom:16px; }
+.login_body .sns_login_box .sns_login_btn span { margin-left:129px; display:block; float:left; width:90px; height:24px; }
+.login_body .sns_login_box .sns_login_btn b { float:left; height:24px; line-height:24px; display:block; font-weight:normal; margin-left:10px; }
+.login_body .sns_login_box .naver_login { color:#00c73c; border:1px solid #00c73c; }
+.login_body .sns_login_box .naver_login span { background:url(../../img/naver.png) left top no-repeat; }
+.login_body .sns_login_box .naver_login:hover { background:#00c73c; color:#fff; }
+.login_body .sns_login_box .naver_login:hover span { background:url(../../img/naver.png) left -24px no-repeat; }
+.login_body .sns_login_box .kakao_login { color:#ffcd00; border:1px solid #ffcd00; }
+.login_body .sns_login_box .kakao_login span { margin-left:152px; width:68px; background:url(../../img/kakao.png) left top no-repeat; }
+.login_body .sns_login_box .kakao_login:hover { background:#ffcd00; color:#fff; }
+.login_body .sns_login_box .kakao_login:hover span { background:url(../../img/kakao.png) left -24px no-repeat; }
+.login_body .sns_login_box .facebook_login { color:#3b559f; border:1px solid #3b559f; margin-bottom:0; }
+.login_body .sns_login_box .facebook_login span { background:url(../../img/facebook.png) left top no-repeat; }
+.login_body .sns_login_box .facebook_login:hover { background:#3b559f; color:#fff; }
+.login_body .sns_login_box .facebook_login:hover span { background:url(../../img/facebook.png) left -24px no-repeat; }
+.login_body .login_go_join { margin-top:48px; text-align:center; color:#424852; font-family:'NBGothicR'; font-size:16px; line-height:100%; }
+.login_body .login_go_join a { font-family:'NBGothicB'; color:#d94452; border-bottom:1px solid #d94452; }

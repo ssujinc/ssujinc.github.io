@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/ico_favicon_60x60.png"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="resources/css/font.css"/>
+<link rel="stylesheet" type="text/css" href="resources/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="resources/css/type_pc_a.css"/>
+<link rel="stylesheet" type="text/css" href="resources/css/chatbot.css"/>
+<!-- //css -->
+<!--[if lte IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title>공통 &gt; MINDsLab</title>
+</head>
+
+<body>
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+		<div class="lot_col02">
+			<h1>
+				<span>MINDsLab</span>
+				<em>HTML GUIDE</em>
+			</h1>
+			<div class="selectBox">
+				<select>
+					<option>PC:TYPE 01</option>
+				</select>
+			</div>
+		</div>
+		<div class="lot_col02">
+			<!-- .sta -->
+			<div class="sta">
+				<!-- .gnb -->
+				<div id="gnb" class="gnb">
+					<ul class="nav_gnb">
+						<li><a href="#">규칙 가이드</a></li>	
+						<li><a href="#">마크업 가이드</a></li>
+						<li><a href="#" class="active">설계 가이드</a></li>
+					</ul>
+				</div>
+				<!-- //.gnb -->
+				<!-- .srchBox -->
+				<div class="srchBox">
+					<input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요.">
+					<button type="submit" class="btn_srch">검색</button>
+				</div>
+				<!-- //.srchBox -->
+				<!-- .etc -->
+				<div class="etc">
+					<!-- .nav_download -->
+					<ul class="nav_download">
+						<li><a href="#">코딩 컨벤션<span>(Ver 1.1)</span></a></li>	
+						<li><a href="#">퍼블리싱 파일<span>(Ver 1.0)</span></a></li>
+					</ul>
+					<!-- //.nav_download -->
+					<!-- .nav_etc -->
+					<ul class="nav_etc">
+						<!-- .alarm -->
+						<li class="lst_dropdown ico_alarm">
+							<div class="tit_dropdown">
+								<button type="button" class="btn_dropdown"><span>알람</span></button>
+								<span class="num">2</span>
+							</div>
+							<dl class="cont_dropdown">
+								<dt class="tit">
+									<strong>알람</strong>
+									<span class="svcBox">2 NEW</span>
+								</dt>
+								<dd class="cont">
+									<ul class="lst">
+										<li>
+											<a href="#">
+												<span class="txt">가나다라 마바사 아자차 카타파하</span>
+											</a>
+										</li>	
+										<li class="al_c">알림 내역이 없습니다.</li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<!-- //.alarm -->
+						<!-- .profile -->
+						<li class="lst_dropdown ico_avatar">
+							<div class="tit_dropdown">
+								<button type="button" class="btn_dropdown">
+									<span>profile</span>
+									<!-- <img src="resources/images/sample/img_profile.png" alt="프로필 사진"> -->
+								</button>
+							</div>
+							<div class="cont_dropdown">
+								<ul class="lst">
+									<li><a class="ico_profile" href="#">설정</a></li>
+									<li><a class="ico_logout"  href="#">로그아웃</a></li>
+								</ul>
+							</div>
+						</li>
+						<!-- //.profile -->
+					</ul>
+					<!-- //.nav_etc -->
+				</div>
+				<!-- //.etc -->
+			</div>
+			<!-- //.sta -->
+		</div>
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+			<ul class="nav_snb">
+				<li>
+					<h3>LAYOUT</h3>
+					<ul class="lst_sub">
+						<li><a href="#"><span>공통</span></a></li>
+						<li><a href="#"><span>TYPE 01</span></a></li>
+						<li><a href="#"><span>TYPE 02</span></a></li>
+						<li><a href="#"><span>TYPE 03</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>COMPONENTS</h3>
+					<ul class="lst_sub">
+						<li><a class="active" href="#"><span>BUTTONS</span></a></li>
+						<li><a href="#"><span>INPUTS</span></a></li>
+						<li><a href="#"><span>DROPDOWNS</span></a></li>
+						<li><a href="#"><span>LOADING BARS</span></a></li>
+						<li><a href="#"><span>TABLES</span></a></li>
+						<li><a href="#"><span>ICONS</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>TYPOGRAPHY</h3>
+					<ul class="lst_sub">
+						<li><a href="#"><span>TYPE FACE</span></a></li>
+					</ul>
+				</li>
+				<li>
+					<h3>COLOR</h3>
+					<ul class="lst_sub">
+						<li><a href="#"><span>COLOR PALETTE</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>BUTTONS</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="pc/index.html">HOME</a></li>
+							<li><a href="#">설계 가이드</a></li>
+							<li><span>COMPONENTS</span></li>
+							<li><span>BUTTONS</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>우측 상단 Type 선택에 따라 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Square Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+<!-- #chatUI_wrap -->
+<div id="chatUI_wrap" style="display: block;">	
+	<!-- .chatUI_mid -->
+	<div class="chatUI_mid" style="padding:10px 0 5px 0">
+		<ul class="lst_talk">
+			<!-- 사용자 UI -->
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">가족수당 지급대상이 어떻게 되지?</em>
+					<div class="date">2019.09.22 12:00</div>
+				</div>				
+			</li>
+			<!-- //사용자 UI -->
+			<!-- chatBot UI -->
+			<li class="bot">				
+				<div class="bot_msg">	
+					<div class="btnLst"> 
+						<span class="txt_s">오른쪽에 정답 후보를 찾았습니다. 찾으시는 내용이 맞습니까?</span>
+					</div>
+					<div class="btnItem" style="margin-top:5px;"> 
+						<ul>
+							<li><a href="#">1번 정답</a></li>
+							<li><a href="#">2번 정답</a></li>
+							<li><a href="#">3번 정답</a></li>
+							<li><a href="#" class="active">정답 없음</a></li>
+						</ul>
+					</div>	
+					<div class="date">2019.09.22 12:00</div>
+				</div>                
+            </li>
+			<!-- 사용자 UI -->
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">정답 없음</em>
+					<div class="date">2019.09.22 12:00</div>
+				</div>				
+			</li>
+			<!-- //사용자 UI -->
+			<!-- chatBot UI -->
+			<li class="bot">				
+				<div class="bot_msg">	
+					<div class="btnLst"> 
+						<span class="txt_s">오른쪽에 정답 후보를 더 찾았습니다. 찾으시는 내용이 맞습니까?</span>
+					</div>
+					<div class="btnItem" style="margin-top:5px;"> 
+						<ul>
+							<li><a href="#" class="active">4번 정답</a></li>
+							<li><a href="#">5번 정답</a></li>
+							<li><a href="#">6번 정답</a></li>
+							<li><a href="#">정답 없음</a></li>
+						</ul>
+					</div>	
+					<div class="date">2019.09.22 12:00</div>
+				</div>   
+            </li>
+			<!-- 사용자 UI -->
+			<li class="user">
+				<div class="bot_msg">					
+					<em class="txt">4번 정답</em>
+					<div class="date">2019.09.22 12:00</div>
+				</div>				
+			</li>
+			<!-- //사용자 UI -->
+		</ul>
+	</div>
+	<!-- //.chatUI_mid -->
+	
+	<!-- .chatUI_btm -->
+	<div class="chatUI_btm">
+		<form method="post" action="" id="formChat" name="formChat">
+			<textarea class="textArea" rows="1" placeholder="메세지를 입력해 주세요"></textarea>
+			<input type="submit" name="btn_chat" id="btn_chat" class="btn_chat" title="전송" value="전송">
+		</form>
+	</div>
+	<!-- //#chatUI_btm -->
+</div>
+<!-- //#chatUI_wrap -->
+							</div>
+							<div class="codeview">
+                                <div class="dl_tblType01">
+                                <dl>
+                                    <dt style="width:100px;">정답 후보4</dt>
+                                    <dd class="dfsa">
+<strong>[급여지급규칙]</strong>
+<p>제10조(가족수당)</p>
+<ol>
+    <li>①인사규정 제41조 제4항의 규정에 의한 가족수당의 지급대상은 <span class="clr_red">배우자 및 배우자이외의 부양가족</span>으로 한다. <개정 2004.3.22, 2007.4.19, 2010.12.31></li>
+    <li>②제1항의 배우자이외의 부양가족이라 함은 부양의무가 있는 직원의 다음 각호에 해당하는 자를 말한다. 다만, 제1호 및 제3호의 경우 본인의 주민등록표상의 동일세대로 한다. <개정 2007. 4.19, 2008.6.18, 2009.6.16., 2011.3.31>
+        <ol>
+            <li>1. 본인 및 배우자의 부모(단, 남자는 60세 이상, 여자는 55세 이상에 한함) <개정 2008.6.18., 2011.3.31></li>
+            <li>2. 자녀(단, 20세 미만에 한함) <개정 2011.3.31></li>
+            <li>3. 부모, 자녀, 형제자매 중 「장애인 복지법 시행령」제2조에 따른 장애등급 제1급부터 제6급까지에 해당되는 자 <신설 2011.3.31> </li>
+        </ol>
+    </li>
+</ol>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt style="width:100px;">정답 후보5</dt>
+                                    <dd class="dfsa">
+<strong>[급여지급규칙]</strong>
+<p>제16조(퇴직금의 중간정산)</p>
+<ol>
+    <li>①인사규정 제54조제1항의 규정에 의한 퇴직금 지급대상 임․직원이 지급사유가 발생하기 전에 다음 각호의 1의 사유로 퇴직금의 중간정산을 희망할 경우에는 제15조의 규정에도 불구하고 정산 희망 일까지의 근속기간에 대한 퇴직금을 정산하여 지급할 수 있다. <개정 2013.1.4.>
+        <ol>
+            <li>1. 무주택자인 임․직원이 본인 명의의 주택을 구입하는 때</li>
+            <li>2. 무주택자인 임․직원이 주거를 목적으로 전세금 또는 보증금을 부담하는 때, 이 경우 재직기간 동안 1회로 한정한다.</li>
+            <li>3. 임․직원 또는 그 부양가족이 <span class="clr_red">질병 또는 부상으로 6개월 이상의 요양을 하는 때</span></li>
+            <li>4. 퇴직금 중간정산 신청일부터 역산하여 5년 이내에 임․직원이「채무자 회생 및 파산에 관한 법률」에 따른 회생절차개시의 결정 또는 파산선고를 받은 때</li>
+            <li>5. 임․직원이 임금피크제를 실시하여 평균임금이 줄어든 때</li>
+        </ol>
+    </li>
+</ol>
+                                    </dd>
+                                </dl>  
+                                <dl>
+                                    <dt style="width:100px;">정답 후보6</dt>
+                                    <dd class="dfsa">
+<strong>[출장규칙]</strong>
+<p>제14조(파견자의 여비 등)</p>
+<ol>
+    <li>①공동연구, 기술협력사업 등을 수행하기 위하여 다른 기관에 파견 근무하는 임․직원에 대하여는 파견 승인 시 원장의 결재를 받아 여비를 지급할 수 있다. 다만, 파견 받은 기관에서 여비조로 실비를 지급하거나 숙박시설을 제공하는 경우에는 이에 상당하는 금액을 차감하여 지급한다.</li>
+    <li>②제1항의 규정에 불구하고 그 파견근무지가 자택에서의 출퇴근이 가능한 지역이거나 출퇴근이 불가능하더라도 <span class="clr_red">가족을 동반하여 이주하는 경우</span>에는 파견자에 대하여 그 출장여비를 지급하지 아니한다.</li>
+    <li>③제1항 및 제2항의 규정에 의한 파견자에 대하여는 별표 2의 범위 내에서 업무운영에 필요한 경비를 지급할 수 있으며, 파견자는 월별로 증빙자료를 첨부하여 정산하여야 한다. <개정 2004.12.29></li>
+</ol>
+
+                                    </dd>
+                                </dl>
+                                    
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Square Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Round Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Round Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Circle Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Image Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_basic"><img class="onlyImg" src="resources/images/ico_mic_w.png" alt="이미지명"></button>
+											<button type="button" class="btnC_basic" disabled="disabled"><img class="onlyImg" src="resources/images/ico_mic_g.png" alt="이미지명"></button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Image + Text Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_basic"><img src="resources/images/ico_mic_w.png" alt="이미지명"><span>텍스트</span></button>
+											<button type="button" class="btnC_basic" disabled="disabled"><img src="resources/images/ico_mic_g.png" alt="이미지명"><span>텍스트</span></button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- Image Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_basic"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_w.png" alt="이미지명"&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_basic" disabled="disabled"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Image + Text Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_basic"&gt;&lt;img src="../../resources/images/ico_mic_w.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_basic" disabled="disabled"&gt;&lt;img src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Circle Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Image Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_line"><img class="onlyImg" src="resources/images/ico_mic_clr.png" alt="이미지명"></button>
+											<button type="button" class="btnC_line" disabled="disabled"><img class="onlyImg" src="resources/images/ico_mic_g.png" alt="이미지명"></button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Image + Text Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_line"><img src="resources/images/ico_mic_clr.png" alt="이미지명"><span>텍스트</span></button>
+											<button type="button" class="btnC_line" disabled="disabled"><img src="resources/images/ico_mic_g.png" alt="이미지명"><span>텍스트</span></button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- Image Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_line"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_clr.png" alt="이미지명"&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_line" disabled="disabled"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;/button&gt;
+&lt;/div&gt;
+&lt;!-- Image + Text Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_line"&gt;&lt;img src="../../resources/images/ico_mic_clr.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_line" disabled="disabled"&gt;&lt;img src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				
+				
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+</body>
+<script type="text/javascript" src="resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="resources/js/common.js"></script>
+<!-- 소스보기 -->
+<!-- //소스보기 -->
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+	});
+});	
+</script>
+</html>

@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>리액트 강의자료</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <style type="text/css">
+            * {margin:0; padding:0;}
+            body {background-color:#fff; font-family:"맑은 고딕", san-serif; padding:20px;}
+            h1 {font-size:24px; margin-bottom:10px;}
+            .note {overflow:hidden; background-color:#eee; border:2px dashed #666; margin-bottom:20px; padding:10px;}
+            .note ul {overflow:hidden; padding-left:15px;}
+            .note ul li {list-style:bullet; font-size:12px; line-height:1.5em;}
+
+            .status {overflow:hidden; margin-bottom:10px;}
+            .status {overflow:hidden;}
+            .status li {float:left; list-style:none; margin-left:5px;}
+            .status li:first-child {margin-left:0;}
+            .status li a {display:block; font-size:11px; text-decoration:none; padding-right:5px; padding-left:5px; height:18px;}
+            .status li a:hover {background-color:#dfb8b6; color:#fff;}
+            .dn { display:none; }
+
+            section {overflow:hidden;}
+            table {width:100%; border-collapse:collapse; table-layout:fixed;}
+            th, td {word-break:break-all;}
+            tbody .c1 td {background-color:#ddd;}
+            tbody .c2 td {background-color:#fffc00 !important; }
+            thead th {background-color:#dcdcdc; color:#333; border:1px solid #666; font-size:12px; padding-top:5px; padding-bottom:5px;}
+            tbody td {border:1px solid #666; font-size:12px; padding:3px 6px;}
+            tbody td.start {color:#10be31; font-weight:bold;}
+            tbody td.name {color:#555; }
+            tbody td.end {color:#ff6028; font-weight:bold;}
+            tbody td.status {color:#0f8ce4; font-weight:bold;}
+            tbody .center {text-align:center !important; padding:0  !important;}
+            tbody .depth01 { text-align:center; padding-left:0;}
+            tbody .bold {font-weight:bold !important;}
+            tbody a {text-decoration:none;}
+            tbody a:hover {text-decoration:underline;}
+            td.link{cursor:pointer;}
+            td.link:hover { text-decoration:underline; }
+            th:nth-child(1), td:nth-child(1) {width:5.5%; padding:0; text-align:center; }
+            th:nth-child(2), td:nth-child(2) {width:8%;}
+            th:nth-child(3), td:nth-child(3) {width:8.5%;}
+            th:nth-child(4), td:nth-child(4) {width:10%; padding:3px 4px; }
+            th:nth-child(5), td:nth-child(5) {width:3%; padding:0; }
+            th:nth-child(6), td:nth-child(6) {width:16%; padding:3px 4px; }
+            th:nth-child(7), td:nth-child(7) {width:2.5%; padding:0; }
+            th:nth-child(8), td:nth-child(8) {width:2.5%; padding:0; }
+            th:nth-child(10), td:nth-child(10) {width:3.5%; padding:0; }
+            th:nth-child(11), td:nth-child(11) {width:5.5%; padding:0; }
+            /* th:nth-child(10), td:nth-child(10) {width:5%;} */
+            .through { text-decoration:line-through; }
+            td > span { display:block; }
+            .accd td { padding:5px 20px !important; font-weight:bold; text-align:left !important; background:rgb(252, 234, 210); }
+
+            /* MOBILE */
+            @media screen and (max-width:768px){
+            body {padding:10px;}
+                h1 {font-size:16px;}
+                th:nth-child(5), td:nth-child(5), th:nth-child(7), td:nth-child(7), th:nth-child(8), td:nth-child(8), th:nth-child(9), td:nth-child(9), th:nth-child(10), td:nth-child(10), th:nth-child(11), td:nth-child(11) { display:none; }
+            }
+
+            /* MENU:HOVER_COLOR */
+            table tbody.menu01 tr:hover td {background-color:#A7EEFF;}
+            table tbody.menu02 tr:hover td {background-color:#9DF0E1;}
+            table tbody.menu03 tr:hover td {background-color:#FFD4DF;}
+            table tbody.menu04 tr:hover td {background-color:#D2FFD2;}
+            table tbody.menu05 tr:hover td {background-color:#FFDCFF;}
+            table tbody.menu06 tr:hover td {background-color:#FAFA96;}
+            table tbody.menu07 tr:hover td {background-color:#FFC846;}
+            table tbody.menu08 tr:hover td {background-color:#FFE4B5;}
+            table tbody.menu09 tr:hover td {background-color:#A5E3E6;}
+            table tbody.menu10 tr:hover td {background-color:#d4e4f5;}
+            table tbody.menu11 tr:hover td {background-color:#41ffb7;}
+            table tbody.menu12 tr:hover td {background-color:#f288af;}
+            table tbody.menu13 tr:hover td {background-color:#7fb2f0;}
+            table tbody.menu14 tr:hover td {background-color:#eddfaf;}
+            table tbody tr.later:hover td {background-color:#34599d;}
+        </style>
+        <script>
+            $(document).ready(function() {
+                $('.link').on('click', function() {
+                    var tg = './' + $(this).text() + '.html';
+                    if (tg == '') {} else {
+                        window.open('' + tg + '', '_blank')
+                    }
+                });
+            })
+        </script>
+    </head>
+
+    <body>
+        <h1>리액트 강의자료</h1>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">1DEPTH</th>
+                        <th scope="col">LINK</th>
+                        <th scope="col">REMARKS</th>
+                    </tr>
+                </thead>
+                <tbody class="menu01">
+                    <tr class="">
+                        <td class="depth01">React</td>
+                        <td class="link">01-hello-react</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">02-simple-spa</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">03-jsx</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">04-props</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">05-stylesheet</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">06-bootstrap</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">07-hook-event</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">08-simple-ajax</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">09-class-component</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">10-react-redux-counter</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">11-redux-thunk-counter</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">12-movie-rank</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">13-news-viewer</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">14-kakao-image-search</td>
+                        <td class="center etc"></td>
+                    </tr>
+                    <tr class="">
+                        <td class="depth01"></td>
+                        <td class="link">15-covid19</td>
+                        <td class="center etc"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <script>
+            function myFunction(x) {
+                if (x.matches) { // If media query matches
+                    $("td[colspan=11]").attr('colspan','5');
+                } else {
+                    $("td[colspan=5]").attr('colspan','11');
+                }
+            }
+            var x = window.matchMedia("(max-width: 750px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes
+        </script>
+    </body>
+</html>

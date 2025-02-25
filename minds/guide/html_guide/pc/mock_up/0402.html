@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>들여쓰기 규칙</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>HTML 코드 작성 규칙</span></li>
+							<li><span>들여쓰기 규칙</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dd>들여쓰기를 하면 코드의 가독성이 높아지고 전체 HTML 구조를 쉽게 파악할 수 있습니다. 다음과 같은 들여쓰기 규칙을 준수합니다.<br>
+마크업의 중첩이 깊어질 때마다 자식 엘리먼트는 1탭 들여 쓰고, 1탭의 크기는 공백 4칸으로 설정합니다. 문서 내에서 반드시 탭을 이용하여  들여쓰기를 하며, 탭을 대쉬하여 공백으로 띄어 들여쓰지 않습는다.</dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 3-5 들여쓰기 사용 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">
+                                            <pre>
+&lt;table&gt;
+&lt;caption&gt;...&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col&gt;…&lt;/col&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;...&lt;/th&gt;
+&lt;th&gt;...&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;td&gt;...&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                                            </td>
+                                            <td class="al_l">
+                                            <pre>
+&lt;table&gt;
+    &lt;caption&gt;...&lt;/caption&gt;
+    &lt;colgroup&gt;
+        &lt;col&gt;…&lt;/col&gt;
+    &lt;/colgroup&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;...&lt;/th&gt;
+            &lt;th&gt;...&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;...&lt;/td&gt;
+            &lt;td&gt;...&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">
+                                            <pre>
+&lt;ul&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                                            </td>
+                                            <td class="al_l">
+                                            <pre>
+&lt;ul&gt;
+    &lt;li&gt;...&lt;/li&gt;
+    &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. 애트리뷰트값 표기</dt>
+                            <dd>애트리뷰트값은 큰따옴표(&quot; &quot;)로 묶는다.</dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 3-2 애트리뷰트값 표기 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">&lt;img src=<em class="ft_clr_red">'</em>test.gif<em class="ft_clr_red">'</em> width=<em class="ft_clr_red">'</em>00<em class="ft_clr_red">'</em> height=<em class="ft_clr_red">'</em>100<em class="ft_clr_red">'</em> alt='테스트'&gt;</td>
+                                            <td class="al_l">&lt;img src="test.gif" width="100" height="100" alt="테스트"&gt;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. Character entity references 사용</dt>
+                            <dd>
+                                <p class="txt">특수 기호는 문자 엔티티 참조를 사용하여 코드로 변환합니다. 자세한 사항은 아래 경로에서 확인할 수 있습니다. 단, 아포스트로피(&#39;)는 &#39;로  선언합니다.</p>
+                                <ul class="lst">
+                                    <li>HTML 4.01의 Character entity references: <a class="link" href="http://www.w3.org/TR/html4/sgml/entities.html" target="_blank">http://www.w3.org/TR/html4/sgml/entities.html</a></li>
+                                    <li>HTML 5의 Character references: <a class="link" href="http://www.w3.org/TR/html5/syntax.html#character-references" target="_blank">http://www.w3.org/TR/html5/syntax.html#character-references</a></li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 3-3 Character entity references 사용 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">&lt;a href="...<em class="ft_clr_red">&</em>nid=2"&gt;</td>
+                                            <td class="al_l">&lt;a href="... & amp;nid=2"&gt;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                            <dd>
+                                <p class="txt_bg">&lt;, &gt;, &quot;, &#39;, &amp;등의 특수기호를 Character entity references로 변환하지 않으면, 브라우저가 이를 시작/종료 엘리먼트나 애트리뷰트로 잘못  해석할 수 있습니다. 자동으로 생성되는 링크의 경로나 이미지의 alt값에도 Character entity references가 바르게 적용되도록 합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. 스크립트 선언 지양</dt>
+                            <dd>
+                                <p class="txt">Jindo Component를 제외한 이벤트 핸들러 및 스크립트는 HTML 산출물에 선언하지 않습는다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 3-4 스크립트 선언 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">&lt;input type="text" id="user_id" name="user_id" <em class="ft_clr_red">onfocus="this.className='focus'"</em>&gt;</td>
+                                            <td class="al_l">
+                                                &lt;!-- [D] 입력 박스에 포커싱되었을 때, class="focus" 추가 --&gt;<br>
+                                                &lt;input type="text" name="user_id" id="user_id" class="focus"&gt;
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(4) span:contains("들여쓰기 규칙")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('들여쓰기 규칙 > HTML GUIDE');
+            });            
+		});
+	});
+});	
+</script>
+</body>
+</html>

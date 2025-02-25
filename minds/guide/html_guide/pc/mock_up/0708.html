@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>문장 규칙</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>Javascript 코드 작성 규칙</span></li>
+							<li><span>문장 규칙</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>return문</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">반환하는 값의 명확한 의미를 알기 위해 괄호를 사용하지 않습는다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-19 return문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+return (age &lt;= 7 ? "baby" : "teenager");
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+var generation = (age &lt;= 7 ? "baby" : "teenager");<br>
+return generation;
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>if 문</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">한 문장이라도 중괄호를 포함합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-20 if문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+if (person != null)  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;work();
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+if (person != null) {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;work();
+}
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>for 문</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">변수는 for문의 초기화 구문 이전에 선언합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-21 for문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+for (var i = 0; i &lt; 10; i++) {<br>
+<br>
+}
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+var I	= 0,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;len = 10;<br>
+for (i = 0; i &lt; len; i++) {<br>
+<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                            <dd>
+                                <dl class="helpBox ico_warn">
+                                    <dt>주의</dt>
+                                    <dd>
+                                        <ul class="lst">
+                                            <li>보통 객체 순회에는 for-in을 사용합니다.</li>
+                                            <li>자바스크립트에서는 배열(Array)도 객체(Object)이지만 배열을 순회할 때 for-in을 사용해서는 안됩니다.</li>
+                                            <li>for-in은 프로토타입 체인에 있는 모든 프로퍼티를 순회하기 때문에 for를 사용할 때보다 보통 10배 이상 느리고, index 순서대로 배열을  순회한다고 보장할 수 없다.</li>
+                                            <li>순회 순서는 브라우저에 따라 다를 수 있습니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-22 배열을 순회할 때의 for문 사용 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+var scores = [70, 75, 80, 61, 89, 56, 77, 83, 90, 93, 66];<br>
+var total = 0;  <br>
+var score;<br>
+<br>
+for (score in scores) {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;total += scores[score];<br>
+}
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+var scores = [70, 75, 80, 61, 89, 56, 77, 83, 90, 93, 66];<br>
+var total = 0;  var i = 0;<br>
+var len = scores.length;<br>
+<br>
+for (; i &lt; len; i += 1) {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;total += scores[i];<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>switch문</h4>
+					</div>
+					<div class="stn_cont">
+                        <ul class="lst">
+                            <li>case는 switch를 기준으로 한 단계 들여쓰기 합니다.</li>
+                            <li>첫 번째 case를 제외한 case와 default 사이에는 한 줄의 공백이 있어야 합니다.</li>
+                            <li>default를 제외한 case는 return, break, throw 중 하나로 마쳐야 하고 다음 case로 의도적으로 넘기는 부분은 주석처리를 합니다.</li>
+                            <li>default를 의도적으로 생략했으면 주석처리 합니다.</li>
+                        </ul>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-22 switch문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+switch (num) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;case 0:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;case 1:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+}                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+switch (num) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;case 0:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;// 다음 case와 같은 동작 처리<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;case 1:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                            <dd>
+                                <dl class="helpBox ico_warn">
+                                    <dt>주의</dt>
+                                    <dd>
+                                        <p class="txt">switch는 if에 비해 간결한 코드를 작성할 수 있지만, 비교적 많은 메모리를 사용하고 저버전 IE에서는 처리 성능도 좋지 않다. 최신 버전 IE와 크롬과 같은 고성능 브라우저만 지원하는 서비스라면 이런 부분을 크게 고민하지 않아도 되겠지만, 저버전 IE를 포함한 다양한 환경을 지원해야 하는 서비스라면 switch문의 득과 실에 대해 따져볼 필요가 있습니다.</p>
+                                        <ul class="lst">
+                                            <li>if문은 원하는 조건이 나올 때까지 순차적으로 모든 비교문을 순회하면서 비교</li>
+                                            <li>switch문은 jump-table을 사용하여 한 번에 원하는 곳으로 이동</li>
+                                            <li>if문은 조건 문의 개수만큼 O(n)의 시간 복잡도를 갖게 되어 성능의 단점</li>
+                                            <li>switch문은 case의 개수만큼 jump-table을 차지하므로 메모리의 단점
+                                                <ul class="lst">
+                                                    <li>저버전 IE에서는 성능에도 문제가 있음</li>
+                                                    <li>case의 조건이 정수형이 아닌 경우(문자열 또는 연산)라면 jump-table을 쓸 수 없어 성능에도 이득 없음</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-23 조건문 개수에 대한 if, switch문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row" rowspan="2">
+                                                <div class="txt_bg">
+switch(foo) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;case 'alpha':  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alpha();  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;
+&nbsp;&nbsp;&nbsp;&nbsp;case 'beta':  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beta();  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;default:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+}
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+// 객체 리터럴 방식  <br>
+var switchObj = {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;alpha: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;beta: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_default: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;} };<br>
+switchObj[foo](args);
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+// 모듈 방식<br>
+var switchModule = (function() {  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;return {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alpha: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;beta: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_default: function() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+})();<br>
+switchModule[foo](args);
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd> 
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(7) span:contains("문장 규칙")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('문장 규칙 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

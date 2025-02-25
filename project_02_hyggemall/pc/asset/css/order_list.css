@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* layout */
+.orderL_section01 { width:100%; height:79px; background:#fff; }
+.orderL_section02 { width:960px; height:171px; margin:0 auto; }
+.orderL_section03 { width:960px; height:auto; margin:48px auto; }
+
+/*---------- section01 ----------*/
+.orderL_inner_section01 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; }
+.orderL_inner_section01 h2 { margin:0; padding:0 0 24px; }
+
+
+
+/*---------- section02 ----------*/
+.orderL_inner_section02 { width:100%; height:100%; box-sizing:border-box; padding:24px; background:#fff; border:1px solid #e4e8eb; border-top:2px solid #e4e8eb; }
+.orderL_inner_section02 .orderL_s02_top { width:100%; box-sizing:border-box; height:88px; margin-bottom:16px; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left { width:820px; height:auto; float:left; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in { width:100%; height:36px; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in:first-child { margin-bottom:16px; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_left { float:left; width:98px; height:36px; line-height:36px; font-size:16px; color:#424852; font-family:'NBGothicB'; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right { float:left; width:700px; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right .period_btn { float:left; border:0;background:#fff; box-sizing:border-box; border-top:1px solid #cad0d7; border-bottom:1px solid #cad0d7; border-right:1px solid #cad0d7; height:36px; padding:0; margin:0; width:67px; color:#a9b0bb; font-size:14px; font-family:'NBGothicL'; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right .week1 { width:68px; border-left:1px solid #cad0d7; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right .period_btn_on { background:#e4e8eb; font-family:'NBGothicR'; color:#636c77; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right .month6 { margin-right:24px; }
+
+/* select */
+select::-ms-expand { display:none; } 
+.orderL_inner_section02 .orderL_right select { float:left; }
+.orderL_inner_section02 .orderL_right .first_select_year { width:104px; height:36px; padding-left:12px; font-size:14px; font-family:'NBGothicL'; color:#424852; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 81px 11px; box-sizing:border-box; float:left; margin-right:6px; }
+.orderL_inner_section02 .orderL_right .first_select_month { width:84px; height:36px; padding-left:12px; font-size:14px; font-family:'NBGothicL'; color:#424852; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 60px 11px; box-sizing:border-box; float:left; }
+.orderL_inner_section02 .orderL_right .second_select_year { width:104px; height:36px; padding-left:12px; font-size:14px; font-family:'NBGothicL'; color:#424852; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 81px 11px; box-sizing:border-box; float:left; margin-right:6px; }
+.orderL_inner_section02 .orderL_right .second_select_month { width:84px; height:36px; padding-left:12px; font-size:14px; font-family:'NBGothicL'; color:#424852; border:1px solid #cad0d7; -webkit-appearance:none; -moz-appearance:none; appearance:none; background:url('../img/selectBox_down.png') no-repeat 60px 11px; box-sizing:border-box; float:left; }
+
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in .orderL_right .bar { display:block; float:left; width:6px; margin:0 6px; height:36px; line-height:36px; color:#636c77; font-family:'NBGothicB'; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_left .orderL_section02_left_in:last-child input { width:100%; height:36px; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #cad0d7; box-sizing:border-box; }
+/* orderL_section02_right */
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_right { width:88px; height:100%; float:right; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_right .check_orderL_btn { width:88px; height:88px; display:block; background:#5e9cea; border:0; color:#fff; border-radius:4px; font-size:16px; font-family:'NBGothicB'; padding:0; margin:0; }
+.orderL_inner_section02 .orderL_s02_top .orderL_section02_right .check_orderL_btn:hover { background:#4a88da; }
+
+/* orderL_s02_bottom */
+.orderL_inner_section02 .orderL_s02_bottom { width:100%; height:16px; }
+.orderL_inner_section02 .orderL_s02_bottom .orderL_left { float:left; width:98px; height:16px; line-height:16px; font-size:16px; color:#424852; font-family:'NBGothicB'; }
+.orderL_inner_section02 .orderL_s02_bottom .orderL_right { float:left; width:700px; height:16px; line-height:16px; }
+
+
+/* order_list_radio */
+.order_list_radio { float:left; display:inline-block; position:relative; cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; font-family:'NBGothicL'; color:#424852; font-size:14px; padding-left:24px; margin-top:0px; margin-right:24px; height:16px; line-height:16px; }
+.order_list_radio input { position:absolute; opacity:0; cursor:pointer; }
+.order_list_checkmark { position:absolute; top:0; left:0; height:16px; width:16px; background-color:#fff; border-radius:50%; border:1px solid #cad0d7; box-sizing:border-box; }
+.order_list_radio input:checked ~ .order_list_checkmark { background-color:#fff; border:1px solid #cad0d7; }
+.order_list_checkmark:after { content: ""; position: absolute; display:none; }
+.order_list_radio input:checked ~ .order_list_checkmark:after { display:block; }
+.order_list_radio .order_list_checkmark:after { top:3px; left:3px; width:8px; height:8px; border-radius:50%; background:#d94452; }
+
+
+/*---------- section03 ----------*/
+.orderL_section03 .orderL_table { width:100%; height:auto; border-bottom:1px solid #424852; }
+.orderL_section03 .orderL_table .orderL_table_thead { height:48px; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.orderL_section03 .orderL_table tr th { text-align:center; vertical-align:middle; font-family:'GodoM'; font-size:16px; color:#636c77; }
+.orderL_section03 .orderL_table tr { border-bottom:1px solid #424852; }
+.orderL_section03 .orderL_table tr:last-child { border-bottom:0; }
+.orderL_section03 .orderL_table tr td { padding:24px 0; text-align:center; vertical-align:middle; }
+.orderL_section03 .orderL_table tr .orderL_number p { color:#636c77; font-size:14px; font-family:'NBGothicR'; line-height:100%; }
+.orderL_section03 .orderL_table tr .orderL_number p b { font-size:16px; font-family:'GodoM'; font-weight:normal; display:block; margin-bottom:12px; }
+.orderL_section03 .orderL_table tr .orderL_number .payment_info_btn { width:96px; height:24px; border-radius:12px; border:0; padding:0; margin:24px 0 0; outline:0; background:#d94452; font-size:12px; text-align:center; vertical-align:middle; color:#fff; font-family:'NBGothicB'; }
+
+/* orderL_sub_table */
+.orderL_section03 .orderL_table tr .orderL_product_info { padding:0; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table { width:100%; height:auto;  }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table tr { width:100%; height:auto; border-bottom:1px solid #cad0d7; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table tr:last-child { border-bottom:0; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table td { vertical-align:middle; text-align:left; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table img { float:left; vertical-align: middle; margin-right:16px; box-sizing:border-box; border:1px solid #cad0d7; width:92px; height:134px; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table p { float:left; vertical-align: middle; margin-top:48px; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table p span { display:block; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table p .book_name { font-size:16px; font-family:'NBGothicB'; color:#424852; margin-bottom:12px; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table p .book_explain { font-size:12px; font-family:'NBGothicL'; color:#a9b0bb; }
+.orderL_section03 .orderL_table tr .orderL_product_info .orderL_sub_table .orderL_quantity { color:#424852; font-size:16px; font-family:'GodoM'; text-align:center; }
+
+.orderL_section03 .orderL_table tr .orderL_pay { color:#424852; font-family:'GodoM'; font-size:16px; }
+.orderL_section03 .orderL_table tr .orderL_status { color:#a9b0bb; font-family:'GodoM'; font-size:16px; }
+
+
+
+/* 레이어 팝업 */
+.mask { position:absolute; left:0; top:0; z-index:99; background:rgba(0,0,0,0.8); display:none; }
+.odl_payment_info_layer { display:none; background:#e4e8eb; width:480px; height:auto; z-index:99; padding:24px; }
+.odl_layer_inner { padding:24px; background:#fff; }
+
+.odl_layer_inner .odl_sub_header { width:100%; margin-bottom:48px; height:13px; font-size:14px; font-family:'GodoM'; color:#424852; }
+
+.odl_layer_inner .odl_header { width:100%; height:auto; box-sizing:border-box; border-bottom:2px solid #424852; }
+.odl_layer_inner .odl_header h3 { font-size:20px; margin:0 0 16px; line-height:100%; }
+
+.odl_layer_inner .odl_section { width:100%; box-sizing:border-box; padding:12px 24px; }
+.odl_layer_inner .odl_section table { width:100%; box-sizing:border-box; }
+.odl_layer_inner .odl_section table tr td { height:36px; vertical-align:middle; text-align:left; color:#636c77; font-family:'NBGothicL'; font-size:!4px; }
+.odl_layer_inner .odl_section table tr td:first-child { color:#424852; font-family:'NBGothicB'; }
+.odl_layer_inner .odl_btn_box { border-top:1px solid #424852; width:100%; height:auto; padding-top:24px; }
+.odl_layer_inner .layer_close_btn { margin:0 auto; width:124px; height:48px; border-radius:24px; background:#d94452; border:1px solid #d94452; font-size:20px; font-family:'GodoM'; color:#fff; text-align:center; display:block; }
+
+
+
+
+
+
+
+

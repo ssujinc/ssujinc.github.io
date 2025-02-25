@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>전역 구조화 엘리먼트 &gt; HTML GUIDE</title>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT"/>
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"/><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css"/>
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/>
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>전역 구조화 엘리먼트</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>HTML 엘리먼트 작성 규칙</span></li>
+							<li><span>전역 구조화 엘리먼트</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. &lt;html&gt;</dt>
+                            <dd>
+                                <p class="txt">class 애트리뷰트는 선언하지 않습는다.</p>
+                                <div class="txt_bg">&lt;html <em class="ft_clr_red">lang</em>="ko"&gt;</div>
+                            </dd>
+                            <dd>
+                                <p class="txt">XHTML DTD 선언 시에는 다음과 같이 lang 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko"&gt;</div>
+                            </dd>
+                            <dd>
+                                <p class="txt">lang 애트리뷰트는 User Agent가 언어를 올바로 해석할 수 있게 도와주며, 검색과 음성 장치(speech synthesizers)에 활용됩니다. 언어 코드  는 모든 엘리먼트에 사용할 수 있지만 HTML 엘리먼트에 해당 문서의 주 언어 코드만 선언합니다.<br>
+HTML 4.01 Specification, XHTML 1.0 Specification에서 자연어는 RFC 1766에 명시된 언어 코드를 사용합니다. RFC1766은 각각 ISO639,  ISO3166을 참조하며, ISO Specification은 유료이므로 아래 웹 페이지를 참조합니다.<br>
+MSDN Language Codes: http://msdn.microsoft.com/en-au/library/ms533052(VS.85).aspx <br>자주 사용하는 국가코드는 en(영어), ja(일본어), zh-cn(중국어)이다.
+</p>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. &lt;head&gt;</dt>
+                            <dd>
+                                <p class="txt">meta, link, script, style, title 순서로 엘리먼트를 선언합니다.</p>
+                                <div class="txt_bg">
+                                <pre>
+&lt;head&gt;
+<em class="ft_clr_red">&lt;!-- meta --&gt;</em>
+&lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"&gt;
+&lt;meta http-equiv="Content-Script-Type" content="text/javascript"&gt;
+&lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;
+<em class="ft_clr_red">&lt;!-- css --&gt;</em>
+&lt;link rel="stylesheet" type="text/css" href="css/default.css"&gt;
+<em class="ft_clr_red">&lt;!-- script --&gt;</em>
+&lt;script type="text/javascript" src="js/default.js"&gt;&lt;/script&gt;
+<em class="ft_clr_red">&lt;!-- style --&gt;</em>
+&lt;style type="text/css"&gt;
+[stuff]
+&lt;/style&gt;
+<em class="ft_clr_red">&lt;!-- title --&gt;</em>
+&lt;title&gt;페이지명 &gt; 사이트명&lt;/title&gt;
+&lt;/head&gt;</pre>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. &lt;meta&gt;</dt>
+                            <dd>
+                                <p class="txt">문서의 기본 인코딩, 뷰포트, 스크립트 형식, 스타일 형식 순서로 엘리먼트를 선언합니다.  뷰포트는 모바일 브라우저에 대응하는 HTML의 경우에만 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;meta http-equiv="<em class="ft_clr_red">Content-Type</em>" content="text/html;charset=utf-8"&gt;<br>
+&lt;meta name="<em class="ft_clr_red">viewport</em>" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi"&gt;<br>
+&lt;meta http-equiv="<em class="ft_clr_red">Content-Script-Type</em>" content="text/javascript"&gt;<br>
+&lt;meta http-equiv="<em class="ft_clr_red">Content-Style-Type</em>" content="text/css"&gt;
+                                </div>
+                            </dd>
+                            <dd>
+                                <p class="txt">HTML5 DTD 선언 시에는 다음과 같다.</p>
+                                <div class="txt_bg">
+&lt;meta charset="utf-8"&gt;<br>
+&lt;meta name="<em class="ft_clr_red">viewport</em>" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-  dpi"&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. &lt;link&gt;</dt>
+                            <dd>
+                                <p class="txt">rel, type, href 순서로 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+                                    &lt;script <em class="ft_clr_red">type</em>="text/javascript" <em class="ft_clr_red">src</em>="js/default.js"&gt;&lt;/script&gt;
+                                </div>
+                                <p class="txt">script는 &lt;head&gt;&lt;/head&gt; 내에 선언하는 것을 원칙으로 합니다. 단, 성능상의 이슈가 있으면 개발 부서와 협의하여 선언 위치를 변경합니다.</p>
+                            </dd>
+                            <dd>
+                                <dl class="helpBox ico_refer">
+                                    <dt>참고</dt>
+                                    <dd>
+                                        <ul class="lst">
+                                            <li>language 애트리뷰트는 HTML4 이전 버전의 하위 호환성을 위해 사용하는 비표준 애트리뷰트로, 사용하지 않습는다.<br>HTML5 문서의 경우 &lt;script&gt;와 &lt;style&gt; 선언 시 type 애트리뷰트의 생략을 허용합니다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd>                            
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. &lt;style&gt;</dt>
+                            <dd>
+                                <p class="txt">type 애트리뷰트를 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;style <em class="ft_clr_red">type</em>="text/css"&gt;  [stuff]<br>
+&lt;/style&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>G. &lt;title&gt;</dt>
+                            <dd>
+                                <p class="txt">&quot;메뉴 &gt; 브랜드명 서비스&quot;의 형식으로 작성합니다.</p>
+                                <div class="txt_bg">
+&lt;title&gt;소개 &gt; 마음에이아이&lt;/title&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>H. &lt;body&gt;</dt>
+                            <dd>
+                                <p class="txt">class 애트리뷰트는 웹페이지의 스킨셋을 변경해야 할 때 선택적으로 사용합니다.<br>
+모바일에서는 &lt;body&gt;에 브라우저별로 정의된 class명을 지정하고 이를 상속하여 브라우저별 CSS 렌더링 차이를 해결합니다. 변경 사항이  잦으니 아래 경로에서 확인합니다.</p>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="브라우저/클래스로 구성됨">
+                                    <caption>표 4-1 &lt;body&gt; 태그의 클래스 추가</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">브라우저</th>
+                                            <th class="al_l" scope="col">클래스</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">사파리</td>
+                                            <td class="al_l">s, s2(iOS 4.2 미만)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">안드로이드</td>
+                                            <td class="al_l">a</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">돌핀</td>
+                                            <td class="al_l">d</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">오페라 모바일 9.5</td>
+                                            <td class="al_l">o</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>
+                            <dd>
+                                <div class="txt_bg">
+                                    &lt;body <em class="ft_clr_red">class="s"</em>&gt;
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(5) span:contains("전역 구조화 엘리먼트")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('전역 구조화 엘리먼트 > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

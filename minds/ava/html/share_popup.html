@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AVA Play!</title>
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/layout.css" />
+        <link rel="stylesheet" href="../css/sub.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+    </head>
+    <body class="share_popup_wrap">
+        <div class="share_popup_area">
+            <div class="spw_header">
+                <h1 class="spw_logo">
+                    <img src="../imgs/img-ava-play.png" alt="AVA Play!">
+                </h1>
+            </div>
+            <div class="spw_cnt">
+                <p class="spw_top_txt">희망의 청춘의 구하기 같지 놀이 생명을 따뜻한 끓는다 2줄까지</p>
+                <div class="spw_cnt_area">
+                    <div class="spw_play_list">
+                        <div class="avatar qquaddurup-56">
+                            <i class="icon-ico-play-56px"></i>
+                        </div>
+                        <div class="spw_play_cnt">
+                            <p class="spw_cnt_tit">스폰지</p>
+                            <p class="spw_cnt_txt">때 아이들의 비둘기, 마디씩 별 책상을 같이 1줄같이 1줄</p>
+                        </div>
+                    </div>
+                    <div class="spw_play_list">
+                        <div class="avatar wanana-56">
+                            <i class="icon-ico-play-56px"></i>
+                        </div>
+                        <div class="spw_play_cnt">
+                            <p class="spw_cnt_tit">와나나</p>
+                            <p class="spw_cnt_txt">때 아이들의 비둘기, 마디씩 별 책상을 같이 1줄같이 1줄</p>
+                        </div>
+                    </div>
+                    <div class="spw_play_list">
+                        <div class="avatar wanana-56">
+                            <i class="icon-ico-play-56px"></i>
+                        </div>
+                        <div class="spw_play_cnt">
+                            <p class="spw_cnt_tit">와나나</p>
+                            <p class="spw_cnt_txt">때 아이들의 비둘기, 마디씩 별 책상을 같이 1줄같이 1줄</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spw_btn_wrap">
+                    <div class="spw_btn_area">
+                        <button class="spw_btn spw_down">
+                            <i class="icon-ico-download-24px"></i>
+                            <span>다운로드</span>
+                        </button>
+                        <button class="spw_btn spw_play">
+                            <i class="icon-ico-play-24px"></i>
+                            <span>전체재생</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/jquery-1.11.2.min.js"></script>
+        <script>
+            $(window).load(function () {
+                var strWidth;
+                var strHeight;
+
+                //innerWidth / innerHeight / outerWidth / outerHeight 지원 브라우저
+                if (window.innerWidth && window.innerHeight && window.outerWidth && window.outerHeight) {
+                    strWidth = $(".share_popup_wrap").outerWidth() + (window.outerWidth - window.innerWidth);
+
+                    strHeight = $(".share_popup_wrap").outerHeight() + (window.outerHeight - window.innerHeight);
+                    
+                } else {
+                    var strDocumentWidth = $(document).outerWidth();
+                    var strDocumentHeight = $(document).outerHeight();
+
+                    window.resizeTo(strDocumentWidth, strDocumentHeight);
+
+                    var strMenuWidth = strDocumentWidth - $(window).width();
+                    var strMenuHeight = strDocumentHeight - $(window).height();
+
+                    strWidth = $(".share_popup_wrap").outerWidth() + strMenuWidth;
+                    // strWidth = 320;
+                    strHeight = $(".share_popup_wrap").outerHeight() + strMenuHeight;
+                }
+
+                //resize
+                window.resizeTo(strWidth, strHeight);
+            });
+        </script>
+    </body>
+</html>

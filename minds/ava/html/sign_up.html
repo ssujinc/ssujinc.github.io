@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>TTS Builder_회원가입</title>
+
+    <!-- sns share -->
+    <meta property="og:title" content="AVA - AI Virtual Avatar" />
+    <meta property="og:image" content="../imgs/share-img.png" />
+    <!-- <meta property="og:description" content=""> -->
+    <!-- <meta name="description" content=""> -->
+    <link rel="apple-touch-icon" href="../imgs/iphone-touch-img.png" />
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/sub.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div class="container sign_up">
+            <h1 class="logo">
+                <a href="../index.html"></a>
+            </h1>
+            <p>Sign Up,</p>
+            <form action="">
+                <fieldset>
+                    <legend>sign up</legend>
+                    <label for="email">E Mail<span>(ID)</span><strong> *</strong></label>
+                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요." />
+                    <button value="이메일 인증받기" id="button_certification" type="button">이메일 인증받기</button>
+                    <p>이메일 인증이 완료되었습니다.</p>
+                    <label for="password" class="">Password<strong> *</strong></label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." />
+                    <p class="password error">영문, 숫자, 특수문자를 포함하여 8자 이상 입력하세요.</p>
+
+                    <label for="password_confirm" class="error">Password Confirm<strong> *</strong></label>
+                    <input
+                        type="password"
+                        id="password_confirm"
+                        name="password_confirm"
+                        placeholder="비밀번호를 다시한번 입력해주세요."
+                    />
+                    <p>비밀번호가 일치하지 않습니다. 다시 입력해주세요.</p>
+
+                    <label for="name" class="error">Name(Nick name)<strong> *</strong></label>
+                    <input type="name" id="name" name="name" placeholder="이름(별명)을 입력해주세요." />
+                    <p>이름을 입력해주세요.</p>
+
+                    <label for="contact_info">Contact Info.<strong> *</strong></label>
+                    <input
+                        type="number"
+                        id="contact_info"
+                        name="contact_info"
+                        placeholder="연락 가능한 전화번호를 '-'(하이픈)없이 입력해주세요."
+                    />
+                    <p>연락처를 입력해주세요.</p>
+
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" placeholder="회사/소속을 입력해주세요." />
+
+                    <button type="submit" value="Sign Up" class="button_submit">
+                        <span class="txt">Sign Up</span>
+                        <div class="icon_bg_68 bg_sign_up_blue">
+                            <i class="icon-ico-check-signup-24px"></i>
+                        </div>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <div class="footer_area">
+                <ul class="ft_link_ul">
+                    <li><a href="javascript:void(0)">회사소개</a></li>
+                    <li><a href="javascript:void(0)">이용약관</a></li>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                </ul>
+                <div class="ft_ul_area">
+                    <div class='ft_btm_top'>
+                        <ul class="ft_cnt_ul">
+                            <li class="ft_fl">대표 유태준</li>
+                            <li class="ft_fl">통신판매업 신고번호 2019-대전유성-0094</li>
+                        </ul>
+                        <ul class="ft_block_ul">
+                            <li><address>경기도 성남시 분당구 대왕판교로 664번길 49 6층</address></li>
+                            <li>고객센터 <em>1661-3222</em></li>
+                        </ul>
+                    </div>
+                    <ul class="ft_copy_ul">
+                        <li><em>&copy;Minds Lab.</em></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var button_certification = document.getElementById('button_certification');
+        var input_email = document.getElementById('email');
+        button_certification.addEventListener('click', function () {
+            button_certification.classList.add('remove');
+            input_email.readOnly = true;
+            input_email.style.background = '#e3e8eb';
+            input_email.style.color = '#414853';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* layout */
+.newbook_section01 { width:100%; height:79px; background:#fff; }
+.newbook_section02 { width:100%; height:auto; }
+
+
+/*---------- section01 ----------*/
+.newbook_inner_section01 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; }
+.newbook_inner_section01 h2 { margin:0; padding:0 0 24px; }
+
+
+/*---------- section02 ----------*/
+.newbook_inner_section02 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; }
+.newbook_tabcontent { display:none; }
+.newbook_tabcontent:after { clear:both; display:block; content:''; }
+.input_box { position:absolute; left:24px; top:23px; }
+
+/* column */
+.grid_type { display:block; float:left; height:338px; width:25%; box-sizing:border-box; position:relative; }
+.grid_type .column_in { display:block; width:224px; height:100%; background:#fff; margin:0 auto; box-sizing:border-box; padding-top:24px; }
+.grid_type:hover .column_in { background:#e4e8eb; cursor:pointer; }
+.grid_type .column_in img { width:138px; height:202px; box-sizing:border-box; border:1px solid #cad0d7; display:block; margin:0 auto 16px; }
+.grid_type .column_in .newbook_txt_grid { display:block; width:192px; height:72px; margin:0 auto; text-align:center; }
+.grid_type .column_in .newbook_txt_grid .newbook_title { color:#424852; font-family:'NBGothicB'; font-size:14px; height:30px; line-height:normal; margin-bottom:6px; }
+.grid_type .column_in .newbook_txt_grid .newbook_author { color:#a9b0bb; font-family:'NBGothicL'; font-size:12px; height:12px; margin-bottom:11px; }
+.grid_type .column_in .newbook_txt_grid .newbook_price { color:#d94452; font-family:'NBGothicB'; font-size:14px; }
+.grid_type .column_in .newbook_txt_list { display:none; }
+
+/* row */
+.list_type { display:block; height:250px; width:100%; box-sizing:border-box; position:relative; }
+.list_type .column_in { width:100%; height:100%; }
+.list_type .column_in:after{ display:block; content:''; clear:both; }
+.list_type img { width:138px; height:202px; box-sizing:border-box; border:1px solid #cad0d7; float:left; margin:24px 24px 0 52px; }
+.list_type:hover { background:#e4e8eb; cursor:pointer; }
+.list_type .column_in .newbook_txt_grid { display:none; }
+.list_type .column_in .newbook_txt_list { display:block; width:746px; padding:24px 0; height:100%; box-sizing:border-box; float:left; }
+.list_type .column_in .newbook_txt_list .newbook_txt_list_left { width:550px; height:auto; float:left; }
+.list_type .column_in .newbook_list_price { display:block; float:right; width:196px; height:100%; padding:44px 24px 24px; box-sizing:border-box; text-align:center; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover { clear:both; width:100%; height:120px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .recommend { display:block;  width:48px; height:16px; margin:0; margin-bottom:6px; clear:both; border:0; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_title { clear:both; color:#424852; font-size:18px; font-family:'NBGothicB';  margin-bottom:12px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_author { clear:both; color:#a9b0bb; font-size:12px; font-family:'NBGothicL'; margin-bottom:12px; height:12px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review { width:100%; height:12px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star_non { width:76px; height:12px; float:left; margin:0 8px 0 0;background:url('../img/star.png') left top no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star01 { width:76px; height:12px; float:left; margin:0 8px 0 0; background:url('../img/star.png') 0 -12px no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star02 { width:76px; height:12px; float:left; margin:0 8px 0 0; background:url('../img/star.png') 0 -24px no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star03 { width:76px; height:12px; float:left; margin:0 8px 0 0; float:left;background:url('../img/star.png') 0 -36px no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star04 { width:76px; height:12px; float:left; margin:0 8px 0 0; background:url('../img/star.png') 0 -48px no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star05 { width:76px; height:12px; float:left; margin:0 8px 0 0; background:url('../img/star.png') 0 bottom no-repeat; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .star_num { display:block; float:left; font-family:'NBGothicL'; color:#636c77; font-size:12px; padding:0; height:12px; line-height:14px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .detail_review_num { float:left; font-family:'NBGothicL'; color:#d56fac; font-size:12px; margin-left:12px; height:12px; line-height:14px; }
+.list_type .column_in .newbook_txt_list .newbook_list_cover .newbook_review .detail_review_num span { font-family:'NBGothicB'; }
+.list_type .column_in .newbook_txt_list .newbook_introduce { width:100%; height:81px; box-sizing:border-box; background:#fff; border:1px solid #e4e8eb; padding:12px; position:relative; line-height:20px; }
+.list_type .column_in .newbook_txt_list .newbook_introduce a { position:absolute; bottom:10px; right:12px; font-size:12px; font-family:'NBGothicL'; color:#a9b0bb; line-height:100%; }
+.list_type .column_in .newbook_list_price .newbook_price { margin-bottom:13px; font-size:14px; font-family:'GodoM'; color:#424852; }
+.list_type .column_in .newbook_list_price .newbook_price span { font-size:24px; }
+.list_type .column_in .newbook_list_price .benefit_box { width:87px; height:10px; display:block; margin:0 auto 24px; }
+.list_type .column_in .newbook_list_price .benefit_box .benefit_price { float:left; margin-right:12px; }
+.list_type .column_in .newbook_list_price .benefit_box .benefit_point { float:left; }
+.list_type .column_in .newbook_list_price .baro-btn { margin-bottom:6px; }
+
+
+
+
+
+
+input.checkbox { display:none; }
+input.checkbox + label span { display:inline-block; width:12px; height:12px; vertical-align:middle;background:url('../img/checkBox.png') left top no-repeat; cursor:pointer; }
+input.checkbox:checked + label span { background:url('../img/checkBox.png') -12px top no-repeat; }
+    

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46">
+    <defs>
+        <filter id="r5ovk4aqua">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"/>
+        </filter>
+        <filter id="qkslsxlrjb" width="185.7%" height="185.7%" x="-42.9%" y="-42.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <path id="tstg3rehmc" d="M0 0L27.994 0 27.994 27.994 0 27.994z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g filter="url(#r5ovk4aqua)" transform="translate(-1870 -568) translate(1860 510)">
+                <g filter="url(#qkslsxlrjb)" transform="translate(19 67)">
+                    <mask id="yjk22ahidd" fill="#fff">
+                        <use xlink:href="#tstg3rehmc"/>
+                    </mask>
+                    <path fill="#3A3A3C" d="M19.829 13.997c-.644 0-1.167-.522-1.167-1.167 0-.644.523-1.166 1.167-1.166s1.166.522 1.166 1.166c0 .645-.522 1.167-1.166 1.167M12.83 12.83c0-.644.523-1.166 1.167-1.166s1.166.522 1.166 1.166c0 .645-.522 1.167-1.166 1.167-.644 0-1.167-.522-1.167-1.167m-5.832 0c0-.644.523-1.166 1.167-1.166s1.166.522 1.166 1.166c0 .645-.522 1.167-1.166 1.167-.644 0-1.167-.522-1.167-1.167M13.997 0C6.279 0 0 5.756 0 12.83c0 2.539.806 4.984 2.333 7.086v7.494c0 .209.111.401.291.505.09.053.191.079.292.079.1 0 .201-.026.292-.079L8.74 24.72c1.683.625 3.45.942 5.256.942 7.718 0 13.997-5.756 13.997-12.83C27.994 5.755 21.714 0 13.997 0" mask="url(#yjk22ahidd)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

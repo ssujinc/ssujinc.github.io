@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="epo4inf8na">
+            <path fill="none" d="M0 0H24V24H0z" transform="translate(611 1707)"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#epo4inf8na)" transform="translate(-611 -1707)">
+        <path fill="none" stroke="#a8b0bc" stroke-width="2px" d="M0 0L16 0" transform="translate(615.5 1718.5)"/>
+    </g>
+</svg>

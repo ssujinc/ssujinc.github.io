@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">      
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" /> 
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/base.css" />       
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <style type="text/css">
+           .pop-container {width:566px; height:746px; box-sizing:border-box; border:1px solid #d94452; padding:10px 16px 16px; }
+            .pop-conts { width:auto; height:auto; }
+            .pop-container .btn-r { width:100%; height:36px; margin-bottom:10px; }
+            div.btn-close { cursor:pointer; display:inline-block; float:right; width:36px; height:36px; background:url(images/close.png) no-repeat center; text-indent:-9999px; }
+            .pop-img { width:100%; height:640px; display:block; }
+            .pop-img img { width:100%; height:auto; }
+            .btn-l { width:100%; height:16px; margin-top:16px; }
+            .btn-l label input { width:16px; height:16px; border:1px solid #cad0d7; float:left; color:#636c77; box-sizing:border-box; cursor:pointer; margin-right:12px; background:#fff; }
+            .btn-l label span { width:auto; display:block; float:left; font-size:14px; box-sizing:border-box; cursor:pointer; line-height:16px; height:16px; color:#424852; font-family:'NanumSquareL',sans-serif,'Arial',dotum; }
+        </style>
+        <title>HYGGE_popup</title>
+    </head>
+    <body>
+        <div class="pop-container">
+            <div class="pop-conts">
+                <div class="btn-r">
+                    <div class="btn-close" onclick="javascript : var win = window.open('', '_self'); win.close();return false;">x</div>
+                </div>
+                <div class="pop-img">
+                    <img src="images/popup.jpg" alt="오픈 팝업 이미지" />
+                </div>
+                <div class="btn-l">
+                    <label for="nomore-view"><input type="checkbox" id="nomore-view"><span>하루동안 보지 않기</span></label>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

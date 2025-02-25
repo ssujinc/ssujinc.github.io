@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/find.css">
+	<script type="text/javascript" src="asset/js/find.js"></script>
+	<script>
+		$(document).bind("mobileinit", function(){
+			$.mobile.ajaxLinksEnabled = false;
+			$.mobile.ajaxFormsEnabled = false;
+			$.mobile.ajaxEnabled = false;
+		});
+	</script>
+  	<title>find</title>    
+</head>
+<body id="find" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content">
+			<ul class="tab tab_find">
+				<li class="tab_btn" onclick="tabover('find', 0)"><a href="javascript:void()">아이디 찾기</a></li>
+				<li class="tab_btn" onclick="tabover('find', 1)"><a href="javascript:void()">비밀번호 찾기</a></li>
+	        </ul>	
+
+			<div class="inner_content">
+				<div id="Id" class="find_tabcontent tabcnt_find0">
+					<div class="find_id">
+						<div class="id_explain_txt">
+							<p>가입 당시 입력한 휴대폰 번호 또는 이메일을<br>통해 아이디를 찾을 수 있습니다.</p>
+						</div>
+						<div class="find_id_input_box">
+							<input type="text" class="find_id_input" placeholder="휴대폰 번호 또는 이메일">
+							<button class="find_id_confirm_number_btn">인증번호 발송</button>  
+							<span class="find_cn_check"></span>
+						</div>
+						<p class="find_id_warning warning_red">해당 휴대폰 번호 또는 이메일로 가입된 아이디가 없습니다.</p>
+						<p class="find_id_cn_go_check warning_red">입력하신 정보로 인증번호가 발송되었습니다.</p>
+						<div class="find_id_confirm_input_box error">
+							<input type="text" class="find_id_confirm_input" placeholder="인증번호를 입력하세요." />
+						</div>
+						<p class="find_id_cn_check warning_red">인증번호가 일치하지 않습니다.</p>
+						<input type="button" class="find_id_next_btn" value="다음" />
+					</div>
+					<div class="find_id_complete_box">
+						<div class="id_explain_txt">
+							<p><span class="txt_bold"><span>01012345678</span> 로 찾은 <br class="displaynone">회원님의 아이디입니다.</span><br>
+							개인정보 보호를 위해 <br class="displaynone">아이디의 일부를 *로 표시합니다.</p>
+						</div>
+						<div class="find_id_complete">
+							<p>
+								<span>hygge*** <span class="find_gray"><br class="displaynone">(가입일 <span>2018.04.01</span>)</span></span>
+							</p>
+						</div>
+						<a href="login.html" class="find_id_login_btn" data-ajax="false">로그인 화면으로 이동</a>
+					</div>
+				</div> <!--  /#Id -->
+
+				<div id="Pw" class="find_tabcontent tabcnt_find1">
+					<div class="first_pw">
+						<div class="id_explain_txt">
+							<p class="find_pw_default_txt">아이디와 가입 당시 입력한 휴대폰 번호 또는 <br class="display:block;">이메일을 통해 비밀번호를 찾을 수 있습니다.</p>
+							<p class="find_pw_first_txt">가입 당시 입력한 휴대폰 번호 또는 이메일을<br>통해 아이디를 찾을 수 있습니다.</p>
+						</div>
+						
+						<div class="find_pw_id_input_box">
+							<input type="text" class="find_pw_id_input find_input" placeholder="아이디" />
+						</div>
+
+						<div class="find_pw_input_box">
+							<input type="text" class="find_pw_phone_input" placeholder="휴대폰 번호 또는 이메일" />
+							<button class="find_pw_confirm_number_btn">인증번호 발송</button>  
+							<span class="find_cn_check"></span>
+						</div>
+
+						<p class="find_pw_warning warning_red">가입 시 입력한 휴대폰 번호 또는 이메일을 입력해주세요.</p>
+						<p class="find_pw_cn_go_check warning_red">입력하신 정보로 인증번호가 발송되었습니다.</p>
+
+						<div class="find_pw_confirm_input_box error">
+							<input type="text" class="find_pw_confirm_input" placeholder="인증번호를 입력하세요." />
+						</div>
+
+						<p class="find_pw_cn_check warning_red">인증번호가 일치하지 않습니다.</p>
+
+						<div class="find_pw_next_btn_box">
+							<input type="button" class="find_pw_next_btn" value="다음" /> 
+						</div>
+					</div>
+
+					<div class="find_re_pw_box">
+						<div class="id_explain_txt">                        
+							<p class="find_reset_txt">
+								<span class="txt_regular">비밀번호 재설정</span><br>비밀번호를 새롭게 설정해주세요.
+							</p>
+						</div>
+
+						<div class="find_pw_re_input_box">
+							<input type="text" class="find_pw_re_input" placeholder="새 비밀번호" />
+						</div>
+						
+						<div class="find_pw_repw_confirm_box">
+							<input type="text" class="find_pw_repw_confirm find_input" placeholder="새 비밀번호 확인" />
+						</div>
+
+						<p>8자~20자 이내로 영문자, 숫자, 특수문자 중 <br>2가지 이상 조합해주세요.</p>
+						<input type="button" class="find_re_pw_complete_btn" value="비밀번호 변경 완료" />
+					</div>
+					
+					<div class="find_pw_complete_box">
+						<p>
+							<span>
+								<span class="bold"><span class="red-color">hygge1234</span> 회원님, <br>새로운 비밀번호로 변경되었습니다.</span>								
+							</span>
+							<span>새로운 비밀번호로 로그인 해주세요.</span>
+						</p>
+						<a href="login.html" class="find_go_login_btn" data-ajax="false">로그인 화면으로 이동</a>
+					</div>						
+
+				</div> <!--  /#Pw -->
+			</div> 
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

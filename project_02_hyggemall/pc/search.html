@@ -1,0 +1,1255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+    <title>search</title>    
+</head>
+ <body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">국내도서</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box">
+                <ul>
+                    <li><a href="">국내도서</a></li>
+                    <li><a href="">해외도서</a></li>
+                    <li><a href="">웹소설</a></li>
+                    <li><a href="">펜시몰</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">여행</a>
+                <span class="select_arrow"></span>
+            </p>
+            <div class="path_location_box" style="width:338px;">
+                <ul>
+                    <li><a href="">소설</a></li>
+                    <li><a href="">시/에세이</a></li>
+                    <li><a href="">인문</a></li>
+                    <li><a href="">가정/육아</a></li>
+                    <li><a href="">요리</a></li>
+                    <li><a href="">건강</a></li>
+                    <li><a href="">취미/실용/스포츠</a></li>
+                    <li><a href="">경제/경영</a></li>
+                    <li><a href="">자기계발</a></li>
+                    <li><a href="">정치/사회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">역사/문화</a></li>
+                    <li><a href="">종교</a></li>
+                    <li><a href="">예술/대중문화</a></li>
+                    <li><a href="">중/고등참고서</a></li>
+                    <li><a href="">기술/공학</a></li>
+                    <li><a href="">외국어</a></li>
+                    <li><a href="">과학</a></li>
+                    <li><a href="">취업/수험서</a></li>
+                    <li><a href="">여행</a></li>
+                    <li><a href="">컴퓨터/IT</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">잡지</a></li>
+                    <li><a href="">청소년</a></li>
+                    <li><a href="">초등참고서</a></li>
+                    <li><a href="">유아(0~7세)</a></li>
+                    <li><a href="">어린이(초등)</a></li>
+                    <li><a href="">어린이영어</a></li>
+                    <li><a href="">만화</a></li>
+                    <li><a href="">대학교재</a></li>
+                    <li><a href="">어린이전집</a></li>
+                    <li><a href="">한국소개도서</a></li>
+                </ul>
+            </div>
+	    </div>
+	    <div class="path_box">
+            <p class="path_location">
+                <a href="">해외여행</a>
+                <span class="select_arrow"></span>
+            </p>
+	    </div>
+    </section>
+    
+	<section class="search_section01">
+        <div class="search_inner_section01">
+            <h2>검색 결과 <span class="blue_color">"<span>해리포터</span>"</span> <span class="small_font">총 <span>113</span>건</span></h2>
+            <div class="list_grid_btn_box">
+                <button class="list_btn list_grid_btn">list</button>
+                <button class="grid_btn list_grid_btn list_grid_active">grid</button>
+            </div>
+        </div>
+	</section>
+	<section class="search_section02">
+	    <div class="search_inner_section02">
+	        <ul class="tab tab_search">
+	            <li class="tab_btn search_tab_btn" onclick="tabover('search', 0)"><a>국내도서</a></li>
+	            <li class="tab_btn search_tab_btn" onclick="tabover('search', 1)"><a>해외도서</a></li>
+	        </ul>
+	        
+	        <div class="submenu">
+	            <ul>
+	                <li class="submenu_box"><a href="" class="submenu_location_no">전체</a></li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">컴퓨터(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">컴퓨터수험서(<span></span>)</a></li>
+                            <li><a href="">OS(<span></span>)</a></li>
+                            <li><a href="">H/W(<span></span>)</a></li>
+                            <li><a href="">OA/FA(<span></span>)</a></li>
+                            <li><a href="">프로그래밍언어(<span></span>)</a></li>
+                            <li><a href="">데이터베이스(<span></span>)</a></li>
+                            <li><a href="">전산학(<span></span>)</a></li>
+                            <li><a href="">네트워크(<span></span>)</a></li>
+                            <li><a href="">그래픽(<span></span>)</a></li>
+                            <li><a href="">홈페이지(웹제작)(<span></span>)</a></li>
+                            <li><a href="">인터넷(<span></span>)</a></li>
+                            <li><a href="">C/C++(<span></span>)</a></li>
+                            <li><a href="">컴퓨터디자인(<span></span>)</a></li>
+                            <li><a href="">포토샵(<span></span>)</a></li>
+                            <li><a href="">일러스트(<span></span>)</a></li>
+                            <li><a href="">영상편집(<span></span>)</a></li>
+                            <li><a href="">컴퓨터일반(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">소설(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">한국소설(<span></span>)</a></li>
+                            <li><a href="">대하소설(<span></span>)</a></li>
+                            <li><a href="">외국소설(<span></span>)</a></li>
+                            <li><a href="">중국역사소설(<span></span>)</a></li>
+                            <li><a href="">일본소설(<span></span>)</a></li>
+                            <li><a href="">SF/추리소설(<span></span>)</a></li>
+                            <li><a href="">세계명작(<span></span>)</a></li>
+                            <li><a href="">한국명작(<span></span>)</a></li>
+                            <li><a href="">무협소설(<span></span>)</a></li>
+                            <li><a href="">환타지소설(<span></span>)</a></li>
+                            <li><a href="">문학상수상집(<span></span>)</a></li>
+                            <li><a href="">문고/전집(<span></span>)</a></li>
+                            <li><a href="">NT소설(<span></span>)</a></li>
+                            <li><a href="">인터넷소설(<span></span>)</a></li>
+                            <li><a href="">로맨스소설(<span></span>)</a></li>
+                            <li><a href="">어른동화(<span></span>)</a></li>
+                            <li><a href="">소설기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">비소설(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">한국수필(<span></span>)</a></li>
+                            <li><a href="">외국수필(<span></span>)</a></li>
+                            <li><a href="">유머(<span></span>)</a></li>
+                            <li><a href="">전기자서전(<span></span>)</a></li>
+                            <li><a href="">민담/민화(<span></span>)</a></li>
+                            <li><a href="">기행물(<span></span>)</a></li>
+                            <li><a href="">청소년교양서(<span></span>)</a></li>
+                            <li><a href="">한시/시조(<span></span>)</a></li>
+                            <li><a href="">한국시(<span></span>)</a></li>
+                            <li><a href="">외국시(<span></span>)</a></li>
+                            <li><a href="">동양고전(<span></span>)</a></li>
+                            <li><a href="">문학기타(<span></span>)</a></li>
+                            <li><a href="">카툰/웹툰(<span></span>)</a></li>
+                            <li><a href="">잠언집(<span></span>)</a></li>
+                            <li><a href="">비소설기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	            </ul>
+                <ul>
+	                <li class="submenu_box"> 
+	                    <a href="" class="submenu_location">수험서(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">공무원 수험서(<span></span>)</a></li>
+                            <li><a href="">상식(<span></span>)</a></li>
+                            <li><a href="">취업/면접(<span></span>)</a></li>
+                            <li><a href="">국가고시(<span></span>)</a></li>
+                            <li><a href="">기타자격증(<span></span>)</a></li>
+                            <li><a href="">임용고시(<span></span>)</a></li>
+                            <li><a href="">공인중개사/주택관리사(<span></span>)</a></li>
+                            <li><a href="">수험서 기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">학습(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">중등교과서문제집(<span></span>)</a></li>
+                            <li><a href="">중등자습서(<span></span>)</a></li>
+                            <li><a href="">중등영어(<span></span>)</a></li>
+                            <li><a href="">고등자습서(<span></span>)</a></li>
+                            <li><a href="">수능모의고사(<span></span>)</a></li>
+                            <li><a href="">수능기출문제(<span></span>)</a></li>
+                            <li><a href="">고등영어(<span></span>)</a></li>
+                            <li><a href="">논술/구슬(<span></span>)</a></li>
+                            <li><a href="">학습방법(<span></span>)</a></li>
+                            <li><a href="">검정고시(<span></span>)</a></li>
+                            <li><a href="">펜글씨/고사성어(<span></span>)</a></li>
+                            <li><a href="">초등문제집(<span></span>)</a></li>
+                            <li><a href="">어린이영어/한자(<span></span>)</a></li>
+                            <li><a href="">어린이기타학습(<span></span>)</a></li>
+                            <li><a href="">초등교과서(<span></span>)</a></li>
+                            <li><a href="">입시/대입적성(<span></span>)</a></li>
+                            <li><a href="">학습기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">외국어(<span></span>)</a>
+	                     <ul class="submenu_location_box">
+                            <li><a href="">영어(<span></span>)</a></li>
+                            <li><a href="">영어회화(<span></span>)</a></li>
+                            <li><a href="">영한대역문고(<span></span>)</a></li>
+                            <li><a href="">중국어회화(TAPE)(<span></span>)</a></li>
+                            <li><a href="">일본어회화(TAPE)(<span></span>)</a></li>
+                            <li><a href="">중국어(<span></span>)</a></li>
+                            <li><a href="">일어(<span></span>)</a></li>
+                            <li><a href="">기타외국어(<span></span>)</a></li>
+                            <li><a href="">ELT(<span></span>)</a></li>
+                            <li><a href="">TOEIC(<span></span>)</a></li>
+                            <li><a href="">TOEFL(<span></span>)</a></li>
+                            <li><a href="">TEPS(<span></span>)</a></li>
+                            <li><a href="">VOCABULARY(<span></span>)</a></li>
+                            <li><a href="">여행회화(<span></span>)</a></li>
+                            <li><a href="">유학(<span></span>)</a></li>
+                            <li><a href="">EBS방송교재(<span></span>)</a></li>
+                            <li><a href="">외국어수험서(<span></span>)</a></li>
+                            <li><a href="">중국어단어/어휘(<span></span>)</a></li>
+                            <li><a href="">중국어문법/독해(<span></span>)</a></li>
+                            <li><a href="">중국어청취/발음(<span></span>)</a></li>
+                            <li><a href="">HSK/중국어시험(<span></span>)</a></li>
+                            <li><a href="">일본어문법/독해(<span></span>)</a></li>
+                            <li><a href="">일본어청취/발음(<span></span>)</a></li>
+                            <li><a href="">일본어단어/어휘(<span></span>)</a></li>
+                            <li><a href="">영문법/독해(<span></span>)</a></li>
+                            <li><a href="">영어동화/동요(<span></span>)</a></li>
+                            <li><a href="">일본어회화(<span></span>)</a></li>
+                            <li><a href="">중국어회화(<span></span>)</a></li>
+                            <li><a href="">영어청취/발음(<span></span>)</a></li>
+                            <li><a href="">비즈니스영어(<span></span>)</a></li>
+                            <li><a href="">통역/번역(<span></span>)</a></li>
+                            <li><a href="">JLPT/JPT(<span></span>)</a></li>
+                            <li><a href="">외국어기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                     <a href="" class="submenu_location">사전(<span></span>)</a>
+	                     <ul class="submenu_location_box">
+                            <li><a href="">영한사전(<span></span>)</a></li>
+                            <li><a href="">한영사전(<span></span>)</a></li>
+                            <li><a href="">국어사전(<span></span>)</a></li>
+                            <li><a href="">한자사전(<span></span>)</a></li>
+                            <li><a href="">일어사전(<span></span>)</a></li>
+                            <li><a href="">중국어사전(<span></span>)</a></li>
+                            <li><a href="">불어사전(<span></span>)</a></li>
+                            <li><a href="">독어사전(<span></span>)</a></li>
+                            <li><a href="">기타외국어사전(<span></span>)</a></li>
+                            <li><a href="">사전기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	            </ul>
+                <ul>
+	                <li class="submenu_box"> 
+	                    <a href="" class="submenu_location">경제/경영(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">경영학(<span></span>)</a></li>
+                            <li><a href="">경제학(<span></span>)</a></li>
+                            <li><a href="">금융(<span></span>)</a></li>
+                            <li><a href="">증권투자(<span></span>)</a></li>
+                            <li><a href="">마케팅(<span></span>)</a></li>
+                            <li><a href="">광고학(<span></span>)</a></li>
+                            <li><a href="">무역학(<span></span>)</a></li>
+                            <li><a href="">회계학(<span></span>)</a></li>
+                            <li><a href="">관광학(<span></span>)</a></li>
+                            <li><a href="">처세/화술(<span></span>)</a></li>
+                            <li><a href="">부동산학(<span></span>)</a></li>
+                            <li><a href="">경제/경영일반(<span></span>)</a></li>
+                            <li><a href="">인터넷마케팅/비지니스(<span></span>)</a></li>
+                            <li><a href="">보험(<span></span>)</a></li>
+                            <li><a href="">재테크(<span></span>)</a></li>
+                            <li><a href="">기업경제(<span></span>)</a></li>
+                            <li><a href="">국가경제(<span></span>)</a></li>
+                            <li><a href="">재무관리(<span></span>)</a></li>
+                            <li><a href="">조세(<span></span>)</a></li>
+                            <li><a href="">경제경영총서(<span></span>)</a></li>
+                            <li><a href="">창업/유통(<span></span>)</a></li>
+                            <li><a href="">경제/경영기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">자기계발(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">처세/성공(<span></span>)</a></li>
+                            <li><a href="">화술/협상(<span></span>)</a></li>
+                            <li><a href="">리더쉽(<span></span>)</a></li>
+                            <li><a href="">관계심리(<span></span>)</a></li>
+                            <li><a href="">고전처세(<span></span>)</a></li>
+                            <li><a href="">청소년자기계발(<span></span>)</a></li>
+                            <li><a href="">자기계발총서(<span></span>)</a></li>
+                            <li><a href="">자기계발기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+                    <!--<li class="submenu_box">
+                        <a href="" class="submenu_location_no">외국서적</a>
+                    </li>-->
+	            </ul>
+                <ul>
+	                <li class="submenu_box"> 
+	                    <a href="" class="submenu_location">인문과학(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">철학(<span></span>)</a></li>
+                            <li><a href="">역학(<span></span>)</a></li>
+                            <li><a href="">심리학(<span></span>)</a></li>
+                            <li><a href="">교육학(<span></span>)</a></li>
+                            <li><a href="">문학이론(<span></span>)</a></li>
+                            <li><a href="">한국문학(<span></span>)</a></li>
+                            <li><a href="">국어학(<span></span>)</a></li>
+                            <li><a href="">언어학(<span></span>)</a></li>
+                            <li><a href="">대학출판물(<span></span>)</a></li>
+                            <li><a href="">문화사(<span></span>)</a></li>
+                            <li><a href="">세계사(<span></span>)</a></li>
+                            <li><a href="">한국사(<span></span>)</a></li>
+                            <li><a href="">문헌정보학(<span></span>)</a></li>
+                            <li><a href="">교양사상(<span></span>)</a></li>
+                            <li><a href="">출판학(<span></span>)</a></li>
+                            <li><a href="">한문학(<span></span>)</a></li>
+                            <li><a href="">지리학(<span></span>)</a></li>
+                            <li><a href="">교육일반(<span></span>)</a></li>
+                            <li><a href="">특수교육학(<span></span>)</a></li>
+                            <li><a href="">중국사(<span></span>)</a></li>
+                            <li><a href="">일본사(<span></span>)</a></li>
+                            <li><a href="">심리일반(<span></span>)</a></li>
+                            <li><a href="">신화(<span></span>)</a></li>
+                            <li><a href="">동양철학(<span></span>)</a></li>
+                            <li><a href="">독서/글쓰기(<span></span>)</a></li>
+                            <li><a href="">인문과학기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">순수과학(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">수학(<span></span>)</a></li>
+                            <li><a href="">물리학(<span></span>)</a></li>
+                            <li><a href="">화학(<span></span>)</a></li>
+                            <li><a href="">생물학(<span></span>)</a></li>
+                            <li><a href="">농학(<span></span>)</a></li>
+                            <li><a href="">순수과학일반(<span></span>)</a></li>
+                            <li><a href="">의학(<span></span>)</a></li>
+                            <li><a href="">약학(<span></span>)</a></li>
+                            <li><a href="">한의학(<span></span>)</a></li>
+                            <li><a href="">식품학(<span></span>)</a></li>
+                            <li><a href="">가정학(<span></span>)</a></li>
+                            <li><a href="">의상/섬유학(<span></span>)</a></li>
+                            <li><a href="">인테리어(<span></span>)</a></li>
+                            <li><a href="">통계학(<span></span>)</a></li>
+                            <li><a href="">순수과학수험서(<span></span>)</a></li>
+                            <li><a href="">지구과학(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">기술과학(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">건축공학(<span></span>)</a></li>
+                            <li><a href="">토목공학(<span></span>)</a></li>
+                            <li><a href="">기계공학(<span></span>)</a></li>
+                            <li><a href="">도시공학(<span></span>)</a></li>
+                            <li><a href="">환경공학(<span></span>)</a></li>
+                            <li><a href="">자동차공학(<span></span>)</a></li>
+                            <li><a href="">전기전자공학(<span></span>)</a></li>
+                            <li><a href="">금속공학(<span></span>)</a></li>
+                            <li><a href="">기술과학수험서(<span></span>)</a></li>
+                            <li><a href="">공학이론(<span></span>)</a></li>
+                            <li><a href="">건설/산업안전(<span></span>)</a></li>
+                            <li><a href="">기술과학일반(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">사회과학(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">행정학(<span></span>)</a></li>
+                            <li><a href="">정치학(<span></span>)</a></li>
+                            <li><a href="">법학(<span></span>)</a></li>
+                            <li><a href="">생활법률(<span></span>)</a></li>
+                            <li><a href="">국방/군사학(<span></span>)</a></li>
+                            <li><a href="">여성학(<span></span>)</a></li>
+                            <li><a href="">사회학(<span></span>)</a></li>
+                            <li><a href="">언론/방송(<span></span>)</a></li>
+                            <li><a href="">복지학(<span></span>)</a></li>
+                            <li><a href="">사회과학기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	            </ul>
+                <ul>
+	                <li class="submenu_box"> 
+	                    <a href="" class="submenu_location">취미/실용(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">레저/스포츠(<span></span>)</a></li>
+                            <li><a href="">등산/낚시(<span></span>)</a></li>
+                            <li><a href="">여행(<span></span>)</a></li>
+                            <li><a href="">바둑/장기(<span></span>)</a></li>
+                            <li><a href="">지도(<span></span>)</a></li>
+                            <li><a href="">레크리에이션(<span></span>)</a></li>
+                            <li><a href="">건강/가정의학(<span></span>)</a></li>
+                            <li><a href="">퍼즐/스도쿠(<span></span>)</a></li>
+                            <li><a href="">취미/실용기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">예술(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">예술일반(<span></span>)</a></li>
+                            <li><a href="">미술(<span></span>)</a></li>
+                            <li><a href="">미술실기(<span></span>)</a></li>
+                            <li><a href="">사진(<span></span>)</a></li>
+                            <li><a href="">체육(<span></span>)</a></li>
+                            <li><a href="">연극/영화(<span></span>)</a></li>
+                            <li><a href="">대중음악(<span></span>)</a></li>
+                            <li><a href="">음악(<span></span>)</a></li>
+                            <li><a href="">피아노곡집(<span></span>)</a></li>
+                            <li><a href="">기타악보(<span></span>)</a></li>
+                            <li><a href="">패션(<span></span>)</a></li>
+                            <li><a href="">디자인(<span></span>)</a></li>
+                            <li><a href="">예술기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">종교(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">종교학(<span></span>)</a></li>
+                            <li><a href="">종교일반(<span></span>)</a></li>
+                            <li><a href="">기독교(<span></span>)</a></li>
+                            <li><a href="">불교(<span></span>)</a></li>
+                            <li><a href="">카톨릭(<span></span>)</a></li>
+                            <li><a href="">교회음악(<span></span>)</a></li>
+                            <li><a href="">기독교성경교재(<span></span>)</a></li>
+                            <li><a href="">성경/찬송(<span></span>)</a></li>
+                            <li><a href="">기타종교(<span></span>)</a></li>
+                            <li><a href="">기독교어린이(<span></span>)</a></li>
+                            <li><a href="">종교학기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	            </ul>
+                <ul>
+	                <li class="submenu_box"> 
+	                    <a href="" class="submenu_location">여성(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">유아학습(<span></span>)</a></li>
+                            <li><a href="">유아과학(<span></span>)</a></li>
+                            <li><a href="">요리(<span></span>)</a></li>
+                            <li><a href="">육아(<span></span>)</a></li>
+                            <li><a href="">임신/출산(<span></span>)</a></li>
+                            <li><a href="">실내장식(<span></span>)</a></li>
+                            <li><a href="">여성교양(<span></span>)</a></li>
+                            <li><a href="">수예/편물(<span></span>)</a></li>
+                            <li><a href="">홈인테리어(<span></span>)</a></li>
+                            <li><a href="">여성기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">아동(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">아동세계명작(<span></span>)</a></li>
+                            <li><a href="">아동문고(<span></span>)</a></li>
+                            <li><a href="">아동과학(<span></span>)</a></li>
+                            <li><a href="">아동전기(<span></span>)</a></li>
+                            <li><a href="">아동학습(<span></span>)</a></li>
+                            <li><a href="">아동취미(<span></span>)</a></li>
+                            <li><a href="">저학년문고(<span></span>)</a></li>
+                            <li><a href="">고학년문고(<span></span>)</a></li>
+                            <li><a href="">추리/공포/소설(<span></span>)</a></li>
+                            <li><a href="">어린이한자(<span></span>)</a></li>
+                            <li><a href="">유아그림책(<span></span>)</a></li>
+                            <li><a href="">유아놀이/스티커북(<span></span>)</a></li>
+                            <li><a href="">아동기타(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	                <li class="submenu_box">
+	                    <a href="" class="submenu_location">만화(<span></span>)</a>
+	                    <ul class="submenu_location_box">
+                            <li><a href="">교양만화(<span></span>)</a></li>
+                            <li><a href="">드라마(<span></span>)</a></li>
+                            <li><a href="">성인만화(<span></span>)</a></li>
+                            <li><a href="">순정만화(<span></span>)</a></li>
+                            <li><a href="">스포츠만화(<span></span>)</a></li>
+                            <li><a href="">만화(<span></span>)</a></li>
+                            <li><a href="">아동만화(<span></span>)</a></li>
+                            <li><a href="">무협(<span></span>)</a></li>
+                            <li><a href="">코믹만화(<span></span>)</a></li>
+                            <li><a href="">액션(<span></span>)</a></li>
+                            <li><a href="">NT소설(<span></span>)</a></li>
+                            <li><a href="">웹툰/카툰(<span></span>)</a></li>
+                            <li><a href="">그래픽노블(<span></span>)</a></li>
+                            <li><a href="">SF/판타지(<span></span>)</a></li>
+                            <li><a href="">기타만화(<span></span>)</a></li>
+                        </ul>
+	                </li>
+	            </ul>
+	        </div>
+	        
+	        <div class="again_search_box">
+	            <div class="search_target again_search">
+	                <p class="again_search_title">결과 내 재 검색</p>
+	                <input type="text" value="" class="again_input"/>
+	                <div class="search_radio_box">
+                        <label class="again_radio">검색어 포함
+                            <input type="radio" checked="checked" name="again_radio">
+                            <span class="again_checkmark"></span>
+                        </label>
+                        <label class="again_radio">검색어 제외
+                            <input type="radio" name="again_radio">
+                            <span class="again_checkmark"></span>
+                        </label>
+	                </div>
+                    <button class="again_search_btn">검색</button>
+	            </div>
+	        </div>
+            <div class="again_search_box2">
+	            <div class="search_target object_search">
+	                <p class="again_search_title">검색 대상 선택</p>
+	                <div class="search_check_box">
+                        <input class="search_checkbox" type="checkbox" id="s1" name="s1" />
+                        <label for="s1" class="search_title_label"><span></span>전체</label>       
+                        <input class="search_checkbox" type="checkbox" id="s2" name="s2" />
+                        <label for="s2" class="search_title_label"><span></span>도서명/상품명</label>       
+                        <input class="search_checkbox" type="checkbox" id="s3" name="s3" />
+                        <label for="s3" class="search_title_label"><span></span>저자/역자명</label>       
+                        <input class="search_checkbox" type="checkbox" id="s4" name="s4" />
+                        <label for="s4" class="search_title_label"><span></span>출판사/제작사</label>    
+                    </div>
+	            </div>
+	            
+	            <div class="search_target price_search">
+	                <p class="again_search_title">가격대 선택</p>
+	                <input type="text" class="price_input" />
+	                <span>원부터</span>
+	                <input type="text" class="price_input" />
+	                <span>원까지</span>
+	            </div>
+	            <div class="search_target period_search">
+	                <p class="again_search_title">검색 기간 선택</p>
+	                <div class="search_radio_box">
+                        <label class="period_radio">전체
+                            <input type="radio" checked="checked" name="period_radio">
+                            <span class="period_checkmark"></span>
+                        </label>
+                        <label class="period_radio">1달이내
+                            <input type="radio" name="period_radio">
+                            <span class="period_checkmark"></span>
+                        </label>
+                        <label class="period_radio">6달이내
+                            <input type="radio" name="period_radio">
+                            <span class="period_checkmark"></span>
+                        </label>
+                        <label class="period_radio">1년이내
+                            <input type="radio" name="period_radio">
+                            <span class="period_checkmark"></span>
+                        </label>
+	                </div>
+	            </div>
+                <button class="again_search_btn2">검색</button>
+            </div>
+            <div class="again_search_btn_box">
+                <button class="again_search_window_btn">상세조건 열기</button>
+            </div>
+            
+	        <div class="range_box">
+                <div class="sort_box">
+                    <button class="sort_btn">판매량</button>
+                    <span>·</span>
+                    <button class="sort_btn sort_btn_on">등록일</button>
+                    <span>·</span>
+                    <button class="sort_btn">최고가</button>
+                    <span>·</span>
+                    <button class="sort_btn">최저가</button>
+                </div>
+                <div class="cart_box">
+                    <span>선택한 상품을</span>
+                    <input type="button" class="cart_s_btn" value="장바구니 담기" />
+                </div>
+	        </div>
+	        
+	        <div id="weekly" class="search_tabcontent tabcnt_search0">
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">죄의 목소리</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="search_title">죄의 목소리</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">당신의 손길이 닿기 전에</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">당신의 손길이 닿기 전에</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="search_author">배지윤 저 · 우리교과서</p>
+                            <p class="search_price">19,800원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="search_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="search_author">이상헌 저 · 메이트북스</p>
+                            <p class="search_price">14,400원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="search_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">죄의 목소리</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="search_title">죄의 목소리</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">당신의 손길이 닿기 전에</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">당신의 손길이 닿기 전에</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="search_author">배지윤 저 · 우리교과서</p>
+                            <p class="search_price">19,800원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="search_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="search_author">이상헌 저 · 메이트북스</p>
+                            <p class="search_price">14,400원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="search_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>    
+            </div>     
+            <div id="monthly" class="search_tabcontent tabcnt_search1">
+               <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c3" name="cc" />
+                            <label for="c3"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="search_author">배지윤 저 · 우리교과서</p>
+                            <p class="search_price">19,800원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="search_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c4" name="cc" />
+                            <label for="c4"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="search_author">이상헌 저 · 메이트북스</p>
+                            <p class="search_price">14,400원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="search_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c5" name="cc" />
+                            <label for="c5"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">죄의 목소리</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="search_title">죄의 목소리</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c6" name="cc" />
+                            <label for="c6"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">당신의 손길이 닿기 전에</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">당신의 손길이 닿기 전에</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c1" name="cc" />
+                            <label for="c1"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_01.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">죄의 목소리</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <img class="recommend" src="asset/img/recommend.jpg" alt="휘게추천" />
+                                    <p class="search_title">죄의 목소리</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c2" name="cc" />
+                            <label for="c2"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_02.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">당신의 손길이 닿기 전에</p>
+                            <p class="search_author">시오타 타케시 저 · 비앤엘</p>
+                            <p class="search_price">13,320원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">당신의 손길이 닿기 전에</p>
+                                    <p class="search_author">시오타 타케시 저 · 비앤엘 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>13,320</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c7" name="cc" />
+                            <label for="c7"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_03.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                            <p class="search_author">배지윤 저 · 우리교과서</p>
+                            <p class="search_price">19,800원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">배지윤의 아테나 유아교육과정 각론편 워크북</p>
+                                    <p class="search_author">배지윤 저 · 우리교과서 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>19,800</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_type">
+                    <div class="column_in">
+                        <div class="input_box">
+                            <input class="checkbox" type="checkbox" id="c8" name="cc" />
+                            <label for="c8"><span></span></label>
+                        </div>
+                        <img src="asset/img/newbook_04.jpg" alt="">
+                        <div class="search_txt_grid">
+                            <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                            <p class="search_author">이상헌 저 · 메이트북스</p>
+                            <p class="search_price">14,400원</p>
+                        </div>
+                        <div class="search_txt_list">
+                            <div class="search_txt_list_left">
+                                <div class="search_list_cover">
+                                    <p class="search_title">세상을 바꾸는 제4차 산업혁명의 미래</p>
+                                    <p class="search_author">이상헌 저 · 메이트북스 · 2018.03.13</p>
+                                    <div class="search_review">
+                                        <p class="star04"></p> 
+                                        <p class="star_num">3.0</p>
+                                        <p class="detail_review_num">리뷰 (<span>4</span>)</p>   
+                                    </div>
+                                </div>
+                                <div class="search_introduce">
+                                    <p>일본 쇼와시대 최대의 미제 ‘구리코·모리나가 사건’ 그 오랜 미스터리의 진실을 추적해가는 실화 소설 31년 전 미해결 사건에 감춰진 삶을 그리다 2017 제14회 서점대상 3위 주간문춘》 미스터리 베스트 10  1위</p>
+                                    <a href="#">더보기 ></a>
+                                </div>
+                            </div>
+                            <div class="search_list_price">
+                                <p class="search_price"><span>14,400</span>원</p>
+                                <div class="benefit_box">
+                                    <p class="benefit_price">10%</p>
+                                    <p class="benefit_point">5%</p>
+                                </div>
+                                <a href="" class="baro-btn">바로드림</a>
+                                <button class="cart-btn">카트담기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="pagination-list">
+                <div class="pagination-div">
+                    <ul>
+                        <li><a href="" class="paging_first"></a></li>
+                        <li><a href="" class="paging_prev"></a></li>
+                        <li><a href="" class="paging_num">1</a></li>
+                        <li><a href="" class="paging_num">2</a></li>
+                        <li><a href="" class="paging_num">3</a></li>
+                        <!--<li><a href="" class="paging_num">4</a></li>
+                        <li><a href="" class="paging_num">5</a></li>
+                        <li><a href="" class="paging_num">6</a></li>
+                        <li><a href="" class="paging_num">7</a></li>
+                        <li><a href="" class="paging_num">8</a></li>
+                        <li><a href="" class="paging_num">9</a></li>
+                        <li><a href="" class="paging_num">10</a></li>-->
+                        <li><a href="" class="paging_next"></a></li>
+                        <li><a href="" class="paging_last"></a></li>
+                    </ul>
+                </div>    
+            </div>
+            
+	    </div>
+	</section>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

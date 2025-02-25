@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>BUTTONS</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Components</span></li>
+							<li><span>Buttons</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Square Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnS_basic">텍스트</button>
+											<button type="button" class="btnS_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_basic" disabled="disabled">텍스트</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnS_basic">텍스트</button>
+											<button type="button" class="btnS_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_basic" disabled="disabled">텍스트</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnS_basic">텍스트</button>
+											<button type="button" class="btnS_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_basic" disabled="disabled">텍스트</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnS_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnS_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnS_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Square Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnS_line">활성화</button>
+											<button type="button" class="btnS_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnS_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnS_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnS_line"&gt;&lt;img src="../../resources/images/ico_google_clr.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnS_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Round Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnR_basic">활성화</button>
+											<button type="button" class="btnR_basic"><img src="../../resources/images/ico_google_w.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_basic" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnR_basic"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_basic" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Round Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Size Large</dt>
+									<dd>
+										<div class="btnBox sz_large">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Regular</dt>
+									<dd>
+										<div class="btnBox sz_regular">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Size Small</dt>
+									<dd>
+										<div class="btnBox sz_small">
+											<button type="button" class="btnR_line">활성화</button>
+											<button type="button" class="btnR_line"><img src="../../resources/images/ico_google_clr.png" alt="이미지명">텍스트</button>
+											<button type="button" class="btnR_line" disabled="disabled">비활성화</button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Size Large --&gt;
+&lt;div class="btnBox sz_large"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Regular --&gt;
+&lt;div class="btnBox sz_regular"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Size Small --&gt;
+&lt;div class="btnBox sz_small"&gt;
+    &lt;button type="button" class="btnR_line"&gt;활성화&lt;/button&gt;
+    &lt;button type="button" class="btnR_line"&gt;&lt;img src="../../resources/images/ico_google_w.png" alt="이미지명"&gt;텍스트&lt;/button&gt;
+    &lt;button type="button" class="btnR_line" disabled="disabled"&gt;비활성화&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Circle Button(Basic)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Image Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_basic"><img class="onlyImg" src="../../resources/images/ico_mic_w.png" alt="이미지명"></button>
+											<button type="button" class="btnC_basic" disabled="disabled"><img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"></button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Image + Text Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_basic"><img src="../../resources/images/ico_mic_w.png" alt="이미지명"><span>텍스트</span></button>
+											<button type="button" class="btnC_basic" disabled="disabled"><img src="../../resources/images/ico_mic_g.png" alt="이미지명"><span>텍스트</span></button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Image Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_basic"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_w.png" alt="이미지명"&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_basic" disabled="disabled"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Image + Text Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_basic"&gt;&lt;img src="../../resources/images/ico_mic_w.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_basic" disabled="disabled"&gt;&lt;img src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Circle Button(Line)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Image Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_line"><img class="onlyImg" src="../../resources/images/ico_mic_clr.png" alt="이미지명"></button>
+											<button type="button" class="btnC_line" disabled="disabled"><img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"></button>
+										</div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Image + Text Button</dt>
+									<dd>
+										<div class="btnBox">
+											<button type="button" class="btnC_line"><img src="../../resources/images/ico_mic_clr.png" alt="이미지명"><span>텍스트</span></button>
+											<button type="button" class="btnC_line" disabled="disabled"><img src="../../resources/images/ico_mic_g.png" alt="이미지명"><span>텍스트</span></button>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Image Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_line"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_clr.png" alt="이미지명"&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_line" disabled="disabled"&gt;&lt;img class="onlyImg" src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Image + Text Button --&gt;
+&lt;div class="btnBox"&gt;
+    &lt;button type="button" class="btnC_line"&gt;&lt;img src="../../resources/images/ico_mic_clr.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" class="btnC_line" disabled="disabled"&gt;&lt;img src="../../resources/images/ico_mic_g.png" alt="이미지명"&gt;&lt;span&gt;텍스트&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				
+				
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("buttons")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('buttons > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

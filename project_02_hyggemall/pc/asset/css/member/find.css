@@ -1,0 +1,72 @@
+@charset "utf-8";
+.warning_red { display:block; font-size:14px; color:#d94452; font-family:'NBGothicR'; margin-top:12px; line-height:100%; }
+.find_body input[type="text"]::-ms-clear { display:none; }
+
+/* layout */
+.find_body { display:block; width:460px; margin:0 auto 0; padding-top:100px; }
+
+/* join_body*/
+.find_body h1 { display:block; text-indent:-9999%; width:167px; height:71px; background:url(../../img/hygge_login.png) center no-repeat; margin:0 auto 48px; }
+.find_body .find_input { display:block; width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; font-family:'NBGothicR'; color:#424852; font-size:16px; margin:0; padding:0 0 0 24px; vertical-align: middle; }
+
+.find_body .tab_find { position:relative; width:100%; font-size:16px; color:#a9b0bb; height:48px; display:block; box-sizing:border-box; background:#ffffff; }
+.find_body .tab_btn { position:absolute; float:left; border:0; border-top:1px solid #cad0d7; text-align:center; border-bottom:2px solid #d94452; padding:0; height:48px; background:#ffffff; font-size:16px; font-family:'NBGothicB'; color:#a9b0bb; }
+.find_body .tab_btn.find_tab_id_btn { width:230px; top:0; left:0; z-index:0; border-left:1px solid #cad0d7; }
+.find_body .tab_btn.find_tab_pw_btn { width:231px; top:0; right:0; z-index:0; border-right:1px solid #cad0d7; }
+.find_body .tab_btn.tab_on { z-index:10; border:2px solid #d94452; background:#fff; border-bottom:0; color:#d94452; }
+.find_body .find_tabcontent { display:none; }
+.find_body .find_tabcontent .find_txt { display:table-cell; vertical-align:middle; width:460px; height:116px; color:#636c77; font-size:16px; text-align:center; }
+.find_body .find_tabcontent .find_txt .txt_bold { font-family:'NBGothicB'; }
+
+/* find_id */
+.find_body .find_tabcontent .find_id_input_box { width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; margin:0; padding:0 0 0 24px; vertical-align:middle; }
+.find_body .find_tabcontent .find_id_input_box:after { content:''; display:block; clear:both; }
+.find_body .find_tabcontent .find_id_input_box .find_id_input { float:left;  box-sizing:border-box; border:0; padding:0; width:284px; height:100%; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.find_body .find_tabcontent .find_id_input_box .find_cn_check { display:block; float:right; width:16px; height:12px; margin:17px 0 0 0; background:url(../../img/confirm_number_check.png) left top no-repeat; }
+.find_body .find_tabcontent .find_id_input_box .find_id_confirm_number_btn { float:right; margin:7px 8px 0 8px; width:auto; height:32px; padding:0; padding:8px 12px; color:#a9b0bb; border:1px solid #cad0d7; outline:0; border-radius:4px; font-family:'NBGothicR'; font-size:14px; background:#fff; }
+
+.find_body .find_id { display:block; width:100%; box-sizing:border-box; }
+.find_body .find_id_complete_box { display:none; width:100%; box-sizing:border-box; }
+.find_body .error { border:1px solid #d94452 !important; z-index:10; }
+.find_body .find_first_txt { display:block; line-height:18px; font-family:'NBGothicB'; }
+.find_body .find_pw_first_txt { display:none; line-height:18px; font-family:'NBGothicB'; }
+.find_body .find_id_complete_txt { display:block; line-height:24px; font-family:'NBGothicL'; }
+.find_body .find_id_warning { display:block; }
+.find_body .find_id_cn_go_check { display:block; color:#424852; }
+.find_body .find_id_confirm_input { display:block; width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; margin:0; margin-top:16px; padding:0 0 0 24px; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.find_body .find_pw_warning { display:none; }
+.find_body .find_pw_cn_go_check { display:none; color:#424852; }
+.find_body .find_pw_confirm_input { display:block; width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; margin:0; margin-top:16px; padding:0 0 0 24px; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.find_body .find_pw_default_txt { display:block; line-height:18px; font-family:'NBGothicB'; }
+.find_body .first_pw { display:block; }
+.find_body .find_re_pw_box { display:none; width:100%; box-sizing:border-box; }
+.find_body .find_pw_complete_box { display:none; }
+
+.find_body .find_tabcontent .find_id_complete { display:block; width:100%; height:106px; vertical-align:middle; text-align:center; }
+.find_body .find_tabcontent .find_id_complete p { display:table; width:100%; height:100%; color:#d94452; font-family:'NBGothicB'; font-size:24px; }
+.find_body .find_tabcontent .find_id_complete p>span { display:table-cell; vertical-align:middle; text-align:center; }
+.find_body .find_tabcontent .find_id_complete span.find_gray { color:#636c77; font-family:'NBGothicL'; font-size:14px; }
+
+.find_body .find_id_next_btn { display:block; width:100%; margin-top:24px; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; }
+.find_body .find_id_login_btn { display:block; width:100%; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; }
+
+
+
+/* find_pw */
+.find_body .find_tabcontent .find_pw_input_box { width:100%; height:48px; box-sizing:border-box; border:1px solid #a9b0bb; margin:16px 0 0 0; padding:0 0 0 24px; vertical-align:middle; }
+.find_body .find_tabcontent .find_pw_input_box:after { content:''; display:block; clear:both; }
+.find_body .find_tabcontent .find_pw_input_box .find_pw_phone_input { float:left;  box-sizing:border-box; border:0; padding:0; width:284px; height:100%; vertical-align:middle; font-family:'NBGothicR'; color:#424852; font-size:16px; }
+.find_body .find_tabcontent .find_pw_input_box .find_cn_check { display:block; float:right; width:16px; height:12px; margin:17px 0 0 0; background:url(../../img/confirm_number_check.png) left top no-repeat; }
+.find_body .find_tabcontent .find_pw_input_box .find_pw_confirm_number_btn { float:right; margin:7px 8px 0 8px; width:auto; height:32px; padding:0; padding:8px 12px; color:#a9b0bb; border:1px solid #cad0d7; outline:0; border-radius:4px; font-family:'NBGothicR'; font-size:14px; background:#fff; }
+.find_body .find_pw_next_btn { display:block; width:100%; margin-top:24px; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; }
+.find_body .find_re_pw_box input { margin-bottom:16px; }
+.find_body .find_re_pw_box .find_pw_repw_confirm { margin-bottom:0; }
+.find_body .find_re_pw_box p { width:100%; margin:24px 0; font-family:'NBGothicR'; font-size:14px; text-align:center; color:#424852; line-height:100%; }
+.find_body p.find_reset_txt { display:block; line-height:24px; font-family:'NBGothicL'; font-size:16px; }
+.find_body .find_re_pw_complete_btn { display:block; width:100%; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; margin-bottom:0; }
+.find_body .find_pw_complete_box p { width:100%; height:130px; color:#636c77; line-height:24px; font-size:16px; font-family:'NBGothicL'; display:table; }
+.find_body .find_pw_complete_box p>span { display:table-cell; vertical-align:middle; text-align:center; } 
+.find_body .find_pw_complete_box p .bold { font-family:'NBGothicB'; }
+.find_body .find_go_login_btn { display:block; width:100%; margin-top:24px; height:48px; font-family:'GodoM'; font-size:20px; color:#fff; text-align:center; line-height:48px; box-sizing:border-box; border:0; background:#d94452; border-radius:24px; }
+
+

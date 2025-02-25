@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/order.css">
+  	<script type="text/javascript" src="asset/js/order.js"></script>
+	<title>order</title>    
+</head>
+<body id="order" data-role="page" class="order_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+
+		<div class="content" data-role="content">
+			<div class="order_tab">
+				<h2>주문/결제</h2>
+			</div>
+
+			<div class="inner_content">
+				
+				<section class="order_section01">
+					<table>
+						<tr>
+							<td>
+								<h3 class="book_name">곰돌이 푸, 서두르지 않아도 괜찮아</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/detail_bookimg.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>12,420</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>690</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<p>주문수량 <span>2</span></p>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>24,840</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="book_name">거래의 기술</h3>
+								<div>
+									<p class="book_img">
+										<img src="asset/img/cart_01.jpg" alt="">
+									</p>
+									<div class="book_right_box">
+										<div>
+											<span class="cart_selling_price"><span>19,800</span>원</span>
+											<span class="benefit_price">10%</span>
+										</div>
+										<div>
+											<span class="cart_point"><span>1,100</span>P</span>
+											<span class="benefit_point">5%</span> 
+										</div>
+										<div class="cart_order_count_box">
+											<p>주문수량 <span>2</span></p>
+										</div>
+										<div>
+											<span class="cart_txt">합계</span>
+											<span class="cart_total_price"><span>19,800</span>원</span>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div class="cart_total_box">
+						<div class="cart_select_pick_box">
+							<p class="only_txt">주문상품 수량</p> 
+							<p class="cart_select_pick">3개</p>
+						</div>
+						<div class="cart_total_price_box">
+							<p class="only_txt">최종결제금액</p>
+							<p class="cart_total_payment"><span>53,640</span>원</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="order_section02">
+					<h3>결제정보</h3>
+					<div class="order_inner_section02">
+						<div class="order_section02_box order_use_cash_box">
+							<p class="order_left_txt">휘게북스 캐시</p>
+							<div class="order_right_box_cnt">
+								<div class="order_txt_box">
+									<input type="text" value="2,000"/>
+									<span>캐시</span>
+								</div>
+								<p>(보유: <span>20,000</span>캐시)</p>
+							</div>
+						</div>
+
+						<div class="order_section02_box order_use_cash_box">
+							<p class="order_left_txt">휘게북스 포인트</p>
+							<div class="order_right_box_cnt">
+								<div class="order_txt_box">
+									<input type="text" value="0"/>
+									<span>P</span>
+								</div>
+								<p>(보유: <span>0</span>P)</p>
+							</div>
+						</div>
+						
+						<div class="order_section02_box order_pay_method">
+							<p class="order_left_txt">결제수단</p>
+							<div class="order_right_box_cnt">
+								<button type="button" class="credit_card pay_method_on pay_method_btn" value="credit_card">신용카드</button>
+								<button type="button" class="cell_phone pay_method_btn" value="cell_phone">휴대폰</button>
+							</div>
+						</div>
+						
+						<div class="order_section02_box pay_creditcard">
+							<p class="order_left_txt">카드선택</p>
+							<div class="order_right_box_cnt">
+								<select class="bank_kind_select">
+									<option value="">결제하실 카드를 선택해주세요</option>
+									<option value="">국민은행</option>
+									<option value="">농협은행</option>
+									<option value="">신한은행</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="order_section02_box pay_creditcard">
+							<p class="order_left_txt">카드구분</p>
+							<div class="order_right_box_cnt">
+								<label class="card_divide_radio">
+									<input type="radio" checked="checked" name="card_divide_radio" class="personal_card" >
+									<span class="card_checkmark"></span>
+									개인카드
+								</label>
+								<label class="card_divide_radio">
+									<input type="radio" name="card_divide_radio" class="corporate_card" >
+									<span class="card_checkmark"></span>
+									법인카드
+								</label>
+							</div>
+						</div>
+
+						<div class="order_section02_box pay_cellphone">
+							<p class="order_left_txt">휴대폰번호</p>
+							<div class="order_right_box_cnt">
+								<select class="number_kind_select">
+									<option value="">010</option>
+									<option value="">011</option>
+									<option value="">017</option>
+									<option value="">016</option>
+								</select>
+								<span>-</span>
+								<input type="text" maxlength="4" />
+								<span>-</span>
+								<input type="text" maxlength="4" />
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<div class="cart_btn_box">
+					<input type="button" onclick="location.href='order_complete.html'" class="order_pay_btn" value="결제하기" />
+				</div>
+				
+			</div>
+		</div>
+		
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>INPUTS</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Components</span></li>
+							<li><span>Inputs</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Input</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Field Only</dt>
+									<dd>
+                                        <div class="iptBox">
+										    <input type="text" class="ipt_txt" placeholder="Type: Text">
+                                        </div>
+									</dd>
+ 									<dd>
+                                        <div class="iptBox">
+										    <input type="number" class="ipt_txt" placeholder="Type: Number">
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Field Only : Disabled</dt>
+									<dd>
+                                        <div class="iptBox">
+										    <input type="text" class="ipt_txt" placeholder="내용을 입력해 주세요." disabled="disabled">
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Text + Field</dt>
+									<dd>
+                                        <div class="iptBox">
+                                            <label for="ipt_labelTxt">필드명</label>
+										    <input type="text" name="ipt_labelTxt" id="ipt_labelTxt" class="ipt_txt" placeholder="내용을 입력해 주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Text + Field : Disabled</dt>
+									<dd>
+                                        <div class="iptBox">
+                                            <label for="ipt_labelTxt2">필드명</label>
+										    <input type="text" name="ipt_labelTxt2" id="ipt_labelTxt2" class="ipt_txt" placeholder="내용을 입력해 주세요." disabled="disabled">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Input --&gt;
+&lt;div class="iptBox"&gt;
+    &lt;!-- Field Only --&gt;
+    &lt;input type="text" class="ipt_txt" placeholder="Type: Text"&gt;    
+    &lt;input type="number" class="ipt_txt" placeholder="Type: Number"&gt;
+    &lt;!-- Field Only : Disabled --&gt;
+    &lt;input type="text" class="ipt_txt" placeholder="내용을 입력해 주세요." disabled="disabled"&gt;
+&lt;/div&gt;
+
+&lt;!-- Text + Field --&gt;
+&lt;div class="iptBox"&gt;
+    &lt;label for="ipt_labelTxt"&gt;필드명&lt;/label&gt;
+    &lt;input type="text" name="ipt_labelTxt" id="ipt_labelTxt" class="ipt_txt" placeholder="내용을 입력해 주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;!-- Text + Field : Disabled --&gt;
+&lt;div class="iptBox"&gt;
+    &lt;label for="ipt_labelTxt2"&gt;필드명&lt;/label&gt;
+    &lt;input type="text" name="ipt_labelTxt2" id="ipt_labelTxt2" class="ipt_txt" placeholder="내용을 입력해 주세요." disabled="disabled"&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Input (Login)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Image + Field</dt>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_img_id"><img src="../../resources/images/ico_user.png" alt="ID"></label>
+										    <input type="text" name="ipt_img_id" id="ipt_img_id" class="ipt_txt" placeholder="아이디를 입력해주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_img_mail"><img src="../../resources/images/ico_mail.png" alt="ID"></label>
+										    <input type="email" name="ipt_img_mail" id="ipt_img_mail" class="ipt_txt" placeholder="이메일을 입력해주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_img_pw"><img src="../../resources/images/ico_key.png" alt="ID"></label>
+										    <input type="password" name="ipt_img_pw" id="ipt_img_pw" class="ipt_txt" placeholder="패스워드를 입력해주세요.">
+                                            <p class="error_msg">아이디 또는 비밀번호를 다시 확인하세요.<br>등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.</p>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Text + Field</dt>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_Txt_id">ID</label>
+										    <input type="text" name="ipt_labelTxt_id" id="ipt_labelTxt_id" class="ipt_txt" placeholder="아이디를 입력해주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_Txt_mail">E-mail</label>
+										    <input type="email" name="ipt_Txt_mail" id="ipt_Txt_mail" class="ipt_txt" placeholder="이메일을 입력해주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="iptBox login">
+                                            <label for="ipt_labelTxt_pw">PW</label>
+										    <input type="password" name="ipt_labelTxt_pw" id="ipt_labelTxt_pw" class="ipt_txt" placeholder="패스워드를 입력해주세요.">
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                            <p class="error_msg">이메일 또는 비밀번호를 다시 확인하세요.<br>등록되지 않은 이메일이거나, 이메일 또는 비밀번호를 잘못 입력하셨습니다.</p>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Image + Field --&gt;
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_img_id"&gt;&lt;img src="../../resources/images/ico_user.png" alt="ID"&gt;&lt;/label&gt;
+    &lt;input type="text" name="ipt_img_id" id="ipt_img_id" class="ipt_txt" placeholder="아이디를 입력해주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_img_mail"&gt;&lt;img src="../../resources/images/ico_mail.png" alt="ID"&gt;&lt;/label&gt;
+    &lt;input type="email" name="ipt_img_mail" id="ipt_img_mail" class="ipt_txt" placeholder="이메일을 입력해주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_img_pw"&gt;&lt;img src="../../resources/images/ico_key.png" alt="ID"&gt;&lt;/label&gt;
+    &lt;input type="password" name="ipt_img_pw" id="ipt_img_pw" class="ipt_txt" placeholder="패스워드를 입력해주세요."&gt;
+    &lt;p class="error_msg"&gt;아이디 또는 비밀번호를 다시 확인하세요.&lt;br&gt;등록되지 않은 아이디이거나, 아이디 또는 비밀번호를 잘못 입력하셨습니다.&lt;/p&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;!-- Text + Field --&gt;
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_Txt_id"&gt;ID&lt;/label&gt;
+    &lt;input type="text" name="ipt_labelTxt_id" id="ipt_labelTxt_id" class="ipt_txt" placeholder="아이디를 입력해주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_Txt_mail"&gt;E-mail&lt;/label&gt;
+    &lt;input type="email" name="ipt_Txt_mail" id="ipt_Txt_mail" class="ipt_txt" placeholder="이메일을 입력해주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;div class="iptBox login"&gt;
+    &lt;label for="ipt_labelTxt_pw"&gt;PW&lt;/label&gt;
+    &lt;input type="password" name="ipt_labelTxt_pw" id="ipt_labelTxt_pw" class="ipt_txt" placeholder="패스워드를 입력해주세요."&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+    &lt;p class="error_msg"&gt;이메일 또는 비밀번호를 다시 확인하세요.&lt;br&gt;등록되지 않은 이메일이거나, 이메일 또는 비밀번호를 잘못 입력하셨습니다.&lt;/p&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+                
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Input (search)</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Text button</dt>
+									<dd>
+                                        <div class="srchBox">
+                                            <input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요.">
+                                            <button type="submit" class="btn_srch">검색</button>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Icon button</dt>
+									<dd>
+                                         <div class="srchBox">
+                                            <input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요.">
+                                            <button type="submit" class="btn_ico">검색</button>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Text button --&gt;
+&lt;div class="srchBox"&gt;
+    &lt;input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요."&gt;
+    &lt;button type="submit" class="btn_srch"&gt;검색&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Icon button --&gt;
+&lt;div class="srchBox"&gt;
+    &lt;input type="text" class="ipt_srch" placeholder="검색어를 입력해 주세요."&gt;
+    &lt;button type="submit" class="btn_ico"&gt;검색&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section--> 
+                
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Textarea</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Textarea</dt>
+									<dd>
+                                        <div class="textareaBox">
+                                            <textarea placeholder="내용을 입력해 주세요."></textarea>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Textarea + Text Button</dt>
+									<dd>
+                                        <div class="textareaBox">
+                                            <textarea class="textArea" placeholder="검색어를 입력해 주세요."></textarea>
+                                            <button type="submit" class="btn_txt">전송</button>
+                                        </div>
+									</dd>
+								</dl>
+								<dl>
+									<dt>Textarea + Chat Icon Button</dt>
+									<dd>
+                                        <div class="textareaBox">
+                                            <textarea class="textArea" placeholder="메세지를 입력해 주세요."></textarea>
+                                            <button type="submit" class="btn_chat">전송</button>
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Textarea --&gt;
+&lt;div class="textareaBox"&gt;
+    &lt;textarea placeholder="내용을 입력해 주세요."&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea + Text Button --&gt;
+&lt;div class="textareaBox"&gt;
+    &lt;textarea class="textArea" placeholder="검색어를 입력해 주세요."&gt;&lt;/textarea&gt;
+    &lt;button type="submit" class="btn_txt"&gt;전송&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Textarea + Chat Icon Button --&gt;
+&lt;div class="textareaBox"&gt;
+    &lt;textarea class="textArea" placeholder="메세지를 입력해 주세요."&gt;&lt;/textarea&gt;
+    &lt;button type="submit" class="btn_chat"&gt;전송&lt;/button&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section--> 
+                
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Checkbox</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Checkbox</dt>
+									<dd>
+                                        <div class="checkBox">                                            
+										    <input type="checkbox" name="ipt_check" id="ipt_check" class="ipt_check">
+                                            <label for="ipt_check">Checkbox</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="checkBox">                                            
+										    <input type="checkbox" name="ipt_check_disab" id="ipt_check_disab" class="ipt_check" disabled="disabled">
+                                            <label for="ipt_check_disab">Checkbox Disabled</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- checkBox--&gt;
+&lt;div class="checkBox"&gt;                                            
+    &lt;input type="checkbox" name="ipt_check" id="ipt_check" class="ipt_check"&gt;
+    &lt;label for="ipt_check"&gt;Checkbox&lt;/label&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;!-- Checkbox Disabled --&gt;
+&lt;div class="checkBox"&gt;                                            
+    &lt;input type="checkbox" name="ipt_check_disab" id="ipt_check_disab" class="ipt_check" disabled="disabled"&gt;
+    &lt;label for="ipt_check_disab"&gt;Checkbox Disabled&lt;/label&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section--> 
+                
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Radio</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+								<dl>
+									<dt>Radio</dt>
+									<dd>
+                                        <div class="radioBox">                                            
+										    <input type="radio" name="ipt_radio" id="ipt_radio" class="ipt_radio">
+                                            <label for="ipt_radio">Radio</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+                                        <div class="radioBox">                                            
+										    <input type="radio" name="ipt_radio" id="ipt_radio2" class="ipt_radio">
+                                            <label for="ipt_radio2">Radio</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+                                        <div class="radioBox">                                            
+										    <input type="radio" name="ipt_radio" id="ipt_radio3" class="ipt_radio">
+                                            <label for="ipt_radio3">Radio</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+									<dd>
+                                        <div class="radioBox">                                            
+										    <input type="radio" name="ipt_radio_disab" id="ipt_radio_disab" class="ipt_radio" disabled="disabled">
+                                            <label for="ipt_radio_disab">Radio Disabled</label>
+                                            <!-- [D] <label>의 for값과 <input>의 ID 값을 동일하게 작성해야 함 -->
+                                        </div>
+									</dd>
+								</dl>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;!-- Radio --&gt;
+&lt;div class="radioBox"&gt;                                            
+    &lt;input type="radio" name="ipt_radio" id="ipt_radio" class="ipt_radio"&gt;
+    &lt;label for="ipt_radio"&gt;Radio&lt;/label&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;
+
+&lt;!-- Radio Disabled --&gt;
+&lt;div class="radioBox"&gt;                                            
+    &lt;input type="radio" name="ipt_radio_disab" id="ipt_radio_disab" class="ipt_radio" disabled="disabled"&gt;
+    &lt;label for="ipt_radio_disab"&gt;Radio Disabled&lt;/label&gt;
+    &lt;!-- [D] &lt;label&gt;의 for값과 &lt;input&gt;의 ID 값을 동일하게 작성해야 함 --&gt;
+&lt;/div&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section--> 
+                
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("inputs")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('inputs > HTML GUIDE');
+            });            
+		}); 
+        
+	});
+});	
+</script>
+</body>
+</html>

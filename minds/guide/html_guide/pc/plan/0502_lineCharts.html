@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css">
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+        <div class="lyrBox">
+            <div class="lyr_top">
+                <h3>브라우저 업데이트 안내</h3>
+             </div> 
+            <div class="lyr_mid"> 
+                <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+                </div>
+            </div> 
+            <div class="lyr_btm">
+                <div class="btnBox sz_small">
+                    <button class="btn_win_close">창 닫기</button>
+                </div>
+            </div> 
+        </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Line Charts</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101_head.html">설계 가이드</a></li>
+							<li><span>Charts</span></li>
+							<li><span>Line Charts</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>작성된 마크업으로 준수하셔야 올바른 디자인을 제공 받을 수 있습니다.</li>
+							<li>사용 하신 CSS에 따라 레이아웃 및 각 엘리먼트의 디자인이 자동으로 변경되니, 유의하시기 바랍니다.</li>
+							<!-- <li>좌측 상단 Type 선택에 따라 다른 디자인을 확인 하실 수 있습니다.</li> -->
+						</ul>
+				        <div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- 사용된 CSS --&gt;
+&lt;link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css"/&gt;
+<!-- 추가 script -->
+&lt;script type="text/javascript" src="../../resources/js/Chart.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../../resources/js/utils.js"&gt;&lt;/script&gt;</code>
+</pre>
+				        </div>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Basic</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="basic"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="basic"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Data1',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            fill: false,
+        }, {
+            label: 'Data2',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Basic'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
+};
+var ctx1 = document.getElementById('basic').getContext('2d');
+window.myLine = new Chart(ctx1, config);
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Interpolation-Modes</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="interpolation-modes"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="interpolation-modes"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var randomScalingFactor = function() {
+    return Math.round(Math.random() * 100);
+};
+
+var datapoints = [0, 20, 20, 60, 60, 120, NaN, 180, 120, 125, 105, 110, 170];
+var config = {
+    type: 'line',
+    data: {
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        datasets: [{
+            label: 'Cubic (monotone)',
+            data: datapoints,
+            borderColor: window.chartColors.red,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+            cubicInterpolationMode: 'monotone'
+        }, {
+            label: 'Cubic (default)',
+            data: datapoints,
+            borderColor: window.chartColors.blue,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+        }, {
+            label: 'Linear',
+            data: datapoints,
+            borderColor: window.chartColors.green,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+            lineTension: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Interpolation-Modes'
+        },
+        tooltips: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+                ticks: {
+                    suggestedMin: -10,
+                    suggestedMax: 200,
+                }
+            }]
+        }
+    }
+};
+
+var ctx2 = document.getElementById('interpolation-modes').getContext('2d');
+window.myLine = new Chart(ctx2, config);
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Line-Styles</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="line-styles"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="line-styles"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Unfilled',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }, {
+            label: 'Dashed',
+            fill: false,
+            backgroundColor: window.chartColors.green,
+            borderColor: window.chartColors.green,
+            borderDash: [5, 5],
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }, {
+            label: 'Filled',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            fill: true,
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Line-Styles'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
+};
+
+var ctx3 = document.getElementById('line-styles').getContext('2d');
+window.myLine = new Chart(ctx3, config);
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Multiple Axes</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="multipleAxes"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="multipleAxes"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var lineChartData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+        label: 'Data1',
+        borderColor: window.chartColors.red,
+        backgroundColor: window.chartColors.red,
+        fill: false,
+        data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor()
+        ],
+        yAxisID: 'y-axis-1',
+    }, {
+        label: 'Data2',
+        borderColor: window.chartColors.blue,
+        backgroundColor: window.chartColors.blue,
+        fill: false,
+        data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor()
+        ],
+        yAxisID: 'y-axis-2'
+    }]
+};
+
+var ctx4 = document.getElementById('multipleAxes').getContext('2d');
+window.myLine = Chart.Line(ctx4, {
+    data: lineChartData,
+    options: {
+        responsive: true,
+        hoverMode: 'index',
+        stacked: false,
+        title: {
+            display: true,
+            text: 'Multiple Axes'
+        },
+        scales: {
+            yAxes: [{
+                type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                display: true,
+                position: 'left',
+                id: 'y-axis-1',
+            }, {
+                type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                display: true,
+                position: 'right',
+                id: 'y-axis-2',
+
+                // grid line settings
+                gridLines: {
+                    drawOnChartArea: false, // only want the grid lines for one axis to show up
+                },
+            }],
+        }
+    }
+});
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Point Sizes</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="point-sizes"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="point-sizes"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'dataset - big points',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            fill: false,
+            borderDash: [5, 5],
+            pointRadius: 15,
+            pointHoverRadius: 10,
+        }, {
+            label: 'dataset - individual point sizes',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            fill: false,
+            borderDash: [5, 5],
+            pointRadius: [2, 4, 6, 18, 0, 12, 20],
+        }, {
+            label: 'dataset - large pointHoverRadius',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.green,
+            borderColor: window.chartColors.green,
+            fill: false,
+            pointHoverRadius: 30,
+        }, {
+            label: 'dataset - large pointHitRadius',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.yellow,
+            borderColor: window.chartColors.yellow,
+            fill: false,
+            pointHitRadius: 20,
+        }]
+    },
+    options: {
+        responsive: true,
+        legend: {
+            position: 'bottom',
+        },
+        hover: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        },
+        title: {
+            display: true,
+            text: 'point-sizes'
+        }
+    }
+};
+
+var ctx5 = document.getElementById('point-sizes').getContext('2d');
+window.myLine = new Chart(ctx5, config);
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Skip Points</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview">
+                                <div class="chartBox">
+                                    <canvas id="skip-points"></canvas>
+                                </div>
+							</div>
+							<div class="codeview">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;canvas id="skip-points"&gt;&lt;/canvas&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Data1',
+            borderColor: window.chartColors.red,
+            fill: false,
+            // Skip a point in the middle
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                NaN,
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+
+        }, {
+            label: 'Data2',
+            borderColor: window.chartColors.blue,
+            fill: false,
+            // Skip first and last points
+            data: [
+                NaN,
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                NaN
+            ],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Skip Points'
+        },
+        tooltips: {
+            mode: 'index',
+        },
+        hover: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+            }]
+        }
+    }
+};
+
+var ctx6 = document.getElementById('skip-points').getContext('2d');
+window.myLine = new Chart(ctx6, config);
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Point Styles</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <div class="chartBox">
+                                    <div class="point-styles"></div>
+                                </div>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;div class="point-styles"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+function createConfig(pointStyle) {
+    return {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: [10, 23, 5, 99, 67, 43, 0],
+                fill: false,
+                pointRadius: 10,
+                pointHoverRadius: 15,
+                showLine: false // no line shown
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: 'Point Style: ' + pointStyle
+            },
+            legend: {
+                display: false
+            },
+            elements: {
+                point: {
+                    pointStyle: pointStyle
+                }
+            }
+        }
+    };
+}
+
+var container = document.querySelector('.point-styles');
+[
+    'circle',
+    'triangle',
+    'rect',
+    'rectRounded',
+    'rectRot',
+    'cross',
+    'crossRot',
+    'star',
+    'line',
+    'dash'
+].forEach(function(pointStyle) {
+    var div = document.createElement('div');
+    div.classList.add('chart-container');
+
+    var canvas = document.createElement('canvas');
+    div.appendChild(canvas);
+    container.appendChild(div);
+
+    var ctx = canvas.getContext('2d');
+    var config = createConfig(pointStyle);
+    new Chart(ctx, config);
+});
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Stepped</h4>
+					</div>
+					<div class="stn_cont">
+						<div class="viewBox">
+							<div class="preview lot_row">
+                                <div class="chartBox">
+                                    <div class="stepped"></div>
+                                </div>
+							</div>
+							<div class="codeview lot_row">
+<pre>
+<code data-language="html">&lt;!-- -------------------- Html -------------------- --&gt;
+&lt;div class="chartBox"&gt;
+    &lt;div class="stepped"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- -------------------- Script -------------------- --&gt;
+&lt;script&gt;
+function createConfig(details, data) {
+    return {
+        type: 'line',
+        data: {
+            labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6'],
+            datasets: [{
+                label: 'steppedLine: ' + details.steppedLine,
+                steppedLine: details.steppedLine,
+                data: data,
+                borderColor: details.color,
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: details.label,
+            }
+        }
+    };
+}
+
+var container = document.querySelector('.stepped');
+
+var data = [
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor()
+];
+
+var steppedLineSettings = [{
+    steppedLine: false,
+    label: 'No Step Interpolation',
+    color: window.chartColors.red
+}, {
+    steppedLine: true,
+    label: 'Step Before Interpolation',
+    color: window.chartColors.green
+}, {
+    steppedLine: 'before',
+    label: 'Step Before Interpolation',
+    color: window.chartColors.green
+}, {
+    steppedLine: 'after',
+    label: 'Step After Interpolation',
+    color: window.chartColors.purple
+}, {
+    steppedLine: 'middle',
+    label: 'Step Middle Interpolation',
+    color: window.chartColors.blue
+}];
+
+steppedLineSettings.forEach(function(details) {
+    var div = document.createElement('div');
+    div.classList.add('chart-container');
+
+    var canvas = document.createElement('canvas');
+    div.appendChild(canvas);
+    container.appendChild(div);
+
+    var ctx7 = canvas.getContext('2d');
+    var config = createConfig(details, data);
+    new Chart(ctx7, config);
+});
+&lt;/script&gt;</code>
+</pre>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/Chart.min.js"></script>
+<script type="text/javascript" src="../../resources/js/utils.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_plan.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a href="../mock_up/0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a class="active" href="0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("line charts")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('line charts > HTML GUIDE');
+            });            
+		});
+        
+	});
+});	
+</script> 
+<script>
+var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Data1',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            fill: false,
+        }, {
+            label: 'Data2',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Basic'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
+};
+var ctx1 = document.getElementById('basic').getContext('2d');
+window.myLine = new Chart(ctx1, config);
+</script> 
+<script>
+var randomScalingFactor = function() {
+    return Math.round(Math.random() * 100);
+};
+
+var datapoints = [0, 20, 20, 60, 60, 120, NaN, 180, 120, 125, 105, 110, 170];
+var config = {
+    type: 'line',
+    data: {
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+        datasets: [{
+            label: 'Cubic (monotone)',
+            data: datapoints,
+            borderColor: window.chartColors.red,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+            cubicInterpolationMode: 'monotone'
+        }, {
+            label: 'Cubic (default)',
+            data: datapoints,
+            borderColor: window.chartColors.blue,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+        }, {
+            label: 'Linear',
+            data: datapoints,
+            borderColor: window.chartColors.green,
+            backgroundColor: 'rgba(0, 0, 0, 0)',
+            fill: false,
+            lineTension: 0
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Interpolation-Modes'
+        },
+        tooltips: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+                ticks: {
+                    suggestedMin: -10,
+                    suggestedMax: 200,
+                }
+            }]
+        }
+    }
+};
+
+var ctx2 = document.getElementById('interpolation-modes').getContext('2d');
+window.myLine = new Chart(ctx2, config);
+</script>   
+<script>
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Unfilled',
+            fill: false,
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }, {
+            label: 'Dashed',
+            fill: false,
+            backgroundColor: window.chartColors.green,
+            borderColor: window.chartColors.green,
+            borderDash: [5, 5],
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+        }, {
+            label: 'Filled',
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            fill: true,
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Line-Styles'
+        },
+        tooltips: {
+            mode: 'index',
+            intersect: false,
+        },
+        hover: {
+            mode: 'nearest',
+            intersect: true
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        }
+    }
+};
+
+var ctx3 = document.getElementById('line-styles').getContext('2d');
+window.myLine = new Chart(ctx3, config);
+</script>
+<script>
+var lineChartData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+        label: 'Data1',
+        borderColor: window.chartColors.red,
+        backgroundColor: window.chartColors.red,
+        fill: false,
+        data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor()
+        ],
+        yAxisID: 'y-axis-1',
+    }, {
+        label: 'Data2',
+        borderColor: window.chartColors.blue,
+        backgroundColor: window.chartColors.blue,
+        fill: false,
+        data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor()
+        ],
+        yAxisID: 'y-axis-2'
+    }]
+};
+
+var ctx4 = document.getElementById('multipleAxes').getContext('2d');
+window.myLine = Chart.Line(ctx4, {
+    data: lineChartData,
+    options: {
+        responsive: true,
+        hoverMode: 'index',
+        stacked: false,
+        title: {
+            display: true,
+            text: 'Multiple Axes'
+        },
+        scales: {
+            yAxes: [{
+                type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                display: true,
+                position: 'left',
+                id: 'y-axis-1',
+            }, {
+                type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+                display: true,
+                position: 'right',
+                id: 'y-axis-2',
+
+                // grid line settings
+                gridLines: {
+                    drawOnChartArea: false, // only want the grid lines for one axis to show up
+                },
+            }],
+        }
+    }
+});
+</script>
+<script>
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'dataset - big points',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.red,
+            borderColor: window.chartColors.red,
+            fill: false,
+            borderDash: [5, 5],
+            pointRadius: 15,
+            pointHoverRadius: 10,
+        }, {
+            label: 'dataset - individual point sizes',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.blue,
+            borderColor: window.chartColors.blue,
+            fill: false,
+            borderDash: [5, 5],
+            pointRadius: [2, 4, 6, 18, 0, 12, 20],
+        }, {
+            label: 'dataset - large pointHoverRadius',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.green,
+            borderColor: window.chartColors.green,
+            fill: false,
+            pointHoverRadius: 30,
+        }, {
+            label: 'dataset - large pointHitRadius',
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+            backgroundColor: window.chartColors.yellow,
+            borderColor: window.chartColors.yellow,
+            fill: false,
+            pointHitRadius: 20,
+        }]
+    },
+    options: {
+        responsive: true,
+        legend: {
+            position: 'bottom',
+        },
+        hover: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                }
+            }]
+        },
+        title: {
+            display: true,
+            text: 'point-sizes'
+        }
+    }
+};
+
+var ctx5 = document.getElementById('point-sizes').getContext('2d');
+window.myLine = new Chart(ctx5, config);
+</script>
+<style>
+.chart-container {width:330px; margin:0 20px 20px 20px;}
+.point-styles {display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center;}
+.stepped {display:flex; flex-direction:row; flex-wrap:wrap; justify-content:center;}
+</style>
+<script>
+function createConfig(pointStyle) {
+    return {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: window.chartColors.red,
+                borderColor: window.chartColors.red,
+                data: [10, 23, 5, 99, 67, 43, 0],
+                fill: false,
+                pointRadius: 10,
+                pointHoverRadius: 15,
+                showLine: false // no line shown
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: 'Point Style: ' + pointStyle
+            },
+            legend: {
+                display: false
+            },
+            elements: {
+                point: {
+                    pointStyle: pointStyle
+                }
+            }
+        }
+    };
+}
+
+var container = document.querySelector('.point-styles');
+[
+    'circle',
+    'triangle',
+    'rect',
+    'rectRounded',
+    'rectRot',
+    'cross',
+    'crossRot',
+    'star',
+    'line',
+    'dash'
+].forEach(function(pointStyle) {
+    var div = document.createElement('div');
+    div.classList.add('chart-container');
+
+    var canvas = document.createElement('canvas');
+    div.appendChild(canvas);
+    container.appendChild(div);
+
+    var ctx = canvas.getContext('2d');
+    var config = createConfig(pointStyle);
+    new Chart(ctx, config);
+});
+</script>   
+<script>
+var config = {
+    type: 'line',
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Data1',
+            borderColor: window.chartColors.red,
+            fill: false,
+            // Skip a point in the middle
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                NaN,
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ],
+
+        }, {
+            label: 'Data2',
+            borderColor: window.chartColors.blue,
+            fill: false,
+            // Skip first and last points
+            data: [
+                NaN,
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                NaN
+            ],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Skip Points'
+        },
+        tooltips: {
+            mode: 'index',
+        },
+        hover: {
+            mode: 'index'
+        },
+        scales: {
+            xAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Month'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Value'
+                },
+            }]
+        }
+    }
+};
+
+var ctx6 = document.getElementById('skip-points').getContext('2d');
+window.myLine = new Chart(ctx6, config);
+</script> 
+<script>
+function createConfig(details, data) {
+    return {
+        type: 'line',
+        data: {
+            labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6'],
+            datasets: [{
+                label: 'steppedLine: ' + details.steppedLine,
+                steppedLine: details.steppedLine,
+                data: data,
+                borderColor: details.color,
+                fill: false,
+            }]
+        },
+        options: {
+            responsive: true,
+            title: {
+                display: true,
+                text: details.label,
+            }
+        }
+    };
+}
+
+var container = document.querySelector('.stepped');
+
+var data = [
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor(),
+    randomScalingFactor()
+];
+
+var steppedLineSettings = [{
+    steppedLine: false,
+    label: 'No Step Interpolation',
+    color: window.chartColors.red
+}, {
+    steppedLine: true,
+    label: 'Step Before Interpolation',
+    color: window.chartColors.green
+}, {
+    steppedLine: 'before',
+    label: 'Step Before Interpolation',
+    color: window.chartColors.green
+}, {
+    steppedLine: 'after',
+    label: 'Step After Interpolation',
+    color: window.chartColors.purple
+}, {
+    steppedLine: 'middle',
+    label: 'Step Middle Interpolation',
+    color: window.chartColors.blue
+}];
+
+steppedLineSettings.forEach(function(details) {
+    var div = document.createElement('div');
+    div.classList.add('chart-container');
+
+    var canvas = document.createElement('canvas');
+    div.appendChild(canvas);
+    container.appendChild(div);
+
+    var ctx7 = canvas.getContext('2d');
+    var config = createConfig(details, data);
+    new Chart(ctx7, config);
+});
+</script>
+</body>
+</html>

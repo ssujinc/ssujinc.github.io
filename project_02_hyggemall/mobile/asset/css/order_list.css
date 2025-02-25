@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; background:#fff; }
+#wrap .content { background:#fff; width:100%; height:auto; border-width:0; overflow:visible; padding:0; } 
+#wrap .inner_content { background:#fff; width:100%; height:auto; box-sizing:border-box; padding:48px 24px 64px; } 
+
+
+input[type="text"]::placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]:-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+input[type="text"]::-ms-input-placeholder { color:#a9b0bb !important; font-family:'NBGothicL' !important; font-size:14px; }
+
+.orderL_tab { height:40px; background:#fff; border-bottom:1px solid #e4e8eb; }
+.orderL_tab h2 { height:100%; text-align:center; width:100%; line-height:40px; color:#424852; font-size:16px; font-family:'GodoM'; text-shadow:none; box-shadow:none; font-weight:normal; }
+
+
+/* orderL_section01 */
+.orderL_section01 { width:100%; height:114px; display:block; } 
+/* orderL_section01_top */
+.orderL_section01 .orderL_section01_top { width:100%; height:32px; }
+.orderL_section01 .orderL_section01_top:after { clear:both; content:''; display:block; }
+.orderL_section01 .orderL_section01_top .period_btn { width:14%; float:left; height:100%; text-align:center; vertical-align:middle; padding:0; margin:0; background:#fff; border:1px solid #cad0d7; margin-left:3%; color:#a9b0bb; font-size:14px; font-family:'NBGothicL'; font-weight:normal; box-shadow:none; text-shadow:none; border-radius:0; line-height:34px; }
+.orderL_section01 .orderL_section01_top .period_btn:nth-child(1) { margin-left:0; }
+.orderL_section01 .orderL_section01_top .period_btn_on { background:#e4e8eb; height:100%; color:#424852; font-family:'NBGothicB'; line-height:34px; }
+/* orderL_section01_bottom */
+.orderL_section01 .orderL_section01_bottom { width:100%; height:32px; margin:12px 0 24px; }
+.orderL_section01 .orderL_section01_bottom .ui-input-text { float:left; width:76%; height:100%; margin:0; padding:0 0 0 12px; border:1px solid #cad0d7; border-radius:0; box-shadow:none; text-shadow:none; box-sizing:border-box; }
+.orderL_section01 .orderL_section01_bottom .ui-input-text input { width:100%; height:100%; padding:0; margin:0; vertical-align:middle; color:#424852; font-family:'NBGothicR'; font-size:14px; }
+.orderL_section01 .orderL_section01_bottom .orderL_check_btn_box { width:20%; float:right; height:100%; border:0; margin:0;  border-radius:4px; background:#5e9cea; font-size:14px; padding:0; margin:0; text-align:center; line-height:34px; color:#fff; font-family:'NBGothicB'; text-shadow:none; box-shadow:none; box-sizing:border-box; }
+.orderL_section01 .orderL_section01_bottom .orderL_check_btn_box .ui-btn { width:100%; height:100%; border:0; margin:0;  border-radius:4px; background:#5e9cea; font-size:14px; padding:0; margin:0; text-align:center; line-height:34px; color:#fff; font-family:'NBGothicB'; text-shadow:none; box-shadow:none; box-sizing:border-box; }
+.orderL_section01 .orderL_section01_bottom .orderL_check_btn_box .ui-btn:active { width:100%; height:100%; border:0; margin:0;  border-radius:4px; background:#4a88da; font-size:14px; padding:0; margin:0; text-align:center; line-height:34px; color:#fff; font-family:'NBGothicB'; text-shadow:none; box-shadow:none; box-sizing:border-box; }
+/* orderL_section01_txt */
+.orderL_section01 .orderL_section01_txt { line-height:100%; font-size:14px; color:#424852; font-family:'NBGothicL'; text-align:left; }
+
+
+
+
+/* orderL_section02 */
+.orderL_section02 { width:100%; height:auto;} 
+.orderL_section02 .orderL_check_list_box { width:100%; height:auto; margin-top:32px; }
+/* orderL_number_box */
+.orderL_section02 .orderL_check_list_box .orderL_number_box { width:100%; height:40px; box-sizing:border-box; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_left { float:left; line-height:40px; width:auto; height:40px; box-sizing:border-box; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_left p { font-weight:normal; font-size:14px; color:#636c77; width:auto; display:inline-block; font-family:'NBGothicB'; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_left p .orderL_number { color:#424852; display:inline-block; font-family:'NBGothicB'; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_left p .orderL_date { display:inline-block; font-family:'NBGothicL'; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_right { float:right; width:auto; display:inline-block; height:40px; line-height:40px; box-sizing:border-box; }
+.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_right .ui-btn { background-color:transparent; box-shadow:none; text-shadow:none; border:0; border-radius:0; margin:0; padding:0; height:100%; line-height:44px; color:#4a88da; font-size:14px; font-family:'NBGothicR'; font-weight:normal; }
+
+.orderL_section02 table { width:100%; height:auto; border-top:2px solid #424852; } 
+.orderL_section02 table td:nth-child(1) { width:36%; vertical-align:middle; text-align:left; padding:24px 0 24px 24px; }
+.orderL_section02 table td:nth-child(2) { width:64%; text-align:left; vertical-align:top; padding:24px 24px 24px 0; }
+.orderL_section02 table tr { border-bottom:1px solid #cad0d7; }
+.orderL_section02 table tr:last-child { border-bottom:1px solid #424852; }
+.orderL_section02 table tr td .book_img { width:65px; height:96px; border:1px solid #e4e8eb; box-sizing:border-box; float:left; }
+.orderL_section02 table tr td .book_img img { width:100%; height:100%; }
+.orderL_section02 table tr td .book_name { font-size:14px; color:#424852; font-family:'GodoM'; font-weight:normal; margin-top:9px; margin-bottom:20px; }
+.orderL_section02 table tr td .order_count { font-size:14px; color:#636c77; font-family:'GodoM'; font-weight:normal; line-height:100%; }
+.orderL_section02 table tr td .order_count span { color:#424852; }
+
+
+/* orderL_total_box */
+.orderL_section02 .orderL_total_box { width:100%; height:auto; border-bottom:2px solid #424852; }
+.orderL_section02 .orderL_total_box div { padding:0 26px 0 10%; }
+.orderL_section02 .orderL_total_box div:after { clear:both; display:block; content:''; }
+.orderL_section02 .orderL_total_box div.cart_select_pick_box { height:40px; background:#fff; box-sizing:border-box; line-height:40px; }
+.orderL_section02 .orderL_total_box .only_txt { float:left; width:auto; display:inline-block; color:#636c77; font-size:14px; font-family:'NBGothicR'; text-shadow:none; font-weight:normal; }
+.orderL_section02 .orderL_total_box .cart_select_pick { float:right; width:auto; display:inline-block; color:#424852; font-size:14px; font-family:'NBGothicB'; text-shadow:none; font-weight:normal; }
+.orderL_section02 .orderL_total_box div.cart_total_price_box { border-top:1px solid #cad0d7; box-sizing:border-box; clear:both; height:51px; background:#fff; line-height:50px; }
+.orderL_section02 .orderL_total_box div.cart_total_price_box .cart_total_payment { float:right; color:#424852; font-size:14px; font-family:'GodoM'; font-weight:normal; }
+.orderL_section02 .orderL_total_box div.cart_total_price_box .cart_total_payment span {font-size:18px; }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 377px) and (max-width: 459px) { 
+}
+
+@media screen and (min-width: 386px) and (max-width: 405px) { 
+}
+
+@media screen and (min-width: 377px) and (max-width: 385px) {
+}
+
+@media screen and (max-width:376px) {
+	.orderL_section01 { height:auto; }
+	
+	.orderL_section01 .orderL_section01_txt { line-height:inherit; }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:365px) {	
+
+	.orderL_section02 .orderL_check_list_box .orderL_number_box .orderL_nb_right { float:left; }
+	.orderL_section01 .orderL_section01_top .period_btn { font-size:12px; }
+	.orderL_section01 .orderL_section01_bottom .orderL_check_btn_box .ui-btn { font-size:12px; }
+	.orderL_section01 .orderL_section01_bottom .orderL_check_btn_box .ui-btn:active { font-size:12px; }
+	.orderL_section01 .orderL_section01_txt { font-size:12px; }
+
+
+	.orderL_section02 table td:nth-child(1) { width:40%; }
+	.orderL_section02 table td:nth-child(2) { width:60%; }
+	.orderL_section02 table tr td .book_name { font-size:12px; }
+	.orderL_section02 table tr td .order_count { font-size:12px;  }
+	.orderL_section02 .orderL_total_box .only_txt { font-size:12px; }
+	.orderL_section02 .orderL_total_box .cart_select_pick { font-size:12px; }
+	.orderL_section02 .orderL_total_box div.cart_total_price_box .cart_total_payment { font-size:12px; }
+	.orderL_section02 .orderL_total_box div.cart_total_price_box .cart_total_payment span { font-size:16px; }
+}
+
+
+
+

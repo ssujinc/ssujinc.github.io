@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* MINDsLab. CSJ. 20210326 */
+
+/* Noto Sans */ 
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:100;
+src:local('Noto Sans KR Thin'), local('NotoSansKR-Thin'), 
+     url('../font/noto-sans-kr-v13-latin_korean-100.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-100.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-100.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Thin.otf') format('opentype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:300;
+src:local('Noto Sans KR Light'), local('NotoSansKR-Light'), 
+     url('../font/noto-sans-kr-v13-latin_korean-300.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-300.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-300.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Light.otf') format('opentype');/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:400;
+src:local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), 
+     url('../font/noto-sans-kr-v13-latin_korean-regular.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-regular.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Regular.otf') format('opentype');/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:500;
+src:local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), 
+     url('../font/noto-sans-kr-v13-latin_korean-500.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-500.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-500.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Medium.otf') format('opentype');/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:700;
+src:local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), 
+     url('../font/noto-sans-kr-v13-latin_korean-700.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-700.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-700.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Bold.otf') format('opentype');/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}
+@font-face {
+font-family:'Noto Sans KR';
+font-style:normal;
+font-weight:900;
+src:local('Noto Sans KR Black'), local('NotoSansKR-Black'), 
+     url('../font/noto-sans-kr-v13-latin_korean-900.eot'), /* IE6~11 */
+     url('../font/noto-sans-kr-v13-latin_korean-900.eot?#iefix') format('embedded-opentype'),
+     url('../font/noto-sans-kr-v13-latin_korean-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+     url('../font/noto-sans-kr-v13-latin_korean-900.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../font/NotoSansKR-Black.otf') format('opentype');/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3-5 */
+}

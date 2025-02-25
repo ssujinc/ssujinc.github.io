@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/faq.css">
+  	<title>faq</title>    
+</head>
+<body id="faq" data-role="page" class="faq_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<div class="faq_tab">
+				<h2>자주묻는 질문 FAQ</h2>
+			</div>
+
+			<div class="faq_inner_content">
+				<section class="faq_section01">
+					<ul>
+						<li>
+							<a href="faq_view.html">회원</a>
+						</li>
+						<li>
+							<a href="javascript:void()">상품</a>
+						</li>
+						<li>
+							<a href="javascript:void()">주문/결제</a>
+						</li>
+						<li>
+							<a href="javascript:void()">취소/교환/반품/환불</a>
+						</li>
+						<li>
+							<a href="cash.html">포인트/캐시</a>
+						</li>
+						<li>
+							<a href="javascript:void()">시스템 장애</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

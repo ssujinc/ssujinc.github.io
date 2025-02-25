@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+    <link rel="stylesheet" type="text/css" href="asset/css/cart.css">
+      <title>Cart</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>'
+    
+	<section class="cart_status">
+	    <div class="inner_cart_status">
+	       <div class="shopping_basket cart_detail_box_on">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">장바구니</h3>	           
+	               <p class="cart_box_txt">주문하실 상품을 선택해주세요.</p>
+	           </div>
+	       </div>
+	       <span class="cart_action_on"></span>
+	       <div class="order_payment cart_detail_box">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">주문/결제</h3>	           
+	               <p class="cart_box_txt">주문정보를 확인 후 결제해 주세요.</p>
+	           </div>
+	       </div>
+	       <span class="cart_action"></span>
+	       <div class="order_complete cart_detail_box">
+	           <span class="cart_status_icon"></span>
+	           <div class="cart_txt_box">
+	               <h3 class="cart_box_tittxt">주문완료</h3>	           
+	               <p class="cart_box_txt">결제가 완료되었습니다.</p>
+	           </div>
+	       </div>
+	    </div>
+	</section>
+	
+	<section class="cart_section01">
+        <p>쇼핑카트 보관기간은 최대 <span class="red-color">90</span>일이며, 판매 종료 상품 및 품절된 상품은 리스트가 자동으로 삭제됩니다.</p>
+	    <div class="cart_inner_section01">
+	        <table class="no_cart_table">
+                <colgroup>
+                    <col style="width:48px;">
+                    <col style="width:484px;">
+                    <col style="width:124px;">
+                    <col style="width:100px;">
+                    <col style="width:80px;">
+                    <col style="width:124px;">
+                </colgroup>
+	            <tr>
+	                <th></th>
+	                <th>상품정보</th>
+	                <th>판매가</th>
+	                <th>포인트</th>
+	                <th>수량</th>
+	                <th>합계</th>
+	            </tr>
+	            <tr>
+	                <td colspan="6">
+	                    장바구니에 담긴 상품이 없습니다.
+	                </td>
+	            </tr>
+	        </table>
+	        <div class="cart_total_box">
+	            <p>선택상품 수량 <b>총 <span class="red-color">0</span>개</b></p>
+	            <div class="cart_total_price_box">
+	                <p class="only_txt">결제예정금액</p>
+	                <p class="cart_total_payment"><span>0</span>원</p>
+	            </div>
+	        </div>
+	        <div class="cart_section01_bottom">
+	            <div class="cart_btn_box">
+	                <input type="button" class="go_shopping_btn cart_btn" value="쇼핑계속하기" />
+	                <input type="button" class="choice_product_btn cart_btn" value="선택상품 주문하기" />
+	                <input type="button" class="all_product_btn cart_btn" value="전체상품 주문하기" />
+	            </div>
+	        </div>
+	    </div>
+	    <div class="cart_service_guide_box">
+	        <h4>바로드림(매장수령) 서비스 안내사항</h4>
+	        <ul>
+	            <li>해당 매장이 휴일인 경우 당일 수령이 불가합니다. 참고부탁드립니다.</li>
+	            <li>매장에 재고가 없으면 주문하실 수 없습니다. 양해바랍니다.</li>
+	            <li>매장 재고는 수시로 변경될 수 있습니다. 재고를 확인하시고 주문해주세요.</li>
+	            <li>반품불가 : 사용하거나 랩핑(비닐포장)제거한 경우, 분철한 도서의 경우는 반품이 불가합니다.</li>
+	        </ul>
+	    </div>
+	</section>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

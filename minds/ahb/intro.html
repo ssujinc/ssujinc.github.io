@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+
+    <!-- icon (Chrome & Opera) -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/image/ico_maumAI_60x60.ico" />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/font.css" />
+    <link rel="stylesheet" href="assets/css/mvp.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="https://sds.maum.ai/css?host=mindslab"/><!-- Chatbot -->
+
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui-1.12.1.js"></script>
+    <script src="https://sds.maum.ai/js/mindslab"></script><!-- Chatbot -->
+
+    <script type="text/javascript" src="assets/js/messages.js"></script>
+    
+    <title>AI Human Builder</title>
+</head>
+<body>
+    <!-- .page loading -->
+    <div id="pageldg">
+        <span class="out_bg">
+            <em>
+                <strong>&nbsp;</strong>
+                <strong>&nbsp;</strong>
+                <strong>&nbsp;</strong>
+                <b>&nbsp;</b>
+            </em>
+        </span>
+    </div>
+    <!-- //.page loading -->
+      
+    <!-- [P] 프로젝트 등록 -->
+    <div id="pop_pjt_add" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap w500">
+            <div class="pop_top"><h2>프로젝트 시작하기 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <div class="pop_mid bg_lightblue">
+                <div class="dlBox">
+                    <dl class="dl_tbl">
+                        <dt><em>STEP 01.</em> 제작할 AI Human 템플릿 선택해 주세요.</dt>
+                        <dd class="pjt_radio">
+                            <div class="radio_box">
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_avatar" class="ipt_radio" checked="" value="AVATAR">
+                                    <label for="rd_avatar">
+                                        <img src="assets/image/img_projectThumb_avatar.png" alt="영상제작용 템플릿 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">영상제작용 템플릿</span>
+                                            <span class="desc">#아나운서 #큐레티어 # 북 리더</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_consult" class="ipt_radio" value="MANAGE">
+                                    <label for="rd_consult">
+                                        <img src="assets/image/img_projectThumb_counseling.png" alt="상담용 템플릿 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">상담용 템플릿</span>
+                                            <span class="desc">#상담봇 #리셉셔니스트 #가이드봇 #마케터</span>
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="radio_area">
+                                    <input type="radio" name="rd_template" id="rd_none" class="ipt_radio" value="NONE">
+                                    <label for="rd_none">
+                                        <img src="assets/image/img_projectThumb_diy.png" alt="템플릿 없음 이미지">
+                                        <span class="txt_area">
+                                            <span class="tit">템플릿 없음</span>
+                                            <span class="desc">AI process과정을 직접 제작</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="dl_tbl">
+                        <dt><em>STEP 02.</em> 프로젝트 이름</dt>
+                        <dd>
+                            <input type="text" id="proj_name" class="ipt_txt w100" placeholder="프로젝트 명을 입력해 주세요.">
+                            <span class="error">Project name already exists</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" id="btn_pjt_add" class="blue_btn">등록</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[P] 프로젝트 등록 -->
+
+    <!-- [P] 프로젝트 관리 -->
+    <div id="pop_pjt_modify" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap w500">
+            <div class="pop_top"><h2>프로젝트 관리 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <div class="pop_mid bg_lightblue">
+                <p class="error">All project names must be unique</p>
+                <ul id="sortable" class="ui-sortable">
+                    <li id="731" class="ui-state-default mod-projects ui-sortable-handle">
+                        <input placeholder="dddf"><button type="button" class="btn_pjt_delete">삭제</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" id="btn_pjt_modify" class="blue_btn ">저장</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[P] 프로젝트 관리 -->
+        
+    <!-- [L] 라이선스 등록-->
+    <div id="pop_license_add" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap pop_license_add">
+            <div class="pop_top"><h2>라이선스 등록 <i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid">
+                <p>고객님의 이메일로 발송된 주문확인서 내의 인증키를 입력하세요.</p>
+                <div class="license_check error">
+                    <!-- [D] 실시간 체크 클래스 넣어주세요.
+                          에러일땐 error, 
+                          일치하면 success -->
+                    <input type="text" placeholder="예) 1234-abcd-5678-efgx">
+                    <i class="fa fa-check-circle"></i>
+                </div>
+                <div class="lc_txt">
+                    <p class="sucess">사용 가능한 라이선스 입니다.</p>
+                    <p class="error">유효하지 않은 라이선스 입니다.</p>
+                </div>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button type="button" class="blue_btn" id="Button_Ok">등록</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //[L] 라이선스 등록-->
+
+    <!-- 삭제 팝업 -->
+    <div id="pop_delete" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>프로젝트를 정말 삭제 하시겠습니까?<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <p>상담 AI 프로젝트일 경우, 서비스가 중단될 수 있습니다.</p>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" class="blue_btn" id="Button_Ok">삭제</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //삭제 팝업 -->
+    
+    <!-- 로그아웃 팝업-->
+    <div class="pop_simple mvp_pop" id="api_logout">
+        <div class="mvp_pop_bg"></div>
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_hd"><h2>Logout<em class="fas fa-times ico_close"></em></h2></div>
+            <!-- .pop_bd -->
+            <div class="pop_bd">AI Human Builder를 로그아웃 하겠습니까?</div>
+            <!-- //.pop_bd -->
+            <div class="btn">
+                <button type="button" id="Button_LogoutCancel">아니오</button>
+                <button type="button" class="blue_btn" id="Button_LogoutOk">네</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //로그아웃 팝업-->
+
+    <!-- 사용량 부족 팝업 -->
+    <div id="pop_lackUsage" class="modal_pop">
+        <!-- .popWrap -->
+        <div class="popWrap">
+            <div class="pop_top"><h2>알림<i class="fas fa-times btn_modal_close">닫기</i></h2></div>
+            <!-- .pop_mid -->
+            <div class="pop_mid tac">
+                <p>사용 시간이 부족하여 다운로드 받으실 수 없습니다.<br>스토어에서 구매하시겠습니까?</p>
+            </div>
+            <!-- //.pop_mid -->
+            <div class="pop_btn">
+                <button class="btn_modal_close blue_line_btn">취소</button>
+                <button type="button" class="blue_btn" id="Button_Ok" onclick="redirectStore()">스토어 바로가기</button>
+            </div>
+        </div>
+        <!-- //.popWrap -->
+    </div>
+    <!-- //사용량 부족 팝업 -->
+
+    <div class="menu_wrap">
+        <div class="hamberger_button">
+            <em class="fas fa-bars"></em>
+            <!--        <em class="fas fa-angle-double-left"></em>-->
+            <a herf="https://builder.maum.ai/">AI Human Builder</a>
+        </div>
+
+            <!-- [P] 추가 -->
+        <div class="projectBox">
+            <a href="javascript:void(0)" class="btn_project_add btn_modal_open" data-popup="pop_pjt_add"><span>새 프로젝트</span></a>
+            <dl class="dlBox">
+                <dt>
+                    <h3>프로젝트 목록</h3>
+                    <a href="javascript:void(0)" class="btn_pjt_setup btn_modal_open" data-popup="pop_pjt_modify" title="프로젝트 관리">프로젝트 관리</a>
+                </dt>
+                <dd>
+                    <ul class="lst menu-projects">
+                        <!-- ******* script로 구현 *******-->
+                        <li class="">
+                            <a href="javascript:void(0)" class="">
+                                <span>dd</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <span>dddf</span>
+                            </a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+        
+        <a href="javascript:void(0)" class="btn_license_add btn_modal_open" data-popup="pop_license_add"><i class="fas fa-key"></i><span>라이선스 등록</span></a>
+    </div>
+
+    <!-- #container -->
+    <div id="container">
+        <!-- .contents -->
+        <div class="contents">
+            <div class="mvp_box">
+                <div class="mvp_top">
+                    <div class="mvp_top_area">
+                        <span class="btn_help">
+                            <a href="https://drive.google.com/file/d/1S6avadjuFMKfOrwDEWbiAE4NorEau-vk/view?usp=sharing" title="도움말" target="_blank">
+                                <em class="fas fa-info"></em> 도움말
+                            </a>
+                        </span>
+                        <h1><a href="https://builder.maum.ai/"><small></small> AI Human Builder</a></h1>
+                        <div class="fr_btn">
+                            <!-- .etcmenu -->
+                            <div class="etcmenu">
+                                <div class="userBox">
+                                    <dl class="">
+                                        <dt class="ico_user"><em class="far fa-user"></em></dt>
+                                        <dd>
+                                            <a target="_self" href="javascript:void(0)">csj@mindslab.ai</a>
+                                            <em class="fas fa-chevron-up"></em>
+                                        </dd>
+                                    </dl>
+                                    <ul class="lst">
+                                        <li class="ico_profile"><a target="_blank" href="https://maum.ai/user/profileMain?lang=ko">프로필</a></li>
+                                        <li class="ico_account"><a target="_blank" href="https://maum.ai/user/apiAccountMain?lang=ko">이용내역</a></li>
+                                        <li class="ico_payment"><a target="_blank" href="https://maum.ai/user/paymentInfoMain?lang=ko">결제내역</a></li>
+                                        <li class="ico_logout"><a href="#" class="btn_logout">로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="lang_box">
+                                <!-- 하단 스크립트 처리 -->
+                                <!-- //.etcmenu -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project_start_wrap">
+                    <div class="ps_area">
+                        <div class="stn_top">
+                            <p class="desc"><em>maum store</em>에서 제품을 구입하셨나요?</p>
+                            <p class="tit">라이선스를 등록하고 지금 바로 사용해 보세요.</p>                        
+                            <button class="blue_link_btn btn_modal_open" data-popup="pop_license_add">
+                                <span>라이선스 등록</span>
+                            </button>
+                        </div>
+    
+                        <div class="stn_calling">
+                            <h3 class="stn_tit">
+                                프로젝트 불러오기
+                                <span>이전에 제작된 AI Human을 목록 불러옵니다.</span>
+                            </h3>
+                            <div class="calling_avatar">
+                                <ul class="calling_list">
+                                    <!-- [D] 프로젝트 없을 시 추가 (개발시 주석 삭제) -->
+                                    <li class="calling_none_list">
+                                        <img src="assets/image/img_projectThumb_none.png" alt="생성된 프로젝트가 없습니다." />
+                                        <div class="desc_txt">
+                                            <p class="none_txt">생성된 프로젝트가 없습니다.</p>
+                                            <p class="none_tit"><em>프로젝트 시작하기</em>에서<br>AI Human을 제작하세요!</p>
+                                        </div>
+                                        <span class="border"></span>
+                                    </li>
+                                    <!-- //[D] 프로젝트 없을 시 추가 (개발시 주석 삭제) -->
+                                    <li>
+                                        <img src="assets/image/img_projectThumb_avatar.png" alt="영상제장용 템플릿" />
+                                        <div class="avatar_desc">
+                                            <div class="desc_txt">
+                                                <p class="avt_name">마인즈랩 사내방송마인즈랩 사내방송마인즈랩 내방</p>
+                                                <p class="avt_txt">영상제장용 템플릿</p>
+                                            </div>
+                                            <button class="btn_delete btn_modal_open" data-popup="pop_delete"><i class="fa fa-trash-alt"></i><span>삭제</span></button>
+                                        </div>
+                                        <span class="border"></span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/img_projectThumb_counseling.png" alt="상담용 템플릿" />
+                                        <div class="avatar_desc">
+                                            <div class="desc_txt">
+                                                <p class="avt_name">마인즈랩 아침뉴스</p>
+                                                <p class="avt_txt">상담용 템플릿</p>
+                                            </div>
+                                            <button class="btn_delete btn_modal_open" data-popup="pop_delete"><i class="fa fa-trash-alt"></i><span>삭제</span></button>
+                                        </div>
+                                        <span class="border"></span>
+                                    </li>
+                                    <li>
+                                        <img src="assets/image/img_projectThumb_diy.png" alt="템플릿 없음" />
+                                        <div class="avatar_desc">
+                                            <div class="desc_txt">
+                                                <p class="avt_name">키오스크</p>
+                                                <p class="avt_txt">Untitled</p>
+                                            </div>
+                                            <button class="btn_delete btn_modal_open" data-popup="pop_delete"><i class="fa fa-trash-alt"></i><span>삭제</span></button>
+                                        </div>
+                                        <span class="border"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="stn_start">
+                            <h3 class="stn_tit">
+                                프로젝트 시작하기
+                                <span>사용용도 별 맞춤 템플릿으로 손쉽게 AI Human을 제작을 시작해보세요.</span>
+                            </h3>
+                            <div class="start_avatar">
+                                <ul class="start_avatar_list">
+                                    <li class="btn_modal_open pop_project_add_modal_btn" data-popup="pop_pjt_add" data-type="AVATAR">
+                                        <div class="img_area">
+                                            <img src="assets/image/img_projectThumb_avatar.png" alt="영상제작용 템플릿" />
+                                            <span class="border"></span>
+                                        </div>
+                                        <div class="start_desc">
+                                            <p class="start_name">영상제작용 템플릿</p>
+                                            <div class="start_txts">
+                                                <span class="avt_txt"># 아나운서</span>
+                                                <span class="avt_txt"># 큐레이터</span>
+                                                <span class="avt_txt"># 북 리더</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="btn_modal_open pop_project_add_modal_btn" data-popup="pop_pjt_add" data-type="MANAGE">
+                                        <div class="img_area">
+                                            <img src="assets/image/img_projectThumb_counseling.png" alt="상담용 템플릿" />
+                                            <span class="border"></span>
+                                        </div>
+                                        <div class="start_desc">
+                                            <p class="start_name">상담용 템플릿</p>
+                                            <div class="start_txts">
+                                                <span class="avt_txt"># 상담봇</span>
+                                                <span class="avt_txt"># 리셉셔니스트</span>
+                                                <span class="avt_txt"># 가이드봇</span>
+                                                <span class="avt_txt"># 마케터</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="btn_modal_open pop_project_add_modal_btn" data-popup="pop_pjt_add" data-type="NONE">
+                                        <div class="img_area">
+                                            <img src="assets/image/img_projectThumb_diy.png" alt="템플릿 없음 이미지" />
+                                            <span class="border"></span>
+                                        </div>
+                                        <div class="start_desc">
+                                            <p class="start_name">템플릿 없음</p>
+                                            <div class="start_txts">
+                                                <p>템플릿 없이 AI process과정을<br>
+                                                    직업 만들 수 있습니다.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //.contents -->
+
+        <!-- #footer -->
+        <div id="footer">
+            <div class="lot_c">
+                <div class="cyrt">
+                    <p> © Copyright 2020  ㈜ 마인즈랩   경기도 성남시 분당구 대왕판교로644번길 49 다산타워 6층 ㅣ 대표 유태준 ㅣ사업자 등록번호 314-86-55446
+                        <a href="javascript:void(0)" class="contact_btn"> ㅣ 문의하기 ㅣ </a>
+                        <a href="https://maum.ai/home/krTermsMain" target="_blank">이용약관</a>
+                    </p>
+                </div>
+                <!-- 			<div class="cyrt"><span>MINDsLab &copy; 2019</span></div> -->
+            </div>
+        </div>
+        <!-- //#footer -->
+    </div>
+    <!-- //#container -->
+
+    <script>
+        $(function(){
+            /*
+            ** logout 버튼 클릭
+            */
+            $(".btn_logout").on("click", function () {
+                $("#api_logout").fadeIn();
+            });
+
+            /*
+            ** logout 취소
+            */
+            $('#Button_LogoutCancel').on("click", function () {
+                $("#api_logout").fadeOut();
+            });
+
+            /*
+            ** 로그아웃 실행
+            */
+            $('#Button_LogoutOk').on("click", function () {
+                $("#api_logout").fadeOut();
+                $(".etcmenu").hide();
+                window.location.href = "/security/logout";
+            });
+            
+            $(".btn_modal_open").on("click", function () {
+                var popupId = "#" + $(this).attr("data-popup");
+               
+                $("body").css('overflow', 'hidden');
+
+                $("body").find(popupId).wrap('<div class="lyrWrap"></div>');
+                $("body").find(popupId).before('<div class="lyr_bg"></div>');
+
+                //Layer popup close
+                $(".popWrap .btn_lyr_close, .ico_close, .btn_modal_close, .blue_btn").on("click", function (e) {
+                    if( !($(this).attr("class") == "blue_btn") ) {
+                        $("body").css("overflow","");
+                        $(".lyr_bg").fadeOut(800).remove();
+                        $("body").find(popupId).unwrap('<div class="lyrWrap"></div>');
+                    }
+                });
+            });
+
+            // 프로젝트 등록 글자수 제한 팝업
+            $("#proj_name").on("keyup", function(){
+                if($(this).val().length > 25) {
+                    $(this).val($(this).val().substr(0, 25));
+                    alert("프로젝트명은 25글자 이내여야 합니다.")
+                }
+            });
+
+            // 프로젝트 등록 포커스
+            $(".btn_project_add").on("click", function(){
+                $("#proj_name").focus();
+                $("input:radio[name='rd_template']:radio[id='rd_avatar']").prop('checked', true);
+            })
+            
+            // 프로젝트 시작하기 클릭 시 포커스
+            $(".pop_project_add_modal_btn").on("click", function(){
+                $("#proj_name").focus();
+                let dataValue = $(this).data("type");
+                $(`input:radio[name='rd_template']:radio[value=${dataValue}]`).prop('checked', true);
+            })
+        });
+
+        document.getElementById('btn_pjt_add').addEventListener('click', function (e) {
+            e.stopPropagation();
+            let projectName = $("#proj_name").val();
+            if (projectName == '') {
+                alert("프로젝트 명을 입력해주세요");
+                $("#proj_name").focus();
+                return;
+            }
+        });
+
+        // 사용량 부족 스토어 바로가기
+        function redirectStore() {
+            let openNewWindow = window.open("about:blank");
+            openNewWindow.location.href = "https://store.maum.ai/";
+        }
+    </script>
+    
+    <!-- page Landing -->
+    <script type="text/javascript">
+        $(window).load(function () {
+            //page loading delete
+            $('#pageldg').addClass('pageldg_hide').delay(300).queue(function () {
+                $(this).remove();
+                // resetEngineStatus('a');
+            });
+        });
+    </script>
+
+    <!-- [P] 0715 추가 -->
+    <script type="text/javascript">
+        jQuery.event.add(window, "load", function () {
+
+            let lang_code = "ko";
+
+            $(document).ready(function () {
+                
+                $('.menu_wrap').hover(function () {
+                    $('.menu_wrap').toggleClass('active');
+                });
+
+                 // header user
+                 $('.etcmenu .userBox dl dd').on('click', function () {
+                    var statue = $('.etcmenu .userBox dl').attr('class');
+                    $(this).parent().addClass('active');
+                    $(this).children('em').attr('class', 'fas fa-chevron-up');
+                    if (statue == "active") {
+                        $('.etcmenu .userBox dl').removeClass('active');
+                        $(this).children('em').attr('class', 'fas fa-chevron-down');
+
+                    }
+                });
+
+                // header user  
+                $('.userBox dl').on('click', function () {
+                    $(this).parent().addClass('active');
+                });
+
+                $(document).on('click', function (e) {
+                    if (!$('.userBox').has(e.target).length) {
+                        $('.userBox').removeClass('active');
+                    }
+                });
+
+                //화면 로드 시 lang 체크
+                $('html').each(function () {
+                    var thisURL = $(location).attr('href'),
+                        urlStr = thisURL.substring(thisURL.indexOf("/?"));
+
+                    if (lang_code == 'en' || urlStr == '/?lang=en' || urlStr == '/?lang=en#none') {
+                        //lang_box ui
+                        $('.lang_box').children().remove();
+                        $('.lang_box').append('\
+                <span>English</span> \
+                <span><a href="?lang=ko">Korean</a></span>'
+                        );
+                        $('.stn_landing_cont .item_set.bg_blue .item_title, .stn_landing_cont .item_set.bg_blue ul.item_lst > li').addClass('en_blue');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .short_box').addClass('en_short_box');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .long_box').addClass('en_long_box');
+                        // $('.en_arrow').parent().parent('li').css('height', '97px');
+
+                        //html language
+                        $('html').attr('lang', 'en');
+
+                        //Live chat close
+                        $('body').addClass('lot_en');
+
+                        $('.btn_help').hide();
+                    } else {
+                        //lang_box ui
+                        $('.lang_box').children().remove();
+                        $('.lang_box').append('\
+                <span>한국어</span> \
+                <span><a href="?lang=en">English</a></span>'
+                        );
+                        $('.stn_landing_cont .item_set.bg_blue .item_title, .stn_landing_cont .item_set.bg_blue ul.item_lst > li').removeClass('en_blue');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .short_box').removeClass('en_short_box');
+                        $('.stn_landing_cont .item_set .item_lst > li .inner_box .long_box').removeClass('en_long_box');
+                        //html language
+                        $('html').attr('lang', 'ko');
+
+                        //Live chat close
+                        $('body').removeClass('lot_en');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

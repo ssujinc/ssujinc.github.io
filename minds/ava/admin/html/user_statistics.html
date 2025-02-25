@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User 통계</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="#"></a></h1>
+    <ul class="gnb">
+      <li><a href="./member.html">회원관리</a></li>
+      <li class="active"><a href="./statistics.html">통계</a>
+        <ul class="lnb">
+          <li><a href="./user_statistics.html">유저 통계</a></li>
+          <li><a href="./voice_font_statistics.html">Voice Font 통계</a></li>
+        </ul>
+      </li>
+      <li><a href="./question.html">문의</a></li>
+      <li><a href="#">공지사항</a></li>
+    </ul>
+  </header>
+  <div id="wrap" class="user_statistics empty">
+    <h2>유저 통계</h2>
+
+    <form action="">
+      <fieldset>
+        <legend>search_filter</legend>
+        <label for="no">회원번호</label>
+        <input type="text" id="no" placeholder="회원번호를 입력하세요.">
+        <label for="name">이름(닉네임)</label>
+        <input type="text" id="name" placeholder="회원 이름(닉네임)을 입력하세요.">
+        <label for="email">E mail<span>(ID)</span></label>
+        <input type="email" id="email" placeholder="Email(ID)를 입력하세요.">
+        <label for="contact">연락처</label>
+        <input type="number" id="contact" placeholder="연락처를 입력하세요.">
+        <hr>
+        <input type="submit" value="유저 통계 조회">
+      </fieldset>
+    </form>
+    <!-- 조회 실패는 class empty 추가 -->
+    <!-- 초기 화면은 class initial 추가 -->
+    <div class="user_statistics_contents">
+      <form action="">
+        <div class="admin-select">
+          <select name="date" id="date">
+            <option value="0">전체 기간</option>
+            <option value="1">1회 결제 기간</option>
+            <option value="2">2회 결제 기간</option>
+            <option value="3">3회 결제 기간</option>
+            <option value="4">4회 결제 기간</option>
+          </select>
+        </div>
+        <div class="tabs">
+          <button class="tablinks convert" onclick="openTab(event, 'tab1')" id="defaultOpen">변환 이용량</button>
+          <button class="tablinks download" onclick="openTab(event, 'tab2')">다운로드 이용량</button>
+        </div>
+
+        <div class="content">
+          <div id="tab1" data-tab-content class="items tabcontent">
+            <div class="information">
+              <ul>
+                <li><span class="label">기간</span><span>2020.02.02 ~ 2020.02.02</span></li>
+                <li><span class="label">플랜</span><span>STANDARD</span></li>
+                <li><span class="label">기간 내 변환 글자수</span><span>236,444,895</span></li>
+                <li><span class="label">기간 내 다운로드 글자 수</span><span>6,577</span></li>
+              </ul>
+            </div>
+            <div class="empty">
+              <img src="../imgs/ico-empty-68-px.png" alt="빈상자" />
+              <p>조회된 내용이 없습니다.</p>
+            </div>
+            <div id="chart_wrap_convert" class="chart">
+            </div>
+          </div>
+          <div id="tab2" data-tab-content class="items tabcontent">
+            <div class="information">
+              <ul>
+                <li><span class="label">기간</span><span>2020.03.02 ~ 2020.03.02</span></li>
+                <li><span class="label">플랜</span><span>STANDARD</span></li>
+                <li><span class="label">기간 내 변환 글자수</span><span>236,444,895</span></li>
+                <li><span class="label">기간 내 다운로드 글자 수</span><span>6,577</span></li>
+              </ul>
+            </div>
+            <div class="empty">
+              <img src="../imgs/ico-empty-68-px.png" alt="빈상자" />
+              <p>조회된 내용이 없습니다.</p>
+            </div>
+            <div id="chart_wrap_download" class="chart">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Minds Lab.</p>
+  </footer>
+</body>
+<script src="../js/admin.js"></script>
+<script>
+  Highcharts.chart('chart_wrap_convert', {
+    chart: {
+      type: 'bar',
+      marginLeft: 168
+    },
+    xAxis: {
+      type: 'category',
+      title: {
+        text: null
+      },
+      min: 0,
+      max: 9,
+      scrollbar: {
+        enabled: true
+      },
+      tickLength: 0
+    },
+    yAxis: {
+      title: {
+        text: null
+      },
+      min: 0,
+      max: 100
+    },
+    plotOptions: {
+      bar: {
+        dataLabels: {
+          enabled: false
+        }
+      }
+    },
+    legend: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    series: [{
+      name: null,
+      data: [
+        ["민아", 70],
+        ["지연", 30],
+        ["박수연", 0],
+        ["제이킴", 0],
+        ["책 읽어주는 여자", 0],
+        ["윤정", 0],
+        ["유라", 0],
+        ["소연", 0],
+        ["리아", 0],
+        ["상진", 0],
+        ["Draw lines over a stock chart, for analysis purpose", 0],
+        ["Data module for database tables", 0],
+        ["Draggable points", 0]
+      ]
+    }]
+  });
+
+  Highcharts.chart('chart_wrap_download', {
+    chart: {
+      type: 'bar',
+      marginLeft: 168
+    },
+    xAxis: {
+      type: 'category',
+      title: {
+        text: null
+      },
+      min: 0,
+      max: 9,
+      scrollbar: {
+        enabled: true
+      },
+      tickLength: 0
+    },
+    yAxis: {
+      title: {
+        text: null
+      },
+      min: 0,
+      max: 100
+    },
+    plotOptions: {
+      bar: {
+        dataLabels: {
+          enabled: false
+        }
+      }
+    },
+    legend: {
+      enabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    series: [{
+      name: null,
+      data: [
+        ["민아", 70],
+        ["지연", 30],
+        ["박수연", 0],
+        ["제이킴", 0],
+        ["책 읽어주는 여자", 0],
+        ["윤정", 0],
+        ["유라", 0],
+        ["소연", 0],
+        ["리아", 0],
+        ["상진", 0],
+        ["Draw lines over a stock chart, for analysis purpose", 0],
+        ["Data module for database tables", 0],
+        ["Draggable points", 0]
+      ]
+    }]
+  });
+
+
+
+  function openTab(evt, tabName) {
+    evt.preventDefault();
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>ES6+</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>Javascript 코드 작성 규칙</span></li>
+							<li><span>ES6+</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>변수 선언 시 "const", "let" 키워드 사용</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">"var"는 함수 스코프를 가진다. 코드 실행 전에 해당 변수가 hoist되므로 선언부보다 위에서 변수를 호출하여도 에러가 발생하지 않습는다. 블  록 스코프에서 "var"를 사용해도 블록 스코프 밖의 함수 스코프에 변수가 hoist되어 블록 스코프 밖에서 접근이 가능합니다. 이는 Undefined  된 변수의 프로퍼티에 접근할 때, 에러가 발생하는 잠재적인 원인이 됩니다. 반면에, "const"와 "let"은 개발자가 예상한대로 동작합니다. 이 키  워드를 통해 선언한 변수는 블록 스코프를 가진다. TDZ의 혜택을 받아 같은 스코프 내에서 선언 전에 호출하면 에러가 발생합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-36 조건문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+var foo = 'foo';  <br>
+var bar = 'bar';<br>
+...<br>
+bar = 'var';
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+const foo = 'foo';  <br>
+let bar = 'bar';<br>
+...<br>
+bar = 'var';
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="txt">"const"를 사용해 변수를 선언하되, 할당 후 값이 변하면 "let"을 사용합니다.</p>
+                            </dd>                                
+                        </dl>                        
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>"require", "module.exports“ 지향</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">자바스크립트에서의 모듈 패턴은 전역에서 특정 변수 영역을 보호하기 위해 사용됩니다. AMD, CommonJS 등의 모듈러가 보편화됨에 따라,  ES6에서는 모듈 패턴을 지원하는 키워드인 import, export를 도입했다. 다만, 이 기능은 지원하는 브라우저의 점유율이 매우 낮기에 ES6 문  법을 사용하기 위해서는 트랜스파일러를 사용해야 합니다. import, export를 사용할 수 있는 환경이라면, require, module.exports 보다는  import, export를 사용하라. 사용할 수 없다면, "require", "module.exports"를 사용하라.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-37 조건문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+/* Top of file */<br>
+const StyleGuide = require('./StyleGuide');  <br>
+module.exports = StyleGuide.es6;
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+/* Top of file */<br>
+import StyleGuide from './StyleGuide';  <br>
+export default StyleGuide.es6;<br>
+     <br>                                               
+/* Top of file */<br>
+import { es6 } from './StyleGuide';  <br>
+export default es6;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>                                
+                        </dl>                        
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>Import문 선언 위치</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">import문은 hoist 비용을 고려하여 코드의 맨 위로 작성합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-38 조건문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+import foo from 'foo';  <br>
+foo.init();<br>
+<br>
+import bar from 'bar';
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+/* Top of file */  <br>
+import foo from 'foo'; <br>
+import bar from 'bar';<br>
+<br>
+foo.init();
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>                                
+                        </dl>                        
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>제너레이터 사용 위치 주의점</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">제너레이터의 *의 위치가 바르지 않으면 트랜스파일링 되지 않습는다. 따라서 가급적 제너레이터를 사용하지 않아야 합니다. 꼭 사용해야 한다면 *의 위치에 주의합니다. 반드시 function 바로 뒤에 써야 합니다.</p>
+                        <dl class="dl_lst">
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 6-39 조건문 작성 예</caption>
+                                    <colgroup>
+                                        <col width="50%"><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l vl_t" scope="row">
+                                                <div class="txt_bg">
+function * foo() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+}<br>
+<br>
+const bar = function * () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+};<br>
+<br>
+const baz = function *() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+};<br>
+<br>
+function *foo() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;;...<br>
+}<br>
+<br>
+// very bad  function<br>
+*  foo() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+}<br>
+<br>
+const wat = function<br>
+*  () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+};
+                                                </div>
+                                            </td>
+                                            <td class="al_l vl_t">
+                                                <div class="txt_bg">
+function* foo() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+}<br>
+<br>
+const foo = function* () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+};
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </dd>                                
+                        </dl>                        
+					</div>
+				</div>
+				<!-- //.section-->
+                
+                
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(7) span:contains("ES6+")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('ES6+ > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

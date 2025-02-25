@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' );           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>   
+	<link rel="stylesheet" href="resources/css/menu.css" />
+
+	<script type="text/javascript" src="resources/js/filterizr_index.js"></script>
+	<link rel="stylesheet" href="resources/css/filterizr_style.css" />
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('.filtr-container').filterizr();
+			jQuery('.filtr-container2').filterizr();
+			var menuBtn = document.getElementById("menu_btnBox");
+			var menuBtns = menuBtn.getElementsByClassName("menu_btn");
+			for (var i = 0; i < menuBtns.length; i++) {
+				menuBtns[i].addEventListener("click", function() {
+					var currentBtn = document.getElementsByClassName("btnOn");
+					currentBtn[0].className = currentBtn[0].className.replace(" btnOn", "");
+					this.className += " btnOn";
+				});
+			}
+			var menuBtn = document.getElementById("menu_btnBox2");
+			var menuBtns = menuBtn.getElementsByClassName("menu_btn2");
+			for (var i = 0; i < menuBtns.length; i++) {
+				menuBtns[i].addEventListener("click", function() {
+					var currentBtn = document.getElementsByClassName("btnOn2");
+					currentBtn[0].className = currentBtn[0].className.replace(" btnOn2", "");
+					this.className += " btnOn2";
+				});
+			}
+			document.getElementById("defaultOpen").click();
+
+		});
+	</script>
+	<script>
+		$(window).on("load", function(){
+			var nav = $(".navName").val();
+			$(".gnb ."+nav).addClass("on");
+		});
+	</script>
+	<title>BARI MENU</title>
+ </head>
+ <body>
+    <input type="hidden" value="menu" class="navName">
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' );
+    ?>
+	<div id="menu_main">
+		<div>
+			<p>super food bowl "BARI" - WHAT A MEAL</p>
+		</div>
+	</div>
+
+	<div id="container">	
+		<div class="menu_tab">
+			<button class="menu_tablinks" onclick="openMenu(event, 'All')" id="defaultOpen">ALL</button>
+			<button class="menu_tablinks" onclick="openMenu(event, 'Vegetarian')">VEGETARIAN</button>
+		</div>
+		<div id="All" class="tabcontent container">
+			<ul class="simplefilter" id="menu_btnBox">
+				<li data-filter="all" class="menu_btn btnOn btnAll">All</li>
+				<li data-filter="1" class="menu_btn">RICE BOWL</li>
+				<li data-filter="2" class="menu_btn">SALAD BOWL</li>
+				<li data-filter="3" class="menu_btn">NOODLE BOWL & SOUP</li>
+				<li data-filter="4" class="menu_btn">ACAI BOWL</li>
+				<li data-filter="5" class="menu_btn">YOGURT</li>
+				<li data-filter="6" class="menu_btn">ICE CREAM</li>
+				<li data-filter="7" class="menu_btn">DRINK</li>
+			</ul>
+			<div class="filtr-container">
+				<div class="filtr-item soldout" data-category="1" data-sort="Wasabi Natto Rice">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_wasabi_natto_rice.jpg" alt="와사비 낫토 라이스" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">와사비 낫토 라이스</span><span class="price">10.0</span></h4>
+						<p class="menu_Entxt">Wasabi Natto Rice</p>
+						<p class="menu_txt">알싸한 와사비 소스 & 낫토</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="Wasabi Avocado Rice">
+					<a href="menu_detail.html">
+						<div class="filtr_img">
+							<img class="img-responsive" src="resources/img/menu_wasabi_avocado_rice.jpg" alt="와사비 아보카도 라이스" />
+						</div>
+						<div class="menu_explain">
+							<h4><span class="menu_tit">와사비 아보카도 라이스</span><span class="price">11.0</span></h4>
+							<p class="menu_Entxt">Wasabi Avocado Rice</p>
+							<p class="menu_txt">알싸한 와사비 소스 & 아보카도</p>
+						</div>
+					</a>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="Citron Salmon Rice">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_citron_salmon_rice.jpg" alt="유자연어 라이스" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">유자연어 라이스</span><span class="price">13.5</span></h4>
+						<p class="menu_Entxt">Citron Salmon Rice</p>
+						<p class="menu_txt">상큼한 유자소스 & 연어</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Thai Beef Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_thai_beef_salad.jpg" alt="타이 우삼겹 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">타이 우삼겹 샐러드</span><span class="price">13.0</span></h4>
+						<p class="menu_Entxt">Thai Beef Salad</p>
+						<p class="menu_txt">타이스타일 드레싱 & 우삼겹</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Miso Shrimp Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_miso_shrimp_salad.jpg" alt="미소 새우 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">미소 새우 샐러드</span><span class="price">12.5</span></h4>
+						<p class="menu_Entxt">Miso Shrimp Salad</p>
+						<p class="menu_txt">고소한 미소 드레싱 & 새우</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Miso Tofu & Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_miso_tofu_salad.jpg" alt="미소 두부 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">미소 두부 샐러드</span><span class="price">9.5</span></h4>
+						<p class="menu_Entxt">Miso Tofu & Salad</p>
+						<p class="menu_txt">고소한 미소 드레싱 & 두부</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Wasabi Chicken Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_wasabi_chicken_salad.jpg" alt="와사비 치킨 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">와사비 치킨 샐러드</span><span class="price">12.0</span></h4>
+						<p class="menu_Entxt">Wasabi Chicken Salad</p>
+						<p class="menu_txt">알싸한 와사비 소스 % 닭안심</p>
+					</div>
+				</div>
+			</div> <!-- /.filtr-container -->
+
+			<div class="toping">
+				<p class="toping_title">ADD <b>TOPING</b><span>추가토핑</span></p>
+				<div class="toping_l">
+					<p class="toping_tit">기본</p>
+					<div>
+						<div>
+							<span class="toping_menu">샐러드</span>
+							<span class="price">
+								<span class="price_fl">4.0</span>
+								<span class="price_fr">1/2<b>2.0</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">100% 현미밥 / 파스타면</span>
+							<span class="price">
+								<span class="price_fl">2.0</span>
+								<span class="price_fr">1/2<b>1.0</b></span>
+							</span>
+						</div>
+					</div>
+					<p class="toping_tit marg_t">기타</p>
+					<div>
+						<div>
+							<span class="toping_menu">연근 피클</span>
+							<span class="price">
+								<span class="price_fr"><b>0.5</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">햄프씨드 / 퀴노아</span>
+							<span class="price">
+								<span class="price_fr"><b>0.3</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">아몬드 / 방울 토마토 / 양파</span>
+							<span class="price">
+								<span class="price_fr"><b>0.3</b></span>
+							</span>
+						</div>
+					</div>
+				</div> <!-- /.toping_l -->
+				<span class="line"></span>
+				<div class="toping_r">
+					<p class="toping_tit">단백질</p>
+					<div>
+						<div>
+							<span class="toping_menu">연어 / 우삼겹</span>
+							<span class="price">
+								<span class="price_fr"><b>4.0</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">새우 / 아보카도</span>
+							<span class="price">
+								<span class="price_fr"><b>2.5</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">닭가슴살 / 두부</span>
+							<span class="price">
+								<span class="price_fr"><b>2.0</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">멸치볶음</span>
+							<span class="price">
+								<span class="price_fr"><b>1.0</b></span>
+							</span>
+						</div>
+						<div>
+							<span class="toping_menu">계란후라이</span>
+							<span class="price">
+								<span class="price_fr"><b>1.5</b></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /#All -->
+
+		<div id="Vegetarian" class="tabcontent container">
+			<ul class="simplefilter2" id="menu_btnBox2">
+				<li data-filter="1" class="menu_btn2 btnOn2 btn1">VEGAN</li>
+				<li data-filter="2" class="menu_btn2">LACTO</li>
+				<li data-filter="3" class="menu_btn2">OVO</li>
+				<li data-filter="4" class="menu_btn2">LACTO OVO</li>
+				<li data-filter="5" class="menu_btn2">PESCO</li>
+				<li data-filter="6" class="menu_btn2">POLLO</li>
+				<li data-filter="all" class="menu_btn2">FLEXITARIAN</li>
+			</ul>
+			<div class="veget_txt">
+				<div class="veget_icon">
+					<img src="resources/img/vegan.png" alt="비건" />
+					<img src="resources/img/lacto.png" alt="락토" />
+					<img src="resources/img/ovo.png" alt="오보" />
+					<img src="resources/img/pesco.png" alt="페스코" />
+					<img src="resources/img/pollo.png" alt="폴로" />
+					<img src="resources/img/flex.png" alt="플랙스" />
+				</div>
+				<p class="veget_explain">
+					<span>오보</span>(Ovo-vegetarian) : 채소와 달걀(동물의 알) 허용
+				</p>
+			</div>
+			<div class="filtr-container2">
+				<div class="filtr-item filtr-item-fix" data-category="1, 2, 3, 4, 5, 6" data-sort="simbol">
+					<div>
+						<img class="img-responsive" src="resources/img/whata_meal_simbol.png" alt="what a meal simbol" />
+						<p>
+							<b>BARI</b>는<br />
+							고객님의 취향에 맞게<br />
+							토핑을 선택할 수 있습니다.
+						</p>
+					</div>
+				</div>				
+				<div class="filtr-item soldout" data-category="1" data-sort="Wasabi Natto Rice">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_wasabi_natto_rice.jpg" alt="와사비 낫토 라이스" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">와사비 낫토 라이스</span><span class="price">10.0</span></h4>
+						<p class="menu_Entxt">Wasabi Natto Rice</p>
+						<p class="menu_txt">알싸한 와사비 소스 & 낫토</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="Wasabi Avocado Rice">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_wasabi_avocado_rice.jpg" alt="와사비 아보카도 라이스" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">와사비 아보카도 라이스</span><span class="price">11.0</span></h4>
+						<p class="menu_Entxt">Wasabi Avocado Rice</p>
+						<p class="menu_txt">알싸한 와사비 소스 & 아보카도</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="1" data-sort="Citron Salmon Rice">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_citron_salmon_rice.jpg" alt="유자연어 라이스" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">유자연어 라이스</span><span class="price">13.5</span></h4>
+						<p class="menu_Entxt">Citron Salmon Rice</p>
+						<p class="menu_txt">상큼한 유자소스 & 연어</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Thai Beef Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_thai_beef_salad.jpg" alt="타이 우삼겹 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">타이 우삼겹 샐러드</span><span class="price">13.0</span></h4>
+						<p class="menu_Entxt">Thai Beef Salad</p>
+						<p class="menu_txt">타이스타일 드레싱 & 우삼겹</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Miso Shrimp Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_miso_shrimp_salad.jpg" alt="미소 새우 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">미소 새우 샐러드</span><span class="price">12.5</span></h4>
+						<p class="menu_Entxt">Miso Shrimp Salad</p>
+						<p class="menu_txt">고소한 미소 드레싱 & 새우</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Miso Tofu & Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_miso_tofu_salad.jpg" alt="미소 두부 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">미소 두부 샐러드</span><span class="price">9.5</span></h4>
+						<p class="menu_Entxt">Miso Tofu & Salad</p>
+						<p class="menu_txt">고소한 미소 드레싱 & 두부</p>
+					</div>
+				</div>
+				<div class="filtr-item" data-category="2" data-sort="Wasabi Chicken Salad">
+					<div class="filtr_img">
+						<img class="img-responsive" src="resources/img/menu_wasabi_chicken_salad.jpg" alt="와사비 치킨 샐러드" />
+					</div>
+					<div class="menu_explain">
+						<h4><span class="menu_tit">와사비 치킨 샐러드</span><span class="price">12.0</span></h4>
+						<p class="menu_Entxt">Wasabi Chicken Salad</p>
+						<p class="menu_txt">알싸한 와사비 소스 % 닭안심</p>
+					</div>
+				</div>
+			</div> <!-- /.filtr-container -->
+
+		</div>
+    </div>
+
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+ </body>
+</html>

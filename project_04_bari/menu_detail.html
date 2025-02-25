@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' );           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>   
+	<link rel="stylesheet" href="resources/css/menu_detail.css" />
+	<script>
+		$(window).on("load", function(){
+			var nav = $(".navName").val();
+			$(".gnb ."+nav).addClass("on");
+		});
+	</script>
+	<title>BARI MENU Detail</title>
+</head>
+<body>
+    <input type="hidden" value="menu" class="navName">
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' );
+    ?>
+
+	<div id="container">	
+		<div class="menu_detail_box">
+			<div class="menu_detail_subject">
+				<img src="resources/img/whata_meal_simbol.png" alt="What A Meal Simbol" />
+				<p><b>BARI</b>'s Menu</p>
+			</div>
+			<div class="menu_detail_show">
+				<img src="resources/img/menu_detail_ex.jpg" alt="타이 우삼겹 국수" />
+				<div class="menu_detail_showbox">
+					<div class="menu_detail_text">
+						<div>
+							<b class="menu_detail_store">STORE</b>
+							<b class="menu_detail_lunchbox">LUNCH BOX</b>
+						</div>
+						<p class="menu_detail_ko">타이 우삼겹 국수</p>	
+						<p class="menu_detail_en">Thai Beef Noodle</p>
+						<p class="menu_detail_explain">타일스타일 드레싱 & 우삼겹 & 국수</p>
+						<p class="menu_detail_material">샐러드, 퀴노아, 방울토마토, 대파, 아몬드, 햄프씨드, 카펠리니 파스타면, 우삼겹, <br />두부, 치즈</p>
+					</div>
+					<div class="menu_detail_icon">
+						<img src="resources/img/vegan.png" alt="비건" />
+						<img src="resources/img/lacto.png" alt="락토" />
+						<img src="resources/img/ovo.png" alt="오보" />
+						<img src="resources/img/pesco.png" alt="페스코" />
+						<img src="resources/img/pollo.png" alt="폴로" />
+						<img src="resources/img/flex.png" alt="플렉스" />
+					</div>
+					<p class="menu_price"><span>\</span>11,500</p>
+				</div>				
+			</div> <!-- /.menu_detail_show -->
+
+			<div class="menu_detail_explain">
+				<div class="menu_line_title">
+					<span class="line1"></span>
+					<p><b>WHAT A MEAL</b></p>
+					<span class="line2"></span>
+				</div>		
+				<img class="menu_detail_img" src="resources/img/menu_main.jpg" alt="" />
+				<div class="menu_detail_text">
+					Capellini 파스타와 신선한 채소 위에<br />
+					우삼겹, 퀴노아, 아몬드, 햄프씨드, 방울토마토, 대파, 두부, 치즈 등 다양한 토핑을 올려<br />
+					<b>바리만의 특별한 소스와 함께 비벼먹는 깔끔한 샐러드 비빔국수입니다.</b>
+				</div>
+			</div> <!-- /.menu_detail_explain -->
+		</div> <!-- /.menu_detail_box -->
+
+		<div class="toping">
+			<p class="toping_title">ADD <b>TOPING</b><span>추가토핑</span></p>
+			<div class="toping_l">
+				<p class="toping_tit">기본</p>
+				<div>
+					<div>
+						<span class="toping_menu">샐러드</span>
+						<span class="price">
+							<span class="price_fl"><span>\ 4,000</span></span>
+							<span class="price_fr">1/2<span>\ 2,000</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">100% 현미밥 / 파스타면</span>
+						<span class="price">
+							<span class="price_fl"><span>\ 2,000</span></span>
+							<span class="price_fr">1/2<span>\ 1,000</span></span>
+						</span>
+					</div>
+				</div>
+				<p class="toping_tit marg_t">기타</p>
+				<div>
+					<div>
+						<span class="toping_menu">연근 피클</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 500</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">햄프씨드 / 퀴노아</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 300</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">아몬드 / 방울 토마토 / 양파</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 300</span></span>
+						</span>
+					</div>
+				</div>
+			</div> <!-- /.toping_l -->
+			<span class="line"></span>
+			<div class="toping_r">
+				<p class="toping_tit">단백질</p>
+				<div>
+					<div>
+						<span class="toping_menu">연어 / 우삼겹</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 4,000</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">새우 / 아보카도</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 2,500</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">닭가슴살 / 두부</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 2,000</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">멸치볶음</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 1,000</span></span>
+						</span>
+					</div>
+					<div>
+						<span class="toping_menu">계란후라이</span>
+						<span class="price">
+							<span class="price_fr"><span>\ 1,500</span></span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.toping -->	
+		
+		<div class="allergy">
+			<p class="allergy_title">ALLERGY <b>INFO</b><span>알레르기 정보</span></p>
+			<div class="allergy_icon_box">
+				<div>
+					<img src="resources/img/normal_egg.png" alt="난류" />
+					<p>난류</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_milk.png" alt="우유" />
+					<p>우유</p>
+				</div>
+				<div class="allergy_have">
+					<img src="resources/img/normal_buckwheat.png" alt="메밀" />
+					<p>메밀</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_peanut.png" alt="땅콩" />
+					<p>땅콩</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_soybean.png" alt="대두" />
+					<p>대두</p>
+				</div>
+				<div>
+					<img src="resources/img/ovo.png" alt="밀" />
+					<p>밀</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_mackerel.png" alt="고등어" />
+					<p>고등어</p>
+				</div>
+				<div class="allergy_have">
+					<img src="resources/img/normal_crab.png" alt="게" />
+					<p>게</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_shrimp.png" alt="새우" />
+					<p>새우</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_pork.png" alt="돼지고기" />
+					<p>돼지고기</p>
+				</div>
+				<div class="allergy_have">
+					<img src="resources/img/normal_peach.png" alt="복숭아" />
+					<p>복숭아</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_tomato.png" alt="토마토" />
+					<p>토마토</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_wine.png" alt="아황산류" />
+					<p>아황산류</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_walnut.png" alt="호두" />
+					<p>호두</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_chicken.png" alt="닭고기" />
+					<p>닭고기</p>
+				</div>
+				<div>
+					<img src="resources/img/normal_beef.png" alt="쇠고기" />
+					<p>쇠고기</p>
+				</div>
+				<div class="allergy_have">
+					<img src="resources/img/normal_squid.png" alt="오징어" />
+					<p>오징어</p>
+				</div>
+				<div class="allergy_have">
+					<img src="resources/img/normal_shellfish.png" alt="조개류" />
+					<p>조개류</p>
+				</div>
+			</div>
+			<p class="remark">* 알레르기 표시 정보에 해당하는 식재료가 사용되지 않았습니다.</p>
+		</div> <!-- /.allergy -->
+		
+		<div class="orgin">
+			<p class="orgin_title">ORIGIN <b>INFO</b><span>원산지 정보</span></p>
+			<div class="orgin_box">
+				<div>
+					<img src="resources/img/rice.png" alt="쌀" />
+					<p><b>쌀</b> 국내산</p>
+				</div>
+				<div>
+					<img src="resources/img/active_soybean.png" alt="콩" />
+					<p><b>콩</b> 중국산</p>
+				</div>
+				<div>
+					<img src="resources/img/active_chicken.png" alt="닭고기" />
+					<p><b>닭고기</b> 국내산</p>
+				</div>
+				<div>
+					<img src="resources/img/active_beef.png" alt="쇠고기" />
+					<p><b>쇠고기</b> 국내산</p>
+				</div>
+			</div>
+			<p class="remark">* 원산지 정보는 공통 항목입니다.</p>
+		</div> <!-- /.orgin -->
+		<a href="" class="go_list">목록으로</a>
+
+		<div class="related_menu">
+			<div class="menu_line_title">
+				<span class="line1"></span>
+				<p><b>RELATED</b> MENU</p>
+				<span class="line2"></span>
+			</div>	
+			<div class="related_menu_box">
+				<div>
+					<div class="related_img">
+                        <img src="resources/img/menu_thai_beef_salad.jpg" alt="타이 우삼겹 샐러드" />
+                    </div>
+					<div class="dimmed">
+						<div>
+							<div>
+								<p class="related_menu_title">타이 우삼겹 샐러드</p>
+								<p>Thai Beef Salad</p>
+								<p>타이스타일 드레싱 & 우삼겹</p>
+								<p class="related_price">\ 13,000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+                    <div class="related_img">
+    					<img src="resources/img/menu_miso_shrimp_noodle.jpg" alt="미소 새우 국수" />
+                    </div>
+					<div class="dimmed">
+						<div>
+							<div>
+								<p class="related_menu_title">미소 새우 국수</p>
+								<p>Miso Shrimp Noodle</p>
+								<p>타이스타일 드레싱 & 우삼겹</p>
+								<p class="related_price">\ 13,000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+                    <div class="related_img">
+					   <img src="resources/img/menu_tomato_suop.jpg" alt="토마토 스프" />
+                    </div>
+					<div class="dimmed">
+						<div>
+							<div>
+								<p class="related_menu_title">토마토 스프</p>
+								<p>Tomato Suop</p>
+								<p class="mar24">타이스타일 드레싱 & 우삼겹</p>
+								<p class="related_price">\ 13,000</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div> <!-- /#container -->
+
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+ </body>
+</html>

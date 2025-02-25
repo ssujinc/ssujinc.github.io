@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>표 엘리먼트</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>HTML 엘리먼트 작성 규칙</span></li>
+							<li><span>표 엘리먼트</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">표 엘리먼트를 아래와 같이 배치합니다.</p>
+                        <div class="txt_bg mgb10">
+&lt;table id="mobTable" class="tblStyle02" summary="시/분,10분,20분,30분,40분,50분,60분으로 구성됨"&gt;<br>
+&lt;caption class="hide"&gt;예약시간선택&lt;/caption&gt;<br>
+&lt;colgroup&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;col&gt;<br>
+&lt;/colgroup&gt;<br>
+&lt;thead&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;시/분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;10분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;20분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;30분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;40분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;50분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;60분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+&lt;/thead&gt;<br>
+&lt;tbody&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;09시&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시00분~09시10분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시10분~09시20분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시20분~09시30분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시30분~09시40분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시40분~09시50분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시50분~10시00분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+&lt;/tbody&gt;<br>
+&lt;/table&gt;
+                        </div>
+                        <dl class="dl_lst">
+                            <dt>A. &lt;table&gt;</dt>
+                            <dd>
+                                <p class="txt">일반적으로 레이아웃을 표현하기 위해 사용하지 않고, 2차원의 격자형 데이터를 표현하기 위해 사용합니다.  표의 요약 내용을 표기해야 할 때 summary 애트리뷰트를 선택적으로 할 수 있습니다.</p>
+                                <div class="txt_bg">
+&lt;table <em class="ft_clr_red">summary</em>="summary context here"&gt;
+                                </div>
+                                <p class="txt">단, Table이 레이아웃으로 사용된 경우, &lt;caption&gt;, &lt;th&gt;, &lt;thead&gt; 등을 사용하지 않아도 되며, &lt;table&gt; 엘리먼트에 tb_layout 클래스를  반드시 선언합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. &lt;caption&gt;</dt>
+                            <dd>
+                                <p class="txt">표의 제목을 표현하기 위해 사용합니다. caption 엘리먼트는 반드시 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;caption&gt;예약시간선택&lt;/caption&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. &lt;colgroup&gt;</dt>
+                            <dd>
+                                <p class="txt">&lt;col&gt; 엘리먼트를 그루핑하여 디자인을 제어할 때 선언합니다. 이 엘리먼트는 선택적으로 사용합니다.&lt;col&gt; 엘리먼트는 5개씩 연속으로 쓰며,  이 후 추가되는 &lt;col&gt; 엘리먼트는 줄바꿈 해준다.</p>
+                                <div class="txt_bg">
+&lt;<em class="ft_clr_red">colgroup</em>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;col width="100" &gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;&lt;col&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;col&gt;<br>
+&lt;/<em class="ft_clr_red">colgroup</em>&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. &lt;col&gt;</dt>
+                            <dd>
+                                <p class="txt">표 각 열의 너비 지정을 위해 선언합니다. width, span 애트리뷰트를 아래와 같은 순서로 선언합니다.</p>
+                                <div class="txt_bg">
+&lt;col <em class="ft_clr_red">width</em>="100" <em class="ft_clr_red">span</em>="2"&gt;<br>
+&lt;col width="100"&gt;&lt;col width="100"&gt;<br>
+&lt;col width="100"&gt;&lt;col&gt;<br>
+&lt;col width="50%"&gt;&lt;col width="50%"&gt;
+                                </div>
+                                <p class="txt">width, span 애트리뷰트는 필요에 따라 선택적으로 사용합니다.</p>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. &lt;thead&gt;</dt>
+                            <dd>
+                                <p class="txt">표 머리글을 그루핑할 때 선언합니다. 이 엘리먼트는 th 엘리먼트만으로 그루핑되어있을 때 선언합니다.</p>
+                                <div class="txt_bg">
+<em class="ft_clr_red">&lt;thead&gt;</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;시/분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;10분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;20분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col"&gt;30분&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+<em class="ft_clr_red">&lt;/thead&gt;</em>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>F. &lt;tfoot&gt;</dt>
+                            <dd>
+                                <p class="txt">표 바닥글을 그루핑할 때 선언합니다. tfoot 엘리먼트는 thead와 tbody 엘리먼트 사이에 위치해야 합니다. 이 엘리먼트는 선택적으로 사용합니다.</p>
+                                <div class="txt_bg">
+&lt;thead&gt;...&lt;/thead&gt;<br>
+<em class="ft_clr_red">&lt;tfoot&gt;</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;계&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;6,500&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;650&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+<em class="ft_clr_red">&lt;/tfoot&gt;</em><br>
+&lt;tbody&gt; &lt;/tbody&gt;
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>G. &lt;th&gt;</dt>
+                            <dd>
+                                <p class="txt">scope, abbr, id 순서로 애트리뷰트를 선언합니다.</p>
+                                <ul class="lst">
+                                    <li>표에 셀 제목이 명시되지 않은 경우에도 &lt;th&gt; 엘리먼트를 필수로 선언하여 의미에 맞는 제목을 명시합니다. (화면에 표시되지 않도록  CSS로 숨김 처리).</li>
+                                    <li>scope 애트리뷰트는 반드시 선언해야 합니다.</li>
+                                    <li>abbr 애트리뷰트는 선택적으로 사용합니다.</li>
+                                    <li>id 애트리뷰트는 선택적으로 사용합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <dl class="helpBox ico_refer">
+                                    <dt>참고</dt>
+                                    <dd>
+                                        <ul class="lst">
+                                            <li>scope 애트리뷰트: &lt;th&gt; 엘리먼트에 동반되는 애트리뷰트로서 현재의 셀이 어느 셀의 제목인지 범위를 명시합니다. scope 애트리뷰트의  값으로는 col, colgroup, row, rowgroup이 있습니다.</li>
+                                            <li>abbr 애트리뷰트: &lt;th&gt; 엘리먼트에 동반되는 애트리뷰트로서 포함하고 있는 콘텐츠를 축약하여 표기할 수 있을 때 약어를 표기하는 데  사용합니다. 헤딩 셀의 내용을 반복해서 음성으로 출력하는 도구들은 abbr 애트리뷰트에 표기된 약어를 읽는다.</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </dd> 
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>H. &lt;tbody&gt;</dt>
+                            <dd>
+                                <p class="txt">표 본문을 그루핑하기 위해 선언합니다. 테이블의 본문(body)이 하나이고 &lt;thead&gt;나 &lt;tfoot&gt;이 없을 경우 생략할 수 있습니다.</p>
+                                <div class="txt_bg">
+<em class="ft_clr_red">&lt;tbody&gt;</em><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;09시&lt;/th&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시00분~09시10분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시10분~09시20분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시20분~09시30분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시30분~09시40분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시40분~09시50분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td title="09시50분~10시00분" class="end_time"&gt;&lt;/td&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+<em class="ft_clr_red">&lt;/tbody&gt;</em>
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(5) span:contains("표 엘리먼트")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('표 엘리먼트 > HTML GUIDE');
+            });            
+		}); 
+	});
+});	
+</script>
+</body>
+</html>

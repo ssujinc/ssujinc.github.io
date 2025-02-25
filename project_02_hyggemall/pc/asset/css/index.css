@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* layout */
+.section01 { width:100%; height:360px; background:#f4f6f8; border-bottom:1px solid #d94452; }
+.section02 { width:960px; height:413px; margin:0 auto; }
+.section03 { width:960px; height:303px; margin:0 auto; }
+.section04 { width:100%; height:452px; background:#f4f6f8; }
+.section05 { width:960px; height:450px; margin:0 auto; }
+.section06 { width:100%; height:48px; margin:0 auto; border-top:2px solid #e4e8eb; }
+
+/*.main_img_size { width:178px; height:264px; border:1px solid #e4e8eb; box-sizing:border-box; display:block; }
+.main_img_size img { width:100%; height:100%; }*/
+
+/*---------- section01 ----------*/
+.innner_section01 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; padding:48px 0; }
+.innner_section01 .section01_left { position:relative; z-index:1; width:176px; height:100%; float:left; }
+.innner_section01 .section01_left h2 { margin:0; float:left; margin-bottom:18px; width:100%; text-align:left; color:#424852; }
+.innner_section01 .section01_left p { font-family:'NBGothicL'; color:#424852; font-size:16px; line-height:19px; }
+.innner_section01 .section01_left .issue_btn { position:absolute; bottom:0; left:0;  }
+.innner_section01 .section01_left .issue_btn .btn { width:56px; background:#fff; font-family:'NBGothicB'; font-size:12px; color:#d94452; padding:0; margin:0; display:block; float:left; margin-right:12px; }
+.innner_section01 .section01_left .issue_btn .btn.issue_btn_on { background:#d94452; color:#fff; }
+.innner_section01 .section01_right li { float:left; margin-left:24px; width:178px; height:264px; border:1px solid #e4e8eb; box-sizing:border-box; }
+.innner_section01 .section01_right li:first-child { margin-left:0; }
+.innner_section01 .section01_right li a { display:block; width:100%; height:100%; }
+.innner_section01 .section01_right a img { width:100%; height:100%; }
+.innner_section01 .section01_right .issue_monthly { display:none; }
+
+
+/*---------- section02 ----------*/
+.section02 h3 { padding-top:48px; }
+.section02 .section02_left { float:left; }
+.section02 .section02_left>a { display:block; float:left; width:178px; height:264px; box-sizing:border-box; border:1px solid #e4e8eb; }
+.section02 .section02_left>a img { width:100%; height:100%; }
+.section02 .section02_left .section02_left_txt { width:498px; float:right; padding:17px 0 0 24px; box-sizing:border-box; } 
+.section02 .section02_left .section02_left_txt .newbook_title { display:block;width:100%; font-family:'NBGothicB'; color:#424852; font-size:18px; line-height:100%; margin-bottom:8px; height:15px; }
+.section02 .section02_left .section02_left_txt .newbook_subtitle { width:100%; height:13px; font-family:'NBGothicR'; color:#424852; font-size:14px; line-height:100%; margin-bottom:12px; }
+.section02 .section02_left .section02_left_txt .newbook_author { width:100%; height:13px; font-family:'NBGothicL'; color:#a9b0bb; font-size:14px; line-height:100%; }
+.section02 .section02_left .section02_left_txt .newbook_price_box { height:19px; width:100%; margin:24px 0 32px; display:block; position:relative; }
+.section02 .section02_left .section02_left_txt .newbook_price_box:after { clear:both; content:''; display:block; }
+.section02 .section02_left .section02_left_txt .newbook_price_box .newbook_price { font-family:'GodoM'; font-size:20px; color:#d94452; display:block; float:left; width:auto; margin-right:12px; }
+.section02 .section02_left .section02_left_txt .newbook_price_box .newbook_price span { font-size:14px; }
+.section02 .section02_left .section02_left_txt .newbook_price_box .benefit_price { font-size:12px; float:left; margin-top:6px; margin-right:6px; }
+.section02 .section02_left .section02_left_txt .newbook_price_box .benefit_point { font-size:12px; float:left; margin-top:6px; }
+.section02 .section02_left .section02_left_txt .newbook_txt { font-size:14px; width:422px; height:96px; font-family:'NBGothicL'; color:#636c77; line-height:20px; overflow:hidden; }
+.section02 .section02_right { width:284px; height:264px; float:right; }
+.section02 .section02_right ul { width:100%; height:100%; }
+.section02 .section02_right ul li { width:84px; height:124px; margin-right:16px; border:1px solid #e4e8ec; box-sizing:border-box; float:left; }
+.section02 .section02_right ul li a { display:block; width:100%; height:100%; }
+.section02 .section02_right ul li:hover { border:1px solid #d94452; }
+.section02 .section02_right ul li.newbook_tumnb_on { border:2px solid #d94452; }
+.section02 .section02_right ul li a img { display:block; width:100%; height:100%; }
+.section02 .section02_right ul li:nth-child(1) { margin-bottom:16px; }
+.section02 .section02_right ul li:nth-child(2) { margin-bottom:16px; }
+.section02 .section02_right ul li:nth-child(3) { margin-bottom:16px; }
+.section02 .section02_right ul li:nth-child(3n) { margin-right:0px; }
+
+
+/*---------- section03 ----------*/
+.section03 .section03_top { border-bottom:1px solid #cad0d7; margin-bottom:24px; height:41px; box-sizing:border-box; }
+.section03 .section03_top h3 { padding-bottom:16px; margin-bottom:0; margin-top:7px; width:50%; float:left; }
+.section03 .realtime_searchbook_box { width:304px; height:100%; box-sizing:border-box; float:left; margin-right:24px; }
+.section03 .event_box { width:632px; height:100%; box-sizing:border-box; float:right; }
+.section03 .realtime_searchbook_box .realtime_reset_btn { float:right; width:24px; height:24px; background:url(../img/refresh.png) left top; border:0; outline:0; background-color:transparent; }
+.section03 .realtime_searchbook_box .realtime_reset_btn:hover { background:url(../img/refresh.png) -24px top; }
+.section03 .realtime_searchbook_box .realtime_list { width:304px; height:200px; box-sizing:border-box; border:1px solid #cad0d7; padding:24px; background:url('../img/raalTime_bg.png') center 100%; }
+.section03 .realtime_searchbook_box .realtime_list li { display:block; font-family:'NBGothicR'; font-size:14px; color:#636c77; line-height:100%; padding:10px 0; width:100%; height:14px; border-bottom:1px dashed #cad0d7; }
+.section03 .realtime_searchbook_box .realtime_list li a { font-family:'GodoM'; display:block; width:100%; height:100%;  }
+.section03 .realtime_searchbook_box .realtime_list li a span { float:right; width:237px; height:100%; display:inline; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-family:'NBGothicR'; }
+.section03 .realtime_searchbook_box .realtime_list li a:hover { color:#d94452; }
+.section03 .realtime_searchbook_box .realtime_list li:first-child { padding-top:0; }
+.section03 .realtime_searchbook_box .realtime_list li:last-child { border-bottom:0; }
+.section03 .event_box .section03_top .event_btn_box { float:right; font-family:'GodoM'; color:#a9b0bb; font-size:14px; }
+.section03 .event_box .section03_top .event_btn_box { float:right; font-family:'GodoM'; color:#a9b0bb; font-size:14px; }
+.section03 .event_box .section03_top .event_btn_box .event_pages { margin:6px 24px 0 0; display:block; float:left; font-family:'GodoM'; color:#a9b0bb; font-size:14px; }
+.section03 .event_box .section03_top .event_btn_box .event_pages .event_page_num { color:#f5b945; }
+.section03 .event_box .section03_top .event_btn_box .event_btn { width:24px; height:24px; padding:0; outline:none; border:1px solid #e4e8eb; box-sizing:border-box; background-color:#fff; float:left; }
+.section03 .event_box .section03_top .event_btn_box .event_prev { background:url('../img/prev_s.png') no-repeat left top; background-size:cover; }
+.section03 .event_box .section03_top .event_btn_box .event_prev:hover { background:url('../img/prev_s.png') no-repeat -22px top; background-size:cover; }
+.section03 .event_box .section03_top .event_btn_box .event_next { margin-left:-1px; background:url('../img/next_s.png') no-repeat left top; background-size:cover; }
+.section03 .event_box .section03_top .event_btn_box .event_next:hover { background:url('../img/next_s.png') no-repeat -22px top; background-size:cover; }
+.section03 .event_box .event_box_img { width:100%; height:200px; }
+.section03 .event_box .event_box_img a { display:block; float:left; width:304px; height:200px; border:1px solid #cad0d7; box-sizing:border-box; }
+.section03 .event_box .event_box_img a:last-child { float:right; }
+.section03 .event_box .event_box_img a img { width:100%; height:100%; }
+
+
+
+/*---------- section04 ----------*/
+.section04_top { width:960px; margin:0 auto; height:80px; }
+.section04_top:after { clear:both; content:''; display:block; }
+.section04_top h3 { padding:48px 0 0 0; float:left; width:50%; height:80px; box-sizing:border-box; margin-bottom:0; }
+.section04_top .section04_btn { margin-top:36px; float:right; width:193px; height:24px; }
+.section04_top .section04_btn .btn { width:56px; background:#fff; font-family:'NBGothicB'; font-size:12px; color:#d94452; padding:0; margin:0; display:block; float:left; margin-right:12px; }
+.section04_top .section04_btn .btn.best_btn_on { background:#d94452; color:#fff; }
+.section04_top .section04_btn .best_more_btn { display:block; float:right; width:56px; font-family:'NBGothicB'; text-align:center; line-height:24px; font-size:12px; color:#f5b945; padding:0; margin:0; border:1px solid #f5b945; box-sizing:border-box; height:24px; border-radius:12px; }
+.inner_section04 { width:1108px; margin:0 auto; }
+.inner_section04 .section04_list_btn { width:100%; margin:0 auto; position:relative; }
+.inner_section04 .section04_list_btn .s4_list_btn { outline:0; border:0; background:transparent; padding:0; margin:0; }
+.inner_section04 .section04_list_btn .section04_prev { position:absolute; top:95px; left:0; }
+.inner_section04 .section04_list_btn .section04_next { position:absolute; top:95px; right:0; }
+.inner_section04 .section04_best { width:960px; height:336px; overflow:hidden; margin:0 auto; position:relative; }
+.inner_section04 .section04_best ul { width:auto; position:absolute; left:0 top:0; overflow:hidden; }
+.inner_section04 .section04_best ul li { width:178px; height:336px; float:left; margin-left:18px; }
+.inner_section04 .section04_best ul li:nth-child(4n) { margin-left:17px; }
+.inner_section04 .section04_best ul li:nth-child(5n) { margin-left:17px; }
+.inner_section04 .section04_best ul li a { display:block; width:100%; height:100%; }
+.inner_section04 .section04_best ul li a:hover span { text-decoration:underline; }
+.inner_section04 .section04_best ul li img { display:block; width:178px; height:264px; border:1px solid #e4e8eb; box-sizing:border-box; margin-bottom:24px; }
+.inner_section04 .section04_best ul li .book_title { display:block; width:100%; text-align:center; height:37px; font-size:14px; font-family:'NBGothicB'; color:#424852; line-height:auto; }
+.inner_section04 .section04_best ul li .book_author { display:block; width:100%; text-align:center; font-size:12px; font-family:'NBGothicL'; color:#a9b0bb; line-height:100%; }
+.inner_section04 .section04_best ul li:first-child { margin-left:0; }
+.inner_section04 .best_monthly { display:none; }
+
+
+
+
+/*---------- section05 ----------*/
+.section05 h3 { padding:68px 0 0 0; }
+.section05 .innner_section05 { width:100%; }
+.section05 .innner_section05 ul { width:100%: }
+.section05 .innner_section05 ul li { width:168px; height:248px; float:left; margin-right:30px; position:relative; }
+.section05 .innner_section05 ul li:last-child { margin-right:0; }
+.section05 .innner_section05 ul li .section5_book_img { display:block; width:168px; height:248px; }
+.section05 .innner_section05 ul li .section5_book_img img { width:168px; height:248px; }
+.section05 .innner_section05 ul li a { display:table; position:absolute; left:0; top:0; text-align:center; z-index:1; width:168px; height:248px; background-color:rgba(0,0,0,0.45); background-image:url('../img/main_theme_bg.png'); }
+.section05 .innner_section05 ul li a:hover { background-color:rgba(0,0,0,0.75); }
+.section05 .innner_section05 ul li a span { height:212px; width:auto; vertical-align:middle; display:table-cell;font-family:'GodoM'; font-size:24px; }
+.section05 .innner_section05 ul li:nth-child(1) a span { color:#66d4f1; }
+.section05 .innner_section05 ul li:nth-child(2) a span { color:#fbd277; }
+.section05 .innner_section05 ul li:nth-child(3) a span { color:#f199ce; }
+.section05 .innner_section05 ul li:nth-child(4) a span { color:#e4e8eb; }
+.section05 .innner_section05 ul li:nth-child(5) a span { color:#b4df80; }
+
+
+/*---------- section06 ----------*/
+.section06 .innner_section06 { width:960px; margin:0 auto; }
+.section06 .innner_section06:after { clear:both; content:''; display:block; }
+.section06 .innner_section06 .section06_left { float:left; width:540px; }
+.section06 .innner_section06 .section06_left .section06_notice { width:524px; float:left; padding:16px 0; height:16px;  }
+.section06 .innner_section06 p { float:left; font-size:14px; height:16px; line-height:16px; color:#424852; font-family:'GodoM'; }
+.section06 .innner_section06 .verti_line { height:16px; width:1px; display:block; float:left; background:#cad0d7; margin:0 16px; }
+.section06 .innner_section06 .section06_left ul { float:left; height:16px; width:440px; line-height:16px; }
+.section06 .innner_section06 .section06_left ul li { display:block; text-align:left; font-family:'NBGothicL'; color:#636c77; font-size:12px; }
+.section06 .innner_section06 .section06_left ul li.hidden { display:none; }
+.section06 .innner_section06 .section06_left ul li.rollup { display:block; }
+.section06 .innner_section06 .section06_left .section06_btn { float:right; position:relative; margin-top:9px;width:16px; }
+.section06 .innner_section06 .section06_left .section06_btn .up_btn { position:absolute; top:0; left:0; display:block; outline:0; padding:0; margin:0; border:0; width:16px; height:16px; box-sizing:border-box; background:url('../img/notice_navi.png') left top no-repeat; border:1px solid #e4e8eb; z-index:1; }
+.section06 .innner_section06 .section06_left .section06_btn .up_btn:hover { border:1px solid #cad0d7; }
+.section06 .innner_section06 .section06_left .section06_btn .down_btn { position:absolute; top:15px; left:0; outline:0; padding:0; margin:0; border:0; width:16px; height:16px; box-sizing:border-box; background:url('../img/notice_navi.png') left bottom no-repeat; border:1px solid #e4e8eb; }
+.section06 .innner_section06 .section06_left .section06_btn .down_btn:hover { border:1px solid #cad0d7; z-index:2; }
+.section06 .innner_section06 .section06_right { float:right; width:320px; height:16px; padding:16px 0; }
+.section06 .innner_section06 .section06_right .section06_number { float:left; font-size:12px; font-family:'NBGothicL'; font-size:12px; color:#636c77; height:16px; line-height:16px;}
+.section06 .innner_section06 .section06_right .section06_number b { font-weight:normal; font-family:'NBGothicB'; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

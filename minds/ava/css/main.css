@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+/* character_list */
+/* 72size */
+.melina-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 0 #F4F6F8; background-size: 500% }
+.charlie-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px 0px #F4F6F8; background-size: 500% }
+.mina-72 { background: url('../imgs/avatar-72-px.png') no-repeat -144px 0px #F4F6F8; background-size: 500% }
+.jiyeon-72 { background: url('../imgs/avatar-72-px.png') no-repeat -216px 0px #F4F6F8; background-size: 500% }
+.yuri-72 { background: url('../imgs/avatar-72-px.png') no-repeat -288px 0px #F4F6F8; background-size: 500% }
+.soyeon-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -72px #F4F6F8; background-size: 500% }
+.hyesu-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -72px #F4F6F8; background-size: 500% }
+.sangjin-72 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -72px #F4F6F8; background-size: 500% }
+.jungwo-72 { background: url('../imgs/avatar-72-px.png') no-repeat -216px -72px #F4F6F8; background-size: 500% }
+.minjun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -288px -72px #F4F6F8; background-size: 500% } 
+.sunghun-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -144px #F4F6F8; background-size: 500% }
+.yeeun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -144px #F4F6F8; background-size: 500% }
+.junyoung-72 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -144px #F4F6F8; background-size: 500% }
+.yunjung-72 { background: url('../imgs/avatar-72-px.png') no-repeat -216px -144px #F4F6F8; background-size: 500% }
+.seohyun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -288px -144px #F4F6F8; background-size: 500% }
+.yejun-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -216px #F4F6F8; background-size: 500% }
+.sponge-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -216px #F4F6F8; background-size: 500% } 
+.readbooks-72 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -216px #F4F6F8; background-size: 500% } 
+.fairytale-72 { background: url('../imgs/avatar-72-px.png') no-repeat -216px -216px #F4F6F8; background-size: 500% }
+.femalegeneral-72 { background: url('../imgs/avatar-72-px.png') no-repeat -288px -216px #F4F6F8; background-size: 500% }
+.femaleannouncer-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -288px #F4F6F8; background-size: 500% }
+.suhyun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -288px #F4F6F8; background-size: 500% }
+.jkim-72 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -288px #F4F6F8; background-size: 500% }
+.yeokka-72 { background: url('../imgs/avatar-72-px.png') no-repeat -216px -288px #F4F6F8; background-size: 500% }
+.wanana-72 { background: url('../imgs/avatar-72-px.png') no-repeat -288px -288px #F4F6F8; background-size: 500% } 
+.kimdoe-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -360px #F4F6F8; background-size: 500% }
+.qquaddurup-72 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -360px #F4F6F8; background-size: 500% }
+
+/* 56size */
+.melina-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 0 #F4F6F8; background-size: 500% }
+.charlie-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px 0 #F4F6F8; background-size: 500% }
+.mina-56 { background: url('../imgs/avatar-72-px.png') no-repeat -112px 0px #F4F6F8; background-size: 500% }
+.jiyeon-56 { background: url('../imgs/avatar-72-px.png') no-repeat -168px 0px #F4F6F8; background-size: 500% }
+.yuri-56 { background: url('../imgs/avatar-72-px.png') no-repeat -224px 0px #F4F6F8; background-size: 500% }
+.soyeon-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -56px #F4F6F8; background-size: 500% }
+.hyesu-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -56px #F4F6F8; background-size: 500% }
+.sangjin-56 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -56px #F4F6F8; background-size: 500% }
+.jungwo-56 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -56px #F4F6F8; background-size: 500% } 
+.minjun-56 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -56px #F4F6F8; background-size: 500% } 
+.sunghun-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -112px #F4F6F8; background-size: 500% }
+.yeeun-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -112px #F4F6F8; background-size: 500% }
+.junyoung-56 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -112px #F4F6F8; background-size: 500% }
+.yunjung-56 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -112px #F4F6F8; background-size: 500% }
+.seohyun-56 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -112px #F4F6F8; background-size: 500% }
+.yejun-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -168px #F4F6F8; background-size: 500% } 
+.sponge-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -168px #F4F6F8; background-size: 500% } 
+.readbooks-56 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -168px #F4F6F8; background-size: 500% }
+.fairytale-56 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -168px #F4F6F8; background-size: 500% }
+.femalegeneral-56 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -168px #F4F6F8; background-size: 500% }
+.femaleannouncer-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -224px #F4F6F8; background-size: 500% } 
+.suhyun-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -224px #F4F6F8; background-size: 500% }
+.jkim-56 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -224px #F4F6F8; background-size: 500% }
+.yeokka-56 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -224px #F4F6F8; background-size: 500% }
+.wanana-56 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -224px #F4F6F8; background-size: 500% }
+.kimdoe-56 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -280px #F4F6F8; background-size: 500% }
+.qquaddurup-56 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -280px #F4F6F8; background-size: 500% }
+
+/* 36size */
+.melina-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 0 #F4F6F8; background-size: 500% } 
+.charlie-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px 0 #F4F6F8; background-size: 500% }
+.mina-36 { background: url('../imgs/avatar-72-px.png') no-repeat -72px 0px #F4F6F8; background-size: 500% } 
+.jiyeon-36 { background: url('../imgs/avatar-72-px.png') no-repeat -108px 0px #F4F6F8; background-size: 500% } 
+.yuri-36 { background: url('../imgs/avatar-72-px.png') no-repeat -144px 0px #F4F6F8; background-size: 500% }
+.soyeon-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -36px #F4F6F8; background-size: 500% }
+.hyesu-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px -36px #F4F6F8; background-size: 500% }
+.sangjin-36 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -36px #F4F6F8; background-size: 500% }
+.jungwo-36 { background: url('../imgs/avatar-72-px.png') no-repeat -108px -36px #F4F6F8; background-size: 500% }
+.minjun-36 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -36px #F4F6F8; background-size: 500% }
+.sunghun-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -72px #F4F6F8; background-size: 500% }
+.yeeun-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px -72px #F4F6F8; background-size: 500% }
+.junyoung-36 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -72px #F4F6F8; background-size: 500% }
+.yunjung-36 { background: url('../imgs/avatar-72-px.png') no-repeat -108px -72px #F4F6F8; background-size: 500% }
+.seohyun-36 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -72px #F4F6F8; background-size: 500% }
+.yejun-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -108px #F4F6F8; background-size: 500% } 
+.sponge-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px -108px #F4F6F8; background-size: 500% }
+.readbooks-36 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -108px #F4F6F8; background-size: 500% }
+.fairytale-36 { background: url('../imgs/avatar-72-px.png') no-repeat -108px -108px #F4F6F8; background-size: 500% }
+.femalegeneral-36 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -108px #F4F6F8; background-size: 500% } 
+.femaleannouncer-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -180px #F4F6F8; background-size: 500% } 
+.suhyun-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px -180px #F4F6F8; background-size: 500% } 
+.jkim-36 { background: url('../imgs/avatar-72-px.png') no-repeat -72px -144px #F4F6F8; background-size: 500% }
+.yeokka-36 { background: url('../imgs/avatar-72-px.png') no-repeat -108px -144px #F4F6F8; background-size: 500% }
+.wanana-36 { background: url('../imgs/avatar-72-px.png') no-repeat -144px -144px #F4F6F8; background-size: 500% } 
+.kimdoe-36 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -180px #F4F6F8; background-size: 500% } 
+.qquaddurup-36 { background: url('../imgs/avatar-72-px.png') no-repeat -36px -180px #F4F6F8; background-size: 500% }
+
+
+
+#character_list .charL_ul { background: #FFFFFF; white-space: nowrap; overflow-x: scroll; letter-spacing: -0.02em; height: 136px; box-sizing: border-box; padding: 0 12px; text-align: center; }
+#character_list .charL_ul .charL_list { position: relative; width: 104px; height: 104px; padding: 16px; display: inline-block; box-sizing: border-box; overflow: hidden; transition: width linear .5s; outline:none; }
+
+
+#character_list .charL_ul .charL_list>p { font-weight: 700; width: 72px; text-align: center; }
+#character_list .avatar { width: 72px; height: 72px; border-radius: 36px; position: relative; margin: 0 0 1px; }
+#character_list li .avatar_detail_info { text-align: left; position: absolute; top: 16px; left: 104px; } 
+#character_list li .avatar_detail_info>li { height: 20px; margin-bottom: 6px; letter-spacing: -0.08em; width: 154px; white-space: nowrap; overflow: hidden; } 
+#character_list li .avatar_detail_info>li:first-child { font-size: 14px; }
+#character_list li .avatar_detail_info>li:last-child { margin-bottom: 0; }
+#character_list li .avatar_detail_info>li:last-child em { color: #1BAFFD; }
+#character_list li .avatar_detail_info>li:last-child::after { display: block; content: ''; width: 58px; height: 1px; background-color: #1BAFFD; margin-top: 2px; }
+#character_list .charL_ul .charL_list .icon_bg_24 { border-radius: 12px; padding: 4px; position: absolute; bottom: 0; right: 0; }
+
+/* mini_map */
+#mini_map h3 { color: #1db6cc; margin-bottom: 16px; text-align: center; font-size: 14px; font-weight: 700; }
+#mini_map ul li { display: block; position: relative; width: 100px; }
+#mini_map ul li a { display: block; padding: 4px 24px; border: 1px solid #1db6cc; background-color: #ffffff; border-radius: 12px; margin-bottom: 25px; letter-spacing: -0.06em; box-shadow: 0 2px 6px 0 rgba(29, 182, 204, 0.16); } 
+#mini_map ul li a em { letter-spacing: -0.06em; }
+#mini_map ul li a:hover,
+#mini_map ul li a:hover em { color: #1db6cc; }
+#mini_map ul li:first-child::before { display: none; }
+#mini_map ul li::before { position: absolute; top: -19px; left: 49px; content: ''; width: 5px; height: 13px; display: block; background: center / contain url('../imgs/icon-arrow-minimap.png') no-repeat; } 
+
+/* script_list */
+#script_list>ul { width: 696px; padding-bottom: 36px; margin: 0 auto; }
+#script_list ul li ul li.conversation { background-color: #ffffff; height: 116px; padding: 16px; box-sizing: border-box; position: relative; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08); border-radius: 0 8px 8px 8px; margin-bottom: 24px; }
+#script_list ul li ul li.index { background: left / 130px url('../imgs/index-bg.png') no-repeat; box-sizing: border-box; padding: 7px 16px; height: 30px; position: relative; }
+#script_list ul li ul li.index span { padding-top: 2px; font-size: 10px; }
+#script_list ul li ul li.index span em { color: #fff; font-size: 10px; }
+#script_list ul li ul li.index .function_buttons { display: inline-block; position: absolute; right: 6px; bottom: 6px; }
+#script_list ul li ul li.index .icon_bg_24 { padding: 4px; border-radius: 12px; margin-right: 10px; }
+#script_list ul li ul li.index .icon_bg_16 { position: absolute; top: 7px; left: 16px; }
+#script_list ul li ul li .audio_player { position: absolute; left: 157px; top: 4px; }
+#script_list ul li ul li .audio_player .time_line_bg { display: inline-block; width: 280px; height: 2px; background-color: #e3e8eb; margin: 3px 12px; }
+#script_list ul li ul li .audio_player .time_line { width: 0%; height: 2px; background-color: #1db6cc; }
+#script_list ul li ul li .audio_player>span { color: #616c78; display: inline-block; }
+#script_list ul li ul li.index>span { color: #ffffff; position: absolute; top: 8px; left: 44px; }
+#script_list ul li ul li textarea { width: 576px; height: 84px; padding: 12px; box-sizing: border-box; resize: none; border-radius: 4px; border: 1px solid #e3ebe3; position: absolute; top: 16px; right: 16px; font-size: 12px; font-weight: 400; letter-spacing: -0.06em; line-height: 20px; color: #414853; }
+#script_list ul li ul li div.avatar { width: 56px; height: 56px; border-radius: 28px; margin: 0 0 8px 8px; }
+#script_list ul li ul li.script_input_area { display: inline-block; }
+#script_list ul li ul li.conversation button { width: 72px; height: 20px; background-color: #ffffff; cursor:pointer; }
+#script_list ul li ul li.conversation button span { font-size: 10px; font-weight: 700; letter-spacing: -0.07em; }
+#script_list ul li ul li.index .bg_purple:hover { box-shadow: 0 2px 6px 0 rgba(93, 31, 255, .6); }
+#script_list ul li ul li.index .bg_blue:hover { box-shadow: 0 2px 6px 0 rgba(9, 100, 255, .6); }
+#script_list ul li ul li.index .bg_sky_blue:hover { box-shadow: 0 2px 6px 0 rgba(27, 175, 253, .6); }
+#script_list ul li .add { display: block; content: ''; width: 100%; height: 48px; background: center / 36px url('../imgs/ico-add-36px.png') no-repeat #fff; border-radius: 8px; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08); cursor: pointer; }
+.script_all_player { width: 139px; height: 89px; background: center / contain url('../imgs/img-cloud.png') no-repeat; position: fixed; bottom: 12px; right: 12px; z-index:10; }
+.script_all_player i::before { position: absolute; top: 42px; left: 24px; }
+.script_all_player span { font-size: 14px; font-weight: 700; color: #fff; position: absolute; top: 45px; left: 52px; }
+#script_list textarea.warning { border-color: #c94f56; }
+#script_list .function_buttons i.tooltip { position: relative; } 
+#script_list .function_buttons i.tooltip .tooltip_text { visibility: hidden; position: absolute; top: 120%; left: -70%; z-index: 1; border-radius: 4px; background-color: #C9D0D8; padding: 4px 8px; font-style: normal; font-size: 12px; }
+#script_list .function_buttons i.tooltip:hover .tooltip_text { visibility: visible; color: #fff; }
+
+
+
+
+/* 퍼블리싱 별도 추가 내용 */
+/* #script_list .add { visibility: hidden; } */ /* edit 20210325 */
+.testAdd { visibility: visible; content: ''; width: 100%; height: 48px; background: center / 36px url('~@/assets/images/ico-add-36px.png') no-repeat #fff; border-radius: 8px; box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08); cursor: pointer; }
+.ghost { opacity: 0.5; background: #c8ebfb; }
+
+
+
+
+
+@media (min-width: 1081px) { 
+    #character_list .charL_ul::-webkit-scrollbar { height: 28px; }
+    #character_list .charL_ul::-webkit-scrollbar-thumb { background-color: #C9D0D8; border-radius: 30px; background-clip: padding-box; border: 12px solid transparent; }
+    #character_list .charL_ul::-webkit-scrollbar-track { background-color: #FFFFFF; border-radius: 30px; box-shadow: inset 0px 0px 5px white; }
+
+    #character_list .charL_ul .charL_list:hover { width: 276px; border: 1px solid #EAEAEA; border-radius: 8px; box-sizing: border-box; transition: width linear .5s; -webkit-transition:width linear .5s; -moz-transition:width linear .5s; -ms-transition:width linear .5s; -o-transition:width linear .5s; -webkit-border-radius: 8px; -moz-border-radius: 8px; -ms-border-radius: 8px; -o-border-radius: 8px; }
+    #character_list .charL_ul .charL_list:hover p { display:none; }    
+
+    
+    #script_list ul li ul li.conversation button { border-radius: 10px; border: 1px solid #cad0d7; padding-bottom:2px; }
+    #script_list ul li ul li.conversation button:hover { color: #ffffff; background-color: #1db6cc; border: none; }
+    #script_list ul li ul li.conversation button:hover span { display: none; }
+    #script_list ul li ul li.conversation button:hover::after { text-indent: 0; content: '화자 변경'; font-size: 10px; font-weight: 700; }
+}
+
+@media (max-width: 1080px) { 
+    #script_list { box-sizing:border-box; grid-row:none; grid-column:none; padding-bottom:0; height:calc(100vh - 196px); }
+    .script_all_player { cursor:pointer; width: auto; height:100%; background:transparent; position:absolute; bottom: auto; right:0; top:0; padding:0 16px; right:0; }
+    .script_all_player i { display: none; }
+    .script_all_player i::before { display: none; }
+    .script_all_player span { font-size:12px; color: #20b6cc; position: static; top: auto; left: auto; }
+    
+    #character_list { padding:12px 0; grid-area:none; overflow: visible; }
+    #character_list .char_all_btn { background:#414853; height:32px; display:block; padding:0 12px 0 16px; border-radius:20px; -webkit-border-radius:20px; -moz-border-radius:20px; -ms-border-radius:20px; -o-border-radius:20px; display:flex !important; justify-content: center; align-items: center; position:absolute; left:50%; bottom:-22px; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); z-index:20; }
+    #character_list .char_all_btn span { font-size: 12px; font-weight:700; color:#fff; }
+    #character_list .char_all_btn i:before { font-size:16px; margin:0 0 0 4px; }
+    #character_list .charL_ul { height:auto; overflow-y:hidden; width:100%;  -ms-overflow-style: none;  /* IE and Edge */ scrollbar-width: none;  /* Firefox */ }
+    #character_list .charL_ul::-webkit-scrollbar { display:none; height: 8px; }
+    #character_list .charL_ul::-webkit-scrollbar-thumb { background-color: #C9D0D8; border-radius: 10px; background-clip: padding-box; border:2px solid transparent; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; }
+    #character_list .charL_ul::-webkit-scrollbar-track { background-color: #FFFFFF; border-radius: 10px; box-shadow: inset 0px 0px 5px white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; }
+
+    #character_list .charL_ul .charL_list  { width:80px; height:88px; padding:16px 12px; float:left; position:relative; outline:none; box-sizing:border-box; }
+    #character_list .avatar { width:56px; height:56px; border-radius:28px; -webkit-border-radius:28px; -moz-border-radius:28px; -ms-border-radius:28px; -o-border-radius:28px; margin:0; position:relative; margin:0 auto; }
+    #character_list .charL_ul .charL_list  .icon_bg_24 { position:absolute; background:transparent; width:100%; padding:0; bottom:-16px; left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); }
+    #character_list .charL_ul .charL_list  .icon-ico-speaker-16px { display:none; }
+    #character_list .avatar .speaker_txt { display: flex !important; justify-content: center; align-items: center; box-sizing:border-box; height: 24px; width: 100%; background: #fff; border-radius: 14px; border: 1px solid #20b6cc; color: #20b6cc; font-weight: 700; }
+    #character_list .charL_ul .charL_list >p { position:absolute; left:0; top:0; font-size:10px; width:100%; font-weight:700; }
+    #character_list .charL_ul .charL_list .avatar_detail_info { display:none; }
+    #character_list .charL_next { position:absolute; right:6px; top:50%; transform:translateY(-50%); cursor:pointer; -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); -ms-transform:translateY(-50%); -o-transform:translateY(-50%); }
+    #character_list .charL_next i { display:block; }
+    #character_list .charL_next i::before { font-size:24px; color:#414853; margin:0; }
+    
+    #character_list .melina-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 0 #F4F6F8; background-size: 500% }
+    #character_list .charlie-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px 0 #F4F6F8; background-size: 500% }
+    #character_list .mina-72 { background: url('../imgs/avatar-72-px.png') no-repeat -112px 0px #F4F6F8; background-size: 500% }
+    #character_list .jiyeon-72 { background: url('../imgs/avatar-72-px.png') no-repeat -168px 0px #F4F6F8; background-size: 500% }
+    #character_list .yuri-72 { background: url('../imgs/avatar-72-px.png') no-repeat -224px 0px #F4F6F8; background-size: 500% }
+    #character_list .soyeon-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -56px #F4F6F8; background-size: 500% }
+    #character_list .hyesu-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -56px #F4F6F8; background-size: 500% }
+    #character_list .sangjin-72 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -56px #F4F6F8; background-size: 500% }
+    #character_list .jungwo-72 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -56px #F4F6F8; background-size: 500% } 
+    #character_list .minjun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -56px #F4F6F8; background-size: 500% } 
+    #character_list .sunghun-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -112px #F4F6F8; background-size: 500% }
+    #character_list .yeeun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -112px #F4F6F8; background-size: 500% }
+    #character_list .junyoung-72 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -112px #F4F6F8; background-size: 500% }
+    #character_list .yunjung-72 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -112px #F4F6F8; background-size: 500% }
+    #character_list .seohyun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -112px #F4F6F8; background-size: 500% }
+    #character_list .yejun-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -168px #F4F6F8; background-size: 500% } 
+    #character_list .sponge-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -168px #F4F6F8; background-size: 500% } 
+    #character_list .readbooks-72 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -168px #F4F6F8; background-size: 500% }
+    #character_list .fairytale-72 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -168px #F4F6F8; background-size: 500% }
+    #character_list .femalegeneral-72 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -168px #F4F6F8; background-size: 500% }
+    #character_list .femaleannouncer-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -224px #F4F6F8; background-size: 500% } 
+    #character_list .suhyun-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -224px #F4F6F8; background-size: 500% }
+    #character_list .jkim-72 { background: url('../imgs/avatar-72-px.png') no-repeat -112px -224px #F4F6F8; background-size: 500% }
+    #character_list .yeokka-72 { background: url('../imgs/avatar-72-px.png') no-repeat -168px -224px #F4F6F8; background-size: 500% }
+    #character_list .wanana-72 { background: url('../imgs/avatar-72-px.png') no-repeat -224px -224px #F4F6F8; background-size: 500% }
+    #character_list .kimdoe-72 { background: url('../imgs/avatar-72-px.png') no-repeat 0 -280px #F4F6F8; background-size: 500% }
+    #character_list .qquaddurup-72 { background: url('../imgs/avatar-72-px.png') no-repeat -56px -280px #F4F6F8; background-size: 500% }
+
+    #script_list>ul { padding-bottom:0; }
+    #script_list>ul>li:last-child .add { visibility:visible; position:fixed; z-index:102; right:16px; bottom:16px; width:36px; height:36px; border-radius:50%; -webkit-border-radius:50%; -moz-border-radius:50%; -ms-border-radius:50%; -o-border-radius:50%; background:#20b6cc; }
+    #script_list>ul>li:last-child .add:before { font-family: "fontello"; font-style: normal; font-weight: normal; content: '\e800'; color:#fff; font-size: 24px; position: absolute; left: 50%; transform: translate(-50%, -50%); top: 50%; }
+    #script_list ul li ul li div.avatar { margin-bottom:4px; }
+    
+    #script_list ul li ul li.index { background:left / 88px 28px url('../imgs/index-bg.png') no-repeat; height:28px; }
+    #script_list ul li ul li.index .icon-ico-handle-24px { display:none; }
+    #script_list ul li ul li.index span { font-size:10px; left:16px; }
+    #script_list ul li ul li.index .audio_player span { font-size:12px; left:0; }
+    #script_list ul li ul li.index .function_buttons { bottom:4px; right:0; }
+    #script_list ul li ul li.index .icon_bg_24 { margin-right:8px; } 
+    #script_list ul li ul li.index .icon_bg_24:last-child { margin:0; }
+
+    #script_list ul li ul li.conversation .cnv_avator { width:72px; cursor:pointer; outline:none; }
+    #script_list ul li ul li textarea { padding:8px 12px; line-height:16px; }
+}
+
+@media (max-width: 767px) { 
+    #script_list>ul { width:100%; }
+    
+    #script_list ul li ul li textarea { width:calc(100% - 116px); }
+    #script_list ul li ul li .audio_player { left:50%; transform:translateX(-50%); -webkit-transform:translateX(-50%); -moz-transform:translateX(-50%); -ms-transform:translateX(-50%); -o-transform:translateX(-50%); }
+    #script_list ul li ul li .audio_player .end_time { position:relative; padding-left:6px; }
+    #script_list ul li ul li .audio_player .end_time::before { position:absolute; content:'/'; display:block; left:0; top:2px; font-size:12px; }
+    #script_list ul li ul li .audio_player .time_line_bg { display: none; }
+}
+
+
+

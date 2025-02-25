@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/order_list.css">
+  	<title>order list</title>    
+</head>
+<body id="orderL" data-role="page" class="orderL_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<div class="orderL_tab">
+				<h2>주문/취소 내역 조회</h2>
+			</div>
+
+			<div class="inner_content">
+				
+				<section class="orderL_section01">
+					<div class="orderL_section01_top">
+						<button class="period_btn">1주일</button>
+						<button class="period_btn period_btn_on">1개월</button>
+						<button class="period_btn">3개월</button>
+						<button class="period_btn">6개월</button>
+						<button class="period_btn">5월</button>
+						<button class="period_btn">4월</button>
+					</div>
+					<div class="orderL_section01_bottom">
+						<input type="text" placeholder="상품명을 입력하세요.">
+						<div class="orderL_check_btn_box">
+							<input type="button" value="조회하기" class="orderL_check_btn">
+						</div>
+					</div>
+					<p class="orderL_section01_txt">결제정보를 보시려면 PC웹을 통해 확인하시기 바랍니다.</p>
+				</section>
+
+				<section class="orderL_section02">
+
+					<div class="orderL_check_list_box	">			
+						<div class="orderL_number_box">
+							<div class="orderL_nb_left">
+								<p>주문번호 <span class="orderL_number">1234567890</span> <span class="orderL_date">(2018.05.03)</span></p>
+							</div>
+							<div class="orderL_nb_right">
+								<input type="button" value="주문취소" class="orderL_number_btn" />
+							</div>
+						</div>
+						<table>
+							<tr>
+								<td>
+									<p class="book_img">
+										<img src="asset/img/detail_bookimg.jpg" alt="">
+									</p>
+								</td>
+								<td>
+									<h3 class="book_name">곰돌이 푸, 서두르지 않아도 괜찮아</h3>
+									<p class="order_count">수량 <span>2</span></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="book_img">
+										<img src="asset/img/cart_01.jpg" alt="">
+									</p>
+								</td>
+								<td>
+									<h3 class="book_name">거래의 기술</h3>
+									<p class="order_count">수량 <span>1</span></p>
+								</td>
+							</tr>							
+						</table>	
+						<div class="orderL_total_box">
+							<div class="cart_select_pick_box">
+								<p class="only_txt">주문 수량</p> 
+								<p class="cart_select_pick">3개</p>
+							</div>
+							<div class="cart_total_price_box">
+								<p class="only_txt">주문금액</p>
+								<p class="cart_total_payment"><span>44,640</span>원</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="orderL_check_list_box	">		
+						<div class="orderL_number_box">
+							<div class="orderL_nb_left">
+								<p>주문번호 <span class="orderL_number">1234567890</span> <span class="orderL_date">(2018.04.20)</span></p>
+							</div>
+							<div class="orderL_nb_right">
+								<input type="button" value="수령완료" class="orderL_number_btn" />
+							</div>
+						</div>
+						<table>
+							<tr>
+								<td>
+									<p class="book_img">
+										<img src="asset/img/order_list_01.jpg" alt="">
+									</p>
+								</td>
+								<td>
+									<h3 class="book_name">워너원 포토에세이 : 우리기억 잃어버리지 않게</h3>
+									<p class="order_count">수량 <span>1</span></p>
+								</td>
+							</tr>		
+						</table>	
+						<div class="orderL_total_box">
+							<div class="cart_select_pick_box">
+								<p class="only_txt">주문 수량</p> 
+								<p class="cart_select_pick">3개</p>
+							</div>
+							<div class="cart_total_price_box">
+								<p class="only_txt">주문금액</p>
+								<p class="cart_total_payment"><span>11,700</span>원</p>
+							</div>
+						</div>
+					</div>
+
+				</section>
+
+			</div>
+		</div>
+		
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

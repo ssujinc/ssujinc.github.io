@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/event.css">
+	<title>event</title>    
+</head>
+<body id="event" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content">
+			<ul class="tab tab_event">
+				<li class="tab_btn" onclick="tabover('event', 0)"><a href="javascript:void()">진행중 이벤트</a></li>
+				<li class="tab_btn" onclick="tabover('event', 1)"><a href="javascript:void()">종료된 이벤트</a></li>
+	        </ul>	
+			<div class="inner_content">
+				<div id="ongoing" class="event_tabcontent tabcnt_event0">
+					<ul>
+						<li>
+							<a href="event_view.html">
+								<img src="asset/img/m_event_01.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a href="event_view.html">
+								<img src="asset/img/m_event_02.jpg" alt="">
+							</a>
+						</li>		
+						<li>
+							<a href="event_view.html">
+								<img src="asset/img/m_event_01.jpg" alt="">
+							</a>
+						</li>	
+						<li></li>
+					</ul>					
+				</div>
+
+				<div id="exiting" class="event_tabcontent tabcnt_event1">
+					<ul>
+						<li>
+							<a href="">
+								<img src="asset/img/m_event_01.jpg" alt="">
+								<span class="dimmed">
+									<span>
+										<span></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/m_event_02.jpg" alt="">
+								<span class="dimmed">
+									<span>
+										<span></span>
+									</span>
+								</span>
+							</a>
+						</li>		
+						<li>
+							<a href="">
+								<img src="asset/img/m_event_01.jpg" alt="">
+								<span class="dimmed">
+									<span>
+										<span></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/m_event_02.jpg" alt="">
+								<span class="dimmed">
+									<span>
+										<span></span>
+									</span>
+								</span>
+							</a>
+						</li>				
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

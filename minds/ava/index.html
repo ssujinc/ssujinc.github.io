@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>TTS Builder_로그인</title>
+
+    <!-- sns share -->
+    <meta property="og:title" content="AVA - AI Virtual Avatar" />
+    <meta property="og:image" content="/imgs/share-img.png" />
+    <!-- <meta property="og:description" content=""> -->
+    <!-- <meta name="description" content=""> -->
+    <link rel="apple-touch-icon" href="./imgs/iphone-touch-img.png" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/sub.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div class="container">
+            <div class="login_wrap">
+                <div class="login_header">
+                    <div class="sign_in_left">
+                        <h1 class="logo">
+                            <a href="./index.html"></a>
+                        </h1>
+                        <p>Welcome,</p>
+                    </div>
+                    <div class="sign_up_area pc">
+                        <p class="txt">아직 회원이 아니신가요?</p>
+                        <button class="button_submit" onclick="location.href ='./html/sign_up.html'">
+                            <span>Sign up</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="video">
+                    <video width="320px" height="180px" autoplay loop controls muted>
+                        <source src="./video/promotion_video.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="sign_in">
+                    <form action="./html/main.html">
+                        <fieldset>
+                            <legend>sign in</legend>
+                            <label for="email" class="error">E Mail<span>(ID)</span></label>
+                            <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요." />
+                            <p>이메일 주소가 형식에 맞지 않습니다.</p>
+
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." />
+
+                            <input type="checkbox" id="always_login" name="always_login" />
+                            <label for="always_login">로그인상태 유지</label>
+
+                            <a href="./html/find_password_send_email.html" target="_blank" class="forgot_password"
+                                >비밀번호를 잊으셨나요?</a
+                            >
+
+                            <button type="submit" value="Log in" class="button_submit">
+                                <span class="txt">Log in</span>
+                                <div class="icon_bg_68">
+                                    <i class="icon-ico-arrow-login-24px"></i>
+                                </div>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="sign_up_area mobile">
+                    <p class="txt">아직 회원이 아니신가요?</p>
+                    <button class="button_submit" onclick="location.href ='./html/sign_up.html'">
+                        <span>Sign up</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_area">
+                <ul class="ft_link_ul">
+                    <li><a href="javascript:void(0)">회사소개</a></li>
+                    <li><a href="javascript:void(0)">이용약관</a></li>
+                    <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                </ul>
+                <div class="ft_ul_area">
+                    <div class="ft_btm_top">
+                        <ul class="ft_cnt_ul">
+                            <li class="ft_fl">대표 유태준</li>
+                            <li class="ft_fl">통신판매업 신고번호 2019-대전유성-0094</li>
+                        </ul>
+                        <ul class="ft_block_ul">
+                            <li><address>경기도 성남시 분당구 대왕판교로 664번길 49 6층</address></li>
+                            <li>고객센터 <em>1661-3222</em></li>
+                        </ul>
+                    </div>
+                    <ul class="ft_copy_ul">
+                        <li><em>&copy;Minds Lab.</em></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

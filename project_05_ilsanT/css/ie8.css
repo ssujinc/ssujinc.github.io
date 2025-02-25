@@ -1,0 +1,55 @@
+﻿@font-face {
+ font-family: 'NanumSquare';
+ font-style: normal;
+ font-weight: 300;
+ src: url(fonts/NanumSquareL.eot);
+ src: url(fonts/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+      url(fonts/NanumSquareL.woff) format('woff'),
+      url(fonts/NanumSquareL.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-style: normal;
+ font-weight: 400;
+ src: url(fonts/NanumSquareR.eot);
+ src: url(fonts/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(fonts/NanumSquareR.woff) format('woff'),
+      url(fonts/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+ font-family: 'NanumSquare';
+ font-style: normal;
+ font-weight: 700;
+ src: url(fonts/NanumSquareB.eot);
+ src: url(fonts/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+      url(fonts/NanumSquareB.woff) format('woff'),
+      url(fonts/NanumSquareB.ttf) format('truetype');
+}
+
+body{font-family:나눔스퀘어,"NanumSquare", sans-serif; }
+
+* {letter-spacing:0; margin:0; padding:0; }
+
+input[type*="radio"] { margin-top:-3px; }
+.input_radio input[type*="radio"] { display:inline; }
+.input_radio label { padding-left:0px; }
+.input_radio label:after { display:none; }
+
+/*--------------------- caution ---------------------*/
+.caution {width:960px; margin:0 auto; background:url(../img/caution_icon01.gif);  background-position:15px 0; background-repeat:no-repeat; margin-top:100px; }
+.caution p.top {padding-left:240px; font-size:26px; line-height:38px; color:#272727; font-weight:400;}
+.caution p.top span {font-weight:700;}
+.caution p.txt {padding-left:240px; font-size:18px; color:#666666; line-height:26px; margin-top:20px;}
+.caution ul {margin-top:24px;}
+.caution ul li {font-size:16px; line-height:26px; font-weight:400; color:#666666; padding-left:15px; background:url(../img/caution_icon05.gif) 0 13px no-repeat; list-style:none; }
+.caution .btnWrap {overflow:hidden;}
+.caution .btnWrap p {font-size:18px; color:#272727; line-height:1; margin-top:35px;}
+.caution .btnWrap span {display:inline-block; float:left; border:1px solid #ccc; font-size:16px; color:#272727; width:318px; height:53px; line-height:53px; margin-top:25px;}
+.caution .btnWrap a {display:inline-block; float:left; padding-left:43px; padding-right:25px; color:#272727; letter-spacing:-0.5px; background:url(../img/caution_icon04.gif); background-size:16px; background-position:right; background-repeat:no-repeat; }
+.caution .btnWrap span.v01 {background:url(../img/caution_icon02.gif); background-position:8px center; background-repeat:no-repeat; }
+.caution .btnWrap span.v02 {width:248px; margin-left:22px; background:url(../img/caution_icon03.gif); background-position:10% center; background-repeat:no-repeat;  }
+.caution .btnWrap span.v02 a {padding-left:73px;}
+.caution .bottom {margin-top:30px; display:block; width:100%; font-size:16px; color:#272727; line-height:24px; font-weight:400; }
+.caution .bottom span {color:#009dca }

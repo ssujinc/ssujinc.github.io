@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+  <title>Event</title>    
+</head>
+<body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' ) ;
+    ?>
+
+	<section class="path">
+	    <p class="path_home">홈</p>    
+	    <p class="no_path_box"><a href="">이벤트</a></p>
+	</section>
+	<section class="event_section01">
+        <div class="event_inner_section01">
+            <h2><span class="red-color">HYGGE BOOKS</span> 이벤트</h2>
+        </div>
+	</section>
+	<section class="event_section02">
+	    <div class="event_inner_section02">
+            <ul class="tab tab_event">
+	            <li class="tab_btn event_tab_btn" onclick="tabover('event', 0)"><a>주간</a></li>
+	            <li class="tab_btn event_tab_btn"  onclick="tabover('event', 1)"><a>월간</a></li>
+	        </ul>
+	       
+	        <div id="ongoing" class="event_tabcontent tabcnt_event0">
+                <ul>
+                    <li><a href="event_view.html"><img src="asset/img/event_01.jpg" alt=""></a></li>
+                    <li><a href="event_view.html"><img src="asset/img/event_02.jpg" alt=""></a></li>
+                    <li><a href="event_view.html"><img src="asset/img/event_01.jpg" alt=""></a></li>
+                    <li><a href="event_view.html"><img src="asset/img/event_02.jpg" alt=""></a></li>
+                </ul>
+            </div>     
+            <div id="exiting" class="event_tabcontent tabcnt_event1">
+                <ul>
+                    <li>
+                        <a href="javascript:void()"><img src="asset/img/event_01.jpg" alt=""></a>
+                        <div class="dimmed">
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void()"><img src="asset/img/event_02.jpg" alt=""></a>
+                        <div class="dimmed">
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void()"><img src="asset/img/event_01.jpg" alt=""></a>
+                        <div class="dimmed">
+                            <div></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void()"><img src="asset/img/event_02.jpg" alt=""></a>
+                        <div class="dimmed">
+                            <div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+	    </div>
+	</section>
+	
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+</body>
+</html>

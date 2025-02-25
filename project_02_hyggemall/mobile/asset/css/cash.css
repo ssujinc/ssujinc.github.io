@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+#wrap { width:100%; position:relative; overflow:hidden; }
+#wrap .ui-content { border-width:0; overflow:visible; overflow-x:hidden; padding:0; }
+#wrap .content { background:#fff; } 
+
+#wrap .inner_content { padding:0 24px 16px; width:100%; height:auto; box-sizing:border-box; } 
+
+
+.cash_tabcontent { width:100%; background:#fff; box-sizing:border-box; } 
+
+
+
+
+/* -----------------------------------------------
+ charging 
+----------------------------------------------- */
+
+/* charging_section01 */
+.charging_section01 { width:100%; height:auto; text-align:center; }
+.charging_section01 p { width:100%; padding:32px 0 24px; text-align:center; color:#636c77; font-family:'NBGothicL'; font-size:14px; line-height:100%; }
+/* cash_table_box */
+.charging_section01 .cash_table_box { width:100%; height:auto; margin-bottom:24px; }
+.charging_section01 .cash_table_box .table_th { width:100%; height:43px; box-sizing:border-box; border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.charging_section01 .cash_table_box .table_th ul { width:100%; height:100%; }
+.charging_section01 .cash_table_box .table_th ul li { font-family:'GodoM'; font-size:14px; float:left; text-align:center; height:100%; line-height:43px; color:#636c77; box-sizing:border-box; width:33.3%; }
+.charging_section01 .cash_table_box .table_th ul li:nth-child(2) { color:#e8553e; }
+
+
+/* table_tr */
+.charging_section01 .cash_table { cursor:pointer; }
+.charging_section01 .cash_table:last-child { border-bottom:1px solid #424852; }
+.charging_section01 .table_tr { width:100%; height:37px; box-sizing:border-box; border-bottom:1px solid #cad0d7; }
+.charging_section01 .table_tr ul { width:100%; height:100%; box-sizing:border-box; }
+.charging_section01 .table_tr ul li { float:left; line-height:36px; box-sizing:border-box; font-size:12px; }
+.charging_section01 .table_tr ul li:nth-child(1) { padding-left:6.2%; color:#636c77; font-family:'NBGothicB'; width:33.4%; }
+.charging_section01 .table_tr ul li:nth-child(2) { color:#e8553e; font-family:'NBGothicL'; text-align:center; font-size:10px; width:33.3%; }
+.charging_section01 .table_tr ul li:nth-child(3) { font-family:'NBGothicB'; color:#424852; text-align:right; padding-right:6.2%; width:33.3%; }
+.charging_section01 .table_tr_on { width:100%; height:37px; box-sizing:border-box; border-bottom:1px solid #cad0d7; }
+.charging_section01 .table_tr_on ul { width:100%; height:100%; box-sizing:border-box; background:#fef5e3; }
+.charging_section01 .table_tr_on ul li { float:left; line-height:36px; box-sizing:border-box; font-size:12px; }
+.charging_section01 .table_tr_on ul li:nth-child(1) { padding-left:6.2%; color:#636c77; font-family:'NBGothicB'; width:33.4%; }
+.charging_section01 .table_tr_on ul li:nth-child(2) { color:#e8553e; font-family:'NBGothicL'; text-align:center; font-size:10px; width:33.3%; }
+.charging_section01 .table_tr_on ul li:nth-child(3) { font-family:'NBGothicB'; color:#424852; text-align:right; padding-right:6.2%; width:33.3%; }
+/* direct_write_input_box */
+.charging_section01 .table_tr .direct_write_input_box {width:61%; height:24px; box-sizing:border-box; background:#e4e8eb; border:1px solid #cad0d7; font-family:'NBGothicB'; font-size:14px; color:#636c77; padding-left:5px; pointer-events:none; float:left; margin-top:6px; }
+.charging_section01 .table_tr .direct_write_input_box .ui-input-text { width:100%; height:100%; background:#e4e8eb; border-radius:0; box-shadow:none; text-shadow:none; border:0; margin:0; padding:0; } 
+.charging_section01 .table_tr_on .direct_write_input_box { width:61%; height:24px; box-sizing:border-box; background:#fff; border:1px solid #cad0d7; font-family:'NBGothicB'; font-size:14px; color:#636c77; padding-left:5px; float:left; margin-top:6px; }
+.charging_section01 .table_tr_on .direct_write_input_box .ui-input-text { width:100%; height:100%; border-radius:0; box-shadow:none; text-shadow:none; border:0; margin:0; padding:0; } 
+.charging_section01 .table_tr .ui-input-text .direct_write_input { color:#a9b0bb; font-size:12px; font-family:'NBGothicL'; padding:0; vertical-align:middle; margin:0; min-height:0; height:100%; } 
+.charging_section01 .table_tr_on .ui-input-text .direct_write_input { color:#636c77; font-size:12px; font-family:'NBGothicR'; padding:0; vertical-align:middle; margin:0; min-height:0; height:100%; } 
+.charging_section01 .direct_write_input_box_span { height:36px; box-sizing:border-box; padding-top:2px; float:left; display:block; line-height:36px; }
+
+
+/* cash_bottom_box */
+.charging_section01 .cash_bottom_box { width:100%; height:auto; border-top:2px solid #424852; border-bottom:2px solid #424852; background:#f4f6f8; padding:12px 0; }
+.charging_section01 .cash_bottom_box:after { clear:both; content:''; display:block; }
+.charging_section01 .cash_bottom_box>div .displaytable { display:table; vertical-align:middle; }
+.charging_section01 .cash_bottom_box>div .displaytablecell { display:table-cell; vertical-align:middle; text-align:center; }
+.charging_section01 .cash_bottom_box .cash_bottom_first { width:34%; float:left; border-right:1px solid #e4e8eb; box-sizing:border-box; }
+.charging_section01 .cash_bottom_box .cash_bottom_first h4 { display:inline-block; color:#424852; font-size:12px; font-family:'NBGothicB'; font-weight:normal; line-height:inherit; margin-bottom:18px; }
+.charging_section01 .cash_bottom_box .cash_bottom_first h2 { display:inline-block; color:#424852; font-size:14px; font-family:'GodoM'; font-weight:normal; line-height:inherit; }
+.charging_section01 .cash_bottom_box .cash_bottom_first h2 span { font-size:18px; }
+.charging_section01 .cash_bottom_box .cash_bottom_second { width:66%; float:right; padding:0 6.2%; box-sizing:border-box; }
+.charging_section01 .cash_bottom_box .cash_bottom_second>div { width:100%; height:auto; margin-bottom:12px; }
+.charging_section01 .cash_bottom_box .cash_bottom_second>div:last-child { margin-bottom:0; }
+.charging_section01 .cash_bottom_box .cash_bottom_second>div:after { clear:both; display:block; content:''; }
+.charging_section01 .cash_bottom_box .cash_bottom_second div p { color:#636c77; font-size:14px; font-family:'NBGothicL'; padding:0; text-shadow:none; }
+.charging_section01 .cash_bottom_box .cash_bottom_second div .cbs_left_txt { float:left; width:50%; text-align:left; } 
+.charging_section01 .cash_bottom_box .cash_bottom_second div .cbs_right_txt { float:right; width:50%; text-align:right; } 
+ 
+
+
+/* charging_section02 */
+.charging_section02 { width:100%; height:auto; margin-top:48px; }
+.charging_section02 h3 { height:40px; line-height:40px; font-size:16px; font-weight:normal; font-family:'GodoM'; color:#424852; }
+.charging_section02 .charging_inner_section02 { border-top:2px solid #424852; border-bottom:2px solid #424852; width:100%; padding:0 24px 12px; box-sizing:border-box; height:auto; }
+.charging_section02 .charging_inner_section02 .charging_section02_box { width:100%; height:32px; margin-top:12px; }
+.charging_section02 .charging_inner_section02 .charing_left_txt { width:34%; float:left; font-family:'NBGothicB'; color:#424852; font-size:14px; line-height:32px; }
+.charging_section02 .charging_inner_section02 .charing_right_box_cnt { width:66%; height:100%; float:right; font-family:'NBGothicL'; color:#424852; font-size:14px; }
+.charging_section02 .charging_inner_section02 .order_use_cash_box .order_txt_box { float:left; width:104px; height:32px; border-bottom:1px solid #cad0d7; box-sizing:border-box;  }
+.charging_section02 .charging_inner_section02 .order_use_cash_box .ui-input-text { margin:0; width:66px; float:left; text-align:right; border:0; padding:0; box-shadow:none; text-shadow:none; border-radius:0; height:31px; }
+.charging_section02 .charging_inner_section02 .order_use_cash_box .ui-input-text input { color:#424852; text-align:right; font-size:14px; font-family:'NBGothicR'; padding:0; vertical-align:middle; height:100%; }
+.charging_section02 .charging_inner_section02 .order_use_cash_box .order_txt_box span { float:right; line-height:32px; }
+.charging_section02 .charging_inner_section02 .order_use_cash_box .charing_right_box_cnt p { margin-left:10px; float:left; line-height:32px; font-size:14px; font-family:'NBGothicL'; color:#d94452;  }
+
+
+
+.charging_section02 .charging_inner_section02 .order_pay_method .charing_right_box_cnt button { width:48%; height:26px; padding:0; margin:0; background:#fff; border:1px solid #e4e8eb; color:#a9b0bb; font-family:'NBGothicR'; font-size:14px; vertical-align:middle; text-align:center; line-height:26px; margin-top:2px; box-shadow:none; text-shadow:none; float:left; border-radius:0; font-weight:normal; }
+.charging_section02 .charging_inner_section02 .order_pay_method .charing_right_box_cnt .cell_phone { float:right; }
+.charging_section02 .charging_inner_section02 .order_pay_method .charing_right_box_cnt .pay_method_on { border:1px solid #636c77; color:#424852; }
+
+
+
+/* pay_creditcard .ui-select  */
+.charging_section02 .charging_inner_section02 .pay_creditcard { display:block; }
+.pay_creditcard .ui-select { padding:0; margin:3px 0 0 0; } 
+.pay_creditcard .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 12px !important; } 
+.pay_creditcard .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:12px !important; box-sizing:border-box; }
+.ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.pay_creditcard .ui-btn-icon-right:after { right:9px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:11px; }
+.ui-select .ui-btn>span:not(.ui-li-count) { text-align:left !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; line-height:100% !important; height:26px !important; line-height:26px !important; }
+
+
+/* pay_creditcard .ui-radio */
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio { margin:0; width:48%; float:left; margin-top:7px; height:18px; position:relative; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio:last-child { float:right; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn { border:0; margin:0; padding:0; background:transparent; border-radius:0; padding-left:30px; box-sizing:border-box; font-size:14px; color:#424852; font-family:'NBGothicL'; font-weight:normal; text-shadow:none; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio input { display:none; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio-off .card_checkmark { position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#fff; border-radius:50%; top:4px; left:4px; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio-on .card_checkmark {  position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#424852; border-radius:50%; top:4px; left:4px; z-index:1;  }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn-icon-left:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn.ui-radio-on.ui-btn-a:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+
+
+/* pay_cellphone */
+.charging_section02 .charging_inner_section02 .pay_cellphone { display:none; } 
+.pay_cellphone .ui-select { width:25%; padding:0; margin:3px 0 0 0; max-width:70px; float:left; } 
+.pay_cellphone .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 0 !important; } 
+.pay_cellphone .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:8px !important; box-sizing:border-box; }
+.pay_cellphone .ui-btn-icon-right:after { right:9px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:11px; }
+.ui-select .ui-btn>span:not(.ui-li-count) { text-align:left !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; width:100%; height:26px !important; line-height:26px !important; padding-left:8px; box-sizing:border-box;  }
+.charging_section02 .charging_inner_section02 .pay_cellphone .charing_right_box_cnt>span { float:left; display:block; height:32px; line-height:32px; font-size:14px; color:#636c77; font-family:'NBGothicR'; margin:0 6px; }
+.charging_section02 .charging_inner_section02 .pay_cellphone .charing_right_box_cnt .ui-input-text { float:left; width:25%; height:26px; padding:0; margin:3px 0 0 0; border-radius:0; box-shadow:none; text-shadow:none; box-sizing:border-box; }
+.charging_section02 .charging_inner_section02 .pay_cellphone .charing_right_box_cnt .ui-input-text  input { width:100%; height:100%; text-align:center; color:#424852; font-size:12px; font-family:'NBGothicR'; vertical-align:middle; font-weight:normal; padding:0; margin:0; line-height:inherit; }
+
+
+/* agree_payment_box */
+.agree_payment_box .ui-checkbox label { color:#636c77; font-size:14px; font-family:'NBGothicL'; background-color:#fff; padding:0; margin:0; border:0; border-radius:0; padding-left:24px; text-shadow:none; font-weight:normal; line-height:100%; }
+.agree_payment_box .ui-checkbox label:hover { color:#636c77; font-size:14px; font-family:'NBGothicL'; background-color:#fff; padding:0; margin:0; border:0; border-radius:0; padding-left:24px; text-shadow:none; font-weight:normal; line-height:100%; }
+.agree_payment_box .ui-checkbox input { display:none; }
+.agree_payment_box .ui-btn.ui-checkbox-off:after { width:12px; height:12px; background-image:url('../img/m_checkBox.png'); background-position:left top; background-size:cover; border:0; border-radius:2px; margin:0; left:0; top:0; }
+.agree_payment_box .ui-icon-check:after, html .ui-btn.ui-checkbox-on.ui-checkbox-on:after { background-image:url('../img/m_checkBox.png'); background-position:-12px top; background-size:cover; width:12px; height:12px; border:0; border-radius:2px; margin:0; left:0; top:0;  }
+
+
+/* cash_pay_btn_box */
+.cash_pay_btn_box { width:100%; height:48px; margin:48px 0; }
+.cash_pay_btn_box .ui-btn { width:100%; height:100%; margin:0; padding:0; text-shadow:none; box-shadow:none; background:#d94452; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; line-height:48px; border:0; border-radius:24px; }
+.cash_pay_btn_box .ui-btn:hover { width:100%; height:100%; margin:0; padding:0; text-shadow:none; box-shadow:none; background:#d94452; color:#fff; font-size:20px; font-family:'GodoM'; font-weight:normal; line-height:48px; border:0; border-radius:24px; }
+.cash_pay_btn_box .cash_pay_btn {  background:#d94452; color:#fff; text-shadow:none; box-shadow:none; vertical-align:middle; text-align:center; padding:0; margin:0; width:100%; height:100%; }
+
+
+
+/* -----------------------------------------------
+ cashHistory 
+----------------------------------------------- */
+
+/* cashH_section01 */
+.cashH_section01 { width:100%; height:auto; text-align:right; }
+.cashH_section01 .available_cash { padding:32px 0 24px; height:14px; font-family:'NBGothicL'; font-size:12px; color:#636c77; }
+.cashH_section01 .available_cash:after { clear:both; content:''; display:block; }
+.cashH_section01 .available_cash b { font-family:'NBGothicB'; font-size:14px; font-weight:normal; display:inline-block; margin-right:16px; }
+.cashH_section01 .available_cash span { font-family:'NBGothicB'; font-size:14px; color:#d94452; font-weight:normal; }
+
+/* cashH_section02 */
+.cashH_section02 { width:100%; height:auto; padding:24px 0; border-top:2px solid #e4e8eb; border-bottom:1px solid #e4e8eb; }
+.cashH_section02 .cashH_check_txt { color:#424852; font-size:14px; font-family:'NBGothicB'; text-align:center; line-height:100%; margin-bottom:12px; }
+
+
+/* cashH_section02 */
+.cashH_section02 { width:100%; height:auto; }
+.cashH_section02 .check_period_box { width:100%; height:auto; }
+.cashH_section02 .check_period_box:nth-child(1) { margin-bottom:24px; }
+.cashH_section02 .check_period_box .check_period_input_box { display:block; width:100%; height:auto; }
+.cashH_section02 .check_period_box .check_period_input_box:after { clear:both; content:''; display:block; }
+.cashH_section02 .check_period_box .check_period_input_box .first_select_year_box { width:23%; height:26px; margin:0 2% 0 0; float:left;  }
+.cashH_section02 .check_period_box .check_period_input_box .first_select_month_box { width:19%; height:26px; margin:0 0 0 0; float:left;  }
+.cashH_section02 .check_period_box .check_period_input_box .second_select_year_box { width:23%; height:26px; margin:0 2% 0 0; float:left;  }
+.cashH_section02 .check_period_box .check_period_input_box .second_select_month_box { width:19%; height:26px; margin:0 0 0 0; float:right;  }
+.cashH_section02 .check_period_box .check_period_input_box .bar { width:12%; height:26px; margin:0 0 0 0; float:left; line-height:26px; text-align:center; color:#424852; }
+
+.ui-select .ui-btn>span:not(.ui-li-count) { text-align:left !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; line-height:100% !important; height:26px !important; line-height:26px !important; }
+/* first_select_year_box */
+.first_select_year_box .ui-select { padding:0; width:100%; margin:0; } 
+.first_select_year_box .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 14% !important; } 
+.first_select_year_box .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:14% !important; box-sizing:border-box; }
+.first_select_year_box .ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.first_select_year_box .ui-btn-icon-right:after { right:8px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:10px; }
+/* first_select_month_box */
+.first_select_month_box .ui-select { padding:0; width:100%; margin:0; } 
+.first_select_month_box .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 14% !important; } 
+.first_select_month_box .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:14% !important; box-sizing:border-box; }
+.first_select_month_box .ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.first_select_month_box .ui-btn-icon-right:after { right:8px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:10px; }
+/* second_select_year_box */
+.second_select_year_box .ui-select { padding:0; width:100%; margin:0; } 
+.second_select_year_box .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 14% !important; } 
+.second_select_year_box .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:14% !important; box-sizing:border-box; }
+.second_select_year_box .ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.second_select_year_box .ui-btn-icon-right:after { right:8px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:10px; }
+/* second_select_month_box */
+.second_select_month_box .ui-select { padding:0; width:100%; margin:0; } 
+.second_select_month_box .ui-select .ui-btn { border-radius:0; border:1px solid #e4e8eb !important; background:#fff !important; text-shadow:none !important; box-shadow:none !important; height:26px !important; box-sizing:border-box !important; padding:0 14% !important; } 
+.second_select_month_box .ui-select .ui-btn select { height:26px !important; color:#636c77 !important; font-family:'NBGothicR' !important; font-size:12px !important; font-weight:normal !important; text-shadow:none !important; padding-left:14% !important; box-sizing:border-box; }
+.second_select_month_box .ui-icon-carat-d:after {background-image:url('../img/m_select_down.png') !important; background-color:transparent !important; background-size:cover !important; overflow:hidden;}
+.second_select_month_box .ui-btn-icon-right:after { right:8px; width:8px; height:4px; border-radius:0 !important; margin-top:0; top:10px; }
+
+/* check_period_radio_box b*/
+.cashH_section02 .check_period_box .check_period_radio_box { width:210px; margin:0 auto; height:auto; }
+.cashH_section02 .check_period_box .check_period_radio_box:after { clear:both; content:''; display:block; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio { margin:0; width:48%; float:left; margin-top:7px; height:18px; position:relative; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio .ui-btn { border:0; margin:0; padding:0; background:transparent; border-radius:0; padding-left:30px; box-sizing:border-box; font-size:14px; color:#424852; font-family:'NBGothicL'; font-weight:normal; text-shadow:none; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio input { display:none; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio-off .cash_charge_usage_checkmark { position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#fff; border-radius:50%; top:4px; left:4px; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio-on .cash_charge_usage_checkmark {  position:absolute; display:block; width:10px; height:10px; box-sizing:border-box; opacity:1; box-shadow:none; text-shadow:none; background:#d94452; border-radius:50%; top:4px; left:4px; z-index:1;  }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio .ui-btn-icon-left:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+.cashH_section02 .check_period_box .check_period_radio_box .ui-radio .ui-btn.ui-radio-on.ui-btn-a:after { left:0; width:18px; height:18px; top:0; margin:0; background:#fff; border:1px solid #cad0d7; box-sizing:border-box; opacity:1; }
+
+
+/* cash_state_check_btn */
+.cash_state_check_btn.ui-btn { width:40%; height:48px; border:1px solid #d94452; border-radius:24px; background:#fff; text-align:center; line-height:48px; color:#d94452; font-size:20px; font-family:'GodoM'; text-shadow:none; box-shadow:none; padding:0; margin:0; box-sizing:border-box; margin:32px auto 64px; } 
+.cash_state_check_btn.ui-btn:hover { width:40%; height:48px; border:1px solid #d94452; border-radius:24px; background:#fff; text-align:center; line-height:48px; color:#d94452; font-size:20px; font-family:'GodoM'; text-shadow:none; box-shadow:none; padding:0; margin:0; box-sizing:border-box; margin:32px auto 64px; } 
+
+
+
+/* cash_check_table */
+.cash_charging_table { display:table; width:100%; margin-bottom:100px; }
+.cash_using_table { display:none; width:100%; }
+.cash_check_table tr:nth-child(1) { border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.cash_check_table tr { border-bottom:1px solid #cad0d7; width:100%; }
+.cash_check_table tr:last-child { border-bottom:1px solid #424852; }
+.cash_check_table tr th { text-align:center; color:#636c77; font-size:14px; font-family:'GodoM'; height:40px; vertical-align:middle; font-weight:normal; }
+.cash_check_table td { text-align:center; vertical-align:middle; height:36px; box-sizing:border-box; }
+.cash_check_table .no_data { height:60px; text-align:center; vertical-align:middle; font-size:12px; font-family:'NBGothicL'; color:#636c77; }
+.cash_check_table .no_data td { vertical-align:middle; }
+
+.cash_charging_table tr td:nth-child(1) { color:#636c77; font-size:12px; font-family:'NBGothicL'; }
+.cash_charging_table tr td:nth-child(2) { color:#424852; font-size:12px; font-family:'NBGothicR'; }
+.cash_charging_table tr td:nth-child(3) { color:#636c77; font-size:12px; font-family:'NBGothicL'; }
+
+.cash_using_table tr td:nth-child(1) { color:#636c77; font-size:12px; font-family:'NBGothicL'; }
+.cash_using_table tr td:nth-child(2) { color:#424852; font-size:12px; font-family:'NBGothicR'; }
+.cash_using_table tr td:nth-child(3) { color:#636c77; font-size:12px; font-family:'NBGothicR'; }
+
+.cash_using_table_txt { margin-top:24px; margin-bottom:48px; font-size:14px; color:#636c77; line-height:100%; font-family:'NBGothicL'; }
+
+
+
+@media screen and (max-width:720px) {
+}
+
+
+@media screen and (max-width:375px) {
+	.charging_section01 .table_tr .direct_write_input_box { width:70%; }
+	.charging_section01 .table_tr_on .direct_write_input_box { width:70%; }
+
+	.charging_section01 .cash_bottom_box .cash_bottom_second { padding:0 2.5%; }
+
+	.charging_section02 .charging_inner_section02 { padding:0 12px 12px; }
+
+	.first_select_year_box .ui-select .ui-btn { padding:0 !important; }
+	.first_select_month_box .ui-select .ui-btn { padding:0 !important; }
+	.second_select_year_box .ui-select .ui-btn { padding:0 !important; }
+	.second_select_month_box .ui-select .ui-btn { padding:0 !important; }
+	.first_select_year_box .ui-btn-icon-right:after { right:4px; }
+	.second_select_year_box .ui-btn-icon-right:after { right:4px; }
+	.first_select_month_box .ui-btn-icon-right:after { right:6px; }
+	
+}
+
+
+
+@media screen and (max-width:360px) {
+
+	.charging_section01 .cash_table_box .table_th ul li { font-size:12px; }
+	.charging_section01 .table_tr ul li:nth-child(1) { padding-left:1%; width:31%; }
+	.charging_section01 .table_tr ul li:nth-child(2) { width:36%; }
+	.charging_section01 .table_tr ul li:nth-child(3) { padding-right:1%; width:33%; }
+	.charging_section01 .table_tr_on ul li:nth-child(1) { padding-left:1%; width:31%; }
+	.charging_section01 .table_tr_on ul li:nth-child(2) {  width:36%; }
+	.charging_section01 .table_tr_on ul li:nth-child(3) {padding-right:1%; width:33%; }
+
+	.charging_section01 .table_tr .direct_write_input_box { width:71%; }
+	.charging_section01 .table_tr_on .direct_write_input_box { width:71%; }
+	.charging_section01 .table_tr .ui-input-text .direct_write_input { font-size:10px; }
+	.charging_section01 .table_tr_on .ui-input-text .direct_write_input {  font-size:10px; } 
+
+	.charging_section01 .cash_bottom_box .cash_bottom_first h4 { font-size:10px; }
+	.charging_section01 .cash_bottom_box .cash_bottom_first h2 { font-size:12px; }
+	.charging_section01 .cash_bottom_box .cash_bottom_first h2 span { font-size:16px; }
+	.charging_section01 .cash_bottom_box .cash_bottom_second div p { font-size:12px; }
+
+
+	.charging_section02 .charging_inner_section02 .charing_left_txt { font-size:12px; }
+	.charging_section02 .charging_inner_section02 .order_use_cash_box .order_txt_box { width:66px; }
+	.charging_section02 .charging_inner_section02 .order_use_cash_box .ui-input-text input { font-size:12px; }
+	.charging_section02 .charging_inner_section02 .order_use_cash_box .charing_right_box_cnt p { margin-left:4px; font-size:10px; }
+
+	.charging_section02 .charging_inner_section02 .order_pay_method .charing_right_box_cnt button { font-size:12px; }
+
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio { height:16px; line-height:16px; margin-top:9px; }
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn { font-size:12px; padding-left:20px; height:16px; line-height:16px; }
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio-off .card_checkmark { width:8px; height:8px; top:4px; left:4px; }
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio-on .card_checkmark { width:8px; height:8px; top:4px; left:4px; }
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn-icon-left:after { width:16px; height:16px; }
+	.charging_section02 .charging_inner_section02 .pay_creditcard .ui-radio .ui-btn.ui-radio-on.ui-btn-a:after { width:16px; height:16px; }
+
+	.ui-select .ui-btn>span:not(.ui-li-count) { font-size:12px !important; }
+	.pay_cellphone .ui-btn-icon-right:after { right:4px; }
+	.ui-select .ui-btn>span:not(.ui-li-count) { padding-left:4px; }
+	.charging_section02 .charging_inner_section02 .pay_cellphone .order_right_box_cnt>span { float:left; display:block; height:32px; line-height:32px; font-size:14px; color:#636c77; font-family:'NBGothicR'; margin:0 3px; }
+
+	.charging_section02 .charging_inner_section02 .charing_left_txt { width:30%; }
+	.charging_section02 .charging_inner_section02 .charing_right_box_cnt { width:70%; }
+
+	.agree_payment_box .ui-checkbox label { font-size:12px; }
+	.agree_payment_box .ui-checkbox label:hover { font-size:12px; }
+	
+	.first_select_year_box .ui-select .ui-btn { padding:0 !important; }
+	.first_select_month_box .ui-select .ui-btn { padding:0 !important; }
+	.second_select_year_box .ui-select .ui-btn { padding:0 !important; }
+	.second_select_month_box .ui-select .ui-btn { padding:0 !important; }
+	.first_select_year_box .ui-btn-icon-right:after { right:4px; }
+	.second_select_year_box .ui-btn-icon-right:after { right:4px; }
+	.first_select_month_box .ui-btn-icon-right:after { right:6px; }
+ 
+	.cash_state_check_btn.ui-btn { font-size:16px; }
+	.cash_state_check_btn.ui-btn:hover { font-size:16px; }
+	.cash_using_table_txt { font-size:12px; }
+} 
+
+
+
+

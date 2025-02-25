@@ -1,0 +1,136 @@
+@charset "utf-8";
+select::-ms-expand { display:none; } 
+
+/* layout */
+.memberInfo_section01 { width:100%; height:79px; background:#fff; }
+.memberInfo_section02 { width:960px; height:auto; margin:0 auto; }
+.memberInfo_section03 { width:960px; height:auto; margin:68px auto; }
+.memberInfo_section04 { width:960px; height:auto; margin:0 auto; }
+.memberInfo_section05 { width:960px; height:132px; margin:48px auto 100px; }
+
+
+/* 공통 */
+.memberInfo_h3 { font-size:20px; }
+.memberInfo_inner_section { border-top:2px solid #424852; border-bottom:1px solid #424852; }
+.memberInfo_inner_section .memeberInfo_inbox { width:100%; height:36px; margin-bottom:12px; }
+.memberInfo_inner_section .memeberInfo_inbox:last-child { margin-bottom:0; }
+.memberInfo_inner_section .memeberInfo_inbox .memberbox_left { width:132px; height:100%; line-height:36px; font-family:'NBGothicB'; color:#424852; font-size:14px; float:left; }
+.memberInfo_inner_section .memeberInfo_inbox .memeberbox_right_box { width:796px; height:100%; line-height:36px; font-family:'NBGothicR'; color:#424852; font-size:14px; float:left; }
+.memberInfo_inner_section .memeberInfo_inbox .memberbox_txt { width:auto; height:100%; line-height:36px; font-family:'NBGothicR'; color:#424852; font-size:14px; float:left; padding-left:12px; }
+
+
+
+/*---------- section01 ----------*/
+.memberInfo_inner_section01 { width:960px; height:100%; box-sizing:border-box; margin:0 auto; }
+.memberInfo_inner_section01 h2 { margin:0; padding:0 0 24px; }
+
+
+/*---------- section02 ----------*/
+.memberInfo_section02 .memberInfo_inner_section { padding:11px 16px 24px 16px; box-sizing:border-box; }
+.memberInfo_section02 .memberInfo_inner_section input[type="text"] { width:240px; height:36px; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_section02 .memberInfo_inner_section .password_input { float:left; }
+.memberInfo_section02 .memberInfo_inner_section .password_change_btn { float:left; width:100px; height:36px; padding:0; margin:0; border-radius:4px; border:1px solid #a9b0bb; outline:0; background:#fff; text-align:center; vertical-align:middle; font-size:14px; font-family:'NBGothicR'; color:#636c77; margin-left:12px; }
+.memberInfo_section02 .memberInfo_inner_section .gender_btn_box { float:left; width:71px; height:36px; margin-left:120px; position:relative; }
+.memberInfo_section02 .memberInfo_inner_section .gender_btn_box .gender_btn { position:absolute; padding:0; margin:0; width:36px; height:36px; text-align:center; color:#a9b0bb; font-size:14px; font-family:'NBGothicL'; border:1px solid #a9b0bb; box-sizing:border-box; background:#fff; float:left; }
+.memberInfo_section02 .memberInfo_inner_section .gender_btn_box .gender_man { right:35px; z-index:0;}
+.memberInfo_section02 .memberInfo_inner_section .gender_btn_box .gender_woman { right:0; z-index:0; }
+.memberInfo_section02 .memberInfo_inner_section .gender_btn_box .gender_on { font-family:'NBGothicR'; color:#4a88da; border:1px solid #4a88da; z-index:1; }
+
+
+
+/*---------- section03 ----------*/
+.memberInfo_section03 .memberInfo_inner_section { padding:24px 16px; box-sizing:border-box; }
+.memberInfo_section03 .memberInfo_inner_section .birthday_box select { height:36px; border:1px solid #a9b0bb; padding-left:12px; font-size:14px; font-family:'NBGothicL'; color:#424852; -webkit-appearance:none; -moz-appearance:none; appearance:none; box-sizing:border-box; float:left; }
+.memberInfo_section03 .memberInfo_inner_section .birth_year_select { width:104px; background:url('../img/selectBox_down.png') no-repeat 81px 12px; }
+.memberInfo_section03 .memberInfo_inner_section .birth_month_select { width:88px; background:url('../img/selectBox_down.png') no-repeat 65px 12px; margin:0 10px; }
+.memberInfo_section03 .memberInfo_inner_section .birth_day_select { width:88px; background:url('../img/selectBox_down.png') no-repeat 65px 12px; }
+.memberInfo_section03 .memberInfo_inner_section .postcode_input { width:124px; height:36px; float:left; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_section03 .memberInfo_inner_section .postcode_btn { float:left; width:80px; height:36px; border-radius:4px; border:1px solid #a9b0bb; padding:0; margin:0; outline:0; background:#fff; text-align:center; vertical-align:middle; font-size:14px; font-family:'NBGothicR'; color:#636c77; margin-left:12px; }
+.memberInfo_section03 .memberInfo_inner_section .address_box input { width:320px; height:36px; float:left; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_section03 .memberInfo_inner_section .address_box .first_address_input { margin-right:12px; }
+.memberInfo_section03 .memberInfo_inner_section .interest_field_inbox { height:60px; padding-top:12px; }
+.memberInfo_section03 .memberInfo_inner_section .interest_field_inbox .memberbox_left { line-height:12px; }
+.memberInfo_section03 .memberInfo_inner_section .interest_field_box { margin-bottom:12px; height:12px; }
+.memberInfo_section03 .memberInfo_inner_section .interest_field_box:last-child { margin-bottom:0; }
+/* interest_field checkbox */
+.memberInfo_section03 .interest_field { display:inline-block; position:relative; padding-left:18px; cursor: pointer; color:#636c77; font-family:'NBGothicL'; font-size:12px; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; height:12px; line-height:14px; width:auto; float:left; margin-left:12px; }
+.memberInfo_section03 .interest_field.marginl0 { margin-left:0; }
+.interest_field input { position:absolute; opacity:0; cursor:pointer; }
+.interest_field_checkmark { position:absolute; top:0; left:0; height:12px; width:12px; background:url('../img/checkBox.png') left top no-repeat; 
+}
+.interest_field input:checked ~ .interest_field_checkmark { background:url('../img/checkBox.png') -12px top no-repeat; }
+.interest_field_checkmark:after { content:""; position:absolute; display:none; }
+.interest_field input:checked ~ .interest_field_checkmark:after { display:block; }
+
+
+/*---------- section04 ----------*/
+.memberInfo_section04 .memberInfo_inner_section { text-align:center; padding:24px 0; }
+.memberInfo_section04 .memberInfo_inner_section .identity_txt { color:#d94452; font-family:'NBGothicB'; font-size:14px; margin-bottom:24px; line-height:100%; }
+.memberInfo_section04 .memberInfo_inner_section .get_confirm_number_box { width:432px; height:36px; display:block; margin:0 auto; }
+.memberInfo_section04 .memberInfo_inner_section .get_confirm_number_box:after{ content:''; display:block; clear:both; }
+.memberInfo_section04 .memberInfo_inner_section .get_confirm_number_box input[type="text"] { width:320px; height:36px; float:left; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_section04 .memberInfo_inner_section .get_confirm_number_box .get_confirm_btn { width:100px; height:36px; border:1px solid #a9b0bb; margin:0; border-radius:4px; color:#636c77; font-size:14px; font-family:'NBGothicR'; text-align:center; float:left; margin-left:12px; background:#fff; vertical-align:middle; padding:0; }
+.memberInfo_section04 .memberInfo_inner_section .confirm_number_box { width:260px; height:auto; display:block; margin:12px auto 0; }
+.memberInfo_section04 .memberInfo_inner_section .confirm_number_box:after{ content:''; display:block; clear:both; }
+.memberInfo_section04 .memberInfo_inner_section .confirm_number_box input[type="text"] { width:168px; height:36px; float:left; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_section04 .memberInfo_inner_section .confirm_number_box .certify_confirm_btn { width:80px; height:36px; border:1px solid #a9b0bb; margin:0; border-radius:4px; color:#636c77; font-size:14px; font-family:'NBGothicR'; text-align:center; float:left; margin-left:12px; background:#fff; vertical-align:middle; padding:0; }
+.memberInfo_section04 .memberInfo_inner_section .confirm_number_box .check_certify_confirm { display:none;  clear:both; text-align:left; padding:12px 0 0; color:#4a88da; font-size:14px; font-family:'NBGothicR'; }
+
+
+/*---------- section05 ----------*/
+.memberInfo_section05 .save_info { display:block; margin:0 auto 48px; width:168px; height:48px; border-radius:24px; border:0; outline:0; background:#d94452; color:#fff; font-family:'GodoM'; font-size:20px; text-align:center; vertical-align:middle; }
+.memberInfo_section05 .leave_hygge_box { float:right; width:auto; height:36px; }
+.memberInfo_section05 .leave_hygge_box p { float:left; color:#636c77; font-family:'NBBothicL'; font-size:14px; height:36px; line-height:36px; }
+.memberInfo_section05 .leave_hygge_box .leave_hygge_btn { float:right; width:100px; height:36px; border:1px solid #a9b0bb; margin:0; border-radius:4px; color:#636c77; font-size:14px; font-family:'NBGothicR'; text-align:center; float:left; margin-left:12px; background:#fff; vertical-align:middle; padding:0; }
+
+
+
+
+/* 레이어 팝업 */
+.mask { position:absolute; left:0; top:0; z-index:99; background:rgba(0,0,0,0.8); display:none; }
+.mi_layer_inner { padding:24px; background:#fff; }
+.mi_layer_inner .mi_header { width:100%; height:auto; box-sizing:border-box; }
+.mi_layer_inner .mi_header h3 { font-size:20px; margin:0 0 16px; line-height:100%; }
+.mi_layer_inner .mi_header p { color:#424852; font-size:14px; font-family:'NBGothicR'; padding-bottom:24px; border-bottom:2px solid #424852; }
+.mi_layer_inner .mi_btn_box { border-top:1px solid #424852; width:100%; height:auto; padding-top:24px; }
+.mi_layer_inner .mi_btn_box_inner { width:272px; height:48px; margin:0 auto 0;  }
+.mi_layer_inner .layer_close_btn { float:right; width:124px; height:48px; border-radius:24px; background:#d94452; border:1px solid #d94452; font-size:20px; font-family:'GodoM'; color:#fff; text-align:center; display:block; }
+
+/* memberInfo_password_change_layer */
+.memberInfo_password_change_layer { display:none; background:#e4e8eb; width:480px; height:auto; z-index:99; padding:24px; }
+.memberInfo_password_change_layer .mi_layer_inner .mi_section { width:100%; box-sizing:border-box; padding:24px; }
+.memberInfo_password_change_layer .mi_layer_inner .mi_section table { width:100%; }
+.memberInfo_password_change_layer .mi_layer_inner .mi_section table tr td:nth-child(1) { font-size:14px; font-family:'NBGothicB'; color:#424852; text-align:left; }
+.memberInfo_password_change_layer .mi_layer_inner .mi_section table tr td:nth-child(2) input { width:100%; height:36px; box-sizing:border-box; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_password_change_layer .mi_layer_inner .mi_btn_box .password_change_cancel_btn { padding:0; margin:0; float:left; width:124px; height:48px; background:#fff; border:1px solid #a9b0bb; color:#a9b0bb; box-sizing:border-box; text-align:center; vertical-align:middle; border-radius:24px; font-size:20px; font-family:'GodoM'; margin-right:24px; }
+.memberInfo_password_change_layer .marginb0 { margin-bottom:0; }
+
+/* memberInfo_leave_hygge_layer */
+.memberInfo_leave_hygge_layer { display:none; background:#e4e8eb; width:480px; height:auto; z-index:99; padding:24px; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section_in { padding:24px; width:100%; height:auto; box-sizing:border-box; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section_in.own_cash_box { border-bottom:1px solid #424852; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section_in.own_cash_box table tr td:nth-child(2) { font-size:14px; font-family:'NBGothicL'; color:#636c77; text-align:left; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section_in.own_cash_box table tr td:nth-child(2) span { font-family:'NBGothicB'; color:#424852; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section_in p { font-size:14px; color:#636c77; font-family:'NBGothicL'; line-height:inherit; margin-bottom:16px; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section table { width:100%; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section table tr td:nth-child(1) { font-size:14px; font-family:'NBGothicB'; color:#424852; text-align:left; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_section table tr td:nth-child(2) input { width:100%; height:36px; box-sizing:border-box; color:#424852; font-family:'NBGothicR'; font-size:14px; padding:0 0 0 12px; vertical-align:middle; border:1px solid #a9b0bb; box-sizing:border-box; }
+.memberInfo_leave_hygge_layer .mi_layer_inner .mi_btn_box .leave_hygge_cancel_btn { padding:0; margin:0; float:left; width:124px; height:48px; background:#fff; border:1px solid #a9b0bb; color:#a9b0bb; box-sizing:border-box; text-align:center; vertical-align:middle; border-radius:24px; font-size:20px; font-family:'GodoM'; margin-right:24px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원관리</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <header>
+    <h1><a href="#"></a></h1>
+    <ul class="gnb">
+      <li class="active"><a href="./member.html">회원관리</a></li>
+      <li><a href="./statistics.html">통계</a>
+        <ul class="lnb">
+          <li><a href="./user_statistics.html">유저 통계</a></li>
+          <li><a href="./voice_font_statistics.html">Voice Font 통계</a></li>
+        </ul>
+      </li>
+      <li><a href="./question.html">문의</a></li>
+      <li><a href="#">공지사항</a></li>
+    </ul>
+  </header>
+  <div id="wrap">
+    <form action="">
+      <fieldset>
+        <legend>search_filter</legend>
+        <label for="name">이름(닉네임)</label>
+        <input type="text" id="name" placeholder="회원 이름(닉네임)을 입력하세요.">
+        <label for="email">E mail<span>(ID)</span></label>
+        <input type="email" id="email" placeholder="Email(ID)를 입력하세요.">
+        <label for="contact">연락처</label>
+        <input type="number" id="contact" placeholder="연락처를 입력하세요.">
+        <label for="company">Company</label>
+        <input type="text" id="company" placeholder="회사/소속을 입력하세요.">
+        <label for="plan">Plan</label>
+        <div class="admin-select">
+          <select name="plan" id="plan">
+            <option value="0">ALL</option>
+            <option value="1">LITE</option>
+            <option value="2">STANDARD</option>
+            <option value="3">BUSINESS</option>
+            <option value="4">무료회원</option>
+          </select>
+        </div>
+        <hr>
+        <input type="submit" value="회원조회">
+      </fieldset>
+    </form>
+
+    <div class="table member_managing">
+      <ul class="thead">
+        <li class="no">No.</li>
+        <li class="name">이름(닉네임)</li>
+        <li class="email">E mail(ID)</li>
+        <li class="contact">연락처</li>
+        <li class="company">Company</li>
+        <li class="plan">Plan</li>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="./member_detail.html">
+          <li class="no">999999999</li>
+          <li class="name">정규민</li>
+          <li class="email">lkm@midslab.ai</li>
+          <li class="contact">010-2394-6162</li>
+          <li class="company">Minds Lab</li>
+          <li class="plan">BUSINESS</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999998</li>
+          <li class="name">혜리니</li>
+          <li class="email">khr@midslab.ai</li>
+          <li class="contact">010-8977-9799</li>
+          <li class="company">마인즈랩</li>
+          <li class="plan">STANDARD</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999997</li>
+          <li class="name">미래킴</li>
+          <li class="email">hailey@midslab.ai</li>
+          <li class="contact">010-7979-4848</li>
+          <li class="company">Minds Lab</li>
+          <li class="plan">-</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999996</li>
+          <li class="name">캡틴아메리카</li>
+          <li class="email">captain_america@avengers.com</li>
+          <li class="contact">010-7979-4849</li>
+          <li class="company">네이버</li>
+          <li class="plan">LITE</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999995</li>
+          <li class="name">아이언맨</li>
+          <li class="email">tony_stark@avengers.com</li>
+          <li class="contact">010-7979-4850</li>
+          <li class="company">-</li>
+          <li class="plan">-</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999994</li>
+          <li class="name">블랙위도우</li>
+          <li class="email">black_widow@avengers.com</li>
+          <li class="contact">010-7979-4851</li>
+          <li class="company">-</li>
+          <li class="plan">-</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999993</li>
+          <li class="name">호크아이</li>
+          <li class="email">Hawkeye@avengers.com</li>
+          <li class="contact">010-7979-4852</li>
+          <li class="company">구글</li>
+          <li class="plan">BUSINESS</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999992</li>
+          <li class="name">거북이</li>
+          <li class="email">mindslabai@kakao.com</li>
+          <li class="contact">010-7979-4853</li>
+          <li class="company">카카오</li>
+          <li class="plan">STANDARD</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr">
+        <a href="#">
+          <li class="no">999999991</li>
+          <li class="name">나비</li>
+          <li class="email">mindslabai@snow.com</li>
+          <li class="contact">010-7979-4854</li>
+          <li class="company">스노우</li>
+          <li class="plan">BUSINESS</li>
+        </a>
+      </ul>
+      <ul class="tbody_tr withdraw">
+        <a href="#">
+          <li class="no">999999990</li>
+          <li class="name">호랑이</li>
+          <li class="email">mindslabai@samsung.com</li>
+          <li class="contact">010-7979-4855</li>
+          <li class="company">삼성</li>
+          <li class="plan">-</li>
+        </a>
+      </ul>
+    </div>
+    <div class="paging">
+      <ul>
+        <li class="prev"><a href="#"><i class="icon-ico-paging-arrow-prev-36px"></i></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li class="active"><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li class="next active"><a href="#"><i class="icon-ico-paging-arrow-next-36px"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Minds Lab.</p>
+  </footer>
+</body>
+<script src="../js/admin.js"></script>
+</html>

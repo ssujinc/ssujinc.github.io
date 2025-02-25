@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' );           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>    
+  	<link rel="stylesheet" href="resources/css/store_detail.css" />
+  	<script type="text/javascript" src="resources/js/store.js"></script>
+	  <!-- <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=agi04H3dFItWVyCIn9QS&submodules=geocoder"></script> -->
+	<script type="text/javascript">
+		jQuery(function(){
+			StoreFunction.storeDetailView(); 
+		});
+	</script>
+  	<title>BARI STORE DETAIL</title>
+ </head>
+ <body>
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' );
+	?>
+	
+	<div id="container_storeD">		
+		<div class="storeD_title_box">
+			<img class="whata_simbol" src="resources/img/whata_meal_simbol.png" alt="WHAT A MEAL simbol" />
+			<p class="storeD_title"><b>BARI</b>'s Store</p>
+		</div>		
+		<div class="storeD_detail">
+			<div class="storeD_img_box">
+				<div class="storeD_img">
+					<div class="storeD_imgview">
+						<img src="resources/img/kd_review_01.jpg" alt="경리단길" class="opaque" />
+					</div>
+					<div class="storeD_imgview">
+						<img src="resources/img/kd_review_02.jpg" alt="경리단길" />
+					</div>
+					<div class="storeD_imgview">
+						<img src="resources/img/kd_review_03.jpg" alt="경리단길" />
+					</div>
+					<div class="storeD_imgview">
+						<img src="resources/img/kd_review_04.jpg" alt="">
+					</div>
+					<div class="storeD_btn">
+						<span href="" class="storeD_prev"></span>
+						<span href="" class="storeD_next"></span>
+					</div>
+				</div>
+				<div class="storeD_imglist">
+					<div class="selected">
+						<img src="resources/img/kd_review_thumb_01.jpg" alt="">
+					</div>
+					<div>
+						<img src="resources/img/kd_review_thumb_02.jpg" alt="">
+					</div>
+					<div>
+						<img src="resources/img/kd_review_thumb_03.jpg" alt="">
+					</div>
+					<div>
+						<img src="resources/img/kd_review_thumb_04.jpg" alt="">
+					</div>
+					<!-- <div class="no_img"></div> -->
+				</div>
+			</div> <!-- /.storeD_img_box -->
+
+			<div class="storeD_explain_box">
+				<input type="hidden" class="storeDetailId" value="1">
+				<p class="store_name">BARI <span class="storeTitle"></span></p>
+				<div class="store_way_box">
+					<p class="left">
+						<span class="store_way storeicon"></span>
+						<span class="store_txt">오시는길</span>
+					</p>
+					<p class="right storeLocation"></p>
+				</div> <!-- /.store_way_box -->
+
+				<div class="store_number_box">
+					<p class="left">
+						<span class="store_number storeicon"></span>
+						<span class="store_txt">전화번호</span>
+					</p>
+					<p class="right storeTel"></p>
+				</div> <!-- /.store_number_box -->
+
+				<div class="store_time_box">
+					<p class="left">
+						<span class="store_time storeicon"></span>
+						<span class="store_txt">이용시간</span>
+					 </p>
+					<p class="right">평일, 주말, 공휴일<br />
+						<span class="storeTime">AM 09:00 - PM 09:00</span>
+					</p>
+				</div> <!-- /.store_time_box -->
+
+				<div class="store_inform_box">
+					<p class="left">
+						<span class="store_inform storeicon"></span>
+						<span class="store_txt">이용안내</span>
+					</p>
+					<p class="right storeInform">
+						
+					</p>
+				</div>  <!-- /.store_inform_box -->
+
+				<div id="map">
+					<img src="resources/img/ex-map.jpg" alt="">
+				</div>
+
+			</div> <!-- /.storeD_explain_box -->
+		</div> <!-- /.storeD_detail -->
+
+		<div class="storeD_review">
+			<div class="store_line_title">
+				<span class="line1"></span>
+				<p>STORE <b>REVIEW</b></p>
+				<span class="line2"></span>
+			</div> <!-- /.store_line_title -->
+
+			<ul class="storeD_review_box">
+				<!-- <li><a target="_blank" href="https://blog.naver.com/wi9673/221195060845"><img src="/resources/img/hb_1.jpg" alt="현대백화점 지하1F 바리 와사비 아보카도 라이스&낙지돌솥비빕밥 맛있게 식사 했어요" /><span><b>NAVER blog</b><span>2018-01-28</span></span></a></li><li>	<a target="_blank" href="https://blog.naver.com/wwaa135/221079862628"><img src="/resources/img/hb_2.jpg" alt="[분당/판교/현대백화점/ 바리 슈퍼푸드볼]" /><span><b>NAVER blog</b><span>2017-08-22</span></span></a></li><li><a target="_blank" href="https://blog.naver.com/kj0801kj/221121770605"><img src="/resources/img/hb_3.jpg" alt="판교현대백화점 바리와 삼진어묵" /><span><b>NAVER blog</b> <span>2017-10-21</span></span></a>	</li><li><a target="_blank" href="https://blog.naver.com/sueevely/221124440478"><img src="/resources/img/hb_4.jpg" alt="[일상]스타벅스 디카페인 아메리카노/ 판교 현대백화점 바리 슈퍼푸드볼/퍼펙트아이스 쉐이크" /><span><b>NAVER blog</b> <span>2017-10-26</span></span></a></li> -->
+<!-- 				<li><a target="_blank" href="https://blog.naver.com/k7094658/221161160910"><img src="/resources/img/kd_1.jpg" alt="경리단길카페 경리단길샐러드 바리 BARI" /><span><b>NAVER blog</b><span>2017-12-12</span></span></a></li><li>	<a target="_blank" href="https://blog.naver.com/anny0707/221181943623"><img src="/resources/img/kd_2.jpg" alt="경리단길 샐러드 맛집 바리 (Bari)" /><span><b>NAVER blog</b><span>2018-01-10</span></span></a></li><li><a target="_blank" href="https://blog.naver.com/hyunsj0421/221174448487"><img src="/resources/img/kd_3.jpg" alt="12月 경리단길 / 이태원 샐러드 맛집 : 바리 (bari)" /><span><b>NAVER blog</b> <span>2017-12-30</span></span></a></li><li><a target="_blank" href="https://blog.naver.com/taenglog/221199102743"><img src="/resources/img/kd_4.jpg" alt="경리단길 샐러드, 바리(BARI)" /><span><b>NAVER blog</b> <span>2018-02-02</span></span></a></li><li><a target="_blank" href="https://blog.naver.com/rgrong78/221040968580"><img src="/resources/img/kd_5.jpg" alt="경리단길 맛집 / 경리단길 샐러드 : 바리아사이볼" /><span><b>NAVER blog</b><span>2017-06-30</span></span></a></li><li>	<a target="_blank" href="https://blog.naver.com/hxxpxxxx/221167197050"><img src="/resources/img/kd_6.jpg" alt="바리 _ 이태원 경리단길 퓨전 건강식, 아사이볼 추천!!" /><span><b>NAVER blog</b><span>2017-12-20</span></span></a></li><li><a target="_blank" href="https://blog.naver.com/ajimom97/221153089345"><img src="/resources/img/kd_7.jpg" alt="경리단길/이태원 브런치 샐러드 맛집 바리 bari" /><span><b>NAVER blog</b> <span>2017-12-01</span></span></a></li><li><a target="_blank" href="http://the-jeonga.kr/220984109021"><img src="/resources/img/kd_8.jpg" alt="이태원 경리단길 맛집 /바리/ 다이어터들에게 추천해요! 페리로스터즈 카페도 함께 가 보세요~" /><span><b>NAVER blog</b> <span>2017-04-16</span></span></a></li> -->
+				<!--<li>
+					<a target="_blank" href="https://blog.naver.com/wi9673/221195060845">
+						<img src="resources/img/hb_1.jpg" alt="현대백화점 지하1F 바리 와사비 아보카도 라이스&낙지돌솥비빕밥 맛있게 식사 했어요" />
+						<span><b>NAVER blog</b><span>2018-01-28</span></span>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/wwaa135/221079862628">
+						<img src="resources/img/hb_2.jpg" alt="[분당/판교/현대백화점/ 바리 슈퍼푸드볼]" />
+						<span><b>NAVER blog</b><span>2017-08-22</span></span>
+					</a>
+				</li>				
+				<li>
+					<a target="_blank" href="https://blog.naver.com/kj0801kj/221121770605">
+						<img src="resources/img/hb_3.jpg" alt="판교현대백화점 바리와 삼진어묵" />
+						<span><b>NAVER blog</b> <span>2017-10-21</span></span>	
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/sueevely/221124440478">
+						<img src="resources/img/hb_4.jpg" alt="[일상]스타벅스 디카페인 아메리카노/ 판교 현대백화점 바리 슈퍼푸드볼/퍼펙트아이스 쉐이크" />
+						<span><b>NAVER blog</b> <span>2017-10-26</span></span>	
+					</a>
+				</li> -->
+				<li>
+					<a target="_blank" href="https://blog.naver.com/k7094658/221161160910">
+						<img src="resources/img/kd_1.jpg" alt="경리단길카페 경리단길샐러드 바리 BARI" />
+						<span><b>NAVER blog</b><span>2017-12-12</span></span>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/anny0707/221181943623">
+						<img src="resources/img/kd_2.jpg" alt="경리단길 샐러드 맛집 바리 (Bari)" />
+						<span><b>NAVER blog</b><span>2018-01-10</span></span>
+					</a>
+				</li>				
+				<li>
+					<a target="_blank" href="https://blog.naver.com/hyunsj0421/221174448487">
+						<img src="resources/img/kd_3.jpg" alt="12月 경리단길 / 이태원 샐러드 맛집 : 바리 (bari)" />
+						<span><b>NAVER blog</b> <span>2017-12-30</span></span>	
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/taenglog/221199102743">
+						<img src="resources/img/kd_4.jpg" alt="경리단길 샐러드, 바리(BARI)" />
+						<span><b>NAVER blog</b> <span>2018-02-02</span></span>	
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/rgrong78/221040968580">
+						<img src="resources/img/kd_5.jpg" alt="경리단길 맛집 / 경리단길 샐러드 : 바리아사이볼" />
+						<span><b>NAVER blog</b><span>2017-06-30</span></span>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://blog.naver.com/hxxpxxxx/221167197050">
+						<img src="resources/img/kd_6.jpg" alt="바리 _ 이태원 경리단길 퓨전 건강식, 아사이볼 추천!!" />
+						<span><b>NAVER blog</b><span>2017-12-20</span></span>
+					</a>
+				</li>				
+				<li>
+					<a target="_blank" href="https://blog.naver.com/ajimom97/221153089345">
+						<img src="resources/img/kd_7.jpg" alt="경리단길/이태원 브런치 샐러드 맛집 바리 bari" />
+						<span><b>NAVER blog</b> <span>2017-12-01</span></span>	
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="http://the-jeonga.kr/220984109021">
+						<img src="resources/img/kd_8.jpg" alt="이태원 경리단길 맛집 /바리/ 다이어터들에게 추천해요! 페리로스터즈 카페도 함께 가 보세요~" />
+						<span><b>NAVER blog</b> <span>2017-04-16</span></span>	
+					</a>
+				</li> 
+			</ul>
+		</div> <!-- /.store_review -->
+    </div> <!-- /#container_storeD -->
+
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+    ?>
+ </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+	<link rel="stylesheet" type="text/css" href="asset/css/login.css">
+	<title>login</title>    
+</head>
+<body id="login" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<section class="login_section">
+				<input type="text" class="login_id" placeholder="아이디" />
+				<input type="text" class="login_pw" placeholder="비밀번호" />
+				<input type="button" class="login_btn" value="로그인" />
+				<div class="login_find_idpw">
+					<a href="find.html" class="login_find_id" data-ajax="false">아이디 찾기</a>
+					<a href="find.html" class="login_find_pw" data-ajax="false">비밀번호 찾기</a>
+				</div>
+			</section>
+
+			<section class="sns_section">
+				<h3>SNS 계정 로그인</h3>
+				<button class="naver_login sns_login_btn">
+					<span class="sns_box">
+						<span class="sns_img"></span><b>아이디 로그인</b>
+					</span>
+				</button>
+                <button class="kakao_login sns_login_btn">
+					<span class="sns_box">
+						<span class="sns_img"></span><b>아이디 로그인</b>
+					</span>
+				</button>
+                <button class="facebook_login sns_login_btn">
+					<span class="sns_box">
+						<span class="sns_img"></span><b>아이디 로그인</b>
+					</span>
+				</button>
+			</section>
+
+			<section class="join_go_section">
+				<p class="login_go_join">아직 휘게문고의 회원이 아니신가요?</p>
+				<p>간편한 <a href="join.html">회원가입</a></p>
+			</section>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

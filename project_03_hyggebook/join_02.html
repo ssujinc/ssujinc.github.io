@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <?PHP
+            define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_03_hyggebook/inc/' ) ;           
+            require_once ( BASIC_INCLUDE . 'head.html' ) ;
+        ?>  
+        <script language="javascript">
+            function bookmark(){                    
+                window.external.AddFavorite('http://','HYGGE')
+            }            
+            jQuery(document).ready(function(){ 
+                jQuery('.gnb>li>a').on('mouseover focusin', function(){
+                    jQuery(this).parents('li').addClass('on').siblings('li').removeClass('on'); 
+                });                
+                
+                jQuery("div.select_box > span").click(function() {
+                    jQuery(this).next("ul").toggle();
+                    return false;
+                });
+                jQuery("div.select_box > ul > li").click(function() {   
+                    jQuery(this).parent().hide().parent("div.select_box").children("span").text($(this).text());
+                    jQuery(this).prependTo($(this).parent());
+                });
+            });
+        </script>
+        <title>HYGGE_Join_02</title>
+    </head>
+    <body>
+        <div id="wrap">
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'header.html' ) ;
+            ?>
+
+            <div id="snb">
+                <div class="snb">
+                    <p class="snb_tit"><span class="line"></span>회원가입<span class="snb_txt">Join Membership</span></p>
+                    <ul>
+                        <li>
+                            <div class="home">HOME</div>
+                        </li>
+                        <li>
+                            <span class="arrow"></span>
+                            <div class="present_page">
+                                회원가입
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="join_cnt_s">
+                <div class="join_cnt_s">
+                    <div class="basic_infor">
+                        <p class="join_input_explain">기본정보 입력<span>*</span></p>
+                        <div class="join_input_box">
+                            <div>
+                                <label for="join_name"><span>이름(실명)</span> <input type="text" id="join_name"></label>
+                            </div>
+                            <div>
+                                <label for="join_id"><span>아이디</span> <input type="text" id="join_id"></label>
+                                <div class="join_reference">
+                                    <p class="join_reference_txt">(4자~12자리의 영문자, 숫자 / @,#,$등 특수문자는 제외)</p>
+                                </div>
+                            </div>
+                            <div class="input_two">
+                                <label for="join_email"><span>이메일</span> <input type="text" id="join_email"></label>
+                                <p class="golbaengyi">@</p>
+                                <input type="text" />
+                                <div class="join_reference">
+                                    <div class="select_box">    
+                                        <span>직접입력</span>
+                                        <ul>
+                                            <li>직접입력</li>
+                                            <li>naver.com</li>
+                                            <li>gmail.com</li>
+                                            <li>nate.com</li>
+                                            <li>hanmail.net</li>
+                                            <li>daum.net</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="checkbox mar_l">
+                                    <label for="collect_agree"><input type="checkbox" id="collect_agree"><span>뉴스레터,공지 이메일을 수신합니다.</span></label>
+                                </p>
+                            </div>
+                            <div>
+                                <label for="join_pw"><span>비밀번호</span> <input type="text" id="join_pw"></label>
+                                <div class="join_reference">
+                                    <p class="join_reference_txt2">영문 대문자, 소문자, 숫자, 특수문자 중 2가지 이상을 조합한 10자이상,<br />
+                                    또는 3가지 이상 조합한 8자 이상을 권장합니다.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="join_pw_re"><span>비밀번호 재입력</span> <input type="text" id="join_pw_re"></label>
+                                <div class="join_reference">
+                                    <p class="join_reference_txt">비밀번호를 다시 한번 입력해주세요.</p>
+                                </div>
+                            </div>
+                            <div class="non_label">
+                                <span>비번찾기 질문</span>
+                                <div class="select_box question_select">    
+                                    <span>질문을 선택하세요.</span>
+                                    <ul>
+                                        <li>내가 좋아하는 캐릭터는?</li>
+                                        <li>타인이 모르는 자신만의 신체비밀이 있다면?</li>
+                                        <li>자신의 인생 좌우명은?</li>
+                                        <li>초등학교 때 기억에 남는 짝꿍 이름은?</li>
+                                        <li>유년시절 가장 생각나는 친구 이름은?</li>
+                                        <li>가장 기억에 남는 선생님 성함은?</li>
+                                        <li>친구들에게 공개하지 않은 어릴 적 별명은?</li>
+                                        <li>다시 태어나면 되고 싶은 것은?</li>
+                                        <li>가장 감명깊게 본 영화는?</li>
+                                        <li>읽은 책 중에서 좋아하는 구절이 있다면?</li>
+                                        <li>기억에 남는 추억의 장소는?</li>
+                                        <li>인상 깊게 읽은 책 이름은?</li>
+                                        <li>자신의 보물 제1호는?</li>
+                                        <li>받았던 선물 중 기억에 남는 독특한 선물은?</li>
+                                        <li>자신이 두번째로 존경하는 인물은?</li>
+                                        <li>아버지의 성함은?</li>
+                                        <li>어머니의 성함은?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="join_pw_qa"><span>비번찾기 답변</span> <input type="text" id="join_pw_qa"></label>
+                                <div class="join_reference">
+                                    <p class="join_reference_txt2">비밀번호찾기 질문에 대한 답변을 혼자만 알 수있는 단어나 기호로 입력해 주세요.<br />
+                                    비밀번호 분실 시 필요하므로 반드시 기억해 주세요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- /.join_input_box -->
+                    </div><!-- /.basic_infor -->
+                    
+                    <hr />
+                    
+                    <div class="addition_infor">
+                        <p class="join_input_explain">부가정보 입력</p>
+                        <div class="join_input_box">
+                            <p class="checkbox">
+                                <label for="next_input"><input type="checkbox" id="next_input"><span class="color">부가정보는 다음에 입력합니다. (단, 주소를 넣지 않으면 각종혜택 및 경품추첨에서 제외될 수 있습니다.)</span></label>
+                            </p>
+                            <div class="join_address_box">
+                                <span>주소</span>
+                                <input type="text" class="zipcode" />
+                                <div class="address_btn">주소검색</div>
+                                <input type="text" class="auto_address"/>
+                                <input type="text" class="remain_address"/>  
+                            </div>
+                            <div class="join_cellphone_box">
+                                <label for="join_cellphone"><span>휴대전화</span> <input type="text" id="join_cellphone"></label>
+                                <span class="line"></span>
+                                <input type="text" />
+                                <span class="line"></span>
+                                <input type="text" />
+                                <p class="checkbox mar_l">
+                                    <label for="notification_agree"><input type="checkbox" id="notification_agree"><span>알림문자를 받겠습니다.</span></label>
+                                </p>
+                            </div>
+                        </div><!-- /.join_input_box -->
+                    </div><!-- /.addition_infor -->
+                    <div class="join_btn_box">
+                        <div class="join_cancel">취소</div>
+                        <div class="join_btn">회원가입</div>
+                    </div>
+                </div> <!-- /.join_cnt_s -->
+            </div>
+
+            <?PHP
+                require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+            ?>
+        </div>
+    </body>
+</html>

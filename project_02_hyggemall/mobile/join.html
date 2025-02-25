@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/join.css">
+  	<title>join</title>    
+</head>
+<body id="join" data-role="page" class="join_body">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>       
+	   
+		<div class="content" data-role="content">
+			<div class="join_tab">
+				<h2>회원가입</h2>
+			</div>
+
+			<div class="inner_content">
+				<div class="join_input_box join_id_box error">
+					<input type="text" class="join_id join_input" placeholder="아이디" />
+				</div>
+				<p class="id_warning warning_red">아이디를 입력해주세요.</p>      
+				<div class="join_check_id_box">
+					<p class="id_check warning_red">이미 사용중인 아이디입니다. 다른 아이디를 입력해주세요.</p>   
+					<a href="" class="join_go_login">로그인</a>       
+					<a href="" class="join_go_findpw">비밀번호 찾기</a>
+				</div>   
+				
+				<div class="join_input_box join_pw_box">
+					<input type="password" class="join_pw join_input" placeholder="비밀번호" />
+				</div>
+				<p class="pw_warning warning_red">8자~20자 이내로 영문자, 숫자, 특수문자 중 2가지 이상 조합해주세요.</p>      
+
+				<div class="join_name_box">
+					<div class="join_name_input_box">
+						<input type="text" class="join_name" placeholder="이름" />
+						<span class="join_name_check"></span>
+					</div>
+					<div class="gender_box ">
+						<button class="gender_btn gender_man gender_on">남</button>
+						<button class="gender_btn gender_woman">여</button>
+					</div>
+				</div>
+				<p class="gender_warning warning_red">이름을 입력해주세요.</p>   
+				<p class="gender_check warning_red">성별을 선택해주세요.</p>   
+					
+				<div class="join_number_box">
+					<input type="text" class="join_number_input" placeholder="전화번호" />
+					<button class="join_check_member_btn">북스 리브로 회원 확인</button>
+					<span class="join_cn_check"></span>
+				</div>
+
+				<div class="join_check_number_box">
+					<p class="number_check warning_red">북스 리브로 회원입니다. 인증번호를 입력후 확인을 눌러주세요.</p>
+					<div class="join_input_box">
+						<input type="text" class="confirm_number join_input" placeholder="인증번호 입력" />
+						<button class="join_confirm_number_btn">확인</button>  
+					</div>					
+				</div>
+				<p class="join_no_member warning_red">북스 리브로 회원이 아닙니다. 휘게문고 신규회원으로 가입을 진행합니다.</p>
+				<p class="number_warning warning_red">전화번호를 입력해주세요.</p>
+				
+				<div class="join_email_box join_input_box">
+					<input type="text" class="join_email join_input" placeholder="이메일 주소" />
+				</div>
+				<p class="email_warning warning_red">이메일 주소를 확인해주세요. 아이디찾기에 사용됩니다.</p>    
+				
+				<div class="join_alert">
+					<b>휘게문고 신규 회원 가입 시 북스 리브로와 동시에 회원가입이 됩니다.<br><br>
+					만 14세 이상</b>이며, <b>휘게문고 <a href="" class="terms">이용약관</a></b> 및 <b><a href="" class="privacy">개인정보 수집 안내</a></b>를 확인하였으며, 이에 <b>동의합니다</b>. (14세 미만은 회원가입이 제한됩니다.)
+				</div>
+				
+				<div class="join_btn_box">
+					<input type="button" class="join_btn" value="동의하고 가입하기" /> 
+				</div>
+
+
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>

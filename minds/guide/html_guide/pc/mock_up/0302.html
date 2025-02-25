@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>id 및 class 네이밍 규칙</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>네이밍 규칙</span></li>
+							<li><span>id 및 class 네이밍 규칙</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>HTML 기본 템플릿 구조</h4>
+					</div>
+					<div class="stn_cont">
+                        <div class="lot_half">
+                            <dl>
+                                <dt>Pc (main)</dt>
+                                <dd>
+                                    <!-- .html_structure -->
+                                    <div class="html_structure">
+                                        <div class="html_wrap">
+                                            #wrap (감싸기)
+                                            <div class="html_skipNav">#skipNav(Skip Navigation)</div>
+                                            <div class="html_header">
+                                                #header (머리글)                                            
+                                                <div class="html_sta">.sta (Service Title Area)</div>
+                                                <div class="html_gnb">.gnb (Global Navigation Bar)</div>
+                                                <div class="html_lnb">.lnb (Local Navigation Bar)</div>
+                                            </div>
+                                            <div class="html_container">
+                                                #container (컨테이너)
+                                                <div class="html_contents">
+                                                    #contents
+                                                    <div class="html_path">.path (문서 경로)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                </div>
+                                            </div>
+                                            <div class="html_footer">#footer (바닥글)</div>
+                                        </div>
+                                    </div>
+                                    <!-- //.html_structure -->
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="lot_half">
+                            <dl>
+                                <dt>Pc (sub)</dt>
+                                <dd>
+                                    <!-- .html_structure -->
+                                    <div class="html_structure">
+                                        <div class="html_wrap">
+                                            #wrap (감싸기)
+                                            <div class="html_skipNav">#skipNav(Skip Navigation)</div>
+                                            <div class="html_header">
+                                                #header (머리글)                                            
+                                                <div class="html_sta">.sta (Service Title Area)</div>
+                                                <div class="html_gnb">.gnb (Global Navigation Bar)</div>
+                                                <div class="html_lnb">.unb (Utility Navigation Bar)</div>
+                                            </div>
+                                            <div class="html_container">
+                                                #container (컨테이너)
+                                                <div class="html_snb">#snb (Sub  Navigation Bar)</div>
+                                                <div class="html_contents">
+                                                    #contents
+                                                    <div class="html_path">.path (문서 경로)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                </div>
+                                                <div class="html_aside">#aside (곁가지)</div>
+                                            </div>
+                                            <div class="html_footer">#footer (바닥글)</div>
+                                        </div>
+                                    </div>
+                                    <!-- //.html_structure -->
+                                </dd>
+                            </dl>
+                        </div>
+					</div>
+					<div class="stn_cont">
+                        <div class="lot_half">
+                            <dl>
+                                <dt>Mobile</dt>
+                                <dd>
+                                    <!-- .html_structure -->
+                                    <div class="html_structure">
+                                        <div class="html_wrap">
+                                            상단 영역 레이아웃 항목들  
+                                            <div class="html_container ft_clr_orange" style="height:200px;">
+                                                #m_ct (본문영역)
+                                            </div>
+                                            하단 영역 레이아웃 항목들  
+                                        </div>
+                                    </div>
+                                    <!-- //.html_structure -->
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="lot_half">
+                            <dl>
+                                <dt>Responsive Web</dt>
+                                <dd>
+                                    <!-- .html_structure -->
+                                    <div class="html_structure">
+                                        <div class="html_wrap">
+                                            #wrap (감싸기)
+                                            <div class="html_skipNav">#skipNav(Skip Navigation)</div>
+                                            <div class="html_header">
+                                                #header (머리글)                                            
+                                                <div class="html_sta">.sta (Service Title Area)</div>
+                                                <div class="html_gnb">.gnb (Global Navigation Bar)</div>
+                                                <div class="html_lnb">.unb (Utility Navigation Bar)</div>
+                                                <div class="html_gnb ft_clr_orange">.mnb (Mobile Navigation Bar)</div>
+                                            </div>
+                                            <div class="html_container">
+                                                #container (컨테이너)
+                                                <div class="html_snb">#snb (Sub Navigation Bar)</div>
+                                                <div class="html_contents">
+                                                    #contents
+                                                    <div class="html_path">.path (문서 경로)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                    <div class="html_stn">.stn (section)</div>
+                                                </div>
+                                                <div class="html_aside">#aside (곁가지)</div>
+                                            </div>
+                                            <div class="html_footer">#footer (바닥글)</div>
+                                        </div>
+                                    </div>
+                                    <!-- //.html_structure -->
+                                </dd>
+                            </dl>
+                        </div>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>기본 네이밍 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. id, class</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>id는 문서 전체의 고유 식별자 이므로 한 문서에서 동일한 id를 여러 번 사용하지 않습는다.</li>
+                                    <li>레이아웃을 제외한 id는 스타일을 지정하지 않습는다.</li>
+                                    <li>class는 문서에서 여러 번 사용할 수 있습니다.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. 레이아웃 예약어</dt>
+                            <dd>레이아웃에는 다음 표에 예약된 id를 사용합니다.</dd>
+                            <dd>
+                                <table class="tbl_line" summary="예약어/ 범위로 구성됨">
+                                    <caption>표 2-3 레이아웃 예약어 범위</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">예약어</th>
+                                            <th class="al_l" scope="col">범위</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">#wrap</td>
+                                            <td class="al_l">페이지 전체 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#header</td>
+                                            <td class="al_l">머리글 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#container</td>
+                                            <td class="al_l">본문영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#contents</td>
+                                            <td class="al_l">주요 콘텐츠 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#footer</td>
+                                            <td class="al_l">바닥글 영역</td>
+                                        </tr>                                   
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. 팝업 레이아웃 예약어</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>팝업 문서의 레이아웃 지정 범위는 동일합니다.</li>
+                                    <li>레이아웃 예약어 앞에 'pop_'를 조합하여 사용합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="예약어/ 범위로 구성됨">
+                                    <caption>표 2-4 팝업 레이아웃 예약어 범위</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">예약어</th>
+                                            <th class="al_l" scope="col">범위</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">#pop_wrap</td>
+                                            <td class="al_l">페이지 전체 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#pop_top</td>
+                                            <td class="al_l">머리글 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#pop_mid</td>
+                                            <td class="al_l">본문영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#pop_ct</td>
+                                            <td class="al_l">주요 콘텐츠 영역</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="al_l" scope="row">#pop_btm</td>
+                                            <td class="al_l">바닥글 영역</td>
+                                        </tr>                                   
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. 레이아웃 네이밍 조합</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>레이아웃 id의 네이밍은 조합하여 사용할 수 없다.</li>
+                                    <li>레이아웃에 디자인 속성을 추가/변경하려면 class를 사용합니다.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="잘못된 예/올바른 예로 구성됨">
+                                    <caption>표 2-5 레이아웃 네이밍 조합 예</caption>
+                                    <colgroup>
+                                        <col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">잘못된 예</th>
+                                            <th class="al_l" scope="col">올바른 예</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row">#wrap2,</td>
+                                            <td class="al_l">#wrap</td>
+                                        </tr>                            
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. 객체 네이밍</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>객체 예약어는 표 B-2 객체 예약어에 근거하여 작성합니다.</li>
+                                    <li>객체는 class만 사용할 수 있으며, 전사 공통 마크업 템플릿의 class와 중복되지 않아야 합니다.</li>
+                                    <li>개발과 연동되는 동적 객체도 class만 사용합니다.</li>
+                                    <li>팝업, iframe에도 동일한 규칙을 적용합니다.</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>F. class 네이밍 확장</dt>
+                            <dd>
+                                <ul class="lst">
+                                    <li>종속 확장 class: 기본형 class에 종속되어 여백, 색깔, 행간 등의 몇 가지 속성을 부여하고자 할 때 사용하는 class.</li>
+                                    <li>독립 확장 class: 기본형 class의 변형이 타입으로 분류할 만큼 클 경우 사용하는 class.</li>
+                                </ul>
+                            </dd>
+                            <dd>
+                                <table class="tbl_line" summary="기본형/확장형/설명으로 구성됨">
+                                    <caption>표 2-6 class 네이밍 확장 예</caption>
+                                    <colgroup>
+                                        <col><col><col>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="al_l" scope="col">기본형</th>
+                                            <th class="al_l" scope="col">확장형</th>
+                                            <th class="al_l" scope="col">설명</th>
+                                        </tr>	
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="al_l" scope="row" rowspan="2">guide_lst</td>
+                                            <td class="al_l">guide_lst<em class="ft_clr_red">01</em>, guide_lst<em class="ft_clr_red">02</em></td>
+                                            <td class="al_l">독립 확장 class</td>
+                                        </tr>    
+                                        <tr>
+                                            <td class="al_l" scope="row">guide_lst <em class="ft_clr_red">type01</em>, guide_lst <em class="ft_clr_red">type02</em></td>
+                                            <td class="al_l">종속 확장 class</td>
+                                        </tr>    
+                                    </tbody>
+                                </table>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb li:nth-child(3) span:contains("id 및 class 네이밍 규칙")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('id 및 class 네이밍 규칙 > HTML GUIDE');
+            });            
+		});
+        
+	});
+});	
+</script>
+</body>
+</html>

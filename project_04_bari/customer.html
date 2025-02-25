@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_04_bari/resources/inc/' );           
+		require_once ( BASIC_INCLUDE . 'head.html' );
+	?>   
+	<link rel="stylesheet" href="resources/css/customer.css" />
+	<script>
+		$(window).on("load", function(){
+			var nav = $(".navName").val();
+			$(".gnb ."+nav).addClass("on");
+		});
+	</script>
+	<title>BARI CUSTOMER</title>
+</head>
+<body>
+    <input type="hidden" value="customer" class="navName">
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'header.html' );
+	?>
+
+	<div id="container_customer">		
+		<div class="customer_title_box">
+			<img class="whata_simbol" src="resources/img/whata_meal_simbol.png" alt="WHAT A MEAL simbol" />
+			<p class="customer_title"><b>BARI</b>'s CUSTOMER</p>
+		</div>
+		<div class="customer_box">
+			<div class="customer_img">
+				<img src="resources/img/customer.jpg" alt="customer barifood 이미지" />
+			</div>
+			<div class="customer_email">
+				<div class="customer_text">
+					<div>
+						<span class="hori_line"></span>
+						<p>편리한 전화 주문 서비스</p>	
+						<h3>02-797-7090</h3>	
+					</div>
+					<div>
+						<span class="hori_line"></span>
+						<p>
+							<img src="resources/img/wooribank.png" alt="우리은행" />
+							<span class="verti_line"></span>
+							주식회사 바리
+						</p>
+						<h3>1005-202-939923</h3>	
+					</div>
+					<div class="opentime">
+						<p>365DAYS OPEN <b>AM 10:30 - PM 08:30</b></p>
+					</div>
+				</div>
+				<div class="customer_email_box">
+					<input type="text" placeholder="답변을 받을 이메일을 적어주세요." />
+					<input type="text" placeholder="제목을 입력하세요." />
+					<textarea name="" id="" placeholder="문의내용을 입력하세요."></textarea>
+					<input type="button" value="E-MAIL SEND"/>
+				</div>
+			</div>
+		</div>	
+    </div> <!-- /#container_customer -->
+
+	<?PHP
+        require_once ( BASIC_INCLUDE . 'footer.html' );
+    ?>
+ </body>
+</html>

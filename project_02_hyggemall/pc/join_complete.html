@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+    <?PHP
+        define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/pc/asset/inc/' ) ;           
+        require_once ( BASIC_INCLUDE . 'head.html' ) ;
+    ?>  
+  <title>Join Complete</title>    
+ </head>
+ <body>
+    <section class="join_complete_body">
+        <h1>HYGGE BOOKS</h1>
+        <form action="">
+            <h2><span class="join_name">김휘게</span>님, <span class="red-color">환영합니다!</span></h2>
+            <h3><span class="join_id">hygge124</span> 아이디로 휘게문고 회원가입이 완료되었습니다!</h3>
+            <div>
+                회원님께서는 <span>hygge1234</span> 아이디로<br>휘게문고와 북스 리브로의 모든 온라인 서비스를 이용하실 수 있습니다.
+            </div>
+            <input type="button" class="join_service_btn" onclick="location.href='index.html'" value="서비스 시작하기" /> 
+        </form>
+    </section>
+ </body>
+</html>

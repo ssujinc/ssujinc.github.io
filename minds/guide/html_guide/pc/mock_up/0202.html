@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<!-- Cache reset -->		
+<meta http-equiv="Expires" content="Mon, 06 Jan 2016 00:00:01 GMT">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<!-- icon_favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="../../resources/images/ico_favicon_60x60.png"><!-- 윈도우즈 사이트 아이콘, HiDPI/Retina 에서 Safari 나중에 읽기 사이드바 -->
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="../../resources/css/font.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/type_pc_a.css">
+<link rel="stylesheet" type="text/css" href="../../resources/css/blackboard.css" media="screen">
+
+<!--[if lte IE 9]>
+<script src="../../resources/js/html5shiv.min.js"></script>
+<script src="../../resources/js/respond.min.js"></script>
+
+<div class="lyrWrap"> 
+    <div class="lyr_bg ie9"></div>
+    <div class="lyrBox">
+        <div class="lyr_top">
+            <h3>브라우저 업데이트 안내</h3>
+         </div> 
+        <div class="lyr_mid"> 
+            <div class="legacy-browser">
+현재 사용중인 브라우저는 지원이 중단된 브라우저입니다.<br>
+원활한 온라인 서비스를 위해 브라우저를 <a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">최신 버전</a>으로 업그레이드 해주세요.
+            </div>
+        </div> 
+        <div class="lyr_btm">
+            <div class="btnBox sz_small">
+                <button class="btn_win_close">창 닫기</button>
+            </div>
+        </div> 
+    </div> 
+</div>
+<![endif]-->
+<title></title>
+</head>
+
+<body>
+<!-- .page loading -->
+<div id="pageldg">
+    <span class="out_bg">
+        <em>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <strong>&nbsp;</strong>
+            <b>&nbsp;</b>
+        </em>
+    </span>    
+</div>
+<!-- //.page loading -->
+    
+<!-- #wrap -->
+<div id="wrap">
+    <!-- #skipNav -->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#snb">서브메뉴 바로가기</a>
+    </div>
+    <!-- //#skipNav -->
+	<!-- #header -->
+	<div id="header">		
+
+	</div>
+	<!-- //#header -->
+	
+	<hr>
+	
+	<!-- #container -->
+	<div id="container">
+		<!-- #snb -->
+		<div id="snb">
+
+		</div>
+		<!-- //#snb -->
+		
+		<!-- #contents -->
+		<div id="contents">
+			<!-- .content -->
+			<div class="content">
+				<!-- .titArea -->
+				<div class="titArea">
+					<h3>Style Guide 요소</h3>
+					<div class="path">
+						<ul class="path_nav">
+							<li><a class="home" href="../rule/0101.html">Home</a></li>
+							<li><a href="0101.html">마크업 가이드</a></li>
+							<li><span>개요</span></li>
+							<li><span>Style Guide 요소</span></li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.titArea -->
+				<!-- .section(All Box Type) -->
+				<div class="stn allBoxType">
+					<div class="stn_tit">
+						<h4>참고사항</h4>
+					</div>
+					<div class="stn_cont">
+						<ul class="lst">
+							<li>이 문서는 마크업 개발자가 소스 코드 작성 시에 따라야 할 규칙을 기술합니다.</li>
+							<li>이 문서는 마크업 언어를 다루는 개발자를 대상으로 합니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //.section(All Box Type) -->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>네이밍 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">네이밍 규칙은 레이아웃, 객체, 이미지, 폴더, 파일의 이름을 작성하는 규칙이다. 이해하기 쉬운 이름으로 작성해야 코드를 쉽게 파악할 수  있습니다. 단, 모바일과 같이 성능, 네트워크 속도를 고려해야 하는 경우 축약된 형태로 작성할 수 있습니다.</p>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>HTML 코드 작성 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. 들여쓰기</dt>
+                            <dd>HTML 코드를 작성할 때 코드의 가독성을 높이기 위하여 왼쪽 첫 번째 열부터 오른쪽으로 일정한 간격만큼 띄어 쓴다. 들여쓰기를 하면 전  체 HTML 구조를 쉽게 파악할 수 있습니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. 빈 줄</dt>
+                            <dd>HTML 코드의 빈 줄은 코드 그룹의 영역을 표시하기 위하여 사용합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. DTD 및 인코딩</dt>
+                            <dd>DTD(Document Type Definition)는 SGML(Standard Generalized Markup Language) 계열 마크업 언어의 문서 타입을 정의하는 것으로서,  해당 HTML 문서가 어떤 버전의 HTML로 작성되었는지, 어떤 규칙으로 내용을 기술하고 어떤 엘리먼트와 애트리뷰트, 애트리뷰트값을 지  정할 수 있는지 정의합니다. 또한 인코딩을 선언하여 문서에서 사용되는 문자 코드 세트를 지정합니다. DTD와 인코딩 선언은 HTML 문서가 브
+라우저에서 바르게 해석될 수 있도록 합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. 주석</dt>
+                            <dd>HTML 코드의 주석은 코드 그룹을 구분하거나, 코드의 수정과 삭제를 표시하거나, 개발자가 참고해야 하는 사항을 기술합니다.</dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>HTML 엘리먼트 작성 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">HTML 엘리먼트 작성 규칙은 반드시 선언해야 하는 애트리뷰트와 선택적 사용이 가능한 애트리뷰트에 대한 내용을 기술하고 선언 순서를  제시하여 코드 품질을 유지합니다.</p>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>CSS 코드 작성 규칙</h4>
+					</div>
+					<div class="stn_cont">
+                        <dl class="dl_lst">
+                            <dt>A. 들여쓰기</dt>
+                            <dd>CSS 코드는 들여쓰기를 하지 않습는다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>B. 공백</dt>
+                            <dd>CSS 코드는 공백을 최소화합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>C. 빈 줄</dt>
+                            <dd>CSS 코드의 빈 줄은 코드 그룹의 영역을 표시하기 위하여 사용합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>D. 줄 바꿈</dt>
+                            <dd>CSS 코드의 가독성을 위한 줄 바꿈은 하지 않습는다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>E. 인코딩</dt>
+                            <dd>CSS의 인코딩은 HTML의 인코딩과 동일하게 선언하여 HTML 문서가 브라우저에서 바르게 해석될 수 있도록 합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>F. 선택자</dt>
+                            <dd>선택자 버그가 발생하지 않도록 사용 규칙을 준수합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>G. 속성</dt>
+                            <dd>속성 선언 순서를 준수하여 개발자가 코드를 쉽게 파악할 수 있도록 하며, CSS 코드 최적화를 위해 속성 값을 축약하여 사용하고 약식 속  성을 허용 범위에 맞게 사용합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>H. z-index</dt>
+                            <dd>z-index 속성 값을 범위에 맞게 사용하여 객체가 브라우저에서 바르게 표현되도록 합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>I. 핵</dt>
+                            <dd>크로스 브라우징을 위해 제시된 핵(hack)에 한해 최소한의 사용을 허용합니다.</dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>J. CSS 선언 타입</dt>
+                            <dd>상황에 알맞은 CSS 선언 타입을 선택합니다. </dd>
+                        </dl>
+                        <dl class="dl_lst">
+                            <dt>K. 주석</dt>
+                            <dd>CSS 코드의 주석은 코드 그룹을 구분하거나, 코드의 수정과 삭제를 표시하거나, 개발자가 참고해야 하는 사항을 기술합니다.</dd>
+                        </dl>
+					</div>
+				</div>
+				<!-- //.section-->
+				<!-- .section -->
+				<div class="stn contBoxType">
+					<div class="stn_tit">
+						<h4>웹 접근성 보장 방법</h4>
+					</div>
+					<div class="stn_cont">
+                        <p class="txt">모든 사람이 환경의 제약 없이 웹 콘텐츠에 접근할 수 있도록 보장하는 마크업 방법을 기술합니다.</p>
+					</div>
+				</div>
+				<!-- //.section-->
+			</div>
+			<!-- //.content -->
+		</div>
+		<!-- //#contents -->
+		<a href="#header" class="btn_goTop"><span>페이지 위로</span></a>
+	</div>
+	<!-- //#container -->
+	
+	<hr>
+	
+	<!-- #footer -->
+	<div id="footer">
+		<div class="cyrt"><span>&copy; MINDsLab. All rights reserved.</span></div>
+	</div>
+	<!-- //#footer -->
+</div>
+<!-- //#wrap -->
+    
+<!-- 공통 script -->
+<script type="text/javascript" src="../../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+<!-- 소스보기 -->
+<script type="text/javascript" src="../../resources/js/src/rainbow.js"></script>
+<script type="text/javascript" src="../../resources/js/src/generic.js"></script>
+<script type="text/javascript" src="../../resources/js/src/html.js"></script>
+<script type="text/javascript" src="../../resources/js/src/css.js"></script>
+<script type="text/javascript" src="../../resources/js/src/javascript.js"></script>
+<!-- page Landing -->  
+<script type="text/javascript">   
+$(window).load(function() { 
+    //page loading delete  
+	$('#pageldg').addClass('pageldg_hide').delay(300).queue(function() { $(this).remove(); });
+}); 
+</script> 
+<!-- script -->  
+<script type="text/javascript">
+jQuery.event.add(window,"load",function(){
+	$(document).ready(function (){
+        //공통        
+		$('body').each(function(){
+             //snb load  
+            $.ajax({
+                url: '../snb_mock_up.html',
+                type: 'GET',
+                dataType: 'html',
+                async: false,				
+                success:function(data){					
+                    $('#snb').html(data);
+                }
+            });	            
+            //gnb  
+            $('#gnb').append(' \
+                <ul class="nav_gnb"> \
+                    <li><a href="../rule/0101.html">규칙 가이드<\/a><\/li>	\
+                    <li><a class="active" href="0101.html">마크업 가이드<\/a><\/li> \
+                    <li><a href="../plan/0101_head.html">설계 가이드<\/a><\/li> \
+                <\/ul>'
+            );
+            //snb active 
+            $('#snb span:contains("Style Guide 요소")').parents('a').addClass('active');   
+            $('title').each(function(){
+                $(this).text('Style Guide 요소 > HTML GUIDE');
+            });            
+		});
+	});
+});	
+</script>
+</body>
+</html>

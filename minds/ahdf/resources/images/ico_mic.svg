@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <defs>
+        <linearGradient id="4wlenpl7xb" x1="-.041" x2="1.038" y1=".209" y2=".819" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#0ff"/>
+            <stop offset="1" stop-color="#a23aff"/>
+        </linearGradient>
+        <clipPath id="mshxj3b1xa">
+            <path fill="#353b67" d="M0 0H40V40H0z" transform="translate(904 149)"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#mshxj3b1xa)" transform="translate(-904 -149)">
+        <path fill="url(#4wlenpl7xb)" d="M908.5 554.342a8.289 8.289 0 0 0 8.28-8.28v-7.3a8.28 8.28 0 0 0-16.556 0v7.3a8.29 8.29 0 0 0 8.276 8.28zm-.263-2.907a5.333 5.333 0 0 1-5.292-5.373v-7.3a5.339 5.339 0 0 1 5.339-5.376h.217a5.338 5.338 0 0 1 5.339 5.376v7.3a5.333 5.333 0 0 1-5.292 5.373zm10.278 2.181a1.457 1.457 0 0 1-.372 1.062 12.907 12.907 0 0 1-8.176 4.237v4.179h2.346a1.471 1.471 0 0 1 0 2.941h-7.628a1.471 1.471 0 1 1-.081-2.941h2.427v-4.179a12.909 12.909 0 0 1-8.176-4.236 1.471 1.471 0 0 1 2.192-1.961 9.983 9.983 0 0 0 14.907 0 1.474 1.474 0 0 1 2.077-.111 1.46 1.46 0 0 1 .483 1.009z" transform="translate(15.498 -379.451)"/>
+    </g>
+</svg>

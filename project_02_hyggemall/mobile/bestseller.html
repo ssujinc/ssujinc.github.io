@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+	<?PHP
+		define ( 'BASIC_INCLUDE' , $_SERVER['DOCUMENT_ROOT'] . '/project_02_hyggemall/mobile/asset/inc/' ) ;           
+		require_once ( BASIC_INCLUDE . 'head.html' ) ;
+	?>  
+  	<link rel="stylesheet" type="text/css" href="asset/css/bestseller.css">
+  	<title>bestseller</title>    
+</head>
+<body id="bestseller" data-role="page">
+	<div id="wrap">
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'header.html' ) ;
+		?>  
+	   
+		<div class="content">
+			<ul class="tab tab_bestseller">
+				<li class="tab_btn" onclick="tabover('bestseller', 0)"><a href="javascript:void()">주간</a></li>
+				<li class="tab_btn" onclick="tabover('bestseller', 1)"><a href="javascript:void()">월간</a></li>
+	        </ul>	
+
+			<div class="inner_content">
+				<div class="path">
+					<select name="select-native" id="select-native">
+ 						<option value="all">전체</option> 
+						<option value="1">소설</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+				    </select>
+				</div>
+
+				<!--<div class="sort_box">
+					<button class="sort_btn">출간일</button>
+					<button class="sort_btn sort_btn_on">최고가</button>
+					<button class="sort_btn" style="float:right;">최저가</button>
+				</div>-->
+
+				<div id="weekly" class="bestseller_tabcontent tabcnt_bestseller0">
+					<ul>
+						<li>
+							<span class="badge badge_top">
+								<span>1</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_01.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">그래도 행복해 그래서 성공해</span>
+									<span class="book_price">13,950원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_top">
+								<span>2</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_02.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">낸시의 홈짐</span>
+									<span class="book_price">14,220원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_top">
+								<span>3</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_03.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">마인크래프트 세계 건축 여행</span>
+									<span class="book_price">9,000원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_top">
+								<span>4</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_04.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">문맹</span>
+									<span class="book_price">9,900원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_low">
+								<span>5</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_05.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">Queen 보헤미안에서 천국으로</span>
+									<span class="book_price">25,200원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_low">
+								<span>6</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_06.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">패미컴 컴플리트 가이드</span>
+									<span class="book_price">17,820원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_low">
+								<span>7</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_07.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">오래된 모더니즘, 열림</span>
+									<span class="book_price">11,700원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<span class="badge badge_low">
+								<span>8</span>
+							</span>
+							<a href="">
+								<img src="asset/img/newbook_08.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">니모의 더 맛있는 다이어트 레시피</span>
+									<span class="book_price">15,120원</span>
+								</span>
+							</a>
+						</li>
+					</ul>					
+				</div>
+
+				<div id="monthly" class="bestseller_tabcontent tabcnt_bestseller1">
+					<ul>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_02.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">낸시의 홈짐</span>
+									<span class="book_price">14,220원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_01.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">그래도 행복해 그래서 성공해</span>
+									<span class="book_price">13,950원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_04.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">문맹</span>
+									<span class="book_price">9,900원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_03.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">마인크래프트 세계 건축 여행</span>
+									<span class="book_price">9,000원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_05.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">Queen 보헤미안에서 천국으로</span>
+									<span class="book_price">25,200원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_06.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">패미컴 컴플리트 가이드</span>
+									<span class="book_price">17,820원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_07.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">오래된 모더니즘, 열림</span>
+									<span class="book_price">11,700원</span>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="asset/img/newbook_08.jpg" alt="">
+								<span class="txt_box">
+									<span class="book_title">니모의 더 맛있는 다이어트 레시피</span>
+									<span class="book_price">15,120원</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<?PHP
+			require_once ( BASIC_INCLUDE . 'footer.html' ) ;
+		?>  
+	</div>
+</body>
+</html>
