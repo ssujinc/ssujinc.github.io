@@ -538,7 +538,7 @@ p.border:after {
     text-align: center;
 }
 
-#about .desc.lt {
+#about .desc:first-child {
     width: 40%;
 }
 
